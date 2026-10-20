@@ -2,7 +2,7 @@
 
 Terminada el 20 de octubre a las 06:52 de Bogotá, diecinueve continuaciones, dos épocas adicionales comunes, batch ocho, época y rama elegidas con validación, la época adicional cero conserva el checkpoint aprendido de fase 1 y no indica una red sin entrenar.
 
-El análisis entre fases y los límites se encuentran en [COMPARACION_FASES.md](COMPARACION_FASES.md) y en [../INFORME.md](../INFORME.md), el CSV completo conserva la configuración, ambas caídas, tiempos y memoria, la tabla siguiente identifica todos los controles por nombre para evitar confundir las variantes que comparten arquitectura.
+El análisis entre fases y los límites se encuentran en [../INFORME.md](../INFORME.md), el CSV completo conserva la configuración, ambas caídas, tiempos y memoria, la tabla siguiente identifica todos los controles por nombre para evitar confundir las variantes que comparten arquitectura.
 
 | Configuración | Rama | Época extra elegida | mAP O % | R1 O % | R5 O % | R10 O % | mAP LR % | R1 LR % | R5 LR % | R10 LR % | Caída pp | Min train F2 |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|

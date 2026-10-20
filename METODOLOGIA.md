@@ -1,6 +1,6 @@
 # Metodología y correspondencia con las fuentes
 
-Esta versión distingue el mecanismo común y el calendario histórico de fase 1 de la continuación de fase 2, el estado vigente está en INFORME.md, la guía PDF y PUBLICACION_FASE2.md, los valores históricos no se atribuyen a los entrenamientos posteriores.
+Esta versión distingue el mecanismo común y el calendario histórico de fase 1 de la continuación de fase 2, el estado vigente está en INFORME.md y las tablas de resultados, los valores históricos no se atribuyen a los entrenamientos posteriores.
 
 ## Problema y alcance
 
@@ -114,7 +114,7 @@ El artículo no explicita el inicio aleatorio, se adopta el valor por defecto do
 
 ## Matriz y estado de los experimentos
 
-REVISION_CUMPLIMIENTO.md conserva la auditoría histórica y COMPARACION_ARQUITECTURAS.md presenta el cierre de la continuación autorizada, en esa sesión se completaron dos controles RF99 con recorte mínimo 0.9 con y sin CO, el resultado local no demuestra una mejora del término CO en esa condición, Places365 solo está identificado como pendiente en metadatos y no dispone de un ejecutor de transferencia literal.
+resultados/revision_cumplimiento.json conserva la auditoría de fase 1 y COMPARACION_ARQUITECTURAS.md presenta el cierre de la continuación autorizada, en esa sesión se completaron dos controles RF99 con recorte mínimo 0.9 con y sin CO, el resultado local no demuestra una mejora del término CO en esa condición, Places365 solo está identificado como pendiente en metadatos y no dispone de un ejecutor de transferencia literal.
 
 La lectura de cabeza compartida no selecciona automáticamente el mejor punto antes o después del MLP como en la tabla seis, el análisis de campos efectivos usa una posición central por imagen y no reproduce las dos posiciones de la figura dos ni el submuestreo espacial de paso dos de la figura C.7, la medición de eficiencia tampoco reproduce el coste completo de entrenamiento y cabezas de la tabla H.13.
 
@@ -149,6 +149,20 @@ El atributo final_training propone incorporar datos de validación después de s
 Los identificadores de training están anonimizados y no incluyen person_ids, no se puede comprobar directamente que las personas no coincidan con validación o prueba, las comprobaciones de píxeles e identificadores excluyen duplicados exactos y no excluyen identidades visualmente relacionadas.
 
 La indicación de bibliotecas para audio de la página dos se mantiene como posible errata por su contradicción con las entradas exclusivamente de imagen de la página uno, no se incorporan entradas de audio ni se atribuye una corrección oficial al docente.
+
+## Decisiones de la segunda fase
+
+La exposición inferior a una época de fase 1 motivó continuar un panel de catorce arquitecturas y cinco controles con presupuesto común, la tasa pequeña de LARS se contrastó mediante pilotos y validación de inicialización aleatoria, no se asumió que BatchNorm causara el rendimiento ni que medir un tensor equivaliera a medir todos los pesos.
+
+Se mantuvo la entrada cuadrada 224 y se pospuso la degradación LR durante aprendizaje para conservar la geometría local y no mezclar otra intervención con las tasas y el calendario, el laboratorio permite esa degradación pero no la exige, la adaptación rectangular y las múltiples semillas quedan fuera de los experimentos entregados, las cien consultas de validación y una semilla limitan la selección y la interpretación estadística.
+
+## Uso de herramientas y atribuciones
+
+Se utilizó un asistente de IA en Codex como apoyo para programación, revisión de código, organización de experimentos y redacción, la expresión implementación propia se refiere al mecanismo programado en este repositorio sin importar una implementación existente de CO-SSL y no afirma una autoría exclusivamente humana, los entrenamientos y métricas proceden de ejecuciones locales con PyTorch, la defensa individual requiere comprensión del método y del código y no se acredita con la generación automática de documentos.
+
+El video utiliza síntesis local Piper, voz es_ES-sharvard-medium, basada en Spanish Harvard sentences de la Universidad de Edimburgo con licencia CC BY 3.0, el motor Piper se distribuye bajo GPL 3.0, el guion conserva las fuentes de voz, datos y motor, esta narración no registra una exposición humana del grupo.
+
+La publicación académica conserva los resultados originales y retira copias y materiales de trabajo del árbol actual de Git, el commit de ejecución a6dc59ab03ac869b5ab100c250492d19c07c5a39 conserva el código congelado y las versiones previas, las únicas modificaciones posteriores del auditor afectan a rutas de entregables y a la interpretación de fechas de copia, los modelos, las pérdidas, la lectura de datos y el cálculo de métricas se mantienen sin cambios.
 
 ## Referencias
 

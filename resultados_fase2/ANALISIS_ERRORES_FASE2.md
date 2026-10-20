@@ -12,15 +12,15 @@ Consulta 18 de identidad 725 y cámara 5, condición original, primer elemento r
 
 Consulta 59 de identidad 487 y cámara 5, condición original, primer elemento recuperado identidad 487 y cámara 3, primer positivo en rango 1, el acierto recupera la misma identidad desde otra cámara bajo las exclusiones del protocolo.
 
-Consulta 0 de identidad 1191 y cámara 3, condición original, primer elemento recuperado identidad 1305 y cámara 5, primer positivo en rango 121, el fallo sitúa otra identidad antes de cualquier positivo válido, una eventual similitud de ropa, pose o fondo debe comprobarse visualmente y no se afirma como causa demostrada.
+Consulta 0 de identidad 1191 y cámara 3, condición original, primer elemento recuperado identidad 1305 y cámara 5, primer positivo en rango 121, el fallo sitúa otra identidad antes de cualquier positivo válido, la inspección visual detallada se presenta más adelante y no demuestra causalidad del encoder.
 
-Consulta 1 de identidad 873 y cámara 5, condición original, primer elemento recuperado identidad 698 y cámara 6, primer positivo en rango 8, el fallo sitúa otra identidad antes de cualquier positivo válido, una eventual similitud de ropa, pose o fondo debe comprobarse visualmente y no se afirma como causa demostrada.
+Consulta 1 de identidad 873 y cámara 5, condición original, primer elemento recuperado identidad 698 y cámara 6, primer positivo en rango 8, el fallo sitúa otra identidad antes de cualquier positivo válido, la inspección visual detallada se presenta más adelante y no demuestra causalidad del encoder.
 
-Consulta 2 de identidad 360 y cámara 4, condición original, primer elemento recuperado identidad 252 y cámara 1, primer positivo en rango 1384, el fallo sitúa otra identidad antes de cualquier positivo válido, una eventual similitud de ropa, pose o fondo debe comprobarse visualmente y no se afirma como causa demostrada.
+Consulta 2 de identidad 360 y cámara 4, condición original, primer elemento recuperado identidad 252 y cámara 1, primer positivo en rango 1384, el fallo sitúa otra identidad antes de cualquier positivo válido, la inspección visual detallada se presenta más adelante y no demuestra causalidad del encoder.
 
-Consulta 3 de identidad 1383 y cámara 2, condición original, primer elemento recuperado identidad 1347 y cámara 2, primer positivo en rango 777, el fallo sitúa otra identidad antes de cualquier positivo válido, una eventual similitud de ropa, pose o fondo debe comprobarse visualmente y no se afirma como causa demostrada.
+Consulta 3 de identidad 1383 y cámara 2, condición original, primer elemento recuperado identidad 1347 y cámara 2, primer positivo en rango 777, el fallo sitúa otra identidad antes de cualquier positivo válido, la inspección visual detallada se presenta más adelante y no demuestra causalidad del encoder.
 
-Consulta 4 de identidad 1271 y cámara 5, condición original, primer elemento recuperado identidad 1399 y cámara 1, primer positivo en rango 51, el fallo sitúa otra identidad antes de cualquier positivo válido, una eventual similitud de ropa, pose o fondo debe comprobarse visualmente y no se afirma como causa demostrada.
+Consulta 4 de identidad 1271 y cámara 5, condición original, primer elemento recuperado identidad 1399 y cámara 1, primer positivo en rango 51, el fallo sitúa otra identidad antes de cualquier positivo válido, la inspección visual detallada se presenta más adelante y no demuestra causalidad del encoder.
 
 Consulta 16 de identidad 319 y cámara 4, condición baja_resolucion, primer elemento recuperado identidad 319 y cámara 1, primer positivo en rango 1, el acierto recupera la misma identidad desde otra cámara bajo las exclusiones del protocolo.
 
@@ -32,15 +32,15 @@ Consulta 65 de identidad 473 y cámara 4, condición baja_resolucion, primer ele
 
 Consulta 121 de identidad 174 y cámara 6, condición baja_resolucion, primer elemento recuperado identidad 174 y cámara 2, primer positivo en rango 1, el acierto recupera la misma identidad desde otra cámara bajo las exclusiones del protocolo.
 
-Consulta 0 de identidad 1191 y cámara 3, condición baja_resolucion, primer elemento recuperado identidad 17 y cámara 4, primer positivo en rango 37, el fallo sitúa otra identidad antes de cualquier positivo válido, una eventual similitud de ropa, pose o fondo debe comprobarse visualmente y no se afirma como causa demostrada.
+Consulta 0 de identidad 1191 y cámara 3, condición baja_resolucion, primer elemento recuperado identidad 17 y cámara 4, primer positivo en rango 37, el fallo sitúa otra identidad antes de cualquier positivo válido, la inspección visual detallada se presenta más adelante y no demuestra causalidad del encoder.
 
-Consulta 1 de identidad 873 y cámara 5, condición baja_resolucion, primer elemento recuperado identidad 698 y cámara 6, primer positivo en rango 11, el fallo sitúa otra identidad antes de cualquier positivo válido, una eventual similitud de ropa, pose o fondo debe comprobarse visualmente y no se afirma como causa demostrada.
+Consulta 1 de identidad 873 y cámara 5, condición baja_resolucion, primer elemento recuperado identidad 698 y cámara 6, primer positivo en rango 11, el fallo sitúa otra identidad antes de cualquier positivo válido, la inspección visual detallada se presenta más adelante y no demuestra causalidad del encoder.
 
-Consulta 2 de identidad 360 y cámara 4, condición baja_resolucion, primer elemento recuperado identidad 1070 y cámara 1, primer positivo en rango 1330, el fallo sitúa otra identidad antes de cualquier positivo válido, una eventual similitud de ropa, pose o fondo debe comprobarse visualmente y no se afirma como causa demostrada.
+Consulta 2 de identidad 360 y cámara 4, condición baja_resolucion, primer elemento recuperado identidad 1070 y cámara 1, primer positivo en rango 1330, el fallo sitúa otra identidad antes de cualquier positivo válido, la inspección visual detallada se presenta más adelante y no demuestra causalidad del encoder.
 
-Consulta 3 de identidad 1383 y cámara 2, condición baja_resolucion, primer elemento recuperado identidad 680 y cámara 2, primer positivo en rango 800, el fallo sitúa otra identidad antes de cualquier positivo válido, una eventual similitud de ropa, pose o fondo debe comprobarse visualmente y no se afirma como causa demostrada.
+Consulta 3 de identidad 1383 y cámara 2, condición baja_resolucion, primer elemento recuperado identidad 680 y cámara 2, primer positivo en rango 800, el fallo sitúa otra identidad antes de cualquier positivo válido, la inspección visual detallada se presenta más adelante y no demuestra causalidad del encoder.
 
-Consulta 4 de identidad 1271 y cámara 5, condición baja_resolucion, primer elemento recuperado identidad 174 y cámara 3, primer positivo en rango 825, el fallo sitúa otra identidad antes de cualquier positivo válido, una eventual similitud de ropa, pose o fondo debe comprobarse visualmente y no se afirma como causa demostrada.
+Consulta 4 de identidad 1271 y cámara 5, condición baja_resolucion, primer elemento recuperado identidad 174 y cámara 3, primer positivo en rango 825, el fallo sitúa otra identidad antes de cualquier positivo válido, la inspección visual detallada se presenta más adelante y no demuestra causalidad del encoder.
 
 ![Aciertos originales](ejemplos/original_aciertos.png)
 

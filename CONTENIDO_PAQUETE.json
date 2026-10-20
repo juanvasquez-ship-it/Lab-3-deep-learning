@@ -1,33 +1,14 @@
 {
-  "tipo": "entrega_compacta_fases_1_y_2",
-  "fecha_Bogota": "2026-10-20",
-  "repositorio": "https://github.com/juanvasquez-ship-it/Lab-3-deep-learning",
-  "release_fase2": "https://github.com/juanvasquez-ship-it/Lab-3-deep-learning/releases/tag/entrega-v2",
-  "release_historica_fase1": "https://github.com/juanvasquez-ship-it/Lab-3-deep-learning/releases/tag/entrega-v1",
-  "fase1": {
-    "configuraciones": 54,
-    "arquitecturas_panel": 14,
-    "actualizaciones": 1253,
-    "analisis_historicos": 44
-  },
-  "fase2": {
-    "continuaciones": 19,
-    "arquitecturas": 14,
-    "controles_adicionales": 5,
-    "epocas_adicionales_comunes": 2,
-    "actualizaciones_adicionales": 2760,
-    "seleccion": {
-      "nombre": "co_byol_bagnet33",
-      "grupo": "arquitecturas",
-      "rama": "objetivo",
-      "criterio": 0.10327042646631046,
-      "epoca_adicional_seleccionada": 2,
-      "actualizacion_unix": 1792489583.5603487,
-      "criterio_descripcion": "media mAP original/LR de validación, ambas ramas del mismo checkpoint"
-    }
-  },
-  "encoders_en_git": false,
-  "encoders_incluidos_en_entrega_zip": [
+  "tipo": "repositorio_academico",
+  "version_resultados": "fases_1_y_2",
+  "commit_ejecucion": "a6dc59ab03ac869b5ab100c250492d19c07c5a39",
+  "release_pesos": "https://github.com/juanvasquez-ship-it/Lab-3-deep-learning/releases/tag/entrega-v2",
+  "configuraciones_fase1": 54,
+  "continuaciones_fase2": 19,
+  "arquitecturas_fase2": 14,
+  "controles_fase2": 5,
+  "pesos_en_git": false,
+  "encoders_disponibles_en_release": [
     {
       "archivo": "encoders_seleccionados.pt",
       "bytes": 130731519,
@@ -47,396 +28,33 @@
       "fase": 2
     }
   ],
-  "exportacion_fase2": {
-    "origen": "resultados_fase2/co_byol_bagnet33/mejores_encoders.pt",
-    "copia_identica_por_SHA256": true,
-    "contenido": "ambos encoders, online y objetivo, configuración y selección, sin optimizador ni cabezas",
-    "seleccion_evaluada": "objetivo, época adicional 2"
-  },
-  "pesos_locales_omitidos": [
-    {
-      "archivo": "resultados/byol_bagnet33/checkpoint.pt",
-      "bytes": 527665826
-    },
-    {
-      "archivo": "resultados/byol_mc_r18/checkpoint.pt",
-      "bytes": 390529328
-    },
-    {
-      "archivo": "resultados/byol_mc_r50/checkpoint.pt",
-      "bytes": 614617119
-    },
-    {
-      "archivo": "resultados/byol_r18/checkpoint.pt",
-      "bytes": 390529328
-    },
-    {
-      "archivo": "resultados/byol_r50/checkpoint.pt",
-      "bytes": 614617055
-    },
-    {
-      "archivo": "resultados/byol_rf163_resnet50/checkpoint.pt",
-      "bytes": 617657209
-    },
-    {
-      "archivo": "resultados/byol_rf195_paper193_resnet50/checkpoint.pt",
-      "bytes": 617657273
-    },
-    {
-      "archivo": "resultados/byol_rf29_r18/checkpoint.pt",
-      "bytes": 346981246
-    },
-    {
-      "archivo": "resultados/byol_rf67_resnet50/checkpoint.pt",
-      "bytes": 617657209
-    },
-    {
-      "archivo": "resultados/byol_rf99/checkpoint.pt",
-      "bytes": 617657017
-    },
-    {
-      "archivo": "resultados/byol_rf99_resnet50_co0.0_crop0.9/checkpoint.pt",
-      "bytes": 617657081
-    },
-    {
-      "archivo": "resultados/byol_rf99_resnet50_co0.2_crop0.9/checkpoint.pt",
-      "bytes": 747959259
-    },
-    {
-      "archivo": "resultados/byol_rf99_sin_mlp_co0.0/checkpoint.pt",
-      "bytes": 589207180
-    },
-    {
-      "archivo": "resultados/byol_rf99_sin_mlp_co0.2/checkpoint.pt",
-      "bytes": 719509358
-    },
-    {
-      "archivo": "resultados/byol_swin_b/checkpoint.pt",
-      "bytes": 1766523721
-    },
-    {
-      "archivo": "resultados/byol_swin_s/checkpoint.pt",
-      "bytes": 1143246985
-    },
-    {
-      "archivo": "resultados/byol_swin_t/checkpoint.pt",
-      "bytes": 801890229
-    },
-    {
-      "archivo": "resultados/byol_vit_s16/checkpoint.pt",
-      "bytes": 683031948
-    },
-    {
-      "archivo": "resultados/co_byol_bagnet33/checkpoint.pt",
-      "bytes": 657967812
-    },
-    {
-      "archivo": "resultados/co_byol_r50/checkpoint.pt",
-      "bytes": 744919233
-    },
-    {
-      "archivo": "resultados/co_byol_resnet18_224/checkpoint.pt",
-      "bytes": 445334034
-    },
-    {
-      "archivo": "resultados/co_byol_rf115_resnet50/checkpoint.pt",
-      "bytes": 747959259
-    },
-    {
-      "archivo": "resultados/co_byol_rf163_resnet50/checkpoint.pt",
-      "bytes": 747959195
-    },
-    {
-      "archivo": "resultados/co_byol_rf195_paper193_resnet50/checkpoint.pt",
-      "bytes": 747959259
-    },
-    {
-      "archivo": "resultados/co_byol_rf29_224/checkpoint.pt",
-      "bytes": 401785824
-    },
-    {
-      "archivo": "resultados/co_byol_rf29_r18/checkpoint.pt",
-      "bytes": 401785760
-    },
-    {
-      "archivo": "resultados/co_byol_rf39_resnet50/checkpoint.pt",
-      "bytes": 747959259
-    },
-    {
-      "archivo": "resultados/co_byol_rf67_resnet50/checkpoint.pt",
-      "bytes": 747959195
-    },
-    {
-      "archivo": "resultados/co_byol_rf99/checkpoint.pt",
-      "bytes": 747959195
-    },
-    {
-      "archivo": "resultados/co_byol_rf99_cabeza_compartida/checkpoint.pt",
-      "bytes": 617657209
-    },
-    {
-      "archivo": "resultados/co_byol_rf99_capa2/checkpoint.pt",
-      "bytes": 672461915
-    },
-    {
-      "archivo": "resultados/co_byol_rf99_locales1/checkpoint.pt",
-      "bytes": 747959387
-    },
-    {
-      "archivo": "resultados/co_byol_rf99_locales16/checkpoint.pt",
-      "bytes": 747959387
-    },
-    {
-      "archivo": "resultados/co_byol_rf99_locales4/checkpoint.pt",
-      "bytes": 747959387
-    },
-    {
-      "archivo": "resultados/co_byol_rf99_locales64/checkpoint.pt",
-      "bytes": 747959387
-    },
-    {
-      "archivo": "resultados/co_byol_rf99_peso0.1/checkpoint.pt",
-      "bytes": 747959323
-    },
-    {
-      "archivo": "resultados/co_byol_rf99_peso0.5/checkpoint.pt",
-      "bytes": 747959323
-    },
-    {
-      "archivo": "resultados/co_byol_rf99_peso1.0/checkpoint.pt",
-      "bytes": 747959323
-    },
-    {
-      "archivo": "resultados/co_byol_swin_b/checkpoint.pt",
-      "bytes": 2412798581
-    },
-    {
-      "archivo": "resultados/co_byol_swin_s/checkpoint.pt",
-      "bytes": 1638526837
-    },
-    {
-      "archivo": "resultados/co_byol_swin_t/checkpoint.pt",
-      "bytes": 1297170027
-    },
-    {
-      "archivo": "resultados/co_byol_swin_t_kernel1/checkpoint.pt",
-      "bytes": 894516971
-    },
-    {
-      "archivo": "resultados/co_byol_swin_t_kernel2/checkpoint.pt",
-      "bytes": 1045511915
-    },
-    {
-      "archivo": "resultados/co_byol_vit_s16/checkpoint.pt",
-      "bytes": 1631296514
-    },
-    {
-      "archivo": "resultados/co_mocov3_r50/checkpoint.pt",
-      "bytes": 543423283
-    },
-    {
-      "archivo": "resultados/co_mocov3_rf29_r18/checkpoint.pt",
-      "bytes": 200289810
-    },
-    {
-      "archivo": "resultados/co_mocov3_rf99/checkpoint.pt",
-      "bytes": 546463245
-    },
-    {
-      "archivo": "resultados/dino_r50/checkpoint.pt",
-      "bytes": 654631205
-    },
-    {
-      "archivo": "resultados/mocov3_mc_r18/checkpoint.pt",
-      "bytes": 189033378
-    },
-    {
-      "archivo": "resultados/mocov3_mc_r50/checkpoint.pt",
-      "bytes": 413121105
-    },
-    {
-      "archivo": "resultados/mocov3_r18/checkpoint.pt",
-      "bytes": 189033314
-    },
-    {
-      "archivo": "resultados/mocov3_r50/checkpoint.pt",
-      "bytes": 413121105
-    },
-    {
-      "archivo": "resultados/mocov3_rf29_r18/checkpoint.pt",
-      "bytes": 145485296
-    },
-    {
-      "archivo": "resultados/mocov3_rf99/checkpoint.pt",
-      "bytes": 416161067
-    },
-    {
-      "archivo": "resultados_fase2/byol_bagnet33/mejores_encoders.pt",
-      "bytes": 130727079
-    },
-    {
-      "archivo": "resultados_fase2/byol_bagnet33/ultimo_checkpoint.pt",
-      "bytes": 527668995
-    },
-    {
-      "archivo": "resultados_fase2/byol_r50/mejores_encoders.pt",
-      "bytes": 188697817
-    },
-    {
-      "archivo": "resultados_fase2/byol_r50/ultimo_checkpoint.pt",
-      "bytes": 614620267
-    },
-    {
-      "archivo": "resultados_fase2/byol_rf99/mejores_encoders.pt",
-      "bytes": 190756241
-    },
-    {
-      "archivo": "resultados_fase2/byol_rf99/ultimo_checkpoint.pt",
-      "bytes": 617660859
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_bagnet33/mejores_encoders.pt",
-      "bytes": 130726887
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_bagnet33/ultimo_checkpoint.pt",
-      "bytes": 657971219
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_r50/mejores_encoders.pt",
-      "bytes": 188697817
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_r50/ultimo_checkpoint.pt",
-      "bytes": 744922683
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_resnet18_224/mejores_encoders.pt",
-      "bytes": 89506885
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_resnet18_224/ultimo_checkpoint.pt",
-      "bytes": 445333955
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_rf115_resnet50/mejores_encoders.pt",
-      "bytes": 190756241
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_rf115_resnet50/ultimo_checkpoint.pt",
-      "bytes": 747963275
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_rf163_resnet50/mejores_encoders.pt",
-      "bytes": 190756241
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_rf163_resnet50/ultimo_checkpoint.pt",
-      "bytes": 747963275
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_rf195_paper193_resnet50/mejores_encoders.pt",
-      "bytes": 190756305
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_rf195_paper193_resnet50/ultimo_checkpoint.pt",
-      "bytes": 747963339
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_rf29_224/mejores_encoders.pt",
-      "bytes": 60505837
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_rf29_224/ultimo_checkpoint.pt",
-      "bytes": 401787635
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_rf39_resnet50/mejores_encoders.pt",
-      "bytes": 190756241
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_rf39_resnet50/ultimo_checkpoint.pt",
-      "bytes": 747963275
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_rf67_resnet50/mejores_encoders.pt",
-      "bytes": 190756241
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_rf67_resnet50/ultimo_checkpoint.pt",
-      "bytes": 747963275
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_rf99/mejores_encoders.pt",
-      "bytes": 190756241
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_rf99/ultimo_checkpoint.pt",
-      "bytes": 747963275
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_swin_b/mejores_encoders.pt",
-      "bytes": 694167767
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_swin_b/ultimo_checkpoint.pt",
-      "bytes": 2412808169
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_swin_s/mejores_encoders.pt",
-      "bytes": 390917975
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_swin_s/ultimo_checkpoint.pt",
-      "bytes": 1638536489
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_swin_t/mejores_encoders.pt",
-      "bytes": 220270223
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_swin_t/ultimo_checkpoint.pt",
-      "bytes": 1297174155
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_vit_s16/mejores_encoders.pt",
-      "bytes": 173424681
-    },
-    {
-      "archivo": "resultados_fase2/co_byol_vit_s16/ultimo_checkpoint.pt",
-      "bytes": 1631299971
-    },
-    {
-      "archivo": "resultados_fase2/co_mocov3_r50/mejores_encoders.pt",
-      "bytes": 188697817
-    },
-    {
-      "archivo": "resultados_fase2/co_mocov3_r50/ultimo_checkpoint.pt",
-      "bytes": 543426571
-    },
-    {
-      "archivo": "resultados_fase2/mocov3_r50/mejores_encoders.pt",
-      "bytes": 188697817
-    },
-    {
-      "archivo": "resultados_fase2/mocov3_r50/ultimo_checkpoint.pt",
-      "bytes": 413124155
-    }
+  "datos": "HDF5 externos, no incluidos, rutas explícitas mediante --datos",
+  "checkpoints_completos": "Conservados localmente, no distribuidos por Git ni en el ZIP compacto de la release, reproducir todas las continuaciones requiere recuperar los diecinueve checkpoints iniciales",
+  "video": "resultados_fase2/audiovisual/VIDEO.mp4",
+  "guion": "GUION_VIDEO.md",
+  "informe": "INFORME.md",
+  "metodologia": "METODOLOGIA.md",
+  "analisis_errores": "resultados_fase2/ANALISIS_ERRORES_FASE2.md",
+  "verificacion_video": "resultados_fase2/audiovisual/resultados/video_verificacion.json",
+  "documentos_evaluacion": [
+    "README.md",
+    "INFORME.md",
+    "METODOLOGIA.md",
+    "COMPARACION_ARQUITECTURAS.md",
+    "GUION_VIDEO.md",
+    "resultados_fase2/RESULTADOS_FASE2.md",
+    "resultados_fase2/ANALISIS_ERRORES_FASE2.md"
   ],
-  "cantidad_pesos_locales_omitidos": 92,
-  "bytes_pesos_locales_omitidos": 59135007880,
+  "procedencia": "Los hashes de ejecución corresponden al commit indicado, los cambios posteriores de auditoría y documentación no modifican modelos, datos, pérdidas ni métricas",
   "omisiones": [
-    "HDF5 originales externos",
-    "entornos Python y cachés",
-    "historial interno .git",
-    "todos los pesos salvo los tres archivos compactos de la raíz"
+    "Copias de código y documentos anteriores",
+    "Guías de trabajo para asistentes de IA",
+    "Video de fase 1 y recursos audiovisuales duplicados",
+    "Logs de consola y salidas de pruebas rápidas descartadas",
+    "Datos, checkpoints completos y entornos"
   ],
-  "video_vigente": "resultados_fase2/audiovisual/VIDEO.mp4",
-  "video_historico": "VIDEO.mp4",
-  "proveniencia": "Los registros experimentales originales se conservan, los pendientes de publicación en revisiones anteriores describen su fecha y se resuelven mediante esta entrega posterior",
-  "limite_reevaluacion": "Reevaluar el resto de modelos requiere recuperar los pesos omitidos y los datos, la revisión de métricas y código no los necesita",
-  "alcance_verificacion_pesos": "Copia seleccionada fase 2 contrastada byte a byte mediante SHA256, no se vuelven a cargar todos los tensores ni se ejecuta inferencia",
-  "entrenamientos_nuevos_publicacion": 0,
-  "inferencias_encoders_nuevas_publicacion": 0,
-  "GPU_utilizada_publicacion": false
+  "conservacion_local": "La retirada afecta al índice Git, los archivos permanecen en el equipo y en el historial anterior, no se reescribe el historial",
+  "fuentes_modificadas_despues_de_ejecucion": {
+    "codigo/auditoria.py": "a0d09bc33a6828e64a80cb3249386b82fbe130b4bd44b98ad5cb4bf16a4d339d"
+  }
 }

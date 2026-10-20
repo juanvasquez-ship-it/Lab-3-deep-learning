@@ -1,12 +1,18 @@
 # Informe de implementación y resultados, fases 1 y 2
 
-## Estado verificado al 20 de octubre
+## Objetivo y datos
 
-La fase 2 terminó el 20 de octubre a las 06:52:06 de Bogotá, completó las catorce arquitecturas de la referencia y cinco controles, diecinueve configuraciones con dos épocas adicionales completas y evaluación de ambas ramas en las dos resoluciones, no hay entrenamientos ni evaluaciones de esta cola pendientes y esta revisión solo consulta archivos y corrige documentación en CPU.
+El objetivo es recuperar imágenes de una misma persona captadas por cámaras distintas mediante un encoder entrenado sin etiquetas de identidad, el artículo estudia representaciones autosupervisadas para clasificación y su mecanismo de alineamiento local y global se adapta a recuperación con normalización L2 y similitud coseno.
+
+Se mantienen las particiones suministradas, training contiene 11043 imágenes sin etiquetas, validation 100 consultas y 1793 imágenes de galería, testing 3368 consultas y 19732 de galería, las consultas originales son 3x128x64 y las reducidas 3x32x16, las identidades y cámaras solo se utilizan en evaluación, no se modifica la base ni se crea una división nueva.
+
+## Entrenamiento realizado
+
+La fase 2 terminó el 20 de octubre a las 06:52:06 de Bogotá, completó las catorce arquitecturas de la referencia y cinco controles, diecinueve configuraciones con dos épocas adicionales completas y evaluación de ambas ramas en las dos resoluciones, el panel experimental acordado está evaluado y la organización posterior de la entrega se realizó sin repetir entrenamiento ni inferencia de encoders.
 
 El tiempo desde el inicio de la tarea fue 6.330 horas, incluido el análisis previo, y desde el lanzamiento independiente 6.013 horas, el cierre quedó dentro del plazo global de diez horas, los códigos de salida de GPU y consolidación CPU fueron cero, esa salida no ocultó el fallo separado del generador audiovisual que se documenta abajo.
 
-La fase 1 conserva 54 configuraciones cortas y su comparación de catorce arquitecturas, las diecinueve ejecuciones de fase 2 son continuaciones de checkpoints válidos y no diecinueve inicializaciones independientes, los resultados históricos completos se conservan en resultados y el informe anterior se archiva en [docs/INFORME_FASE1_HISTORICO.md](docs/INFORME_FASE1_HISTORICO.md).
+La fase 1 conserva 54 configuraciones cortas y su comparación de catorce arquitecturas, las diecinueve ejecuciones de fase 2 son continuaciones de checkpoints válidos y no diecinueve inicializaciones independientes, las configuraciones y métricas de fase 1 se conservan en resultados y permiten contrastar cada comparación, las versiones anteriores de documentación permanecen en el historial de Git.
 
 ## Qué cambió y qué se mantuvo
 
@@ -57,7 +63,7 @@ La fase 1 de esta tabla usa la rama con mayor mAP media de validación de cada c
 | swin_s | online | 0.682 | 0.599 | objetivo | 2 | 1.142 | 1.086 | +0.473 | 13.822 |
 | swin_b | online | 0.587 | 0.522 | objetivo | 2 | 0.850 | 0.802 | +0.271 | 15.171 |
 
-Doce arquitecturas mejoran su mAP media observada, ResNet18 conserva exactamente su checkpoint de fase 1 porque sus nuevas épocas no superaron la validación inicial, RF29 empeora la media de prueba porque su caída en consultas reducidas supera la pequeña mejora en originales, no se eligió otro checkpoint mirando prueba para corregir ese resultado.
+Doce arquitecturas mejoran su mAP media observada, ResNet18 conserva exactamente su checkpoint de fase 1 porque sus nuevas épocas no superaron la validación inicial, RF29 reduce su mAP original y LR frente a la mejor rama de validación de fase 1 y su deterioro es mayor en LR, frente a la tabla histórica que fijaba online mejora ligeramente en original pero empeora la media, no se eligió otro checkpoint mirando prueba para corregir ese resultado.
 
 Las ocho métricas originales y LR, ambas caídas, configuraciones, tiempos y memoria de las diecinueve ejecuciones están en [resultados_fase2/comparacion_fase2.csv](resultados_fase2/comparacion_fase2.csv), las dos ramas del checkpoint elegido están en comparacion_ramas_fase2.csv, los deltas y la comparación manteniendo rama fija están en comparacion_fase1_fase2.csv y comparacion_fase1_fase2_misma_rama.csv.
 
@@ -78,7 +84,7 @@ Las diecinueve continuaciones sumaron 302.644 minutos de bucle de entrenamiento,
 | BYOL BagNet33 | 1/objetivo | 2/objetivo | 2.017 | 2.167 | +0.151 | 1.889 | 2.014 | +0.126 |
 | MoCoV3 ResNet50 | 2/objetivo | 2/online | 0.933 | 1.909 | +0.976 | 0.741 | 1.675 | +0.935 |
 
-CO mejora las dos condiciones en RF99, BagNet33 y la pareja MoCoV3 ResNet50 de esta ejecución, pero empeora ambas frente a BYOL sin CO en ResNet50, cada variante usa su selección propia de validación y por eso la comparación práctica incluye diferencias de época y a veces de rama, no debe describirse como un efecto aislado a checkpoint idéntico, las ablationes históricas y sus límites permanecen documentados en fase 1.
+CO mejora las dos condiciones en RF99, BagNet33 y la pareja MoCoV3 ResNet50 de esta ejecución, pero empeora ambas frente a BYOL sin CO en ResNet50, cada variante usa su selección propia de validación y por eso la comparación práctica incluye diferencias de época y a veces de rama, la comparación no aísla el efecto a checkpoint idéntico, las ablaciones de fase 1 y sus límites se documentan en METODOLOGIA.md y sus archivos originales.
 
 ## Inicialización aleatoria, una comprobación que faltaba
 
@@ -103,24 +109,47 @@ ResNet50, RF39, RF67, RF163 y RF195 conservan una puntuación observada inferior
 
 BagNet33 pasa de 8.453 a 10.327 por ciento medio de validación frente a su inicialización aleatoria, una mejora observada de 1.874 puntos, en el piloto RF99 el cambio relativo del primer tensor fue aproximadamente 0.088 por ciento con tasa base 0.2 y 0.772 por ciento con tasa 1.6, se midió un tensor y no toda la red, no queda demostrado que BatchNorm sea la causa del rendimiento ni que toda red de fase 1 fuera equivalente a no entrenar.
 
-## Integridad y alcance de esta revisión
+## Integridad y procedencia
 
-Se contrastaron las 152 métricas del CSV seleccionado con sus JSON de prueba, se verificaron los 378 hashes de registros históricos protegidos y las huellas de los trece archivos de código ejecutado, todas las configuraciones conservan batch ocho, 2760 pasos adicionales, dos épocas completas y protocolo de evaluación común, no se recalcularon embeddings, métricas mediante inferencia ni gradientes durante esta revisión.
+La revisión posterior a los experimentos contrastó las 152 métricas del CSV seleccionado con sus JSON de prueba, los 378 hashes de registros históricos y las huellas de los trece archivos ejecutados, todas las configuraciones conservan batch ocho, 2760 pasos adicionales, dos épocas completas y protocolo de evaluación común, no se recalcularon embeddings, métricas mediante inferencia ni gradientes durante esta revisión.
 
-Se conservaron sesion_independiente.json, verificacion_fase2.json y errores.log del cierre original, el estado completado de esos archivos acredita el panel experimental y convive con el fallo audiovisual que registran, una revisión posterior de documentación no sustituye esos registros ni cambia los pesos o las selecciones.
+sesion_independiente.json y verificacion_fase2.json conservan el cierre experimental, el fallo audiovisual inicial y su corrección CPU posterior se distinguen en revision_resultados_20261020.json, el registro de consola completo queda fuera de la entrega académica, la organización de archivos no sustituye los resultados ni cambia pesos o selecciones.
 
 La selección por validación antecede a la prueba de fase 2, pero la fase se diseñó después de existir pruebas históricas, no constituye un segundo conjunto ciego, no hay evidencia de ajuste con testing ni se propone ahora entrenar para mejorar las filas peores.
 
-## Estado audiovisual y publicación de la entrega
+## Material audiovisual y análisis de errores
 
-El video de fase 2 se corrigió solo en CPU, el fallo inicial fue ModuleNotFoundError de matplotlib en el entorno de voz, el gráfico se genera ahora con el entorno de análisis que ya lo tiene instalado y la narración y codificación siguen en su entorno CPU, la versión nueva dura 717.56 segundos y pasó decodificación completa y límite por capítulo, se conserva el video histórico de fase 1.
+El video de fase 2 se corrigió solo en CPU, el fallo inicial fue ModuleNotFoundError de matplotlib en el entorno de voz, el gráfico se genera ahora con el entorno de análisis que ya lo tiene instalado y la narración y codificación siguen en su entorno CPU, la versión final dura 717.56 segundos y pasó decodificación completa y límite por capítulo, el video anterior queda fuera de la entrega académica y se conserva localmente y en el historial.
 
-La versión actual y su guion están en [resultados_fase2/audiovisual/VIDEO.mp4](resultados_fase2/audiovisual/VIDEO.mp4) y [resultados_fase2/audiovisual/GUION_VIDEO.md](resultados_fase2/audiovisual/GUION_VIDEO.md), el grupo debe revisar la narración sintética y los ejemplos visuales antes de la entrega.
+La versión actual y su guion están en [resultados_fase2/audiovisual/VIDEO.mp4](resultados_fase2/audiovisual/VIDEO.mp4) y [GUION_VIDEO.md](GUION_VIDEO.md), el material utiliza narración sintética y su generación no acredita una exposición humana del grupo.
 
-Las figuras incluyen cinco aciertos y cinco fallos por condición, durante esta revisión se inspeccionaron visualmente los veinte casos y se añadieron observaciones concretas sobre prendas, punto de vista, mochila y pérdida de detalle LR en ANALISIS_ERRORES_FASE2.md, esos rasgos visibles apoyan hipótesis de confusión pero no demuestran qué atributo determinó el encoder, la revisión del grupo sigue pendiente.
+Las figuras incluyen cinco aciertos y cinco fallos por condición, se inspeccionaron visualmente los veinte casos y se documentaron prendas, punto de vista, mochila y pérdida de detalle LR en [el análisis de errores](resultados_fase2/ANALISIS_ERRORES_FASE2.md), esos rasgos visibles apoyan hipótesis de confusión pero no demuestran qué atributo determinó el encoder, la revisión del grupo sigue pendiente.
 
 Persisten una semilla, solo unas 2.908 épocas equivalentes, cien consultas de validación, ausencia de convergencia y de intervalos de incertidumbre, no se reprodujeron los calendarios largos del paper, Places365, la igualación literal de parámetros de BagNet33 ni todos los barridos, los 44 análisis históricos de máscaras, PGD, campos efectivos y lecturas no se repitieron con los pesos nuevos y no deben presentarse como evidencia de fase 2, se mantienen como diferencias declaradas y no como requisitos básicos de ejecución que falten en el panel acordado.
 
-La entrega consolidada de ambas fases se publica en [entrega-v2](https://github.com/juanvasquez-ship-it/Lab-3-deep-learning/releases/tag/entrega-v2), incluye ZIP actualizado, guía PDF, resultados y video de fase 2 y preserva la release anterior, el ZIP añade los encoders seleccionados de fase 2 y declara los pesos omitidos, los registros previos de revisión mantienen su estado histórico de publicación pendiente, revisar PUBLICACION_FASE2.md para las evidencias actuales, siguen pendientes la revisión del grupo, el envío al formulario y la defensa individual.
+## Cobertura de las instrucciones
 
-El contraste de requisitos se conserva en resultados_fase2/REVISION_CIERRE.md, los experimentos básicos del laboratorio tienen evidencia y las actividades humanas y la reproducción experimental íntegra del paper continúan separadas del estado completado de los entrenamientos.
+| Requisito del laboratorio | Página | Evidencia |
+|---|---:|---|
+| Solo imágenes y aprendizaje sin identidades | 1 | codigo/datos.py y pérdidas propias, training como único origen |
+| Particiones suministradas | 1 | Verificación de formas y metadatos, sin nuevo split ni final_training |
+| Propuesta central implementada | 2 | codigo/modelos.py, CO-BYOL y CO-MoCoV3, ecuaciones y adaptaciones en METODOLOGIA.md |
+| Entrenar y seleccionar mediante validación | 2 | Planes, pilotos, validaciones por época y selección global congelada |
+| Modelo base y ablación | 2 | BYOL sin CO en ResNet50, RF99 y BagNet33 y pareja MoCoV3 sin/con CO |
+| Mecanismo maestro y estudiante y comparación | 2 | EMA y stop-gradient, ambas ramas de la misma época evaluadas |
+| Dos resoluciones con el mismo encoder, L2 y coseno | 2 | Prueba original y LR con galería original, codigo/evaluacion.py |
+| mAP, Rank-1/5/10 y caída de mAP | 2 | comparacion_fase2.csv y JSON individuales, ambas convenciones de caída |
+| Código, instrucciones y diferencias del paper | 2-3 | main.py, codigo, README y METODOLOGIA, dependencias fijadas |
+| Cinco aciertos y cinco fallos explicados | 2-3 | Veinte casos y cuatro figuras del modelo final |
+| Video de hasta 18 minutos y capítulos de hasta seis | 3 | 717.56 s, capítulos de 260.60, 228.46 y 226.70 s, SHA256 y decodificación verificados |
+| Envío grupal y defensa individual | 3 | Actividades humanas pendientes, no acreditadas por el repositorio |
+
+## Alcance de la entrega y reproducibilidad
+
+Se entregan código, configuraciones, métricas, curvas, casos, video final y guion con referencias y atribuciones, se conservan las familias BYOL, MoCoV3, CO-BYOL, CO-MoCoV3, multicrop y DINO y las catorce arquitecturas acordadas, los 44 análisis de fase 1 se mantienen separados de los pesos nuevos.
+
+Los datos y los checkpoints completos son externos por tamaño, la release entrega-v2 permite recuperar los tres exportados compactos, incluido el modelo seleccionado de fase 2, estos permiten evaluar encoders pero no retomar todo el entrenamiento, repetir las diecinueve continuaciones requiere recuperar sus checkpoints de fase 1, las instrucciones preparan una copia independiente sin sobrescribir los resultados entregados.
+
+El código congelado de los experimentos se identifica con el commit a6dc59ab03ac869b5ab100c250492d19c07c5a39 y codigo_ejecucion_SHA256.json, la adaptación posterior del auditor utiliza las rutas finales y deja de interpretar fechas de copia de Git como orden experimental, no cambia entrenamiento, datos, representaciones ni métricas, la verificación de entrega informa ese cambio en lugar de afirmar que todas las fuentes siguen idénticas.
+
+Se utilizó asistencia de IA en Codex y narración sintética Piper, las funciones y las atribuciones se describen en METODOLOGIA.md y GUION_VIDEO.md, no se afirma autoría exclusivamente humana ni se da por realizada la defensa individual o el envío académico.

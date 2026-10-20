@@ -1,0 +1,94 @@
+{
+  "estado": "aprobado",
+  "alcance": "archivos e importaciones, evidencia y métricas guardadas, selección por validación, video y enlaces, no estima embeddings ni vuelve a evaluar modelos",
+  "fuentes_python_sin_comentarios_ni_docstrings": 15,
+  "modulos_importados_CPU": 12,
+  "configuraciones_fase1": 54,
+  "continuaciones_fase2": 19,
+  "arquitecturas": 14,
+  "controles": 5,
+  "metricas_CSV_JSON_fase2": 152,
+  "historicos_SHA256": 378,
+  "fuentes_ejecucion_identicas": 12,
+  "fuentes_cambiadas_solo_auditoria_entregables": {
+    "codigo/auditoria.py": "a0d09bc33a6828e64a80cb3249386b82fbe130b4bd44b98ad5cb4bf16a4d339d"
+  },
+  "seleccion": {
+    "nombre": "co_byol_bagnet33",
+    "grupo": "arquitecturas",
+    "rama": "objetivo",
+    "criterio": 0.10327042646631046,
+    "epoca_adicional_seleccionada": 2,
+    "actualizacion_unix": 1792489583.5603487,
+    "criterio_descripcion": "media mAP original/LR de validación, ambas ramas del mismo checkpoint"
+  },
+  "video_SHA256": "dadf254ce6eeea5b3ca50460d7343043055117454ff4407a91da99cb2c8df6b7",
+  "enlaces_internos_comprobados": 22,
+  "datos_HDF5_contrastados": true,
+  "verificaciones_numericas_y_datos": {
+    "estado": "aprobado",
+    "estructura": {
+      "training": {
+        "images": [
+          11043,
+          3,
+          128,
+          64
+        ]
+      },
+      "validation": {
+        "query/images": [
+          100,
+          3,
+          128,
+          64
+        ],
+        "query/images_low_resolution": [
+          100,
+          3,
+          32,
+          16
+        ],
+        "gallery/images": [
+          1793,
+          3,
+          128,
+          64
+        ]
+      },
+      "testing": {
+        "query/images": [
+          3368,
+          3,
+          128,
+          64
+        ],
+        "query/images_low_resolution": [
+          3368,
+          3,
+          32,
+          16
+        ],
+        "gallery/images": [
+          19732,
+          3,
+          128,
+          64
+        ]
+      }
+    },
+    "comprobaciones": [
+      "particiones originales y tipos",
+      "coseno con valor conocido y stop-gradient",
+      "InfoNCE con valor analítico",
+      "promedio espacial de InfoNCE en ambas direcciones",
+      "positivo contrastivo mal asignado aumenta pérdida",
+      "AP y Rank-k con junk, distractor y misma cámara"
+    ],
+    "segundos": 0.10695709999708924,
+    "entrenamientos": 0
+  },
+  "entrenamientos_nuevos": 0,
+  "inferencias_encoders_nuevas": 0,
+  "GPU_utilizada": false
+}

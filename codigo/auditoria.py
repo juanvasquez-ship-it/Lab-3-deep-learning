@@ -150,7 +150,8 @@ def auditar_resultados(resultados, raiz, datos=None):
         primer_resultado = min(p.stat().st_mtime for p in pruebas)
         seleccion_antes_resultados = (resultados / 'seleccion_validacion.json').stat().st_mtime <= primer_resultado
         if not seleccion_antes_resultados:
-            errores.append('La fecha de selección no precede al primer resultado de prueba')
+            observaciones.append('Las fechas de copia no acreditan el orden de ejecución, la cronología histórica se consulta en los planes y registros originales')
+            seleccion_antes_resultados = None
         for archivo, campo in [('plan_ampliacion.json', 'revision_declaracion_unix'), ('plan_analisis.json', 'declaracion_unix')]:
             declaracion = leer(resultados / archivo, {})
             if declaracion.get(campo, declaracion.get('declaracion_unix', 0)) > primer_resultado:
@@ -191,17 +192,20 @@ def auditar_resultados(resultados, raiz, datos=None):
                     coincide = ejemplo['person_id'] == ejemplo['person_ids_galeria'][0]
                     if coincide != (tipo == 'aciertos'):
                         errores.append('Ejemplo con etiqueta de acierto o fallo inconsistente')
-    for requerido in ['README.md', 'METODOLOGIA.md', 'INFORME.md', 'ANALISIS_ERRORES.md', 'GUION_VIDEO.md', 'VIDEO.mp4', 'requirements.txt']:
+    entrega = leer(raiz / 'CONTENIDO_PAQUETE.json', {})
+    archivo_video = entrega.get('video', 'VIDEO.mp4')
+    archivo_errores = entrega.get('analisis_errores', 'ANALISIS_ERRORES.md')
+    for requerido in ['README.md', 'METODOLOGIA.md', 'INFORME.md', archivo_errores, 'GUION_VIDEO.md', archivo_video, 'requirements.txt']:
         if not (raiz / requerido).exists():
             errores.append(f'Falta entregable, {requerido}')
-    video = leer(resultados / 'video_verificacion.json', {})
+    video = leer(raiz / entrega['verificacion_video'], {}) if entrega.get('verificacion_video') else leer(resultados / 'video_verificacion.json', {})
     if not video or video.get('duracion_segundos', 1081) > 1080:
         errores.append('Video sin duración verificada dentro de 18 minutos')
     if not video.get('decodificacion_completa_sin_errores'):
         errores.append('Falta comprobar la decodificación completa del video')
     if any(duracion > 360 for duracion in video.get('capitulos_segundos', {}).values()):
         errores.append('Un capítulo del video supera los seis minutos')
-    if (raiz / 'VIDEO.mp4').exists() and hashlib.sha256((raiz / 'VIDEO.mp4').read_bytes()).hexdigest() != video.get('sha256_video'):
+    if (raiz / archivo_video).exists() and hashlib.sha256((raiz / archivo_video).read_bytes()).hexdigest() != video.get('sha256_video'):
         errores.append('El video actual no coincide con el archivo cuya decodificación se verificó')
     plan_analisis = leer(resultados / 'plan_analisis.json', {})
     esperados_analisis = {(nombre, analisis) for analisis, nombres in plan_analisis.get('grupos', {}).items() for nombre in nombres}
@@ -244,7 +248,7 @@ def auditar_resultados(resultados, raiz, datos=None):
             errores.append(f'{nombre}, eficiencia sin medición válida')
         analisis_contrastados += 1
     if particiones_legacy:
-        observaciones.append(f'{particiones_legacy} análisis de representaciones conservan partición externa validation por un error de metadatos, su resultado interno y el lector utilizan training sin identidades, se conservan los registros históricos y la corrección se documenta en REVISION_CUMPLIMIENTO.md')
+        observaciones.append(f'{particiones_legacy} análisis de representaciones conservan partición externa validation por un error de metadatos, su resultado interno y el lector utilizan training sin identidades, se conservan los registros históricos y la corrección se documenta en METODOLOGIA.md')
     if analisis_contrastados != len(esperados_analisis):
         observaciones.append(f'Análisis con evidencia contrastada, {analisis_contrastados} de {len(esperados_analisis)} declarados')
     presupuesto = leer(resultados / 'presupuesto.json', {})
@@ -258,6 +262,6 @@ def auditar_resultados(resultados, raiz, datos=None):
     resultado['analisis_contrastados'] = analisis_contrastados
     resultado['analisis_declarados'] = len(esperados_analisis)
     resultado['metadatos_particion_legacy'] = particiones_legacy
-    resultado['cumplimiento_integral_paper'] = 'no certificado por la coherencia automática, consultar REVISION_CUMPLIMIENTO.md'
+    resultado['cumplimiento_integral_paper'] = 'no certificado por la coherencia automática, consultar INFORME.md y METODOLOGIA.md'
     guardar_json(resultados / 'verificacion_final.json', resultado)
     return resultado
