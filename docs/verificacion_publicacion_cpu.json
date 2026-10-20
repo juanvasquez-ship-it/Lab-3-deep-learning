@@ -1,0 +1,21 @@
+{
+  "estado": "aprobado",
+  "alcance": "revisión documental y empaquetado, auditoría CPU ejecutada en copia compacta sin alterar resultados originales",
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "entrenamientos_nuevos": 0,
+  "inferencias_nuevas": 0,
+  "archivos_candidatos_git": 455,
+  "bytes_candidatos_git": 92983324,
+  "archivos_python_ast_sin_comentarios_docstrings": 12,
+  "metricas_panel_contrastadas_desde_json": 112,
+  "registros_historicos_SHA256_preservados": 292,
+  "secretos_patrones_conocidos_detectados": 0,
+  "limite_busqueda_secretos": "patrones conocidos de credenciales y claves privadas, no es garantía universal de ausencia de datos sensibles",
+  "auditoria_copia_compacta": "aprobado",
+  "codigo_salida_auditoria": 0,
+  "checkpoint_completos_en_git": false,
+  "pdf_paginas": 13,
+  "pdf_revision_visual": "13 páginas renderizadas e inspeccionadas en contacto, tabla de métricas inspeccionada además a tamaño legible",
+  "instalacion": "se añade filelock==3.32.3, dependencia previamente usada por comparacion.py",
+  "conservacion_bytes_git": ".gitattributes desactiva conversión de fin de línea para mantener huellas de evidencia histórica"
+}

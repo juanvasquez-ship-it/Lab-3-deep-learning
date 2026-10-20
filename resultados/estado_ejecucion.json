@@ -1,0 +1,507 @@
+[
+  {
+    "modelo": "byol_r50",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.021704801954552093,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 0.0005866999999852851,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "byol_mc_r50",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.02639205096669628,
+    "rama": "objetivo",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 190.85225190000074,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "co_byol_r50",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.01702894980462441,
+    "rama": "objetivo",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 105.27909089999957,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "co_byol_rf99",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.032681403265848064,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 162.04654329999994,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "byol_rf99",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.024042699045967328,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 155.7957139,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "byol_r18",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.061239646266521376,
+    "rama": "objetivo",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 44.54990089999956,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "byol_mc_r18",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.06700329545552135,
+    "rama": "objetivo",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 81.21005240000068,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "co_byol_rf29_r18",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.037807083989273786,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 72.53885530000025,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "mocov3_r50",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.02537792855888461,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 80.62375479999992,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "mocov3_mc_r50",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.03192980324059004,
+    "rama": "objetivo",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 152.93385780000062,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "co_mocov3_r50",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.021545537035529184,
+    "rama": "objetivo",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 90.28753629999937,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "co_mocov3_rf99",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.024493197902342154,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 147.14294549999977,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "mocov3_rf99",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.029203768116186298,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 135.81328500000018,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "mocov3_r18",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.06443340349096524,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 39.617256100000304,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "mocov3_mc_r18",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.0675801335459511,
+    "rama": "objetivo",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 78.77113129999998,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "co_mocov3_rf29_r18",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.04069016607280784,
+    "rama": "objetivo",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 75.20719830000053,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "byol_vit_s16",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.03616934514302138,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 69.80045819999941,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "co_byol_vit_s16",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.03615064749945855,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 102.19855429999916,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "byol_swin_t",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.037714427709725065,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 122.89228469999944,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "co_byol_swin_t",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.03951325164682912,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 133.66043450000143,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "byol_swin_s",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.03696973440459499,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 216.5614974,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "co_byol_swin_s",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.03776552413700437,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 230.53729070000009,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "byol_swin_b",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.03781063293973997,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 238.8885255999994,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "co_byol_swin_b",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.03560153763406683,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 235.36127900000065,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "dino_r50",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.023803545054173987,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 174.30198819999896,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "co_byol_bagnet33",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.07533237917314749,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 185.0816665000002,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "co_byol_rf67_resnet50",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.028784872231991096,
+    "rama": "objetivo",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 252.48140330000024,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "co_byol_rf163_resnet50",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.022353821079776924,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 96.59572979999939,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "co_byol_rf195_paper193_resnet50",
+    "estado": "entrenamiento_completado",
+    "validacion_mAP_media": 0.01884419085152672,
+    "rama": "online",
+    "pasos": 1253,
+    "segundos_entrenamiento_y_validacion": 98.3021579999986,
+    "evaluacion_prueba": "completada"
+  },
+  {
+    "modelo": "byol_bagnet33",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "online",
+    "validacion_mAP_media": 0.088085730681426,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 301.2174063000002
+  },
+  {
+    "modelo": "byol_rf67_resnet50",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "online",
+    "validacion_mAP_media": 0.032007351975510245,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 436.38950230000046
+  },
+  {
+    "modelo": "byol_rf163_resnet50",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "online",
+    "validacion_mAP_media": 0.021283144261557283,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 149.44415409999965
+  },
+  {
+    "modelo": "byol_rf195_paper193_resnet50",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "online",
+    "validacion_mAP_media": 0.018345100386846974,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 151.5414998999986
+  },
+  {
+    "modelo": "byol_rf29_r18",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "objetivo",
+    "validacion_mAP_media": 0.03558493516151298,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 114.34101370000099
+  },
+  {
+    "modelo": "mocov3_rf29_r18",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "online",
+    "validacion_mAP_media": 0.037346984834226486,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 101.70807909999894
+  },
+  {
+    "modelo": "byol_rf99_sin_mlp_co0.0",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "objetivo",
+    "validacion_mAP_media": 0.024547346987476557,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 235.37001260000034
+  },
+  {
+    "modelo": "byol_rf99_sin_mlp_co0.2",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "online",
+    "validacion_mAP_media": 0.031335704209472875,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 246.95109159999993
+  },
+  {
+    "modelo": "co_byol_rf99_cabeza_compartida",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "objetivo",
+    "validacion_mAP_media": 0.03510434765665006,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 249.78023700000085
+  },
+  {
+    "modelo": "co_byol_rf99_peso0.1",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "objetivo",
+    "validacion_mAP_media": 0.026693718486835334,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 246.80628590000015
+  },
+  {
+    "modelo": "co_byol_rf99_peso0.5",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "objetivo",
+    "validacion_mAP_media": 0.029981515127359533,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 251.4240291999995
+  },
+  {
+    "modelo": "co_byol_rf99_peso1.0",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "online",
+    "validacion_mAP_media": 0.028562736893402385,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 247.6134248999988
+  },
+  {
+    "modelo": "co_byol_rf99_locales1",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "online",
+    "validacion_mAP_media": 0.026938933978226255,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 250.54541879999852
+  },
+  {
+    "modelo": "co_byol_rf99_locales4",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "objetivo",
+    "validacion_mAP_media": 0.01947742637451187,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 270.0511125000012
+  },
+  {
+    "modelo": "co_byol_rf99_locales16",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "objetivo",
+    "validacion_mAP_media": 0.02608284201254708,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 270.5815042000013
+  },
+  {
+    "modelo": "co_byol_rf99_locales64",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "online",
+    "validacion_mAP_media": 0.02848899484006804,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 246.20778790000077
+  },
+  {
+    "modelo": "co_byol_swin_t_kernel1",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "online",
+    "validacion_mAP_media": 0.037971247910350295,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 166.10902469999928
+  },
+  {
+    "modelo": "co_byol_rf99_capa2",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "objetivo",
+    "validacion_mAP_media": 0.030423841045945164,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 240.6285659999994
+  },
+  {
+    "modelo": "co_byol_swin_t_kernel2",
+    "estado": "entrenamiento_completado",
+    "grupo": "ampliacion_predeclarada",
+    "rama": "online",
+    "validacion_mAP_media": 0.03955834026432238,
+    "pasos": 1253,
+    "evaluacion_prueba": "completada",
+    "segundos_totales": 165.22765849999996
+  },
+  {
+    "modelo": "co_byol_rf115_resnet50",
+    "grupo": "comparacion_arquitecturas",
+    "estado": "entrenamiento_completado",
+    "pasos": 1253,
+    "rama": "online",
+    "evaluacion_prueba": "completada",
+    "validacion_mAP_media": 0.02582820568806863
+  },
+  {
+    "modelo": "co_byol_rf39_resnet50",
+    "grupo": "comparacion_arquitecturas",
+    "estado": "entrenamiento_completado",
+    "pasos": 1253,
+    "rama": "objetivo",
+    "evaluacion_prueba": "completada",
+    "validacion_mAP_media": 0.034924776055844806
+  },
+  {
+    "modelo": "co_byol_resnet18_224",
+    "grupo": "comparacion_arquitecturas",
+    "estado": "entrenamiento_completado",
+    "pasos": 1253,
+    "rama": "online",
+    "evaluacion_prueba": "completada",
+    "validacion_mAP_media": 0.09389163795786473
+  },
+  {
+    "modelo": "co_byol_rf29_224",
+    "grupo": "comparacion_arquitecturas",
+    "estado": "entrenamiento_completado",
+    "pasos": 1253,
+    "rama": "objetivo",
+    "evaluacion_prueba": "completada",
+    "validacion_mAP_media": 0.06264545680998991
+  },
+  {
+    "modelo": "byol_rf99_resnet50_co0.0_crop0.9",
+    "grupo": "comparacion_arquitecturas",
+    "estado": "entrenamiento_completado",
+    "pasos": 1253,
+    "rama": "online",
+    "evaluacion_prueba": "completada",
+    "validacion_mAP_media": 0.042614142304125614
+  },
+  {
+    "modelo": "byol_rf99_resnet50_co0.2_crop0.9",
+    "grupo": "comparacion_arquitecturas",
+    "estado": "entrenamiento_completado",
+    "pasos": 1253,
+    "rama": "objetivo",
+    "evaluacion_prueba": "completada",
+    "validacion_mAP_media": 0.026974083691461575
+  }
+]

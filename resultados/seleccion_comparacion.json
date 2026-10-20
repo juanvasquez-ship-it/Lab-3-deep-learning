@@ -1,0 +1,25 @@
+{
+  "modelo": "co_byol_resnet18_224",
+  "arquitectura": "resnet18",
+  "rama": "online",
+  "mAP_media_validacion": 0.09389163795786473,
+  "creacion_unix": 1792450039.8247519,
+  "pool_predeclarado": [
+    "co_byol_resnet18_224",
+    "co_byol_r50",
+    "co_byol_rf29_224",
+    "co_byol_rf39_resnet50",
+    "co_byol_rf67_resnet50",
+    "co_byol_rf99",
+    "co_byol_rf115_resnet50",
+    "co_byol_rf163_resnet50",
+    "co_byol_rf195_paper193_resnet50",
+    "co_byol_bagnet33",
+    "co_byol_vit_s16",
+    "co_byol_swin_t",
+    "co_byol_swin_s",
+    "co_byol_swin_b"
+  ],
+  "candidatas_con_validacion": 14,
+  "criterio": "media de mAP de validación original y reducida, rama online fijada para comparar, selección histórica preservada"
+}

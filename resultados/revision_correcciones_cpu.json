@@ -1,0 +1,40 @@
+{
+  "estado": "aprobado",
+  "alcance": "casos dirigidos a las correcciones de auditoría, protección de resultados, metadatos y extracción, no vuelven a probar modelos ya entrenados",
+  "caracter_sintetico": "Los checkpoints vacíos y las corrupciones deliberadas solo existen en work/revision_regresiones, nunca son resultados experimentales ni se incluyen en la entrega",
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "cuda_inicializada": false,
+  "entrenamientos": 0,
+  "inferencia_modelos": 0,
+  "casos": [
+    {
+      "caso": "panel ya completado",
+      "resultado": "reutiliza 44 estados sin inferencia y sin sobrescribir estados ni presupuesto"
+    },
+    {
+      "caso": "suite con prueba ya registrada",
+      "resultado": "rechaza la repetición antes de consultar CUDA"
+    },
+    {
+      "caso": "metadatos futuros de representaciones",
+      "resultado": "el campo externo refleja training sin identidades, se utilizó una función sustituida y no se ejecutó el modelo"
+    },
+    {
+      "caso": "rama objetivo de prueba ausente y análisis declarado completo sin archivo",
+      "version_anterior": "aprobado",
+      "version_corregida": "requiere_correcciones",
+      "errores_detectados": [
+        "byol_r50, testing, faltan ramas de evaluación",
+        "byol_r50, mascaras, falta evidencia completa de la rama declarada"
+      ]
+    },
+    {
+      "caso": "auditoría rechazada desde la terminal",
+      "codigo_salida": 1
+    },
+    {
+      "caso": "extracción de archivos sintéticos y alteración conservando tamaño",
+      "resultado": "acepta contenido idéntico y rechaza un CRC distinto, no accede a los HDF5 originales"
+    }
+  ]
+}

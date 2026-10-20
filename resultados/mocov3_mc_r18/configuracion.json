@@ -1,0 +1,12 @@
+{
+  "nombre": "mocov3_mc_r18",
+  "metodo": "mocov3",
+  "arquitectura": "resnet18",
+  "peso_local": 0.0,
+  "resolucion": 64,
+  "recorte": 0.2,
+  "semilla": 20261019,
+  "temperatura": 0.2,
+  "kernel_local": 1,
+  "multicrop": true
+}

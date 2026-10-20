@@ -1,0 +1,310 @@
+[
+  {
+    "modelo": "byol_r50",
+    "analisis": "representaciones",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 1.3511810999989393
+  },
+  {
+    "modelo": "byol_r50",
+    "analisis": "mascaras",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 5.089025900000706
+  },
+  {
+    "modelo": "byol_r50",
+    "analisis": "pgd",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 2.6791393000003154
+  },
+  {
+    "modelo": "byol_r50",
+    "analisis": "capas",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 1.957824499999333
+  },
+  {
+    "modelo": "byol_r50",
+    "analisis": "eficiencia",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 0.28168990000085614
+  },
+  {
+    "modelo": "co_byol_r50",
+    "analisis": "representaciones",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 0.7126201000010042
+  },
+  {
+    "modelo": "co_byol_r50",
+    "analisis": "mascaras",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 4.92803449999883
+  },
+  {
+    "modelo": "co_byol_r50",
+    "analisis": "pgd",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 2.5889939999997296
+  },
+  {
+    "modelo": "co_byol_r50",
+    "analisis": "capas",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 1.9700658999990992
+  },
+  {
+    "modelo": "co_byol_r50",
+    "analisis": "eficiencia",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 0.2714579000003141
+  },
+  {
+    "modelo": "co_byol_r50",
+    "analisis": "representaciones384",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 1.0164091999995435
+  },
+  {
+    "modelo": "byol_rf99",
+    "analisis": "representaciones",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 0.6604690999993181
+  },
+  {
+    "modelo": "byol_rf99",
+    "analisis": "mascaras",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 14.538134000000355
+  },
+  {
+    "modelo": "byol_rf99",
+    "analisis": "antes_mlp",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 2.8882468000010704
+  },
+  {
+    "modelo": "co_byol_rf99",
+    "analisis": "representaciones",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 0.655477799999062
+  },
+  {
+    "modelo": "co_byol_rf99",
+    "analisis": "mascaras",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 14.603531200000361
+  },
+  {
+    "modelo": "co_byol_rf99",
+    "analisis": "pgd",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 5.92727879999984
+  },
+  {
+    "modelo": "co_byol_rf99",
+    "analisis": "antes_mlp",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 2.909798000000592
+  },
+  {
+    "modelo": "co_byol_rf99",
+    "analisis": "capas",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 5.780914500001018
+  },
+  {
+    "modelo": "co_byol_rf99",
+    "analisis": "eficiencia",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 1.0329714999988937
+  },
+  {
+    "modelo": "byol_swin_t",
+    "analisis": "representaciones",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 0.8668447000000015
+  },
+  {
+    "modelo": "byol_swin_t",
+    "analisis": "mascaras",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 6.607786499998838
+  },
+  {
+    "modelo": "byol_swin_t",
+    "analisis": "pgd",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 3.9092055999990407
+  },
+  {
+    "modelo": "co_byol_swin_t",
+    "analisis": "representaciones",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 0.8284043000003294
+  },
+  {
+    "modelo": "co_byol_swin_t",
+    "analisis": "mascaras",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 6.597679099999368
+  },
+  {
+    "modelo": "co_byol_swin_t",
+    "analisis": "pgd",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 3.685999899998933
+  },
+  {
+    "modelo": "byol_vit_s16",
+    "analisis": "representaciones",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 0.7341362999995908
+  },
+  {
+    "modelo": "co_byol_vit_s16",
+    "analisis": "representaciones",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 0.7483107999996719
+  },
+  {
+    "modelo": "byol_mc_r50",
+    "analisis": "representaciones",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 0.7063483000001725
+  },
+  {
+    "modelo": "byol_mc_r50",
+    "analisis": "mascaras",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 4.99058739999964
+  },
+  {
+    "modelo": "byol_mc_r50",
+    "analisis": "pgd",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 2.4420361000011326
+  },
+  {
+    "modelo": "byol_mc_r50",
+    "analisis": "eficiencia",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 0.27248300000064773
+  },
+  {
+    "modelo": "mocov3_r50",
+    "analisis": "representaciones",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 0.7022016000009899
+  },
+  {
+    "modelo": "mocov3_r50",
+    "analisis": "mascaras",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 4.934868099999221
+  },
+  {
+    "modelo": "mocov3_r50",
+    "analisis": "pgd",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 2.429003499999453
+  },
+  {
+    "modelo": "mocov3_mc_r50",
+    "analisis": "representaciones",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 0.6929882000004
+  },
+  {
+    "modelo": "mocov3_mc_r50",
+    "analisis": "mascaras",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 4.919921400000021
+  },
+  {
+    "modelo": "mocov3_mc_r50",
+    "analisis": "pgd",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 2.381571400001121
+  },
+  {
+    "modelo": "co_mocov3_r50",
+    "analisis": "representaciones",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 0.7402614000002359
+  },
+  {
+    "modelo": "co_mocov3_r50",
+    "analisis": "mascaras",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 4.928373900000224
+  },
+  {
+    "modelo": "co_mocov3_r50",
+    "analisis": "pgd",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 2.4400628999992477
+  },
+  {
+    "modelo": "mocov3_rf99",
+    "analisis": "representaciones",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 0.6530736999993678
+  },
+  {
+    "modelo": "co_mocov3_rf99",
+    "analisis": "representaciones",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 0.6743582999988575
+  },
+  {
+    "modelo": "co_byol_rf99_cabeza_compartida",
+    "analisis": "antes_mlp",
+    "estado": "completado",
+    "rama": "online",
+    "segundos": 2.9571051000002626
+  }
+]

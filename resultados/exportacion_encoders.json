@@ -1,0 +1,9 @@
+{
+  "origen": "C:\\Users\\msdro\\Documents\\Codex\\2026-10-19\\act-a-como-un-cient-fico-8\\outputs\\Laboratorio3\\resultados\\co_byol_bagnet33\\checkpoint.pt",
+  "destino": "C:\\Users\\msdro\\Documents\\Codex\\2026-10-19\\act-a-como-un-cient-fico-8\\outputs\\Laboratorio3\\encoders_seleccionados.pt",
+  "tensores_verificados": 638,
+  "igualdad_exacta_parametros_y_buffers": true,
+  "bytes_completo": 657967812,
+  "bytes_encoders": 130731519,
+  "procedimiento": "lectura CPU, carga estricta en los mismos Encoder y comparación torch.equal de todos los tensores, sin repetir inferencia ni entrenamiento"
+}

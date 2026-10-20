@@ -1,0 +1,56 @@
+{
+  "online": {
+    "original": {
+      "mAP": 0.0154761392998437,
+      "Rank-1": 0.03978622327790974,
+      "Rank-5": 0.09798099762470308,
+      "Rank-10": 0.14489311163895488,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.014729465623802243,
+      "Rank-1": 0.03889548693586698,
+      "Rank-5": 0.08937054631828979,
+      "Rank-10": 0.12470308788598575,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": 0.07466736760414569,
+    "caida_mAP_relativa_porcentaje": 4.824676630101139,
+    "criterio_validacion": 0.01510280246182297
+  },
+  "objetivo": {
+    "original": {
+      "mAP": 0.01513472815009103,
+      "Rank-1": 0.043052256532066506,
+      "Rank-5": 0.10065320665083136,
+      "Rank-10": 0.14192399049881235,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.013553718313062877,
+      "Rank-1": 0.0344418052256532,
+      "Rank-5": 0.0855106888361045,
+      "Rank-10": 0.11579572446555819,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": 0.15810098370281528,
+    "caida_mAP_relativa_porcentaje": 10.446238752023065,
+    "criterio_validacion": 0.014344223231576953
+  }
+}

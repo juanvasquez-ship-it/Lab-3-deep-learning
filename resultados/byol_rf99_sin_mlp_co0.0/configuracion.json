@@ -1,0 +1,17 @@
+{
+  "nombre": "byol_rf99_sin_mlp_co0.0",
+  "metodo": "byol",
+  "arquitectura": "rf99_resnet50",
+  "peso_local": 0.0,
+  "resolucion": 224,
+  "recorte": 0.2,
+  "semilla": 20261019,
+  "temperatura": 0.2,
+  "kernel_local": 1,
+  "sin_mlp": true,
+  "fuente": "Tabla 6",
+  "estado": "implementado_no_ejecutado",
+  "alias": [
+    "byol_rf99_sin_mlp_co0.0"
+  ]
+}

@@ -1,0 +1,1270 @@
+{
+  "titulo": "Guía de evaluación independiente",
+  "paginas": [
+    {
+      "titulo": "Guía para evaluar el proyecto",
+      "subtitulo": "Laboratorio 3 | Adaptación de CO-SSL a reidentificación de personas | 19 de octubre de 2026",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Este documento explica qué se implementó, qué se ejecutó realmente, por qué se tomaron las decisiones locales y qué evidencia permite comprobar cada afirmación, acompaña al código y no sustituye la revisión independiente de las fuentes ni de los resultados guardados."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Estado comprobado",
+            "Alcance real"
+          ],
+          "filas": [
+            [
+              "54 configuraciones entrenadas",
+              "Cada una completó el calendario local de 1253 actualizaciones, completar ese calendario no significa converger ni completar una época"
+            ],
+            [
+              "14 arquitecturas evaluadas",
+              "Panel común CO-BYOL, rama online, resolución 224 y peso local 0.2, las variantes RF cuentan como arquitecturas distintas"
+            ],
+            [
+              "432 conjuntos de métricas",
+              "54 configuraciones por 2 particiones por 2 ramas por 2 resoluciones, cada conjunto contiene mAP y Rank-1/5/10"
+            ],
+            [
+              "44 análisis históricos",
+              "Representaciones, máscaras, PGD, lecturas y eficiencia, su alcance específico se detalla en la página 7"
+            ],
+            [
+              "Reproducción del paper parcial",
+              "No se reproducen sus calendarios largos, sus datasets de clasificación ni todo su panel experimental"
+            ]
+          ],
+          "anchos": [
+            156,
+            343
+          ],
+          "tamano": 8.2
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Restricción temporal"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La sesión inicial consumió 171.58 minutos y la continuación autorizada 98.96 minutos, cada una tuvo un límite independiente de tres horas, la suma observada es aproximadamente 270.54 minutos y no se presenta como una única sesión de tres horas."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La preparación de esta guía y de la publicación solo utiliza CPU y archivos existentes, no inicia entrenamiento, inferencia GPU ni una nueva autorización de cómputo."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Orden sugerido de revisión"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Para una lectura rápida, comenzar por README.md, esta guía y COMPARACION_ARQUITECTURAS.md, después contrastar codigo/modelos.py y codigo/evaluacion.py con los JSON individuales, el inventario legible por máquina está en docs/inventario_ejecuciones.json."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El PDF del laboratorio tiene prioridad para el problema y los entregables, el paper recibido aporta el método de referencia, los metadatos HDF5 y las elecciones locales se distinguen de ambas fuentes, una contradicción no se resuelve atribuyendo una suposición al documento original."
+        }
+      ]
+    },
+    {
+      "titulo": "1. Requisitos del laboratorio",
+      "subtitulo": "Cobertura del PDF de tres páginas, sin confundir implementación y actividades humanas",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Requisito y página",
+            "Implementación / evidencia",
+            "Límite o estado"
+          ],
+          "filas": [
+            [
+              "Solo imágenes, sin identidades al entrenar, p 1",
+              "datos.Entrenamiento entrega vistas e índice, pérdidas sin person_ids",
+              "No texto, cámaras ni identidades como entradas de entrenamiento"
+            ],
+            [
+              "Particiones suministradas, p 1",
+              "training 11043, validation 100+1793, testing 3368+19732",
+              "Sin nuevo split ni incorporación de validación al aprendizaje"
+            ],
+            [
+              "Método central propio, p 2",
+              "modelos.py, pérdidas CO, ramas, EMA, cabezas y RF propias",
+              "torchvision y timm solo para arquitecturas y operaciones generales"
+            ],
+            [
+              "Entrenar y seleccionar con validación, p 2",
+              "resumen.json, validacion.json y dos selecciones documentadas",
+              "Calendario corto, selección ampliada después de existir pruebas antiguas"
+            ],
+            [
+              "Base y ablación, p 2",
+              "BYOL/MoCoV3 sin CO y controles a arquitectura fija",
+              "Compartir cabeza también cambia profundidad y BatchNorm"
+            ],
+            [
+              "Maestro / estudiante, p 2",
+              "Stop gradient y EMA, ambas ramas evaluadas",
+              "Estadísticas BatchNorm objetivo proceden de sus propias pasadas"
+            ],
+            [
+              "Dos condiciones, L2 y coseno, p 2",
+              "Mismo encoder congelado y galería original, query HR o LR",
+              "No se utiliza superresolución ni se entrena con prueba"
+            ],
+            [
+              "mAP, Rank-1/5/10 y caída, p 2",
+              "prueba.json, validacion.json, metricas.csv",
+              "AP por posiciones relevantes, caída absoluta y relativa explícitas"
+            ],
+            [
+              "Código, instrucciones y diferencias, p 2",
+              "main.py, 11 módulos, README y METODOLOGIA",
+              "Sin comentarios ni docstrings por preferencia expresa del usuario"
+            ],
+            [
+              "5 aciertos y 5 fallos explicados, pp 2-3",
+              "ANALISIS_ERRORES.md y resultados/ejemplos",
+              "20 casos, 5 de cada tipo por resolución"
+            ],
+            [
+              "Video máximo 18 min, p 3",
+              "VIDEO.mp4, verificación 845.48 s, tres capítulos menores de 6 min",
+              "Narración sintética, revisión humana pendiente"
+            ],
+            [
+              "Envío y defensa, p 3",
+              "Material preparado para entrega",
+              "Envío al formulario, presentación del grupo y defensa son actividades humanas pendientes"
+            ]
+          ],
+          "anchos": [
+            147,
+            188,
+            164
+          ],
+          "tamano": 7.8
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El PDF no fija batch, calendario local, convención única de caída ni todos los filtros de recuperación, esas decisiones se declaran de forma independiente, la mención a bibliotecas de audio en la página 2 se conserva como posible errata frente a la restricción de imágenes de la página 1."
+        }
+      ]
+    },
+    {
+      "titulo": "2. Datos y protocolo de evaluación",
+      "subtitulo": "Sin modificar originales ni crear divisiones nuevas",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Archivo",
+            "Contenido",
+            "Uso"
+          ],
+          "filas": [
+            [
+              "training.h5",
+              "11043 imágenes sin etiquetas de identidad",
+              "Única fuente de aprendizaje autosupervisado"
+            ],
+            [
+              "validation.h5",
+              "100 consultas y 1793 elementos de galería",
+              "Selección y análisis evaluativos declarados"
+            ],
+            [
+              "testing.h5",
+              "3368 consultas y 19732 elementos de galería",
+              "Evaluación final de configuraciones fijadas"
+            ],
+            [
+              "Imágenes originales / LR",
+              "uint8, originales 3x128x64, consultas LR 3x32x16",
+              "Se leen los datasets suministrados, mismo orden de consultas"
+            ]
+          ],
+          "anchos": [
+            112,
+            208,
+            179
+          ],
+          "tamano": 8.2
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La inspección exploratoria previa leyó los siete arrays de imagen, 39504 registros contando las consultas LR, comparó duplicados exactos dentro y entre los cinco grupos originales y dentro de cada conjunto LR, no encontró duplicados de píxeles en esos alcances, eso no demuestra ausencia de identidades compartidas con training, que carece de person_ids."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Las 3468 consultas LR se comprobaron iguales a la reducción bicúbica Pillow de sus originales en el orden suministrado, esta evidencia directa se distingue de lo declarado por los atributos del HDF5, todas las consultas de validación y prueba tienen positivos de otras cámaras."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Regla",
+            "Aplicación y fundamento"
+          ],
+          "filas": [
+            [
+              "person_ids = -1",
+              "Ignorar elementos junk de galería, 3819 en prueba"
+            ],
+            [
+              "person_ids = 0",
+              "Conservar como distractores, 2798 en galería de prueba"
+            ],
+            [
+              "Misma persona y cámara",
+              "Excluir esa coincidencia de galería para la consulta, otras personas de la misma cámara permanecen"
+            ],
+            [
+              "Representación y orden",
+              "Encoder congelado, normalización L2 y coseno, empates por índice original estable"
+            ],
+            [
+              "AP y Rank-k",
+              "AP es media de precisión en rangos relevantes, Rank-k verifica al menos un positivo en el prefijo"
+            ],
+            [
+              "Caída de mAP",
+              "Absoluta = 100*(O-LR) puntos porcentuales, relativa = 100*(O-LR)/O, conservar valores negativos"
+            ]
+          ],
+          "anchos": [
+            146,
+            353
+          ],
+          "tamano": 8.2
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El protocolo market_documentado procede de la documentación oficial de Market-1501, el paper es de clasificación y no especifica estos filtros, no se le atribuye el protocolo de recuperación ni se garantiza equivalencia con variantes antiguas de AP trapezoidal."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El atributo final_training propone una fase adicional con validación que el laboratorio no exige, no se aplicó, se conserva training como único origen de aprendizaje, la separación de identidades declarada en el PDF no se puede certificar a partir de píxeles distintos."
+        }
+      ]
+    },
+    {
+      "titulo": "3. Núcleo implementado y decisiones",
+      "subtitulo": "Ecuaciones 1 a 3, algoritmo 1 y sección 3 del paper",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "La rama online contiene encoder, proyectores y predictores, la rama objetivo contiene encoder y proyectores y no recibe gradientes, sus parámetros siguen una media móvil exponencial de los online, se comparan ambas ramas como exige el laboratorio."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "BYOL alinea predicción online con proyección objetivo detenida mediante menos dos por coseno, CO añade local online frente a global objetivo y global online frente a local objetivo, promedia todas las posiciones locales e intercambia las dos vistas, el peso local multiplica el término adicional."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Componente",
+            "Implementación propia / biblioteca",
+            "Por qué"
+          ],
+          "filas": [
+            [
+              "BYOL, MoCoV3 y CO",
+              "SSL, perdida_coseno, perdida_contrastiva, Rama",
+              "Conservar el mecanismo central sin importar un método SSL completo"
+            ],
+            [
+              "Actualización objetivo",
+              "SSL.actualizar_objetivo y DINO.actualizar_objetivo",
+              "Transferencia EMA con stop gradient y ramas comparables"
+            ],
+            [
+              "RF-ResNet / BagNet",
+              "RFResNet, BloqueEspacial y MLPResidual",
+              "Controlar campo receptivo y representación local según el paper"
+            ],
+            [
+              "ResNet estándar",
+              "torchvision, sin pesos externos",
+              "Arquitectura general permitida y estado aleatorio explícito"
+            ],
+            [
+              "ViT y Swin",
+              "timm, sin pesos externos",
+              "Arquitecturas generales, cabezas locales escritas en el proyecto"
+            ],
+            [
+              "DINO comparador",
+              "CabezaDINO, RamaDINO y DINO",
+              "Comparación independiente, no se inventa CO-DINO para el PDF final"
+            ],
+            [
+              "Recuperación",
+              "calcular_metricas y evaluar_encoder",
+              "Sustituir la sonda de clasificación por la tarea del laboratorio"
+            ]
+          ],
+          "anchos": [
+            113,
+            190,
+            196
+          ],
+          "tamano": 8.2
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "MoCoV3 utiliza negativos del batch físico y temperatura 0.2 documentada a partir de la prepublicación de los autores, no hay cola ni acumulación que simule negativos adicionales, dos imágenes de una misma identidad podrían ser falsos negativos y no se puede cuantificar ese efecto sin etiquetas de training."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "BYOL usa proyector global con dos capas ocultas 4096 y salida 256, MoCoV3 CNN utiliza una oculta y BatchNorm final sin parámetros afines, las cabezas locales independientes usan una oculta y convoluciones espaciales, las discrepancias con el conteo de la tabla H.13 se declaran sin forzar cifras."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La recuperación usa el encoder y no las proyecciones de entrenamiento, entrenar un clasificador de identidades con las etiquetas del laboratorio contradiría su condición de aprendizaje sin etiquetas, por eso sus mAP no son comparables directamente con Top-1 ImageNet del artículo."
+        }
+      ]
+    },
+    {
+      "titulo": "4. Catorce arquitecturas y diferencias",
+      "subtitulo": "Panel común CO-BYOL online a 224, además se conservan paneles históricos a 64",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Arquitectura",
+            "Parámetros encoder M",
+            "Entrenamiento min",
+            "VRAM GiB"
+          ],
+          "filas": [
+            [
+              "ResNet18",
+              "11.169",
+              "3.374",
+              "2.940"
+            ],
+            [
+              "ResNet50",
+              "23.508",
+              "1.568",
+              "1.633"
+            ],
+            [
+              "RF29-ResNet18",
+              "7.525",
+              "10.932",
+              "10.057"
+            ],
+            [
+              "RF39-ResNet50",
+              "23.750",
+              "41.481",
+              "5.512"
+            ],
+            [
+              "RF67-ResNet50",
+              "23.750",
+              "3.912",
+              "5.795"
+            ],
+            [
+              "RF99-ResNet50",
+              "23.750",
+              "2.456",
+              "3.549"
+            ],
+            [
+              "RF115-ResNet50",
+              "23.750",
+              "2.801",
+              "2.978"
+            ],
+            [
+              "RF163-ResNet50",
+              "23.750",
+              "1.456",
+              "1.784"
+            ],
+            [
+              "RF195 / paper193",
+              "23.750",
+              "1.486",
+              "1.643"
+            ],
+            [
+              "BagNet33",
+              "16.261",
+              "2.858",
+              "4.096"
+            ],
+            [
+              "ViT-S/16",
+              "21.666",
+              "1.509",
+              "2.516"
+            ],
+            [
+              "Swin-T",
+              "27.519",
+              "2.050",
+              "2.594"
+            ],
+            [
+              "Swin-S",
+              "48.837",
+              "3.581",
+              "3.581"
+            ],
+            [
+              "Swin-B",
+              "86.743",
+              "3.686",
+              "4.975"
+            ]
+          ],
+          "anchos": [
+            176,
+            117,
+            114,
+            92
+          ],
+          "tamano": 8.2
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los siete RF son RF29, RF39, RF67, RF99, RF115, RF163 y RF195, además de ResNet18, ResNet50, BagNet33, ViT-S/16 y tres Swin, contar catorce arquitecturas no significa catorce algoritmos SSL ni que las 54 configuraciones sean 54 backbones distintos."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La figura A.6 denomina RF193 a una construcción que da campo teórico 195 al seguir sus operaciones, se mantiene el nombre rf195_paper193_resnet50, la ResNet50 de torchvision da 427 frente al aproximadamente 425 del texto, ambas diferencias están explícitas y no se corrigen cambiando pesos después de entrenar."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "BagNet33 conserva un campo local pero tiene 16.261 millones de parámetros de encoder y no reproduce la igualación a aproximadamente 23.5 millones del paper, es una limitación de comparabilidad que requiere otra construcción y nuevos entrenamientos para resolverla."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "ViT utiliza promedio de tokens de parche sin CLS, sus ventanas locales son 6x6 tokens y las de Swin 3x3 por defecto, el padding válido y el submuestreo espacial determinista son elecciones locales declaradas, RF39 conserva todas sus posiciones con recomputación de activaciones."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La VRAM tabulada es el máximo asignado por PyTorch durante entrenamiento y no toda la memoria de la tarjeta, el tiempo incluye transferencias y guardados del bucle, no se presenta como energía ni como reproducción de la tabla H.13."
+        }
+      ]
+    },
+    {
+      "titulo": "5. Entrenamiento y selección",
+      "subtitulo": "Restricciones reales del equipo y separación de las dos sesiones autorizadas",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Decisión local",
+            "Valor y razón"
+          ],
+          "filas": [
+            [
+              "Origen y exposición",
+              "training 11043 como origen, cada configuración visitó 10024 imágenes distintas sin etiquetas"
+            ],
+            [
+              "Batch y pasos",
+              "Batch físico y efectivo 8, sin acumulación, 1253 actualizaciones comunes por calibración temporal"
+            ],
+            [
+              "Época equivalente",
+              "1253 / 1380 batches completos = 0.907971, drop_last descartaría 3 imágenes al final de una época completa"
+            ],
+            [
+              "Inicialización y semillas",
+              "Aleatoria, sin pesos externos, una semilla por configuración, no hay evidencia de convergencia"
+            ],
+            [
+              "CNN BYOL / MoCoV3",
+              "LARS, momento 0.9, LR base 0.2*B/256, weight decay 1.5e-6"
+            ],
+            [
+              "Transformers y DINO",
+              "AdamW, LR base 0.0005*B/256, los grupos aplican aquí el mismo decay a sus parámetros"
+            ],
+            [
+              "Calendario y precisión",
+              "Warmup local como máximo 10% y coseno, EMA 0.996 hacia 1, bfloat16 y pérdidas float32"
+            ],
+            [
+              "Hardware",
+              "RTX 4080 SUPER 16 GiB, PyTorch 2.8.0+cu128, detalles en hardware_comparacion.json"
+            ]
+          ],
+          "anchos": [
+            133,
+            366
+          ],
+          "tamano": 8.2
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Las imágenes se leen en modo de solo lectura y se aumentan en memoria, se adaptan recortes a personas verticales con aspecto 0.375 a 2/3, el panel común usa 224x224 y el pequeño histórico 64x64, multicrop usa dos grandes y cuatro pequeñas, DINO seis pequeñas, no se atribuyen esas decisiones a restricciones inexistentes del PDF."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "DINO conserva centrado 0.9, temperaturas 0.1 estudiante y 0.04 hacia 0.07 objetivo durante 30 épocas reales, congelación de última capa durante una época y clipping 3, al durar menos de una época su última capa permanece congelada toda la ejecución, el valor de gradiente guardado es anterior al clipping."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La selección histórica compara las 29 configuraciones iniciales y ambas ramas por media de mAP de validación O/LR, conserva co_byol_bagnet33 online con 7.533%, se guarda antes de su primera prueba, las ampliaciones posteriores no sustituyen retroactivamente esa selección."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La comparación ampliada fija online y catorce candidatas CO a 224 y selecciona co_byol_resnet18_224 con 9.389% medio de validación antes de sus nuevas pruebas, como ya existían pruebas de la primera sesión, esta ampliación no se presenta como una evaluación completamente ciega."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los 54 hashes del conjunto de índices fuente coinciden, ese hash no certifica el orden de cada batch ni los aumentos exactos, RF39 usa recomputación con prueba CPU dirigida de salidas, gradientes y buffers BatchNorm, no se promete reproducibilidad bit a bit entre equipos."
+        }
+      ]
+    },
+    {
+      "titulo": "6. Qué se ejecutó y qué significa pendiente",
+      "subtitulo": "Resultados de archivos reales, no solo capacidades del ejecutor",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Grupo",
+            "Ejecución documentada",
+            "Fuente"
+          ],
+          "filas": [
+            [
+              "Panel principal histórico",
+              "29 configuraciones con entrenamiento, validación y prueba",
+              "plan_ejecucion.json y carpetas individuales"
+            ],
+            [
+              "Ampliación histórica",
+              "19 configuraciones adicionales completadas",
+              "plan_ampliacion.json y estado_ejecucion.json"
+            ],
+            [
+              "Continuación autorizada",
+              "6 configuraciones, RF115, RF39, ResNet18-224, RF29-224 y dos controles crop0.9",
+              "plan_comparacion.json y estado_comparacion.json"
+            ],
+            [
+              "Evaluaciones completas",
+              "54 x 2 particiones x 2 ramas x 2 resoluciones = 432 conjuntos",
+              "validacion.json y prueba.json de cada ejecución"
+            ],
+            [
+              "Panel común de arquitecturas",
+              "14 referencias CO-BYOL online, mismas actualizaciones y batch",
+              "comparacion_arquitecturas.csv y .json"
+            ]
+          ],
+          "anchos": [
+            126,
+            224,
+            149
+          ],
+          "tamano": 8.2
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Análisis histórico completado",
+            "Cantidad de tareas",
+            "Alcance"
+          ],
+          "filas": [
+            [
+              "Representaciones locales",
+              "14",
+              "16 imágenes fijas de training por tarea, sin identidades"
+            ],
+            [
+              "Máscaras internas",
+              "10",
+              "Cinco proporciones por tarea sobre validación"
+            ],
+            [
+              "PGD",
+              "9",
+              "Cinco ataques por tarea sobre validación, objetivo adaptado"
+            ],
+            [
+              "Lectura antes de MLP",
+              "3",
+              "Lectura congelada, distinta de entrenar sin MLP"
+            ],
+            [
+              "Lectura de capas",
+              "3",
+              "Capas intermedias congeladas, distinta de alinear al entrenar"
+            ],
+            [
+              "Eficiencia",
+              "4",
+              "Conteo parcial de operaciones y coste local"
+            ],
+            [
+              "Representaciones a 384",
+              "1",
+              "Lectura congelada a otra resolución, no entrenamiento nuevo"
+            ]
+          ],
+          "anchos": [
+            182,
+            94,
+            223
+          ],
+          "tamano": 8.2
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La matriz histórica tiene 144 filas con redundancias y calendarios publicados, permanecen 67 configuraciones de ampliación no ejecutadas fuera del panel mínimo acordado, ese número no representa 67 arquitecturas pendientes ni obliga a presentar una configuración como entrenada por estar escrita en JSON."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "No faltan ejecuciones esenciales del panel mínimo acordado, sí quedan experimentos para una reproducción experimental íntegra del paper, las celdas No registrado de tiempos antiguos indican ausencia de medición separada y no ausencia de evaluación, no se repiten inferencias para rellenarlas."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La sesión independiente y sus dos procesos terminaron con código cero, verificacion_comparacion.json registra cola completa, catorce arquitecturas y 292 registros históricos preservados, el seguimiento único posterior volvió a contrastar 112 métricas del CSV sin GPU."
+        }
+      ]
+    },
+    {
+      "titulo": "7. Resultados del panel común",
+      "subtitulo": "Prueba, porcentajes, CO-BYOL online a 224, O original y LR consulta reducida",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Arquitectura",
+            "mAP O",
+            "R1 O",
+            "R5 O",
+            "R10 O",
+            "mAP LR",
+            "R1 LR",
+            "R5 LR",
+            "R10 LR"
+          ],
+          "filas": [
+            [
+              "ResNet18",
+              "1.861",
+              "4.394",
+              "9.531",
+              "13.302",
+              "1.432",
+              "2.672",
+              "7.037",
+              "10.570"
+            ],
+            [
+              "ResNet50",
+              "0.324",
+              "0.445",
+              "2.227",
+              "3.593",
+              "0.209",
+              "0.267",
+              "1.306",
+              "1.989"
+            ],
+            [
+              "RF29-ResNet18",
+              "1.326",
+              "3.236",
+              "7.482",
+              "11.075",
+              "0.899",
+              "1.752",
+              "4.929",
+              "6.829"
+            ],
+            [
+              "RF39-ResNet50",
+              "0.725",
+              "2.108",
+              "5.285",
+              "8.224",
+              "0.237",
+              "0.238",
+              "1.158",
+              "2.227"
+            ],
+            [
+              "RF67-ResNet50",
+              "0.649",
+              "1.485",
+              "3.504",
+              "5.938",
+              "0.408",
+              "0.534",
+              "1.841",
+              "3.118"
+            ],
+            [
+              "RF99-ResNet50",
+              "0.521",
+              "0.713",
+              "2.643",
+              "4.394",
+              "0.367",
+              "0.356",
+              "1.663",
+              "2.643"
+            ],
+            [
+              "RF115-ResNet50",
+              "0.542",
+              "0.861",
+              "3.474",
+              "5.790",
+              "0.294",
+              "0.505",
+              "1.752",
+              "3.088"
+            ],
+            [
+              "RF163-ResNet50",
+              "0.369",
+              "0.505",
+              "2.346",
+              "3.711",
+              "0.238",
+              "0.208",
+              "0.950",
+              "1.871"
+            ],
+            [
+              "RF195 / paper193",
+              "0.305",
+              "0.356",
+              "1.336",
+              "2.257",
+              "0.212",
+              "0.148",
+              "0.772",
+              "1.306"
+            ],
+            [
+              "BagNet33",
+              "1.587",
+              "4.632",
+              "10.125",
+              "13.925",
+              "1.334",
+              "3.385",
+              "7.601",
+              "10.243"
+            ],
+            [
+              "ViT-S/16",
+              "0.630",
+              "1.069",
+              "4.186",
+              "6.740",
+              "0.581",
+              "0.861",
+              "3.207",
+              "5.760"
+            ],
+            [
+              "Swin-T",
+              "0.689",
+              "1.158",
+              "4.899",
+              "7.928",
+              "0.616",
+              "0.891",
+              "3.800",
+              "6.502"
+            ],
+            [
+              "Swin-S",
+              "0.682",
+              "1.544",
+              "5.255",
+              "8.017",
+              "0.599",
+              "1.099",
+              "4.038",
+              "6.799"
+            ],
+            [
+              "Swin-B",
+              "0.587",
+              "1.099",
+              "3.919",
+              "6.770",
+              "0.522",
+              "0.891",
+              "3.444",
+              "5.701"
+            ]
+          ],
+          "anchos": [
+            115,
+            48,
+            48,
+            48,
+            48,
+            48,
+            48,
+            48,
+            48
+          ],
+          "tamano": 7.0
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "ResNet18 tiene la mayor media descriptiva de mAP entre condiciones, 1.646%, con 1.861% original y 1.432% LR, también es la selección ampliada por validación, eso no significa que gane todas las métricas, BagNet33 presenta Rank-1 superior en ambas condiciones."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "ViT-S/16 presenta la menor caída relativa de mAP, 7.761%, pero su mAP LR es 0.581%, conservar una mayor fracción de una precisión inicial baja no lo convierte en el mejor recuperador absoluto, la robustez relativa y la calidad final deben leerse por separado."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "BagNet33 tiene el mayor cociente descriptivo entre mAP media porcentual y minutos de entrenamiento, no es una medición de eficiencia energética, RF39 requirió 41.481 minutos de entrenamiento y no mejoró la mAP de las alternativas de mejor precisión en esta ejecución."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los resultados son bajos en términos absolutos y no acreditan un sistema de reidentificación útil en producción, una semilla y menos de una época no permiten significación estadística ni atribuir diferencias pequeñas a superioridad general del método o de una arquitectura."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los valores se copian de resultados/comparacion_arquitecturas.csv y se contrastan con los 112 valores de sus prueba.json originales, los JSON mantienen proporciones 0 a 1 y el CSV común porcentajes, metricas.csv contiene también validación y rama objetivo, no mezclar escalas."
+        }
+      ]
+    },
+    {
+      "titulo": "8. Bases, ablaciones y conclusiones acotadas",
+      "subtitulo": "Comparaciones a arquitectura fija, sin ocultar resultados desfavorables a CO",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Comparación, rama online",
+            "mAP original %",
+            "mAP LR %"
+          ],
+          "filas": [
+            [
+              "BYOL RF99",
+              "0.428",
+              "0.262"
+            ],
+            [
+              "CO-BYOL RF99",
+              "0.521",
+              "0.367"
+            ],
+            [
+              "BYOL BagNet33",
+              "1.548",
+              "1.473"
+            ],
+            [
+              "CO-BYOL BagNet33",
+              "1.587",
+              "1.334"
+            ],
+            [
+              "RF99 crop0.9 sin CO",
+              "0.522",
+              "0.447"
+            ],
+            [
+              "RF99 crop0.9 con CO",
+              "0.382",
+              "0.297"
+            ]
+          ],
+          "anchos": [
+            273,
+            113,
+            113
+          ],
+          "tamano": 8.2
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "En RF99 con recorte mínimo 0.2 CO aumenta mAP frente al control sin CO, ese contraste conserva arquitectura, batch y actualizaciones, en BagNet33 la mejora original es pequeña y la mAP LR disminuye, por ello no se afirma una mejora uniforme por añadir el término local."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los controles RF99 con recorte mínimo 0.9 completaron entrenamiento y ambas evaluaciones, CO da menor mAP en original y LR, este resultado no respalda localmente la mejora sin recortes pequeños sugerida por el paper y tampoco refuta sus experimentos largos en clasificación, los dominios y calendarios son distintos."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "También existen entrenamientos con peso local 0.1, 0.2, 0.5 y 1, cantidades K 1, 4, 16, 64 y valor por defecto 196 para RF99, dos variantes sin MLP, una cabeza compartida, kernels Swin 1, 2 y 3 y alineamiento en capa 2 frente al control en capa 4 a K64, revisar cobertura_experimentos.csv para los nombres equivalentes."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La ablación de cabeza compartida cambia la reutilización de parámetros, la profundidad local y las estadísticas BatchNorm a la vez, no aísla solo compartir pesos, la lectura antes del MLP se analiza sin reentrenar y no equivale a eliminar ese módulo durante el aprendizaje."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los errores visuales documentados incluyen oclusión, encuadre, iluminación y similitud de ropa, las explicaciones se apoyan en ejemplos y no demuestran causalidad sobre las representaciones, los veinte casos conservan sus índices y etiquetas evaluativas en resultados/ejemplos."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El laboratorio exige al menos una base y una ablación, no se afirma que se hayan entrenado todos los cruces de algoritmo, arquitectura y recorte de las tablas bibliográficas, los controles ya existentes se conservan y no se usan las pruebas para ajustar otro modelo."
+        }
+      ]
+    },
+    {
+      "titulo": "9. Diferencias y partes no reproducidas",
+      "subtitulo": "Separar adaptación implementada, experimento pendiente y componente ausente",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Parte del paper",
+            "Estado local y por qué",
+            "Impacto en la evaluación"
+          ],
+          "filas": [
+            [
+              "Clasificación ImageNet / Tiny-ImageNet",
+              "Reemplazada por recuperación del laboratorio sin clasificador de identidades",
+              "No comparar mAP con Top-1 ni afirmar reproducción de sus benchmarks"
+            ],
+            [
+              "Calendarios 100 / 300 / 400 / 1000 épocas",
+              "No ejecutados, 0.908 épocas locales por restricción temporal",
+              "No convergencia ni validación de la escala publicada"
+            ],
+            [
+              "Múltiples semillas y barrido de LR",
+              "No ejecutados, tasas locales explícitas y una semilla",
+              "Sin intervalos estadísticos ni selección de LR equivalente al paper"
+            ],
+            [
+              "BagNet igualado en parámetros",
+              "No reproducido, encoder propio de 16.261M frente a unos 23.5M",
+              "El efecto de capacidad puede confundirse con el campo receptivo"
+            ],
+            [
+              "Places365, tabla G.11",
+              "Sin datos recibidos ni ejecutor de transferencia literal, solo metadatos pendientes",
+              "No se declara transferencia implementada ni evaluada"
+            ],
+            [
+              "AMDIM y SD-BYOL, tabla 1",
+              "No implementados, procedencia y alcance de comparadores pendientes",
+              "No atribuirles resultados locales ni inferir cobertura total de la tabla"
+            ],
+            [
+              "Barridos completos de recortes / RF",
+              "Parciales, dos controles RF99 crop0.9 sí completados",
+              "No generalizar a todas las arquitecturas, algoritmos o mínimos de recorte"
+            ],
+            [
+              "Kernel Swin 4 y 5, alineamiento capa 3",
+              "Configurados pero no ejecutados",
+              "No usar la existencia del plan como evidencia de resultados"
+            ],
+            [
+              "Mejor lectura antes / después MLP, tabla 6",
+              "Lecturas disponibles, no reproduce automáticamente su selección de mejor punto",
+              "La comparación de cabeza compartida tiene otras diferencias locales"
+            ],
+            [
+              "Campos efectivos figuras 2 / C.7",
+              "16 imágenes y posición central, sin ambas posiciones ni submuestreo espacial paso 2",
+              "Evidencia exploratoria local, no réplica literal de las figuras"
+            ],
+            [
+              "PGD, tabla 5",
+              "Objetivo de recuperación con centro de positivos, inicio aleatorio declarado",
+              "Ataque adaptado, no exactitud adversarial del clasificador del paper"
+            ],
+            [
+              "Eficiencia, tabla H.13",
+              "Conteo Conv2d/Linear y tiempos locales, no todo el coste de cabezas y entrenamiento",
+              "No equivalencia literal de FLOPs, hardware ni batch de referencia"
+            ]
+          ],
+          "anchos": [
+            135,
+            193,
+            171
+          ],
+          "tamano": 7.8
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "CO-DINO pertenece a una versión anterior y no se agrega como supuesto requisito de la publicación final entregada, la temperatura MoCo y algunos valores de ataque proceden de fuentes auxiliares explícitas, ninguna laguna se completa atribuyendo al paper detalles que no contiene."
+        }
+      ]
+    },
+    {
+      "titulo": "10. Límites de la evidencia y correcciones",
+      "subtitulo": "Qué demuestra la auditoría y qué sigue sin poder certificarse",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Evidencia o incidencia",
+            "Resultado y límite"
+          ],
+          "filas": [
+            [
+              "Auditoría actual aprobada",
+              "verificacion_final.json contrasta coherencia, ramas, cantidades y análisis, no certifica convergencia ni reproducción íntegra"
+            ],
+            [
+              "Checkpoints históricos",
+              "48 revisados estructuralmente en CPU con FakeTensor/mmap, claves, formas, tipos y configuración, no todos sus valores ni finitud"
+            ],
+            [
+              "Encoders compactos",
+              "638 tensores BagNet33 y 240 ResNet18 con carga estricta y torch.equal CPU, sin repetir inferencia"
+            ],
+            [
+              "Preservación histórica",
+              "292 registros por SHA256 sin cambios durante la continuación y seguimiento, 49 archivos de pesos históricos por tamaño/fecha en el último control"
+            ],
+            [
+              "Código al iniciar entrenamiento",
+              "No se tomó hash exactamente al primer inicio, la captura retrospectiva y el commit actual no demuestran la versión histórica exacta"
+            ],
+            [
+              "15 metadatos legacy",
+              "Campo externo validation en análisis de representaciones, lector y resultado interno training sin identidades, se conserva el error original visible"
+            ],
+            [
+              "Guardas corregidas en CPU",
+              "Auditoría rechaza rama ausente y análisis sin archivo, devuelve error, impide repetir suites y preserva panel completo"
+            ],
+            [
+              "Preparación de datos",
+              "Se añadió CRC al aceptar archivos existentes, comprobado con copias sintéticas de igual tamaño"
+            ],
+            [
+              "Recomputación RF39",
+              "Prueba CPU dirigida con salidas, gradientes y buffers iguales, no prueba universal de todas las ejecuciones posibles"
+            ],
+            [
+              "Documentación de publicación",
+              "Se declara filelock==3.32.3 porque comparacion.py ya lo importa, corrección de instalación, sin cambiar pesos ni método"
+            ]
+          ],
+          "anchos": [
+            153,
+            346
+          ],
+          "tamano": 8.0
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La separación de identidades train/validación/prueba depende de lo declarado en los materiales porque training no proporciona identidades, no se puede probar mediante ausencia de duplicados exactos, la inspección visual por sí sola tampoco permitiría certificarla."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Las marcas temporales locales y los logs respaldan el orden registrado pero no son una prueba forense inmutable de toda actividad externa, tampoco se atribuyen a correcciones posteriores resultados experimentales nuevos, las pruebas CPU dirigidas solo validan los caminos que cubren."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los tiempos antiguos de validación y prueba no registrados por separado permanecen sin dato, no se reconstruyen por restas de intervalos de distinto alcance ni se repite GPU, el pico de memoria no es consumo total del dispositivo y el cociente mAP/minuto no mide energía."
+        }
+      ]
+    },
+    {
+      "titulo": "11. Entrega en GitHub y revisión sin GPU",
+      "subtitulo": "Código y evidencia completos del proyecto, pesos grandes y datos declarados por separado",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Ubicación",
+            "Contenido y límite"
+          ],
+          "filas": [
+            [
+              "Repositorio Git",
+              "12 archivos Python, requirements, documentación, guía PDF, JSON/CSV, análisis, gráficos y video"
+            ],
+            [
+              "Release entrega-v1",
+              "ZIP compacto con el proyecto y ambos archivos de encoders, también se publica esta guía para acceso directo"
+            ],
+            [
+              "encoders_seleccionados.pt",
+              "Ambas ramas de BagNet33 histórico, 130731519 bytes, sin cabezas ni optimizador"
+            ],
+            [
+              "encoders_comparacion.pt",
+              "Ambas ramas de ResNet18 ampliado, 89508573 bytes, sin cabezas ni optimizador"
+            ],
+            [
+              "54 checkpoints completos",
+              "38720560690 bytes locales, 36.06 GiB, excluidos de Git y del ZIP compacto, inventario por archivo incluido"
+            ],
+            [
+              "Datos y entorno",
+              "HDF5 y entorno virtual externos, no se alteran ni se incorporan al repositorio"
+            ],
+            [
+              "CONTENIDO_PAQUETE.json",
+              "Declara omisiones de pesos y permite auditoría de un paquete compacto sin presentarlas como archivos existentes"
+            ],
+            [
+              "docs/inventario_ejecuciones.json",
+              "54 configuraciones, resúmenes y hashes de métricas, no contiene pesos faltantes"
+            ]
+          ],
+          "anchos": [
+            155,
+            344
+          ],
+          "tamano": 8.2
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La revisión estática de código y resultados no necesita GPU ni los checkpoints completos, para repetir inferencia de los dos seleccionados se requiere descargar los encoders y disponer de los HDF5, para reevaluar los otros modelos deben recuperarse sus checkpoints locales, no basta con sus JSON de métricas."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Leer el inventario y los JSON no ejecuta modelos, el comando de auditoría existente inspecciona archivos y puede regenerar sus informes de coherencia, si se usa debe hacerse en una copia de revisión para mantener intacta la evidencia original."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Paso",
+            "Instrucción"
+          ],
+          "filas": [
+            [
+              "PowerShell, en una copia del repositorio",
+              "$env:CUDA_VISIBLE_DEVICES='-1'"
+            ],
+            [
+              "Auditoría CPU con intérprete preparado",
+              "python main.py auditar --dispositivo cpu --datos RUTA_A_LOS_HDF5"
+            ]
+          ],
+          "anchos": [
+            196,
+            303
+          ],
+          "tamano": 7.7
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "No iniciar ejecutar, ampliar, completar-arquitecturas, analizar-panel ni evaluar para una evaluación documental, la autorización vigente de publicación no amplía el permiso de GPU, las fases experimentales existentes están cerradas."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El video usa narración sintética local con créditos, duración verificada 14 min 05.48 s, revisión del grupo, envío al formulario y defensa individual siguen pendientes, subir el repositorio no equivale a entregar en el formulario académico."
+        }
+      ]
+    },
+    {
+      "titulo": "12. Mapa del código y referencias",
+      "subtitulo": "Localizadores verificables para una IA que revise el repositorio",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Archivo y línea",
+            "Símbolo principal"
+          ],
+          "filas": [
+            [
+              "codigo/datos.py:43",
+              "Entrenamiento"
+            ],
+            [
+              "codigo/datos.py:62",
+              "Evaluacion"
+            ],
+            [
+              "codigo/modelos.py:72",
+              "RFResNet"
+            ],
+            [
+              "codigo/modelos.py:122",
+              "Encoder"
+            ],
+            [
+              "codigo/modelos.py:194",
+              "Rama"
+            ],
+            [
+              "codigo/modelos.py:253",
+              "SSL"
+            ],
+            [
+              "codigo/modelos.py:314",
+              "DINO"
+            ],
+            [
+              "codigo/entrenamiento.py:158",
+              "entrenar"
+            ],
+            [
+              "codigo/entrenamiento.py:247",
+              "exportar_encoders"
+            ],
+            [
+              "codigo/evaluacion.py:12",
+              "calcular_metricas"
+            ],
+            [
+              "codigo/evaluacion.py:64",
+              "evaluar_encoder"
+            ],
+            [
+              "codigo/analisis.py:213",
+              "ejecutar_panel"
+            ],
+            [
+              "codigo/comparacion.py:198",
+              "ejecutar_cola"
+            ],
+            [
+              "codigo/auditoria.py:29",
+              "auditar_resultados"
+            ]
+          ],
+          "anchos": [
+            283,
+            216
+          ],
+          "tamano": 7.9
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Las líneas corresponden al código de esta publicación, la guía, los inventarios y los hashes deben leerse junto con los JSON individuales, REVISION_CUMPLIMIENTO.md conserva la auditoría histórica de 48 ejecuciones y tiene prioridad temporal anterior a COMPARACION_ARQUITECTURAS.md y al seguimiento CPU final, no mezclar sus cifras como si fueran contemporáneas."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Laboratorio 3.pdf, 3 páginas, SHA256 322bdc0185f86fe187bfb94f19d423142d94a72c920c2dc1058d62945e6ac0e2, fuente original proporcionada por el usuario."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Aubret, Teulière y Triesch, Seeing the whole in the parts with self-supervised representation learning, Neurocomputing 675, 132973, 2026, DOI 10.1016/j.neucom.2026.132973, PDF recibido main (3).pdf, 12 páginas, SHA256 3a93097c694e1e9cfa6666f9bc55d55ab44ddb463b6c6934b9c4e874127a41d7."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Protocolo oficial de Market-1501, https://zheng-lab-anu.github.io/Project/project_reid.html, detalles de ataque y diferencias adicionales se citan en METODOLOGIA.md, no se copian los PDF fuente al repositorio como si fueran código del proyecto."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La valoración independiente debe separar fidelidad del mecanismo CO, adecuación al laboratorio, integridad documental y fuerza de las conclusiones empíricas, una implementación verificable con presupuesto corto puede cumplir la tarea básica y seguir sin demostrar las conclusiones experimentales de la publicación."
+        }
+      ]
+    }
+  ]
+}

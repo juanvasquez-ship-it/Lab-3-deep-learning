@@ -1,0 +1,56 @@
+{
+  "online": {
+    "original": {
+      "mAP": 0.0036180832638729016,
+      "Rank-1": 0.005344418052256532,
+      "Rank-5": 0.022268408551068885,
+      "Rank-10": 0.035629453681710214,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.003123382230713124,
+      "Rank-1": 0.004750593824228029,
+      "Rank-5": 0.014548693586698337,
+      "Rank-10": 0.027612826603325414,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": 0.04947010331597776,
+    "caida_mAP_relativa_porcentaje": 13.673014054138578,
+    "criterio_validacion": 0.0033707327472930126
+  },
+  "objetivo": {
+    "original": {
+      "mAP": 0.003277596874285532,
+      "Rank-1": 0.004156769596199525,
+      "Rank-5": 0.014548693586698337,
+      "Rank-10": 0.028503562945368172,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.002719190120708262,
+      "Rank-1": 0.003859857482185273,
+      "Rank-5": 0.014251781472684086,
+      "Rank-10": 0.023752969121140142,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": 0.05584067535772696,
+    "caida_mAP_relativa_porcentaje": 17.03707853635887,
+    "criterio_validacion": 0.002998393497496897
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "estado": "aprobado",
+  "comprobacion": "dos vistas de batch ocho, recomputación anidada con BatchNorm, salidas iguales, gradientes coincidentes y todos los buffers finales iguales, no hay actualización de optimizador ni entrenamiento de un modelo del proyecto",
+  "error_maximo_gradientes": 0.0,
+  "cuda_inicializada": false,
+  "limite": "caso CPU dirigido al mecanismo de memoria, no constituye un benchmark de RF39 ni prueba de igualdad bit a bit en CUDA"
+}

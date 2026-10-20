@@ -1,0 +1,2720 @@
+{
+  "fecha_documento": "2026-10-19",
+  "fuente": "lectura de archivos existentes, sin entrenamiento ni inferencia",
+  "ejecuciones_completas": 54,
+  "arquitecturas_panel_comun": 14,
+  "conjuntos_metricas": 432,
+  "archivos_pesos_completos_locales": [
+    {
+      "ruta": "resultados/byol_bagnet33/checkpoint.pt",
+      "bytes": 527665826,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_mc_r18/checkpoint.pt",
+      "bytes": 390529328,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_mc_r50/checkpoint.pt",
+      "bytes": 614617119,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_r18/checkpoint.pt",
+      "bytes": 390529328,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_r50/checkpoint.pt",
+      "bytes": 614617055,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_rf163_resnet50/checkpoint.pt",
+      "bytes": 617657209,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_rf195_paper193_resnet50/checkpoint.pt",
+      "bytes": 617657273,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_rf29_r18/checkpoint.pt",
+      "bytes": 346981246,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_rf67_resnet50/checkpoint.pt",
+      "bytes": 617657209,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_rf99/checkpoint.pt",
+      "bytes": 617657017,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_rf99_resnet50_co0.0_crop0.9/checkpoint.pt",
+      "bytes": 617657081,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_rf99_resnet50_co0.2_crop0.9/checkpoint.pt",
+      "bytes": 747959259,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_rf99_sin_mlp_co0.0/checkpoint.pt",
+      "bytes": 589207180,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_rf99_sin_mlp_co0.2/checkpoint.pt",
+      "bytes": 719509358,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_swin_b/checkpoint.pt",
+      "bytes": 1766523721,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_swin_s/checkpoint.pt",
+      "bytes": 1143246985,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_swin_t/checkpoint.pt",
+      "bytes": 801890229,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/byol_vit_s16/checkpoint.pt",
+      "bytes": 683031948,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_bagnet33/checkpoint.pt",
+      "bytes": 657967812,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_r50/checkpoint.pt",
+      "bytes": 744919233,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_resnet18_224/checkpoint.pt",
+      "bytes": 445334034,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf115_resnet50/checkpoint.pt",
+      "bytes": 747959259,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf163_resnet50/checkpoint.pt",
+      "bytes": 747959195,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf195_paper193_resnet50/checkpoint.pt",
+      "bytes": 747959259,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf29_224/checkpoint.pt",
+      "bytes": 401785824,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf29_r18/checkpoint.pt",
+      "bytes": 401785760,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf39_resnet50/checkpoint.pt",
+      "bytes": 747959259,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf67_resnet50/checkpoint.pt",
+      "bytes": 747959195,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf99/checkpoint.pt",
+      "bytes": 747959195,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf99_cabeza_compartida/checkpoint.pt",
+      "bytes": 617657209,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf99_capa2/checkpoint.pt",
+      "bytes": 672461915,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf99_locales1/checkpoint.pt",
+      "bytes": 747959387,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf99_locales16/checkpoint.pt",
+      "bytes": 747959387,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf99_locales4/checkpoint.pt",
+      "bytes": 747959387,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf99_locales64/checkpoint.pt",
+      "bytes": 747959387,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf99_peso0.1/checkpoint.pt",
+      "bytes": 747959323,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf99_peso0.5/checkpoint.pt",
+      "bytes": 747959323,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_rf99_peso1.0/checkpoint.pt",
+      "bytes": 747959323,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_swin_b/checkpoint.pt",
+      "bytes": 2412798581,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_swin_s/checkpoint.pt",
+      "bytes": 1638526837,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_swin_t/checkpoint.pt",
+      "bytes": 1297170027,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_swin_t_kernel1/checkpoint.pt",
+      "bytes": 894516971,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_swin_t_kernel2/checkpoint.pt",
+      "bytes": 1045511915,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_byol_vit_s16/checkpoint.pt",
+      "bytes": 1631296514,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_mocov3_r50/checkpoint.pt",
+      "bytes": 543423283,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_mocov3_rf29_r18/checkpoint.pt",
+      "bytes": 200289810,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/co_mocov3_rf99/checkpoint.pt",
+      "bytes": 546463245,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/dino_r50/checkpoint.pt",
+      "bytes": 654631205,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/mocov3_mc_r18/checkpoint.pt",
+      "bytes": 189033378,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/mocov3_mc_r50/checkpoint.pt",
+      "bytes": 413121105,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/mocov3_r18/checkpoint.pt",
+      "bytes": 189033314,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/mocov3_r50/checkpoint.pt",
+      "bytes": 413121105,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/mocov3_rf29_r18/checkpoint.pt",
+      "bytes": 145485296,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    },
+    {
+      "ruta": "resultados/mocov3_rf99/checkpoint.pt",
+      "bytes": 416161067,
+      "sha256": null,
+      "limite_evidencia": "inventario por tamaño, no se vuelven a leer todos los valores de los pesos"
+    }
+  ],
+  "ejecuciones": [
+    {
+      "nombre": "byol_bagnet33",
+      "configuracion": {
+        "nombre": "byol_bagnet33",
+        "metodo": "byol",
+        "arquitectura": "bagnet33",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "fuente": "Laboratorio PDF p 2, control sin CO con la misma arquitectura",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "byol_bagnet33"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 167.12889570000152,
+        "perdida_media": -1.976559500577908,
+        "vram_pico_GiB": 3.663665771484375,
+        "parametros_online": 44597824,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "52f35e8ea9bf53ddacc9fa9556ae1784b0f008c06fbf987f6a103924757ae9da",
+      "prueba_sha256": "3c9cf84117da5fc3cb807ff63181b173e435b1b7a7e9a6ada6194e4eb64dffe9"
+    },
+    {
+      "nombre": "byol_mc_r18",
+      "configuracion": {
+        "nombre": "byol_mc_r18",
+        "metodo": "byol",
+        "arquitectura": "resnet18",
+        "peso_local": 0.0,
+        "resolucion": 64,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "multicrop": true
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 72.86336050000045,
+        "perdida_media": -1.7726830360772317,
+        "vram_pico_GiB": 0.7575745582580566,
+        "parametros_online": 33214016,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "4932094395a9aa60924c41f0d57282b33d875583b1fc2466f9249fadbd01e32d",
+      "prueba_sha256": "80ce2803123ffe141826b6e3ba08115c470f5874370ef43c56d5450f71ee03cf"
+    },
+    {
+      "nombre": "byol_mc_r50",
+      "configuracion": {
+        "nombre": "byol_mc_r50",
+        "metodo": "byol",
+        "arquitectura": "resnet50",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "multicrop": true
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 180.00433460000022,
+        "perdida_media": -1.8841191065493608,
+        "vram_pico_GiB": 1.719151496887207,
+        "parametros_online": 51844672,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "04cf2f2f3f0205f38def96cd79f6e8821df82b7f161196c31bb81b171f3abf0a",
+      "prueba_sha256": "eab3271e4846738ffae3011075847f6709fe7d86440f8da04b444579ce62d4bb"
+    },
+    {
+      "nombre": "byol_r18",
+      "configuracion": {
+        "nombre": "byol_r18",
+        "metodo": "byol",
+        "arquitectura": "resnet18",
+        "peso_local": 0.0,
+        "resolucion": 64,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 35.972737199999756,
+        "perdida_media": -1.8035643748397934,
+        "vram_pico_GiB": 0.64434814453125,
+        "parametros_online": 33214016,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "4b95d8a187715144a46f7137275d475272064cde7f85e07ba6560fcabc2cb8a5",
+      "prueba_sha256": "e932528104baff2c9fd1d6c16432898de6319f0bf2d173bf78b77e7babbf6fa7"
+    },
+    {
+      "nombre": "byol_r50",
+      "configuracion": {
+        "nombre": "byol_r50",
+        "metodo": "byol",
+        "arquitectura": "resnet50",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 95.00463650000074,
+        "perdida_media": -1.9151258237529114,
+        "vram_pico_GiB": 1.455458164215088,
+        "parametros_online": 51844672,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "3464946e31b40e4bd2ee51f64670edf4034e073b099852cfecca154e0f386fa1",
+      "prueba_sha256": "45fafb956dc57f9fd28d65c20651fd05088b4891eefb4cfcda94efc229530bc4"
+    },
+    {
+      "nombre": "byol_rf163_resnet50",
+      "configuracion": {
+        "nombre": "byol_rf163_resnet50",
+        "metodo": "byol",
+        "arquitectura": "rf163_resnet50",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "fuente": "Laboratorio PDF p 2, control sin CO con la misma arquitectura",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "byol_rf163_resnet50"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 89.65449210000043,
+        "perdida_media": -1.6625163502134948,
+        "vram_pico_GiB": 1.5587964057922363,
+        "parametros_online": 52086336,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "6fd5e13dcfe8554bb70d08cc92e247e26e1124d4449f3577550ecdf017f493bf",
+      "prueba_sha256": "01f5940c333eaf66b51e0521a237b771bdf5de3f54d879694f249869563c25e3"
+    },
+    {
+      "nombre": "byol_rf195_paper193_resnet50",
+      "configuracion": {
+        "nombre": "byol_rf195_paper193_resnet50",
+        "metodo": "byol",
+        "arquitectura": "rf195_paper193_resnet50",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "fuente": "Laboratorio PDF p 2, control sin CO con la misma arquitectura",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "byol_rf195_paper193_resnet50"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 93.80055429999993,
+        "perdida_media": -1.670964805487356,
+        "vram_pico_GiB": 1.4646191596984863,
+        "parametros_online": 52086336,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "ab3b21ae3536362c46b7af3cf2e32be7176f492db76f90d49eeedf2e40ff4b01",
+      "prueba_sha256": "57cbd94119ab0a9fe5726da9226aaaada307e7b56fa58bb4baf157d6d23a4ccf"
+    },
+    {
+      "nombre": "byol_rf29_r18",
+      "configuracion": {
+        "nombre": "byol_rf29_r18",
+        "metodo": "byol",
+        "arquitectura": "rf29_resnet18",
+        "peso_local": 0.0,
+        "resolucion": 64,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "fuente": "Control con arquitectura fija para panel pequeño",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "byol_rf29_r18"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 62.22965089999889,
+        "perdida_media": -1.808305183999725,
+        "vram_pico_GiB": 1.0597624778747559,
+        "parametros_online": 29570112,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "d18ea26971ddda4e61721d819ddefc77837c4885a27d5000ccca4852a78a1fa2",
+      "prueba_sha256": "028adbf3bed43e88193771d98c62186ba0f848f791fe8010769c718dc4aa7323"
+    },
+    {
+      "nombre": "byol_rf67_resnet50",
+      "configuracion": {
+        "nombre": "byol_rf67_resnet50",
+        "metodo": "byol",
+        "arquitectura": "rf67_resnet50",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "fuente": "Laboratorio PDF p 2, control sin CO con la misma arquitectura",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "byol_rf67_resnet50"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 245.97408249999899,
+        "perdida_media": -1.6824409139668903,
+        "vram_pico_GiB": 5.2511749267578125,
+        "parametros_online": 52086336,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "5b9e8b7ca93edbd8fccf0ca213e659331b0112000166134fb67b44823b379ef4",
+      "prueba_sha256": "70347865f1ac17043d9369cdb612ae03479602a0deaeded4f80bf59310b54ce9"
+    },
+    {
+      "nombre": "byol_rf99",
+      "configuracion": {
+        "nombre": "byol_rf99",
+        "metodo": "byol",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 137.81692980000025,
+        "perdida_media": -1.6733798927293775,
+        "vram_pico_GiB": 3.3112030029296875,
+        "parametros_online": 52086336,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "2c73e3271c59739fe04301c6b2271bcacb2858854f4b893378d0a1504050aaa4",
+      "prueba_sha256": "ea3fe18440a188443971ae9e31adf59e1139dcc5a49eec4161f4387af127b6f2"
+    },
+    {
+      "nombre": "byol_rf99_resnet50_co0.0_crop0.9",
+      "configuracion": {
+        "nombre": "byol_rf99_resnet50_co0.0_crop0.9",
+        "metodo": "byol",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.9,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "checkpoint_cada": 250
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 198.38527939999767,
+        "perdida_media": -1.6716694275068873,
+        "vram_pico_GiB": 3.3101043701171875,
+        "parametros_online": 52086336,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "739c9cff457cca0f2ccf9108d0fd6f082f99d42ad1ace501a6796b5e0511437f",
+      "prueba_sha256": "e3a6cd686345eccd7d53ae52618c5c4ca11d23989c31ec89329d3d07ba20237c"
+    },
+    {
+      "nombre": "byol_rf99_resnet50_co0.2_crop0.9",
+      "configuracion": {
+        "nombre": "byol_rf99_resnet50_co0.2_crop0.9",
+        "metodo": "byol",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.9,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "checkpoint_cada": 250
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 205.73438629999873,
+        "perdida_media": -2.0164005918025447,
+        "vram_pico_GiB": 3.5514445304870605,
+        "parametros_online": 63637568,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "69a44a400bdd6514e6dc1e2b27243cdfa3b0ca1f36b9a2b1e23a07eee7649143",
+      "prueba_sha256": "929f6c8aad2e39bcd517d8215fcad3941d132761b3219e44543e7a921ea4c46c"
+    },
+    {
+      "nombre": "byol_rf99_sin_mlp_co0.0",
+      "configuracion": {
+        "nombre": "byol_rf99_sin_mlp_co0.0",
+        "metodo": "byol",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "sin_mlp": true,
+        "fuente": "Tabla 6",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "byol_rf99_sin_mlp_co0.0"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 128.98478289999912,
+        "perdida_media": -1.8214816621193293,
+        "vram_pico_GiB": 3.277531623840332,
+        "parametros_online": 49720896,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "3ab1813a555217710f64b5a9ab0511f15b3510fab060111b18f364446ea53fbb",
+      "prueba_sha256": "30befee7105fc242ab7228bf1812921c72e886d752f6f5a747ebc53660726f44"
+    },
+    {
+      "nombre": "byol_rf99_sin_mlp_co0.2",
+      "configuracion": {
+        "nombre": "byol_rf99_sin_mlp_co0.2",
+        "metodo": "byol",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "sin_mlp": true,
+        "fuente": "Tabla 6",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "byol_rf99_sin_mlp_co0.2"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 139.2144558,
+        "perdida_media": -2.267078270531406,
+        "vram_pico_GiB": 3.5209012031555176,
+        "parametros_online": 61272128,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "d6670cbde5e62e5b2eea16ad6c315dbbe84cff290032803d5b4b77409be162b8",
+      "prueba_sha256": "d3da6b57a79a7d8cd51a06983d2f2cd7e4e9263fff8e6970c8f9057e54d7f8bd"
+    },
+    {
+      "nombre": "byol_swin_b",
+      "configuracion": {
+        "nombre": "byol_swin_b",
+        "metodo": "byol",
+        "arquitectura": "swin_b",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 224.0237003000002,
+        "perdida_media": -1.887730683619268,
+        "vram_pico_GiB": 4.26176643371582,
+        "parametros_online": 110885560,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "989fb0a1f29bf91e792e84c212b002b4fc9291377431662fc7ff53bd0de8c716",
+      "prueba_sha256": "e88b2e501a3b3789b4223bb4f51691e4628cf692243516cda6c1e755419b9a24"
+    },
+    {
+      "nombre": "byol_swin_s",
+      "configuracion": {
+        "nombre": "byol_swin_s",
+        "metodo": "byol",
+        "arquitectura": "swin_s",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 204.07839980000062,
+        "perdida_media": -1.9901060147485223,
+        "vram_pico_GiB": 3.0334677696228027,
+        "parametros_online": 71931018,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "074f31dd2f11778b963fd886eb9b9f19e90e4b5c9d55acf8fa5833570bc59f97",
+      "prueba_sha256": "343a20968a3bc20806461504b98c66580c457408bf85d3f80e8b862f9b17f7b9"
+    },
+    {
+      "nombre": "byol_swin_t",
+      "configuracion": {
+        "nombre": "byol_swin_t",
+        "metodo": "byol",
+        "arquitectura": "swin_t",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 111.0507491999997,
+        "perdida_media": -1.9413023493613182,
+        "vram_pico_GiB": 2.035412311553955,
+        "parametros_online": 50613114,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "ca124fa281c979ace3710ff507d0a5313a178e02a1c3f51f4d29df29f4bef22e",
+      "prueba_sha256": "172825fdf13d3052dd87097131a473896710143f98292a39a49613afc20a08c9"
+    },
+    {
+      "nombre": "byol_vit_s16",
+      "configuracion": {
+        "nombre": "byol_vit_s16",
+        "metodo": "byol",
+        "arquitectura": "vit_s16",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 61.12887810000029,
+        "perdida_media": -2.049301514697855,
+        "vram_pico_GiB": 1.3194403648376465,
+        "parametros_online": 43186560,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "997ccd9ae9d0c3015ca68b7f983ef27c239bf61cee3d2969ae059dfd58a49d26",
+      "prueba_sha256": "1d9d9fac022f3cf2ba453fe251d95afbe0ea6a2ae3ab30e46fc0538c00096cc4"
+    },
+    {
+      "nombre": "co_byol_bagnet33",
+      "configuracion": {
+        "nombre": "co_byol_bagnet33",
+        "metodo": "byol",
+        "arquitectura": "bagnet33",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 171.45955790000153,
+        "perdida_media": -2.324407046829504,
+        "vram_pico_GiB": 4.096404552459717,
+        "parametros_online": 56149056,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "d03e8ecf3d6b98ba103df43d4bb1767abc4ba9d161fac529f913a9ea055e2114",
+      "prueba_sha256": "7922cc1aa34b5bfd5d5164e08be24ab10ee12960aed01669a57441cee4af8822"
+    },
+    {
+      "nombre": "co_byol_r50",
+      "configuracion": {
+        "nombre": "co_byol_r50",
+        "metodo": "byol",
+        "arquitectura": "resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 94.07089090000045,
+        "perdida_media": -2.3363456621376613,
+        "vram_pico_GiB": 1.6330394744873047,
+        "parametros_online": 63395904,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "38690de0da11f05203cc66052de702fe4d1138649e0f01329e0d98dad398899d",
+      "prueba_sha256": "5f55d3b8b254a44827c00c56955546d5489eccad88f65bd80dd4a2e1821592b2"
+    },
+    {
+      "nombre": "co_byol_resnet18_224",
+      "configuracion": {
+        "nombre": "co_byol_resnet18_224",
+        "metodo": "byol",
+        "arquitectura": "resnet18",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "checkpoint_cada": 250
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 202.44411390000096,
+        "perdida_media": -2.243336953627836,
+        "vram_pico_GiB": 2.9396162033081055,
+        "parametros_online": 38473792,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "a16601dacd59dfed00471a04d416abfac4646a4e0aae3e9583d7c1a06155a981",
+      "prueba_sha256": "554e218e616c40a8b8c77d78d60cd611402bfa3b5dd2beb412e3aff30490aab1"
+    },
+    {
+      "nombre": "co_byol_rf115_resnet50",
+      "configuracion": {
+        "nombre": "co_byol_rf115_resnet50",
+        "metodo": "byol",
+        "arquitectura": "rf115_resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "checkpoint_cada": 250
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 168.06662890000007,
+        "perdida_media": -2.0294568140530944,
+        "vram_pico_GiB": 2.9781370162963867,
+        "parametros_online": 63637568,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "855d70232213e739a662a7f961f08a3bb4b195a62e1e0cb350bf700ccbcb1760",
+      "prueba_sha256": "776a8eac9ef0a3df526295dd01e901514af1aec179d72ccd1b6996dbb9f85b2c"
+    },
+    {
+      "nombre": "co_byol_rf163_resnet50",
+      "configuracion": {
+        "nombre": "co_byol_rf163_resnet50",
+        "metodo": "byol",
+        "arquitectura": "rf163_resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 87.36153869999907,
+        "perdida_media": -2.0136964409823954,
+        "vram_pico_GiB": 1.783759593963623,
+        "parametros_online": 63637568,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "ae5d1f07c7f8223ce4e6aff8f45b061a181fc7d624d60865b49cd424ea3922a6",
+      "prueba_sha256": "37f4871c9a8affc5eb864463a3484b3ce0fbd1c2a7ded144887701b05618b111"
+    },
+    {
+      "nombre": "co_byol_rf195_paper193_resnet50",
+      "configuracion": {
+        "nombre": "co_byol_rf195_paper193_resnet50",
+        "metodo": "byol",
+        "arquitectura": "rf195_paper193_resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 89.14641429999938,
+        "perdida_media": -2.015164604174168,
+        "vram_pico_GiB": 1.6430091857910156,
+        "parametros_online": 63637568,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "5992cc05aa87f79e1f93fd900592434c7666f4191ee21c6136cad4f2d5071935",
+      "prueba_sha256": "759e4f21f6a4bcfc63b0391bff5bd87433ae139a335e9428494cf66b18d56849"
+    },
+    {
+      "nombre": "co_byol_rf29_224",
+      "configuracion": {
+        "nombre": "co_byol_rf29_224",
+        "metodo": "byol",
+        "arquitectura": "rf29_resnet18",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "checkpoint_cada": 250
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 655.9022309000029,
+        "perdida_media": -2.2134975726758586,
+        "vram_pico_GiB": 10.056721687316895,
+        "parametros_online": 34829888,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "884b554898a2295f339d5ef3fc53f833a5b1892969998239ab63dab1857f960c",
+      "prueba_sha256": "1421a3e0afba62a9e815a24ec36b98068c6141fc2d348bcf4e44a1ac3f5391c9"
+    },
+    {
+      "nombre": "co_byol_rf29_r18",
+      "configuracion": {
+        "nombre": "co_byol_rf29_r18",
+        "metodo": "byol",
+        "arquitectura": "rf29_resnet18",
+        "peso_local": 0.2,
+        "resolucion": 64,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 63.709448800000246,
+        "perdida_media": -2.194569750845801,
+        "vram_pico_GiB": 1.231999397277832,
+        "parametros_online": 34829888,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "12a6d76d408edd8d63d2f885733ac08efe8ef8f108c480361aefa7114e5632bd",
+      "prueba_sha256": "3bce4d57dd4c38ae4ff396042f56e39a82b9aeae1597fc27f40d9093f4f71527"
+    },
+    {
+      "nombre": "co_byol_rf39_resnet50",
+      "configuracion": {
+        "nombre": "co_byol_rf39_resnet50",
+        "metodo": "byol",
+        "arquitectura": "rf39_resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "checkpoint_cada": 250,
+        "checkpoint_activaciones": true
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 2488.8681517000005,
+        "perdida_media": -2.052208562733134,
+        "vram_pico_GiB": 5.512475490570068,
+        "parametros_online": 63637568,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "251c20069dc1c5be5245b1e6d568d5c80cbc31a21a2633baa1bcac0a3a785362",
+      "prueba_sha256": "b97b7c0698b08a0f660871c0e504aed7e00e9041b1f6d675e1ee7d0678aa44e2"
+    },
+    {
+      "nombre": "co_byol_rf67_resnet50",
+      "configuracion": {
+        "nombre": "co_byol_rf67_resnet50",
+        "metodo": "byol",
+        "arquitectura": "rf67_resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 234.7064365999995,
+        "perdida_media": -2.0210362407947455,
+        "vram_pico_GiB": 5.795386791229248,
+        "parametros_online": 63637568,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "d0e2fb98b47099fba7a33cb4c29ab6183b580bb52f813024bebedb8bf15cb2fc",
+      "prueba_sha256": "625030320a43a1d96cb2f3be5eff2433a75281b9026f75a11d5426229de98551"
+    },
+    {
+      "nombre": "co_byol_rf99",
+      "configuracion": {
+        "nombre": "co_byol_rf99",
+        "metodo": "byol",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 147.38021219999973,
+        "perdida_media": -2.014095346221116,
+        "vram_pico_GiB": 3.5487589836120605,
+        "parametros_online": 63637568,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "9ef50f44717d9d35cf0bc23a9a53f1aff38a283a8c6d1efe88bf78706784820b",
+      "prueba_sha256": "db6ddcb7f1e3c0046b6b8803c052b53528aef4bbc8087c57e72b3e75d0e2c9d9"
+    },
+    {
+      "nombre": "co_byol_rf99_cabeza_compartida",
+      "configuracion": {
+        "nombre": "co_byol_rf99_cabeza_compartida",
+        "metodo": "byol",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "cabeza_compartida": true,
+        "fuente": "Tabla 6",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "co_byol_rf99_cabeza_compartida"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 144.42676370000117,
+        "perdida_media": -2.428333800881417,
+        "vram_pico_GiB": 3.46954345703125,
+        "parametros_online": 52086336,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "323802530df177fa0c530727fe7d8f0cc312f0b343aff0d128800cf231cd7708",
+      "prueba_sha256": "a29b472eef6015c49be2074e806b4f60ea77907f2dc4ab06644ae98caf664c5a"
+    },
+    {
+      "nombre": "co_byol_rf99_capa2",
+      "configuracion": {
+        "nombre": "co_byol_rf99_capa2",
+        "metodo": "byol",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "capa_local": 2,
+        "cantidad_locales": 64,
+        "fuente": "Apéndice I",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "co_byol_rf99_capa2"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 135.4143914999986,
+        "perdida_media": -2.080029836057552,
+        "vram_pico_GiB": 3.399148464202881,
+        "parametros_online": 57346112,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "8208a9fd929b01b4682215bb695396891ee0fda948b2a5bcd065da60b29e8f2e",
+      "prueba_sha256": "3c814c6d5d1a96bb64f086a89531a52ae5021ea6df8096b40b2ee656356364c0"
+    },
+    {
+      "nombre": "co_byol_rf99_locales1",
+      "configuracion": {
+        "nombre": "co_byol_rf99_locales1",
+        "metodo": "byol",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "cantidad_locales": 1,
+        "fuente": "Tabla 3",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "co_byol_rf99_locales1"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 138.08568449999984,
+        "perdida_media": -1.97549107023355,
+        "vram_pico_GiB": 3.460233211517334,
+        "parametros_online": 63637568,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "eef654603687e88504d49f1b6e5a5b63b692009f44b179c03b4f744acc91c511",
+      "prueba_sha256": "ff3e8efa7cef94dddb9b8a4befe0cb43a3faa166f7f85880f06c5016ca6d4e84"
+    },
+    {
+      "nombre": "co_byol_rf99_locales16",
+      "configuracion": {
+        "nombre": "co_byol_rf99_locales16",
+        "metodo": "byol",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "cantidad_locales": 16,
+        "fuente": "Tabla 3",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "co_byol_rf99_locales16"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 154.1751973999999,
+        "perdida_media": -2.023725032520979,
+        "vram_pico_GiB": 3.468759059906006,
+        "parametros_online": 63637568,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "f65fd1c02dad51ac303cb2dfa5f5047191fce5a7c3152f6932c68068ea1530bc",
+      "prueba_sha256": "d680b3ef1afc171ba04d6abfb1413c04e416472a4e7efa974cb641acf1c31863"
+    },
+    {
+      "nombre": "co_byol_rf99_locales4",
+      "configuracion": {
+        "nombre": "co_byol_rf99_locales4",
+        "metodo": "byol",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "cantidad_locales": 4,
+        "fuente": "Tabla 3",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "co_byol_rf99_locales4"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 156.1896615000005,
+        "perdida_media": -1.9857034057242007,
+        "vram_pico_GiB": 3.4619383811950684,
+        "parametros_online": 63637568,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "d99eb36651139ebc257b81534c5c05c14180c1dc16200346f1f32fbcd72e6f79",
+      "prueba_sha256": "4fdd55fe998008ff39e3c5cd21e0537c623dcfb7e8e476e803376cb0ae8fe049"
+    },
+    {
+      "nombre": "co_byol_rf99_locales64",
+      "configuracion": {
+        "nombre": "co_byol_rf99_locales64",
+        "metodo": "byol",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "cantidad_locales": 64,
+        "fuente": "Tabla 3",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "co_byol_rf99_locales64"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 139.35149020000063,
+        "perdida_media": -2.0178292043624535,
+        "vram_pico_GiB": 3.4902281761169434,
+        "parametros_online": 63637568,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "dc13cda030367797baf1c5121d06e788dab1e6212dd374a398db0f0839b88f6e",
+      "prueba_sha256": "b4200112d5b0f6e0539daa541614bf41645dac3b4e1acd1f2fbd20954f8c7a70"
+    },
+    {
+      "nombre": "co_byol_rf99_peso0.1",
+      "configuracion": {
+        "nombre": "co_byol_rf99_peso0.1",
+        "metodo": "byol",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 0.1,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "fuente": "Tabla 7",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "co_byol_rf99_peso0.1"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 140.74781030000122,
+        "perdida_media": -1.8378721887126108,
+        "vram_pico_GiB": 3.556830883026123,
+        "parametros_online": 63637568,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "8c053d388947738fd59a6b015862f34d5c17f8bb079175193d9ce6932c73864a",
+      "prueba_sha256": "6a69e9cdf626c058956d4c34bf8a18025d86b9c04ed217de14a7b418a81b06fc"
+    },
+    {
+      "nombre": "co_byol_rf99_peso0.5",
+      "configuracion": {
+        "nombre": "co_byol_rf99_peso0.5",
+        "metodo": "byol",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 0.5,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "fuente": "Tabla 7",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "co_byol_rf99_peso0.5"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 140.76305909999974,
+        "perdida_media": -2.6993568427176924,
+        "vram_pico_GiB": 3.556830883026123,
+        "parametros_online": 63637568,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "e528286d3406d3d1a0af0a9795d884c0b02575167dedba4c5d6129466435a319",
+      "prueba_sha256": "2db0bbd9575763efc0f9fa68e3f552802ca4263ab207ef5687c1508ac51694b0"
+    },
+    {
+      "nombre": "co_byol_rf99_peso1.0",
+      "configuracion": {
+        "nombre": "co_byol_rf99_peso1.0",
+        "metodo": "byol",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 1.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "fuente": "Tabla 7",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "co_byol_rf99_peso1.0"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 141.7140120999993,
+        "perdida_media": -4.186663505960931,
+        "vram_pico_GiB": 3.556830883026123,
+        "parametros_online": 63637568,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "fc9ac35d0417a4d1b8a168dd59aef8eb7dc6f50550e0f99d1e59d0beb199c5bc",
+      "prueba_sha256": "40d564e4c3aba067adffe6628e0edba4b112842ca964957bd4a7cc8926d70156"
+    },
+    {
+      "nombre": "co_byol_swin_b",
+      "configuracion": {
+        "nombre": "co_byol_swin_b",
+        "metodo": "byol",
+        "arquitectura": "swin_b",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 3
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 221.15270080000118,
+        "perdida_media": -2.312785956620611,
+        "vram_pico_GiB": 4.975132942199707,
+        "parametros_online": 151796920,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "61c9d20697a2fc84415cafd1f20ab092fcd3f16b18073cec2e6113e82bee1352",
+      "prueba_sha256": "e354685933acbd287435e93a6e15069953755cd75779241b8702b553b3ff7400"
+    },
+    {
+      "nombre": "co_byol_swin_s",
+      "configuracion": {
+        "nombre": "co_byol_swin_s",
+        "metodo": "byol",
+        "arquitectura": "swin_s",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 3
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 214.88994429999912,
+        "perdida_media": -2.4431188012259963,
+        "vram_pico_GiB": 3.5814223289489746,
+        "parametros_online": 103405194,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "991bfd19b60b38420957dcbbfac31dbf754c3d000a230f979d3d852feeaa77e8",
+      "prueba_sha256": "24f40ecda5bda8286f031fc3a475ac1ffbbd747660ac800a48398d75acfc5d4d"
+    },
+    {
+      "nombre": "co_byol_swin_t",
+      "configuracion": {
+        "nombre": "co_byol_swin_t",
+        "metodo": "byol",
+        "arquitectura": "swin_t",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 3
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 122.97028280000086,
+        "perdida_media": -2.3458301649627358,
+        "vram_pico_GiB": 2.594292163848877,
+        "parametros_online": 82087290,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "f207e6b9c94e0541e562942423b9c681bbb98b22e09989e823e931b6b21a7fae",
+      "prueba_sha256": "c60e6803f6f9bade0b27899493770ddb88c96a74b2995c6312591ed5bfcb8a14"
+    },
+    {
+      "nombre": "co_byol_swin_t_kernel1",
+      "configuracion": {
+        "nombre": "co_byol_swin_t_kernel1",
+        "metodo": "byol",
+        "arquitectura": "swin_t",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "fuente": "Tabla F.10",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "co_byol_swin_t_kernel1"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 106.60843999999815,
+        "perdida_media": -2.3639579456350086,
+        "vram_pico_GiB": 2.160964012145996,
+        "parametros_online": 56921466,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "5bbfebdd5f49d165a42da8819f56765df66423df5a85c93d0e777f015e650c73",
+      "prueba_sha256": "734f76e3cbb7bd21a803275e1efe8128c16ad78364f4157990ac0d7e75e37f66"
+    },
+    {
+      "nombre": "co_byol_swin_t_kernel2",
+      "configuracion": {
+        "nombre": "co_byol_swin_t_kernel2",
+        "metodo": "byol",
+        "arquitectura": "swin_t",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 2,
+        "fuente": "Tabla F.10",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "co_byol_swin_t_kernel2"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 105.57355830000233,
+        "perdida_media": -2.3727907742583993,
+        "vram_pico_GiB": 2.3145008087158203,
+        "parametros_online": 66358650,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "21471cd606876fb38f9646fcfe6f43a5096231a41a37495188683a894f6c9d83",
+      "prueba_sha256": "703350023b0efb13d1572ffa3a168aa947e91ac82315bca70a85a8c51e34f234"
+    },
+    {
+      "nombre": "co_byol_vit_s16",
+      "configuracion": {
+        "nombre": "co_byol_vit_s16",
+        "metodo": "byol",
+        "arquitectura": "vit_s16",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 6
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 90.56596910000007,
+        "perdida_media": -2.501044404313878,
+        "vram_pico_GiB": 2.5157976150512695,
+        "parametros_online": 102972288,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "6f886ecc9d8a2d728bb6ecd2d92537f8785fcc670c6e5cf5dba8696bb744d59e",
+      "prueba_sha256": "5e8e8bf532f60f11319319450560cbd2cfc3bbdd27b11b9ebcbc64329f2cd562"
+    },
+    {
+      "nombre": "co_mocov3_r50",
+      "configuracion": {
+        "nombre": "co_mocov3_r50",
+        "metodo": "mocov3",
+        "arquitectura": "resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 81.17095479999989,
+        "perdida_media": 2.3516049343209597,
+        "vram_pico_GiB": 1.3868579864501953,
+        "parametros_online": 46609984,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "6aa6ac04bd1ec5ef2d0064e9d3e911a3d3d4f270fd9165aa3bbb7923ba353d86",
+      "prueba_sha256": "f60eb62b4e6c047ca4770fc72aef4ca53c80c5c6740148e190715d38cba6e0b7"
+    },
+    {
+      "nombre": "co_mocov3_rf29_r18",
+      "configuracion": {
+        "nombre": "co_mocov3_rf29_r18",
+        "metodo": "mocov3",
+        "arquitectura": "rf29_resnet18",
+        "peso_local": 0.2,
+        "resolucion": 64,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 64.53562650000094,
+        "perdida_media": 2.3200397790191847,
+        "vram_pico_GiB": 1.012801170349121,
+        "parametros_online": 18043968,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "05938c4f1a4ab814abf4b2f02f24f740e0cd6d05f864da41c4b6d6c7314a2d7d",
+      "prueba_sha256": "43db99d0e98eba09c0e819cb696b80dca2400127cb0967194b9668c0040a0443"
+    },
+    {
+      "nombre": "co_mocov3_rf99",
+      "configuracion": {
+        "nombre": "co_mocov3_rf99",
+        "metodo": "mocov3",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 0.2,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 134.42812279999907,
+        "perdida_media": 2.3562871338554316,
+        "vram_pico_GiB": 3.330918788909912,
+        "parametros_online": 46851648,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "b67fbf127d4ad3b99627294e0ec04fcd14035f9366871c718a0678319c373d13",
+      "prueba_sha256": "61413dda6a049490beae8adc5e68725ca082ef2d7c07ceb6eab69728c435f77d"
+    },
+    {
+      "nombre": "dino_r50",
+      "configuracion": {
+        "nombre": "dino_r50",
+        "metodo": "dino",
+        "arquitectura": "resnet50",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "multicrop": true,
+        "numero_locales": 6
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 164.71727660000033,
+        "perdida_media": 11.173644832297505,
+        "vram_pico_GiB": 2.333505153656006,
+        "parametros_online": 49268032,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "9baf5dddd835ff913c45f04ebc310b2e5a37ea6c6bb89fe12aa3ca01f06d2d6e",
+      "prueba_sha256": "a8b91f582c403662f60c44d5276427c2812e656499555215d6b247f66d9e2fbc"
+    },
+    {
+      "nombre": "mocov3_mc_r18",
+      "configuracion": {
+        "nombre": "mocov3_mc_r18",
+        "metodo": "mocov3",
+        "arquitectura": "resnet18",
+        "peso_local": 0.0,
+        "resolucion": 64,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "multicrop": true
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 69.88292400000137,
+        "perdida_media": 1.6397989977861727,
+        "vram_pico_GiB": 0.4556694030761719,
+        "parametros_online": 16428096,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "ccf507e199e7e4572e604ced1267124ac7d85cdd5247d10d17786f6fb603f34c",
+      "prueba_sha256": "208f6955f22a316925b847a32f73e1ae848a12335a182b5a39935625a062931f"
+    },
+    {
+      "nombre": "mocov3_mc_r50",
+      "configuracion": {
+        "nombre": "mocov3_mc_r50",
+        "metodo": "mocov3",
+        "arquitectura": "resnet50",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "multicrop": true
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 143.98821769999995,
+        "perdida_media": 1.6808183941951487,
+        "vram_pico_GiB": 1.4638428688049316,
+        "parametros_online": 35058752,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "61a36487b536cf40f1f42069683d88da1f9b890ee17105744183b516f58e86ac",
+      "prueba_sha256": "aa7be40a77f2eaf73818e96b07d288ddf3162f10a6ca5847546f4bb79ab27cff"
+    },
+    {
+      "nombre": "mocov3_r18",
+      "configuracion": {
+        "nombre": "mocov3_r18",
+        "metodo": "mocov3",
+        "arquitectura": "resnet18",
+        "peso_local": 0.0,
+        "resolucion": 64,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 31.90890749999926,
+        "perdida_media": 1.6262021402502098,
+        "vram_pico_GiB": 0.3955726623535156,
+        "parametros_online": 16428096,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "5b0f55a1cb0f8d653ed9cd152bd6d90ce25f414d8012fc6387f7fe9cf0389c5c",
+      "prueba_sha256": "1ee13b8c0a76716ae0759954b5e2be3efcc7fe206d6cbfa383912bc31996ab83"
+    },
+    {
+      "nombre": "mocov3_r50",
+      "configuracion": {
+        "nombre": "mocov3_r50",
+        "metodo": "mocov3",
+        "arquitectura": "resnet50",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 71.68127090000053,
+        "perdida_media": 1.6763424274927126,
+        "vram_pico_GiB": 1.207399845123291,
+        "parametros_online": 35058752,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "2079944e39302ddee6f3bce40b802136d9ba738b8ed80e643c6a37342342909d",
+      "prueba_sha256": "2eec35bc87a2b4100fbb66b8826719eaf1e842a371fad90c9b8db76f3f6c3c63"
+    },
+    {
+      "nombre": "mocov3_rf29_r18",
+      "configuracion": {
+        "nombre": "mocov3_rf29_r18",
+        "metodo": "mocov3",
+        "arquitectura": "rf29_resnet18",
+        "peso_local": 0.0,
+        "resolucion": 64,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1,
+        "fuente": "Control con arquitectura fija para panel pequeño",
+        "estado": "implementado_no_ejecutado",
+        "alias": [
+          "mocov3_rf29_r18"
+        ]
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 52.94081759999972,
+        "perdida_media": 1.6716387145346103,
+        "vram_pico_GiB": 0.824439525604248,
+        "parametros_online": 12784192,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "37667067d7b89418934974745429c0b2a9d0c6f2010d05831c109be98ce5a6c7",
+      "prueba_sha256": "69d86290c48f5a7c1f4ea1b61f9dd759d8c00def5d25ff45a7dd2096ac447f4a"
+    },
+    {
+      "nombre": "mocov3_rf99",
+      "configuracion": {
+        "nombre": "mocov3_rf99",
+        "metodo": "mocov3",
+        "arquitectura": "rf99_resnet50",
+        "peso_local": 0.0,
+        "resolucion": 224,
+        "recorte": 0.2,
+        "semilla": 20261019,
+        "temperatura": 0.2,
+        "kernel_local": 1
+      },
+      "resumen": {
+        "estado": "entrenamiento_completado",
+        "pasos_objetivo": 1253,
+        "pasos_realizados": 1253,
+        "batch_fisico": 8,
+        "acumulacion_gradientes": 1,
+        "batch_efectivo": 8,
+        "imagenes_fuente_procesadas": 10024,
+        "imagenes_fuente_distintas": 10024,
+        "epocas_completas": 0,
+        "fraccion_epoca": 0.9079710144927536,
+        "longitud_particion": 11043,
+        "pasos_por_epoca": 1380,
+        "descartadas_por_drop_last_cada_epoca": 3,
+        "segundos_entrenamiento": 123.12697710000066,
+        "perdida_media": 1.6844443917179337,
+        "vram_pico_GiB": 3.088815689086914,
+        "parametros_online": 35300416,
+        "initializacion": "aleatoria, sin pesos externos",
+        "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+        "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+      },
+      "cobertura_metricas": {
+        "validation": true,
+        "testing": true
+      },
+      "validacion_sha256": "5824e8272cc68b993f08b59966287efd840550b70c1970a65d48744ac6386211",
+      "prueba_sha256": "c42d6bafa60bdf6da18369417eaa8365db98d393d1915fda29662702e9c46112"
+    }
+  ]
+}

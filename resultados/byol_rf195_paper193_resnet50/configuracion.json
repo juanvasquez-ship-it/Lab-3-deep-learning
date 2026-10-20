@@ -1,0 +1,16 @@
+{
+  "nombre": "byol_rf195_paper193_resnet50",
+  "metodo": "byol",
+  "arquitectura": "rf195_paper193_resnet50",
+  "peso_local": 0.0,
+  "resolucion": 224,
+  "recorte": 0.2,
+  "semilla": 20261019,
+  "temperatura": 0.2,
+  "kernel_local": 1,
+  "fuente": "Laboratorio PDF p 2, control sin CO con la misma arquitectura",
+  "estado": "implementado_no_ejecutado",
+  "alias": [
+    "byol_rf195_paper193_resnet50"
+  ]
+}

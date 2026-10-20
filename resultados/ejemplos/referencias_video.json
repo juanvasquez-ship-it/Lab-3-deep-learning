@@ -1,0 +1,16 @@
+[
+  {
+    "consulta": 18,
+    "person_id": 725,
+    "primer_positivo_rank": 1,
+    "positivo_referencia_indice": 3372,
+    "nota": "El positivo de referencia es el primer índice de galería de igual persona y otra cámara, no se afirma que sea el primer positivo recuperado"
+  },
+  {
+    "consulta": 0,
+    "person_id": 1191,
+    "primer_positivo_rank": 30,
+    "positivo_referencia_indice": 2450,
+    "nota": "El positivo de referencia es el primer índice de galería de igual persona y otra cámara, no se afirma que sea el primer positivo recuperado"
+  }
+]

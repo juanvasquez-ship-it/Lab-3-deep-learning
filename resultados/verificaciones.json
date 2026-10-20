@@ -1,0 +1,63 @@
+{
+  "estado": "aprobado",
+  "estructura": {
+    "training": {
+      "images": [
+        11043,
+        3,
+        128,
+        64
+      ]
+    },
+    "validation": {
+      "query/images": [
+        100,
+        3,
+        128,
+        64
+      ],
+      "query/images_low_resolution": [
+        100,
+        3,
+        32,
+        16
+      ],
+      "gallery/images": [
+        1793,
+        3,
+        128,
+        64
+      ]
+    },
+    "testing": {
+      "query/images": [
+        3368,
+        3,
+        128,
+        64
+      ],
+      "query/images_low_resolution": [
+        3368,
+        3,
+        32,
+        16
+      ],
+      "gallery/images": [
+        19732,
+        3,
+        128,
+        64
+      ]
+    }
+  },
+  "comprobaciones": [
+    "particiones originales y tipos",
+    "coseno con valor conocido y stop-gradient",
+    "InfoNCE con valor analítico",
+    "promedio espacial de InfoNCE en ambas direcciones",
+    "positivo contrastivo mal asignado aumenta pérdida",
+    "AP y Rank-k con junk, distractor y misma cámara"
+  ],
+  "segundos": 0.04246860000057495,
+  "entrenamientos": 0
+}

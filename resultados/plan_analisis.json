@@ -1,0 +1,68 @@
+{
+  "declaracion_unix": 1792429646.6738706,
+  "rama": "online",
+  "particion_metricas": "validation",
+  "particion_representaciones": "training sin identidades",
+  "grupos": {
+    "representaciones": [
+      "byol_r50",
+      "co_byol_r50",
+      "byol_rf99",
+      "co_byol_rf99",
+      "byol_swin_t",
+      "co_byol_swin_t",
+      "byol_vit_s16",
+      "co_byol_vit_s16",
+      "byol_mc_r50",
+      "mocov3_r50",
+      "mocov3_mc_r50",
+      "co_mocov3_r50",
+      "mocov3_rf99",
+      "co_mocov3_rf99"
+    ],
+    "mascaras": [
+      "byol_r50",
+      "byol_mc_r50",
+      "co_byol_r50",
+      "byol_rf99",
+      "co_byol_rf99",
+      "byol_swin_t",
+      "co_byol_swin_t",
+      "mocov3_r50",
+      "mocov3_mc_r50",
+      "co_mocov3_r50"
+    ],
+    "pgd": [
+      "byol_r50",
+      "byol_mc_r50",
+      "co_byol_r50",
+      "co_byol_rf99",
+      "byol_swin_t",
+      "co_byol_swin_t",
+      "mocov3_r50",
+      "mocov3_mc_r50",
+      "co_mocov3_r50"
+    ],
+    "antes_mlp": [
+      "byol_rf99",
+      "co_byol_rf99",
+      "co_byol_rf99_cabeza_compartida"
+    ],
+    "capas": [
+      "byol_r50",
+      "co_byol_r50",
+      "co_byol_rf99"
+    ],
+    "eficiencia": [
+      "byol_r50",
+      "byol_mc_r50",
+      "co_byol_r50",
+      "co_byol_rf99"
+    ],
+    "representaciones384": [
+      "co_byol_r50"
+    ]
+  },
+  "criterio": "comparadores de las tablas y figuras del artículo, declarados antes de prueba, mismo encoder online para las comparaciones controladas",
+  "limite": "presupuesto original de tres horas, se registran pendientes si no caben"
+}

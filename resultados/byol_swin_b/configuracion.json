@@ -1,0 +1,11 @@
+{
+  "nombre": "byol_swin_b",
+  "metodo": "byol",
+  "arquitectura": "swin_b",
+  "peso_local": 0.0,
+  "resolucion": 224,
+  "recorte": 0.2,
+  "semilla": 20261019,
+  "temperatura": 0.2,
+  "kernel_local": 1
+}

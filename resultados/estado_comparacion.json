@@ -1,0 +1,46 @@
+{
+  "estado": "completado",
+  "pid": 25264,
+  "inicio_unix": 1792445920.4297419,
+  "cola": [
+    "co_byol_rf115_resnet50",
+    "co_byol_rf39_resnet50",
+    "co_byol_resnet18_224",
+    "co_byol_rf29_224",
+    "byol_rf99_resnet50_co0.0_crop0.9",
+    "byol_rf99_resnet50_co0.2_crop0.9"
+  ],
+  "tareas": {
+    "co_byol_rf115_resnet50": {
+      "fase": "evaluado",
+      "inicio_entrenamiento_unix": 1792445920.4836214
+    },
+    "co_byol_rf39_resnet50": {
+      "fase": "evaluado",
+      "inicio_entrenamiento_unix": 1792446103.3603823
+    },
+    "co_byol_resnet18_224": {
+      "fase": "evaluado",
+      "inicio_entrenamiento_unix": 1792448674.0557811
+    },
+    "co_byol_rf29_224": {
+      "fase": "evaluado",
+      "inicio_entrenamiento_unix": 1792448898.513668
+    },
+    "byol_rf99_resnet50_co0.0_crop0.9": {
+      "fase": "evaluado",
+      "inicio_entrenamiento_unix": 1792449592.7119768
+    },
+    "byol_rf99_resnet50_co0.2_crop0.9": {
+      "fase": "evaluado",
+      "inicio_entrenamiento_unix": 1792449812.3803563
+    }
+  },
+  "sesion": "presupuesto_comparacion.json",
+  "reanudar": "se reutilizan entrenamiento completo, validación y ramas de prueba guardadas, no se finge reanudación exacta de un entrenamiento parcial",
+  "actual": "byol_rf99_resnet50_co0.2_crop0.9",
+  "fase": "evaluado",
+  "actualizacion_unix": 1792451857.7824957,
+  "arquitecturas_referencia_evaluadas": 14,
+  "fin_unix": 1792451857.9574926
+}

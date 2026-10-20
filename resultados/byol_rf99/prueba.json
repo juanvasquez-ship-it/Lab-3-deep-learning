@@ -1,0 +1,56 @@
+{
+  "online": {
+    "original": {
+      "mAP": 0.004276173027924104,
+      "Rank-1": 0.006828978622327791,
+      "Rank-5": 0.022565320665083134,
+      "Rank-10": 0.03800475059382423,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.002619347850691941,
+      "Rank-1": 0.0020783847980997625,
+      "Rank-5": 0.010688836104513063,
+      "Rank-10": 0.019002375296912115,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": 0.16568251772321632,
+    "caida_mAP_relativa_porcentaje": 38.74551301859924,
+    "criterio_validacion": 0.0034477604393080225
+  },
+  "objetivo": {
+    "original": {
+      "mAP": 0.0037456116125777566,
+      "Rank-1": 0.006235154394299287,
+      "Rank-5": 0.018705463182897862,
+      "Rank-10": 0.033847980997624705,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.0023003477414292746,
+      "Rank-1": 0.0017814726840855108,
+      "Rank-5": 0.00831353919239905,
+      "Rank-10": 0.01811163895486936,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": 0.1445263871148482,
+    "caida_mAP_relativa_porcentaje": 38.5855240915873,
+    "criterio_validacion": 0.0030229796770035156
+  }
+}

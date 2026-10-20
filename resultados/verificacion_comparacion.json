@@ -1,0 +1,13 @@
+{
+  "estado": "aprobado",
+  "arquitecturas": 14,
+  "cola_completa": true,
+  "registros_historicos_preservados": 292,
+  "mismo_conjunto_indices": true,
+  "estado_auditoria": "aprobado",
+  "errores_auditoria": [],
+  "seleccion_historica_preservada": true,
+  "pendientes_humanos": "revisión del material audiovisual y presentación grupal, envío al formulario y defensa individual",
+  "video_comparacion_actualizado": true,
+  "revision_video_humana": "pendiente"
+}

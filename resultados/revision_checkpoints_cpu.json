@@ -1,0 +1,492 @@
+{
+  "estado": "aprobado",
+  "metodo": "torch.load con map_location CPU, mmap y FakeTensorMode, construcción sin datos de los modelos actuales y comparación exhaustiva de claves, formas, tipos, configuraciones, resúmenes y cantidad de parámetros",
+  "limitacion": "No lee los valores de todos los pesos ni comprueba finitud de cada tensor, no verifica CRC de los archivos internos de los checkpoints y no repite inferencia, la igualdad exacta de los encoders exportados conserva su comprobación CPU previa separada",
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "cuda_inicializada": false,
+  "entrenamientos": 0,
+  "inferencia_modelos": 0,
+  "segundos": 23.67755961418152,
+  "checkpoints": [
+    {
+      "modelo": "byol_bagnet33",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 674,
+      "parametros_online": 44597824,
+      "estados_optimizador": 173,
+      "sha256_esquema": "76af8fbe753d5048bddaed6bd4467d23cf3b42976d9b901f1dd94c84d228f480",
+      "bytes_checkpoint": 527665826
+    },
+    {
+      "modelo": "byol_mc_r18",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 276,
+      "parametros_online": 33214016,
+      "estados_optimizador": 73,
+      "sha256_esquema": "69cfb2609411a297e971c6b91ea4de19bad7556377bc993edd88d28c87142a23",
+      "bytes_checkpoint": 390529328
+    },
+    {
+      "modelo": "byol_mc_r50",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 672,
+      "parametros_online": 51844672,
+      "estados_optimizador": 172,
+      "sha256_esquema": "454fc7b77e9d31f5c8e1d35518ac6fb880d5fcf9376888397ecb2900e357b84d",
+      "bytes_checkpoint": 614617119
+    },
+    {
+      "modelo": "byol_r18",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 276,
+      "parametros_online": 33214016,
+      "estados_optimizador": 73,
+      "sha256_esquema": "69cfb2609411a297e971c6b91ea4de19bad7556377bc993edd88d28c87142a23",
+      "bytes_checkpoint": 390529328
+    },
+    {
+      "modelo": "byol_r50",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 672,
+      "parametros_online": 51844672,
+      "estados_optimizador": 172,
+      "sha256_esquema": "454fc7b77e9d31f5c8e1d35518ac6fb880d5fcf9376888397ecb2900e357b84d",
+      "bytes_checkpoint": 614617055
+    },
+    {
+      "modelo": "byol_rf163_resnet50",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 744,
+      "parametros_online": 52086336,
+      "estados_optimizador": 190,
+      "sha256_esquema": "8d5cf2ef321389f1698e8f43ec175b6f8c11cdcb14c0de41fdf96ea68af66c10",
+      "bytes_checkpoint": 617657209
+    },
+    {
+      "modelo": "byol_rf195_paper193_resnet50",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 744,
+      "parametros_online": 52086336,
+      "estados_optimizador": 190,
+      "sha256_esquema": "8d5cf2ef321389f1698e8f43ec175b6f8c11cdcb14c0de41fdf96ea68af66c10",
+      "bytes_checkpoint": 617657273
+    },
+    {
+      "modelo": "byol_rf29_r18",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 492,
+      "parametros_online": 29570112,
+      "estados_optimizador": 127,
+      "sha256_esquema": "5b9977027a428d499002d8fd9499b8beb88f3eb30f13f9d5081a54cac5d7e6a8",
+      "bytes_checkpoint": 346981246
+    },
+    {
+      "modelo": "byol_rf67_resnet50",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 744,
+      "parametros_online": 52086336,
+      "estados_optimizador": 190,
+      "sha256_esquema": "8d5cf2ef321389f1698e8f43ec175b6f8c11cdcb14c0de41fdf96ea68af66c10",
+      "bytes_checkpoint": 617657209
+    },
+    {
+      "modelo": "byol_rf99",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 744,
+      "parametros_online": 52086336,
+      "estados_optimizador": 190,
+      "sha256_esquema": "8d5cf2ef321389f1698e8f43ec175b6f8c11cdcb14c0de41fdf96ea68af66c10",
+      "bytes_checkpoint": 617657017
+    },
+    {
+      "modelo": "byol_rf99_sin_mlp_co0.0",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 708,
+      "parametros_online": 49720896,
+      "estados_optimizador": 181,
+      "sha256_esquema": "df910bde22b23488e8f730e4a61f36c226f32271638a66e59667b8f34b7c67e8",
+      "bytes_checkpoint": 589207180
+    },
+    {
+      "modelo": "byol_rf99_sin_mlp_co0.2",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 732,
+      "parametros_online": 61272128,
+      "estados_optimizador": 191,
+      "sha256_esquema": "f66a88bef0123f0b1bd6187c12e1b1e6a0c8e1c7883be282a77bd1c1730cba7a",
+      "bytes_checkpoint": 719509358
+    },
+    {
+      "modelo": "byol_swin_b",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 690,
+      "parametros_online": 110885560,
+      "estados_optimizador": 340,
+      "sha256_esquema": "e1a8566b245a30c6ae0281556ef058ee5efe128db708955c0af9348f4f72e87a",
+      "bytes_checkpoint": 1766523721
+    },
+    {
+      "modelo": "byol_swin_s",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 690,
+      "parametros_online": 71931018,
+      "estados_optimizador": 340,
+      "sha256_esquema": "e8bcb0c4993e86c3817d28915149dc5d2f5d193c6dc8fe0b6fd6a285292c0934",
+      "bytes_checkpoint": 1143246985
+    },
+    {
+      "modelo": "byol_swin_t",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 378,
+      "parametros_online": 50613114,
+      "estados_optimizador": 184,
+      "sha256_esquema": "12821e9b56350b9b84ac3d9e3146d0930f15326aedf60d523d60c224ec3a4e61",
+      "bytes_checkpoint": 801890229
+    },
+    {
+      "modelo": "byol_vit_s16",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 336,
+      "parametros_online": 43186560,
+      "estados_optimizador": 163,
+      "sha256_esquema": "b828d44e83f57b05e2f62a5894d4fa3d3681c5433a77e6f62ebead4408ff1569",
+      "bytes_checkpoint": 683031948
+    },
+    {
+      "modelo": "co_byol_bagnet33",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 698,
+      "parametros_online": 56149056,
+      "estados_optimizador": 183,
+      "sha256_esquema": "2be3d2bf4af5112e38cf7c161bec9f364b6ad8c1468ce9f17aa6ca356bbd481b",
+      "bytes_checkpoint": 657967812
+    },
+    {
+      "modelo": "co_byol_r50",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 696,
+      "parametros_online": 63395904,
+      "estados_optimizador": 182,
+      "sha256_esquema": "33d57c0955451ee44bb042d926cf8175dfe0da4eabfb6f33d9c7293842ca11a7",
+      "bytes_checkpoint": 744919233
+    },
+    {
+      "modelo": "co_byol_rf163_resnet50",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 768,
+      "parametros_online": 63637568,
+      "estados_optimizador": 200,
+      "sha256_esquema": "63bfb42ff844e8b2d6a78433325ee675db2b4927a3ef33d19a0a1e577aad5bf2",
+      "bytes_checkpoint": 747959195
+    },
+    {
+      "modelo": "co_byol_rf195_paper193_resnet50",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 768,
+      "parametros_online": 63637568,
+      "estados_optimizador": 200,
+      "sha256_esquema": "63bfb42ff844e8b2d6a78433325ee675db2b4927a3ef33d19a0a1e577aad5bf2",
+      "bytes_checkpoint": 747959259
+    },
+    {
+      "modelo": "co_byol_rf29_r18",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 516,
+      "parametros_online": 34829888,
+      "estados_optimizador": 137,
+      "sha256_esquema": "92fd9008be01b700234339772c750f3cdf1bd66508c9004d8afcb6bf5e6b0046",
+      "bytes_checkpoint": 401785760
+    },
+    {
+      "modelo": "co_byol_rf67_resnet50",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 768,
+      "parametros_online": 63637568,
+      "estados_optimizador": 200,
+      "sha256_esquema": "63bfb42ff844e8b2d6a78433325ee675db2b4927a3ef33d19a0a1e577aad5bf2",
+      "bytes_checkpoint": 747959195
+    },
+    {
+      "modelo": "co_byol_rf99",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 768,
+      "parametros_online": 63637568,
+      "estados_optimizador": 200,
+      "sha256_esquema": "63bfb42ff844e8b2d6a78433325ee675db2b4927a3ef33d19a0a1e577aad5bf2",
+      "bytes_checkpoint": 747959195
+    },
+    {
+      "modelo": "co_byol_rf99_cabeza_compartida",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 744,
+      "parametros_online": 52086336,
+      "estados_optimizador": 190,
+      "sha256_esquema": "8d5cf2ef321389f1698e8f43ec175b6f8c11cdcb14c0de41fdf96ea68af66c10",
+      "bytes_checkpoint": 617657209
+    },
+    {
+      "modelo": "co_byol_rf99_capa2",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 768,
+      "parametros_online": 57346112,
+      "estados_optimizador": 200,
+      "sha256_esquema": "b95df08a6dd87518fc4b08caf67ac7f374c15f0d1f1edf0385c6a08096c8ff91",
+      "bytes_checkpoint": 672461915
+    },
+    {
+      "modelo": "co_byol_rf99_locales1",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 768,
+      "parametros_online": 63637568,
+      "estados_optimizador": 200,
+      "sha256_esquema": "63bfb42ff844e8b2d6a78433325ee675db2b4927a3ef33d19a0a1e577aad5bf2",
+      "bytes_checkpoint": 747959387
+    },
+    {
+      "modelo": "co_byol_rf99_locales16",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 768,
+      "parametros_online": 63637568,
+      "estados_optimizador": 200,
+      "sha256_esquema": "63bfb42ff844e8b2d6a78433325ee675db2b4927a3ef33d19a0a1e577aad5bf2",
+      "bytes_checkpoint": 747959387
+    },
+    {
+      "modelo": "co_byol_rf99_locales4",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 768,
+      "parametros_online": 63637568,
+      "estados_optimizador": 200,
+      "sha256_esquema": "63bfb42ff844e8b2d6a78433325ee675db2b4927a3ef33d19a0a1e577aad5bf2",
+      "bytes_checkpoint": 747959387
+    },
+    {
+      "modelo": "co_byol_rf99_locales64",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 768,
+      "parametros_online": 63637568,
+      "estados_optimizador": 200,
+      "sha256_esquema": "63bfb42ff844e8b2d6a78433325ee675db2b4927a3ef33d19a0a1e577aad5bf2",
+      "bytes_checkpoint": 747959387
+    },
+    {
+      "modelo": "co_byol_rf99_peso0.1",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 768,
+      "parametros_online": 63637568,
+      "estados_optimizador": 200,
+      "sha256_esquema": "63bfb42ff844e8b2d6a78433325ee675db2b4927a3ef33d19a0a1e577aad5bf2",
+      "bytes_checkpoint": 747959323
+    },
+    {
+      "modelo": "co_byol_rf99_peso0.5",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 768,
+      "parametros_online": 63637568,
+      "estados_optimizador": 200,
+      "sha256_esquema": "63bfb42ff844e8b2d6a78433325ee675db2b4927a3ef33d19a0a1e577aad5bf2",
+      "bytes_checkpoint": 747959323
+    },
+    {
+      "modelo": "co_byol_rf99_peso1.0",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 768,
+      "parametros_online": 63637568,
+      "estados_optimizador": 200,
+      "sha256_esquema": "63bfb42ff844e8b2d6a78433325ee675db2b4927a3ef33d19a0a1e577aad5bf2",
+      "bytes_checkpoint": 747959323
+    },
+    {
+      "modelo": "co_byol_swin_b",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 714,
+      "parametros_online": 151796920,
+      "estados_optimizador": 350,
+      "sha256_esquema": "7067dea07e5dc2963eedee153baf85b1ce4b488a3634587e03c3b863fd11b6dc",
+      "bytes_checkpoint": 2412798581
+    },
+    {
+      "modelo": "co_byol_swin_s",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 714,
+      "parametros_online": 103405194,
+      "estados_optimizador": 350,
+      "sha256_esquema": "d129119b20ea03eb083a8ed58dd494b6a1213606102c515f3d0165301d933df8",
+      "bytes_checkpoint": 1638526837
+    },
+    {
+      "modelo": "co_byol_swin_t",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 402,
+      "parametros_online": 82087290,
+      "estados_optimizador": 194,
+      "sha256_esquema": "5f08bc06168235dadba108492c67007f7746e0b9fd155c208a7882175fa3f00d",
+      "bytes_checkpoint": 1297170027
+    },
+    {
+      "modelo": "co_byol_swin_t_kernel1",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 402,
+      "parametros_online": 56921466,
+      "estados_optimizador": 194,
+      "sha256_esquema": "c8788248a3ab58753663b26ada885e2606968c6c2cd3dba7feae25e2776d7596",
+      "bytes_checkpoint": 894516971
+    },
+    {
+      "modelo": "co_byol_swin_t_kernel2",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 402,
+      "parametros_online": 66358650,
+      "estados_optimizador": 194,
+      "sha256_esquema": "21aa880ea4b3c2a0c8cfd5f8eb5a649432238d8422b273b7620345ef6f33909f",
+      "bytes_checkpoint": 1045511915
+    },
+    {
+      "modelo": "co_byol_vit_s16",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 360,
+      "parametros_online": 102972288,
+      "estados_optimizador": 173,
+      "sha256_esquema": "bd2cb2c4f2308ddba52f4408d5440ce78db6d4e2a2407231021d25b73bb0a408",
+      "bytes_checkpoint": 1631296514
+    },
+    {
+      "modelo": "co_mocov3_r50",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 687,
+      "parametros_online": 46609984,
+      "estados_optimizador": 177,
+      "sha256_esquema": "99f5f27012dde818c9d4ebc2f5e9ac5ade665110655933d5b26211cb25abd05b",
+      "bytes_checkpoint": 543423283
+    },
+    {
+      "modelo": "co_mocov3_rf29_r18",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 507,
+      "parametros_online": 18043968,
+      "estados_optimizador": 132,
+      "sha256_esquema": "0f41485336940fc1f16e6de4cbf8ee22b31fa3721edb544f1836e04ad23328f6",
+      "bytes_checkpoint": 200289810
+    },
+    {
+      "modelo": "co_mocov3_rf99",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 759,
+      "parametros_online": 46851648,
+      "estados_optimizador": 195,
+      "sha256_esquema": "3f0e319bf21b4d32f1ba5f3ac3ee3548161c0f28faaa0f73b643d4214055e4e5",
+      "bytes_checkpoint": 546463245
+    },
+    {
+      "modelo": "dino_r50",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 653,
+      "parametros_online": 49268032,
+      "estados_optimizador": 165,
+      "sha256_esquema": "5af7fa39b4b37d301f125c9d041022ecfef1cdae6ad5031c32571420325507c6",
+      "bytes_checkpoint": 654631205
+    },
+    {
+      "modelo": "mocov3_mc_r18",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 267,
+      "parametros_online": 16428096,
+      "estados_optimizador": 68,
+      "sha256_esquema": "94668f90eebc1a309d325215646bfc854d4dcb9d1d4969d70ed767f73c9fd7d4",
+      "bytes_checkpoint": 189033378
+    },
+    {
+      "modelo": "mocov3_mc_r50",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 663,
+      "parametros_online": 35058752,
+      "estados_optimizador": 167,
+      "sha256_esquema": "8d3b09ab1c69409e546ea81abf32848613e6723d78e3c65b578d10f3f930c18b",
+      "bytes_checkpoint": 413121105
+    },
+    {
+      "modelo": "mocov3_r18",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 267,
+      "parametros_online": 16428096,
+      "estados_optimizador": 68,
+      "sha256_esquema": "94668f90eebc1a309d325215646bfc854d4dcb9d1d4969d70ed767f73c9fd7d4",
+      "bytes_checkpoint": 189033314
+    },
+    {
+      "modelo": "mocov3_r50",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 663,
+      "parametros_online": 35058752,
+      "estados_optimizador": 167,
+      "sha256_esquema": "8d3b09ab1c69409e546ea81abf32848613e6723d78e3c65b578d10f3f930c18b",
+      "bytes_checkpoint": 413121105
+    },
+    {
+      "modelo": "mocov3_rf29_r18",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 483,
+      "parametros_online": 12784192,
+      "estados_optimizador": 122,
+      "sha256_esquema": "5f450086c520d87f2bb8a4f16b9ca2bdf4f993aed1fcc4a3f289977f368eeac3",
+      "bytes_checkpoint": 145485296
+    },
+    {
+      "modelo": "mocov3_rf99",
+      "configuracion_y_resumen_iguales": true,
+      "esquema_coincide_modelo_actual": true,
+      "tensores_modelo": 735,
+      "parametros_online": 35300416,
+      "estados_optimizador": 185,
+      "sha256_esquema": "4f185f8b6a15d577be8be7177734d6bd10656035e6737a23f40014db0841726e",
+      "bytes_checkpoint": 416161067
+    }
+  ]
+}

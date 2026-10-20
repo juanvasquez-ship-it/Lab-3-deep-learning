@@ -1,0 +1,13 @@
+{
+  "nombre": "dino_r50",
+  "metodo": "dino",
+  "arquitectura": "resnet50",
+  "peso_local": 0.0,
+  "resolucion": 224,
+  "recorte": 0.2,
+  "semilla": 20261019,
+  "temperatura": 0.2,
+  "kernel_local": 1,
+  "multicrop": true,
+  "numero_locales": 6
+}

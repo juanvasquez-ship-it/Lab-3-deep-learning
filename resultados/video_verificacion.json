@@ -1,0 +1,25 @@
+{
+  "duracion_segundos": 845.48,
+  "capitulos_segundos": {
+    "Metodología": 260.5993650793651,
+    "Implementación": 290.9826757369614,
+    "Resultados": 292.27138321995466
+  },
+  "resolucion": [
+    1600,
+    900
+  ],
+  "voz": "Piper sharvard medium, speaker 0, síntesis CPU local",
+  "fuente_voz": "https://huggingface.co/rhasspy/piper-voices/tree/main/es/es_ES/sharvard/medium",
+  "atribucion_dataset_voz": "Spanish Harvard sentences, Universidad de Edimburgo, https://datashare.ed.ac.uk/handle/10283/574, CC BY 3.0",
+  "motor": "Piper, https://github.com/OHF-Voice/piper1-gpl, GPL 3.0",
+  "limitacion": "Material audiovisual sintético de apoyo, no registra una exposición humana del grupo",
+  "duracion_estimada_segundos": 843.8534240362812,
+  "decodificacion_completa_sin_errores": true,
+  "codigo_salida_decodificador": 0,
+  "pistas_verificadas": [
+    "h264 1600x900",
+    "aac"
+  ],
+  "sha256_video": "94f29b8437a14a6d27ea5673d92b04c6d3a20aefa946e328937e3fe98a1ac59d"
+}

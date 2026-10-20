@@ -1,0 +1,11 @@
+{
+  "nombre": "byol_r50",
+  "metodo": "byol",
+  "arquitectura": "resnet50",
+  "peso_local": 0.0,
+  "resolucion": 224,
+  "recorte": 0.2,
+  "semilla": 20261019,
+  "temperatura": 0.2,
+  "kernel_local": 1
+}

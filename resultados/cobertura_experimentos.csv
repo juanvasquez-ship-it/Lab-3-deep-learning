@@ -1,0 +1,145 @@
+﻿configuracion,fuente,configuracion_equivalente_ejecutada,entrenado_calendario_local,validado,probado_ambas_ramas_y_resoluciones,calendario_largo_publicado,estado
+byol_r50,"Tablas 1, 2, E.9; apéndice D",byol_r50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_mc_r50,"Tablas 1, 2, E.9; apéndice D",byol_mc_r50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_r50,"Tablas 1, 2, E.9; apéndice D",co_byol_r50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf99,"Tablas 1, 2, E.9; apéndice D",co_byol_rf99,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_rf99,"Tablas 1, 2, E.9; apéndice D",byol_rf99,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_r18,"Tablas 1, 2, E.9; apéndice D",byol_r18,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_mc_r18,"Tablas 1, 2, E.9; apéndice D",byol_mc_r18,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf29_r18,"Tablas 1, 2, E.9; apéndice D",co_byol_rf29_r18,True,True,True,,ejecutado_o_cubierto_por_equivalente
+mocov3_r50,"Tablas 1, 2, E.9; apéndice D",mocov3_r50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+mocov3_mc_r50,"Tablas 1, 2, E.9; apéndice D",mocov3_mc_r50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_mocov3_r50,"Tablas 1, 2, E.9; apéndice D",co_mocov3_r50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_mocov3_rf99,"Tablas 1, 2, E.9; apéndice D",co_mocov3_rf99,True,True,True,,ejecutado_o_cubierto_por_equivalente
+mocov3_rf99,"Tablas 1, 2, E.9; apéndice D",mocov3_rf99,True,True,True,,ejecutado_o_cubierto_por_equivalente
+mocov3_r18,"Tablas 1, 2, E.9; apéndice D",mocov3_r18,True,True,True,,ejecutado_o_cubierto_por_equivalente
+mocov3_mc_r18,"Tablas 1, 2, E.9; apéndice D",mocov3_mc_r18,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_mocov3_rf29_r18,"Tablas 1, 2, E.9; apéndice D",co_mocov3_rf29_r18,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_vit_s16,"Tablas 1, 2, E.9; apéndice D",byol_vit_s16,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_vit_s16,"Tablas 1, 2, E.9; apéndice D",co_byol_vit_s16,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_swin_t,"Tablas 1, 2, E.9; apéndice D",byol_swin_t,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_swin_t,"Tablas 1, 2, E.9; apéndice D",co_byol_swin_t,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_swin_s,"Tablas 1, 2, E.9; apéndice D",byol_swin_s,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_swin_s,"Tablas 1, 2, E.9; apéndice D",co_byol_swin_s,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_swin_b,"Tablas 1, 2, E.9; apéndice D",byol_swin_b,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_swin_b,"Tablas 1, 2, E.9; apéndice D",co_byol_swin_b,True,True,True,,ejecutado_o_cubierto_por_equivalente
+dino_r50,"Tablas 1, 2, E.9; apéndice D",dino_r50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_bagnet33,"Tablas 1, 2, E.9; apéndice D",co_byol_bagnet33,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf67_resnet50,"Tablas 1, 2, E.9; apéndice D",co_byol_rf67_resnet50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf163_resnet50,"Tablas 1, 2, E.9; apéndice D",co_byol_rf163_resnet50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf195_paper193_resnet50,"Tablas 1, 2, E.9; apéndice D",co_byol_rf195_paper193_resnet50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_rf29_r18,Control con arquitectura fija para panel pequeño,byol_rf29_r18,True,True,True,,ejecutado_o_cubierto_por_equivalente
+mocov3_rf29_r18,Control con arquitectura fija para panel pequeño,mocov3_rf29_r18,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_bagnet33,"Laboratorio PDF p 2, control sin CO con la misma arquitectura",byol_bagnet33,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_rf67_resnet50,"Laboratorio PDF p 2, control sin CO con la misma arquitectura",byol_rf67_resnet50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_rf163_resnet50,"Laboratorio PDF p 2, control sin CO con la misma arquitectura",byol_rf163_resnet50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_rf195_paper193_resnet50,"Laboratorio PDF p 2, control sin CO con la misma arquitectura",byol_rf195_paper193_resnet50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf39_resnet50,"Apéndice A, construcción arquitectónica",co_byol_rf39_resnet50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf115_resnet50,"Apéndice A, construcción arquitectónica",co_byol_rf115_resnet50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_resnet50_co0.0_crop0.08,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_resnet50_co0.0_crop0.4,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_resnet50_co0.0_crop0.6,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_resnet50_co0.0_crop0.8,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_resnet50_co0.0_crop0.9,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_resnet50_co0.2_crop0.08,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_resnet50_co0.2_crop0.4,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_resnet50_co0.2_crop0.6,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_resnet50_co0.2_crop0.8,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_resnet50_co0.2_crop0.9,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_rf99_resnet50_co0.0_crop0.08,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_rf99_resnet50_co0.0_crop0.4,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_rf99_resnet50_co0.0_crop0.6,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_rf99_resnet50_co0.0_crop0.8,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_rf99_resnet50_co0.0_crop0.9,Figura D.8,byol_rf99_resnet50_co0.0_crop0.9,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_rf99_resnet50_co0.2_crop0.08,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_rf99_resnet50_co0.2_crop0.4,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_rf99_resnet50_co0.2_crop0.6,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_rf99_resnet50_co0.2_crop0.8,Figura D.8,,False,False,False,,pendiente_ejecucion
+byol_rf99_resnet50_co0.2_crop0.9,Figura D.8,byol_rf99_resnet50_co0.2_crop0.9,True,True,True,,ejecutado_o_cubierto_por_equivalente
+mocov3_resnet50_co0.0_crop0.08,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_resnet50_co0.0_crop0.4,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_resnet50_co0.0_crop0.6,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_resnet50_co0.0_crop0.8,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_resnet50_co0.0_crop0.9,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_resnet50_co0.2_crop0.08,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_resnet50_co0.2_crop0.4,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_resnet50_co0.2_crop0.6,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_resnet50_co0.2_crop0.8,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_resnet50_co0.2_crop0.9,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_rf99_resnet50_co0.0_crop0.08,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_rf99_resnet50_co0.0_crop0.4,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_rf99_resnet50_co0.0_crop0.6,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_rf99_resnet50_co0.0_crop0.8,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_rf99_resnet50_co0.0_crop0.9,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_rf99_resnet50_co0.2_crop0.08,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_rf99_resnet50_co0.2_crop0.4,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_rf99_resnet50_co0.2_crop0.6,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_rf99_resnet50_co0.2_crop0.8,Figura D.8,,False,False,False,,pendiente_ejecucion
+mocov3_rf99_resnet50_co0.2_crop0.9,Figura D.8,,False,False,False,,pendiente_ejecucion
+co_byol_bagnet33_crop0.1,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_bagnet33_crop0.2,Figura 4,co_byol_bagnet33,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_bagnet33_crop0.3,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_bagnet33_crop0.4,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_bagnet33_crop0.7,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf67_resnet50_crop0.1,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf67_resnet50_crop0.2,Figura 4,co_byol_rf67_resnet50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf67_resnet50_crop0.3,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf67_resnet50_crop0.4,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf67_resnet50_crop0.7,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf99_resnet50_crop0.1,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf99_resnet50_crop0.2,Figura 4,co_byol_rf99,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf99_resnet50_crop0.3,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf99_resnet50_crop0.4,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf99_resnet50_crop0.7,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf163_resnet50_crop0.1,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf163_resnet50_crop0.2,Figura 4,co_byol_rf163_resnet50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf163_resnet50_crop0.3,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf163_resnet50_crop0.4,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf163_resnet50_crop0.7,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf195_paper193_resnet50_crop0.1,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf195_paper193_resnet50_crop0.2,Figura 4,co_byol_rf195_paper193_resnet50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf195_paper193_resnet50_crop0.3,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf195_paper193_resnet50_crop0.4,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf195_paper193_resnet50_crop0.7,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_resnet50_crop0.1,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_resnet50_crop0.2,Figura 4,co_byol_r50,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_resnet50_crop0.3,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_resnet50_crop0.4,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_resnet50_crop0.7,Figura 4,,False,False,False,,pendiente_ejecucion
+co_byol_rf99_locales1,Tabla 3,co_byol_rf99_locales1,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf99_locales4,Tabla 3,co_byol_rf99_locales4,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf99_locales16,Tabla 3,co_byol_rf99_locales16,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf99_locales64,Tabla 3,co_byol_rf99_locales64,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf99_locales196,Tabla 3,co_byol_rf99,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf99_peso0.0,Tabla 7,byol_rf99,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf99_peso0.1,Tabla 7,co_byol_rf99_peso0.1,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf99_peso0.2,Tabla 7,co_byol_rf99,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf99_peso0.5,Tabla 7,co_byol_rf99_peso0.5,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf99_peso1.0,Tabla 7,co_byol_rf99_peso1.0,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_rf99_sin_mlp_co0.0,Tabla 6,byol_rf99_sin_mlp_co0.0,True,True,True,,ejecutado_o_cubierto_por_equivalente
+byol_rf99_sin_mlp_co0.2,Tabla 6,byol_rf99_sin_mlp_co0.2,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf99_cabeza_compartida,Tabla 6,co_byol_rf99_cabeza_compartida,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_swin_t_kernel1,Tabla F.10,co_byol_swin_t_kernel1,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_swin_t_kernel2,Tabla F.10,co_byol_swin_t_kernel2,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_swin_t_kernel3,Tabla F.10,co_byol_swin_t,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_swin_t_kernel4,Tabla F.10,,False,False,False,,pendiente_ejecucion
+co_byol_swin_t_kernel5,Tabla F.10,,False,False,False,,pendiente_ejecucion
+co_byol_rf99_capa2,Apéndice I,co_byol_rf99_capa2,True,True,True,,ejecutado_o_cubierto_por_equivalente
+co_byol_rf99_capa3,Apéndice I,,False,False,False,,pendiente_ejecucion
+byol_vit_s16_co0.0_crop09,Tabla D.8,,False,False,False,,pendiente_ejecucion
+byol_vit_s16_co0.2_crop09,Tabla D.8,,False,False,False,,pendiente_ejecucion
+byol_swin_s_co0.0_crop09,Tabla D.8,,False,False,False,,pendiente_ejecucion
+byol_swin_s_co0.2_crop09,Tabla D.8,,False,False,False,,pendiente_ejecucion
+byol_r50_epocas300,Tabla 1,,False,False,False,300,pendiente_ejecucion
+byol_r50_epocas1000,Tabla 1,,False,False,False,1000,pendiente_ejecucion
+co_byol_r50_epocas300,Tabla 1,,False,False,False,300,pendiente_ejecucion
+co_byol_r50_epocas1000,Tabla 1,,False,False,False,1000,pendiente_ejecucion
+co_byol_rf99_epocas300,Tabla 1,,False,False,False,300,pendiente_ejecucion
+byol_vit_s16_epocas300,Tabla 1,,False,False,False,300,pendiente_ejecucion
+byol_vit_s16_epocas1000,Tabla 1,,False,False,False,1000,pendiente_ejecucion
+co_byol_vit_s16_epocas300,Tabla 1,,False,False,False,300,pendiente_ejecucion
+co_byol_vit_s16_epocas1000,Tabla 1,,False,False,False,1000,pendiente_ejecucion
+byol_swin_t_epocas300,Tabla 1,,False,False,False,300,pendiente_ejecucion
+co_byol_swin_t_epocas300,Tabla 1,,False,False,False,300,pendiente_ejecucion
+byol_swin_b_epocas300,Tabla 1,,False,False,False,300,pendiente_ejecucion
+co_byol_swin_b_epocas300,Tabla 1,,False,False,False,300,pendiente_ejecucion

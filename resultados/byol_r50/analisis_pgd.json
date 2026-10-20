@@ -1,0 +1,117 @@
+{
+  "rama": "online",
+  "particion": "validation",
+  "segundos": 2.6791393000003154,
+  "resultado": {
+    "0": {
+      "ataque": {
+        "epsilon": 0.01,
+        "paso": 0.00025,
+        "iteraciones": 1
+      },
+      "inicio_aleatorio": true,
+      "semilla": 20261019,
+      "maximo_cambio_Linf_verificado": 0.01000000536441803,
+      "metricas": {
+        "mAP": 0.02064671047426063,
+        "Rank-1": 0.04,
+        "Rank-5": 0.09,
+        "Rank-10": 0.14,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "objetivo": "reducir similitud con centro de positivos de otras cámaras, etiquetas utilizadas solo en análisis de robustez"
+    },
+    "1": {
+      "ataque": {
+        "epsilon": 0.03,
+        "paso": 0.00075,
+        "iteraciones": 1
+      },
+      "inicio_aleatorio": true,
+      "semilla": 20261019,
+      "maximo_cambio_Linf_verificado": 0.030000001192092896,
+      "metricas": {
+        "mAP": 0.019058880279177223,
+        "Rank-1": 0.02,
+        "Rank-5": 0.06,
+        "Rank-10": 0.09,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "objetivo": "reducir similitud con centro de positivos de otras cámaras, etiquetas utilizadas solo en análisis de robustez"
+    },
+    "2": {
+      "ataque": {
+        "epsilon": 0.1,
+        "paso": 0.0025,
+        "iteraciones": 1
+      },
+      "inicio_aleatorio": true,
+      "semilla": 20261019,
+      "maximo_cambio_Linf_verificado": 0.10000002384185791,
+      "metricas": {
+        "mAP": 0.015743210955316493,
+        "Rank-1": 0.01,
+        "Rank-5": 0.03,
+        "Rank-10": 0.04,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "objetivo": "reducir similitud con centro de positivos de otras cámaras, etiquetas utilizadas solo en análisis de robustez"
+    },
+    "3": {
+      "ataque": {
+        "epsilon": 0.003,
+        "paso": 7.500000000000001e-05,
+        "iteraciones": 5
+      },
+      "inicio_aleatorio": true,
+      "semilla": 20261019,
+      "maximo_cambio_Linf_verificado": 0.003000020980834961,
+      "metricas": {
+        "mAP": 0.01789677792100334,
+        "Rank-1": 0.0,
+        "Rank-5": 0.07,
+        "Rank-10": 0.13,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "objetivo": "reducir similitud con centro de positivos de otras cámaras, etiquetas utilizadas solo en análisis de robustez"
+    },
+    "4": {
+      "ataque": {
+        "epsilon": 0.003,
+        "paso": 0.00030000000000000003,
+        "iteraciones": 1
+      },
+      "inicio_aleatorio": true,
+      "semilla": 20261019,
+      "maximo_cambio_Linf_verificado": 0.003000020980834961,
+      "metricas": {
+        "mAP": 0.018710558105648898,
+        "Rank-1": 0.0,
+        "Rank-5": 0.09,
+        "Rank-10": 0.13,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "objetivo": "reducir similitud con centro de positivos de otras cámaras, etiquetas utilizadas solo en análisis de robustez"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "online": {
+    "original": {
+      "mAP": 0.0038224462520636622,
+      "Rank-1": 0.0032660332541567696,
+      "Rank-5": 0.020783847980997625,
+      "Rank-10": 0.034738717339667456,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.0029683328720183175,
+      "Rank-1": 0.002672209026128266,
+      "Rank-5": 0.012470308788598575,
+      "Rank-10": 0.021971496437054632,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": 0.08541133800453447,
+    "caida_mAP_relativa_porcentaje": 22.344679917584873,
+    "criterio_validacion": 0.0033953895620409897
+  },
+  "objetivo": {
+    "original": {
+      "mAP": 0.0038447446400899595,
+      "Rank-1": 0.0056413301662707836,
+      "Rank-5": 0.021377672209026127,
+      "Rank-10": 0.03978622327790974,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.0028007740699162406,
+      "Rank-1": 0.004156769596199525,
+      "Rank-5": 0.016330166270783847,
+      "Rank-10": 0.029097387173396674,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": 0.1043970570173719,
+    "caida_mAP_relativa_porcentaje": 27.153183576563674,
+    "criterio_validacion": 0.0033227593550031
+  }
+}

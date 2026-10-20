@@ -1,0 +1,522 @@
+[
+  {
+    "paso": 1,
+    "perdida": -0.024622615426778793,
+    "global": -0.0327533483505249,
+    "local": 0.040653668344020844,
+    "tasa_aprendizaje": 1.25e-07,
+    "momentum_objetivo": 0.996,
+    "segundos": 0.7762665999998717,
+    "norma_gradiente": 30.02583122253418
+  },
+  {
+    "paso": 25,
+    "perdida": -0.5076297521591187,
+    "global": -0.4477148950099945,
+    "local": -0.2995742857456207,
+    "tasa_aprendizaje": 3.125e-06,
+    "momentum_objetivo": 0.9960036198371851,
+    "segundos": 2.827706499998385,
+    "norma_gradiente": 26.679866790771484
+  },
+  {
+    "paso": 50,
+    "perdida": -1.4795737266540527,
+    "global": -1.2247824668884277,
+    "local": -1.273956537246704,
+    "tasa_aprendizaje": 6.25e-06,
+    "momentum_objetivo": 0.9960150745182884,
+    "segundos": 4.889068899999984,
+    "norma_gradiente": 23.067232131958008
+  },
+  {
+    "paso": 75,
+    "perdida": -2.173206090927124,
+    "global": -1.7606072425842285,
+    "local": -2.0629940032958984,
+    "tasa_aprendizaje": 9.375e-06,
+    "momentum_objetivo": 0.9960343253393907,
+    "segundos": 6.969530699998359,
+    "norma_gradiente": 20.094757080078125
+  },
+  {
+    "paso": 100,
+    "perdida": -2.0173418521881104,
+    "global": -1.5870883464813232,
+    "local": -2.1512677669525146,
+    "tasa_aprendizaje": 1.25e-05,
+    "momentum_objetivo": 0.9960612966895448,
+    "segundos": 9.027445599998828,
+    "norma_gradiente": 13.570735931396484
+  },
+  {
+    "paso": 125,
+    "perdida": -2.500553846359253,
+    "global": -2.016829252243042,
+    "local": -2.4186224937438965,
+    "tasa_aprendizaje": 1.5625e-05,
+    "momentum_objetivo": 0.9960958826340824,
+    "segundos": 11.108213799998339,
+    "norma_gradiente": 11.320222854614258
+  },
+  {
+    "paso": 150,
+    "perdida": -2.9565794467926025,
+    "global": -2.3853232860565186,
+    "local": -2.85628080368042,
+    "tasa_aprendizaje": 1.5607553739243384e-05,
+    "momentum_objetivo": 0.9961379473306922,
+    "segundos": 13.190775599998233,
+    "norma_gradiente": 11.032585144042969
+  },
+  {
+    "paso": 175,
+    "perdida": -2.254114866256714,
+    "global": -1.786110520362854,
+    "local": -2.340021848678589,
+    "tasa_aprendizaje": 1.5552362713823477e-05,
+    "momentum_objetivo": 0.9961873255629633,
+    "segundos": 15.298165099999096,
+    "norma_gradiente": 7.793393611907959
+  },
+  {
+    "paso": 200,
+    "perdida": -3.179436683654785,
+    "global": -2.5953755378723145,
+    "local": -2.9203062057495117,
+    "tasa_aprendizaje": 1.545966408119999e-05,
+    "momentum_objetivo": 0.996243823389302,
+    "segundos": 17.369780099999844,
+    "norma_gradiente": 6.8571648597717285
+  },
+  {
+    "paso": 225,
+    "perdida": -1.7473061084747314,
+    "global": -1.3765144348144531,
+    "local": -1.8539586067199707,
+    "tasa_aprendizaje": 1.5329907061731127e-05,
+    "momentum_objetivo": 0.9963072189046703,
+    "segundos": 19.454493599998386,
+    "norma_gradiente": 8.132074356079102
+  },
+  {
+    "paso": 250,
+    "perdida": -2.934708833694458,
+    "global": -2.367431640625,
+    "local": -2.836386203765869,
+    "tasa_aprendizaje": 1.5163720461830918e-05,
+    "momentum_objetivo": 0.9963772631121577,
+    "segundos": 21.49798229999942,
+    "norma_gradiente": 6.861576557159424
+  },
+  {
+    "paso": 275,
+    "perdida": -2.3241937160491943,
+    "global": -1.8844424486160278,
+    "local": -2.198756694793701,
+    "tasa_aprendizaje": 1.4961909626754443e-05,
+    "momentum_objetivo": 0.9964536809009588,
+    "segundos": 23.54618059999848,
+    "norma_gradiente": 6.507319927215576
+  },
+  {
+    "paso": 300,
+    "perdida": -2.935511589050293,
+    "global": -2.379563093185425,
+    "local": -2.7797422409057617,
+    "tasa_aprendizaje": 1.4725452537870536e-05,
+    "momentum_objetivo": 0.9965361721269194,
+    "segundos": 25.608577299999524,
+    "norma_gradiente": 6.137214660644531
+  },
+  {
+    "paso": 325,
+    "perdida": -2.5184617042541504,
+    "global": -2.0373053550720215,
+    "local": -2.4057812690734863,
+    "tasa_aprendizaje": 1.4455495073334704e-05,
+    "momentum_objetivo": 0.9966244127914046,
+    "segundos": 27.69357239999954,
+    "norma_gradiente": 7.554044246673584
+  },
+  {
+    "paso": 350,
+    "perdida": -3.2573981285095215,
+    "global": -2.6386027336120605,
+    "local": -3.0939767360687256,
+    "tasa_aprendizaje": 1.415334545512915e-05,
+    "momentum_objetivo": 0.99671805631386,
+    "segundos": 29.791467799999737,
+    "norma_gradiente": 6.221771240234375
+  },
+  {
+    "paso": 375,
+    "perdida": -2.306892156600952,
+    "global": -1.8793717622756958,
+    "local": -2.137601852416992,
+    "tasa_aprendizaje": 1.3820467909379762e-05,
+    "momentum_objetivo": 0.996816734893067,
+    "segundos": 31.87426289999894,
+    "norma_gradiente": 5.576329708099365
+  },
+  {
+    "paso": 400,
+    "perdida": -2.65580153465271,
+    "global": -2.1669156551361084,
+    "local": -2.4444291591644287,
+    "tasa_aprendizaje": 1.3458475570672324e-05,
+    "momentum_objetivo": 0.996920060951746,
+    "segundos": 33.93114699999933,
+    "norma_gradiente": 6.03300142288208
+  },
+  {
+    "paso": 425,
+    "perdida": -2.2794361114501953,
+    "global": -1.8640284538269043,
+    "local": -2.077038288116455,
+    "tasa_aprendizaje": 1.3069122664753846e-05,
+    "momentum_objetivo": 0.9970276286588337,
+    "segundos": 35.986119499999404,
+    "norma_gradiente": 6.902846336364746
+  },
+  {
+    "paso": 450,
+    "perdida": -2.7005438804626465,
+    "global": -2.1871776580810547,
+    "local": -2.566831111907959,
+    "tasa_aprendizaje": 1.2654296007501914e-05,
+    "momentum_objetivo": 0.9971390155234549,
+    "segundos": 38.00724009999976,
+    "norma_gradiente": 8.257952690124512
+  },
+  {
+    "paso": 475,
+    "perdida": -1.9273734092712402,
+    "global": -1.5461745262145996,
+    "local": -1.9059945344924927,
+    "tasa_aprendizaje": 1.2216005861358261e-05,
+    "momentum_objetivo": 0.9972537840543289,
+    "segundos": 40.08731469999839,
+    "norma_gradiente": 7.0483832359313965
+  },
+  {
+    "paso": 500,
+    "perdida": -1.429542899131775,
+    "global": -1.1411064863204956,
+    "local": -1.442181944847107,
+    "tasa_aprendizaje": 1.1756376193536594e-05,
+    "momentum_objetivo": 0.9973714834780932,
+    "segundos": 42.1330025999996,
+    "norma_gradiente": 9.178849220275879
+  },
+  {
+    "paso": 525,
+    "perdida": -2.4561681747436523,
+    "global": -1.9546202421188354,
+    "local": -2.507739782333374,
+    "tasa_aprendizaje": 1.1277634383213679e-05,
+    "momentum_objetivo": 0.9974916515097936,
+    "segundos": 44.19719099999929,
+    "norma_gradiente": 10.539484977722168
+  },
+  {
+    "paso": 550,
+    "perdida": -2.778172492980957,
+    "global": -2.2405991554260254,
+    "local": -2.687866687774658,
+    "tasa_aprendizaje": 1.078210042758293e-05,
+    "momentum_objetivo": 0.9976138161685888,
+    "segundos": 46.24719349999941,
+    "norma_gradiente": 6.908238410949707
+  },
+  {
+    "paso": 575,
+    "perdida": -1.8732869625091553,
+    "global": -1.514259934425354,
+    "local": -1.7951350212097168,
+    "tasa_aprendizaje": 1.0272175699078338e-05,
+    "momentum_objetivo": 0.9977374976315374,
+    "segundos": 48.29543599999852,
+    "norma_gradiente": 10.622920989990234
+  },
+  {
+    "paso": 600,
+    "perdida": -2.7264370918273926,
+    "global": -2.1924328804016113,
+    "local": -2.670020580291748,
+    "tasa_aprendizaje": 9.75033130825151e-06,
+    "momentum_objetivo": 0.9978622101181862,
+    "segundos": 50.3761960999982,
+    "norma_gradiente": 9.093597412109375
+  },
+  {
+    "paso": 625,
+    "perdida": -2.591543674468994,
+    "global": -2.098666191101074,
+    "local": -2.4643869400024414,
+    "tasa_aprendizaje": 9.219096128695721e-06,
+    "momentum_objetivo": 0.9979874637985569,
+    "segundos": 52.436691599999904,
+    "norma_gradiente": 8.74836254119873
+  },
+  {
+    "paso": 650,
+    "perdida": -1.857841968536377,
+    "global": -1.50173819065094,
+    "local": -1.7805190086364746,
+    "tasa_aprendizaje": 8.681044542048507e-06,
+    "momentum_objetivo": 0.9981127667170387,
+    "segundos": 54.51416649999919,
+    "norma_gradiente": 9.263375282287598
+  },
+  {
+    "paso": 675,
+    "perdida": -2.077268123626709,
+    "global": -1.6662732362747192,
+    "local": -2.054974317550659,
+    "tasa_aprendizaje": 8.138783962460911e-06,
+    "momentum_objetivo": 0.9982376267246298,
+    "segundos": 56.599694599999566,
+    "norma_gradiente": 14.434002876281738
+  },
+  {
+    "paso": 700,
+    "perdida": -2.827195882797241,
+    "global": -2.3033649921417236,
+    "local": -2.6191539764404297,
+    "tasa_aprendizaje": 7.5949422009902125e-06,
+    "momentum_objetivo": 0.9983615534119376,
+    "segundos": 58.63554519999889,
+    "norma_gradiente": 6.522775650024414
+  },
+  {
+    "paso": 725,
+    "perdida": -2.8659582138061523,
+    "global": -2.3312315940856934,
+    "local": -2.673633575439453,
+    "tasa_aprendizaje": 7.052154731148584e-06,
+    "momentum_objetivo": 0.9984840600353475,
+    "segundos": 60.70287839999946,
+    "norma_gradiente": 8.556065559387207
+  },
+  {
+    "paso": 750,
+    "perdida": -3.074186086654663,
+    "global": -2.49466609954834,
+    "local": -2.897599697113037,
+    "tasa_aprendizaje": 6.513051917319299e-06,
+    "momentum_objetivo": 0.9986046654287927,
+    "segundos": 62.75816119999945,
+    "norma_gradiente": 6.859843730926514
+  },
+  {
+    "paso": 775,
+    "perdida": -2.183445930480957,
+    "global": -1.7550231218338013,
+    "local": -2.1421146392822266,
+    "tasa_aprendizaje": 5.980246267931903e-06,
+    "momentum_objetivo": 0.9987228958936177,
+    "segundos": 64.80011909999848,
+    "norma_gradiente": 7.822266101837158
+  },
+  {
+    "paso": 800,
+    "perdida": -2.5071985721588135,
+    "global": -2.0484306812286377,
+    "local": -2.2938389778137207,
+    "tasa_aprendizaje": 5.4563197751679175e-06,
+    "momentum_objetivo": 0.9988382870591122,
+    "segundos": 66.8809601999983,
+    "norma_gradiente": 10.851325988769531
+  },
+  {
+    "paso": 825,
+    "perdida": -1.8368245363235474,
+    "global": -1.4637677669525146,
+    "local": -1.8652836084365845,
+    "tasa_aprendizaje": 4.943811402549136e-06,
+    "momentum_objetivo": 0.9989503857064076,
+    "segundos": 68.9188239999985,
+    "norma_gradiente": 9.758028030395508
+  },
+  {
+    "paso": 850,
+    "perdida": -2.660834312438965,
+    "global": -2.1405375003814697,
+    "local": -2.6014833450317383,
+    "tasa_aprendizaje": 4.445204781044158e-06,
+    "momentum_objetivo": 0.9990587515485732,
+    "segundos": 70.95022649999919,
+    "norma_gradiente": 6.812046051025391
+  },
+  {
+    "paso": 875,
+    "perdida": -2.814419746398926,
+    "global": -2.2699317932128906,
+    "local": -2.722440242767334,
+    "tasa_aprendizaje": 3.962916173318093e-06,
+    "momentum_objetivo": 0.9991629589599197,
+    "segundos": 73.00557489999846,
+    "norma_gradiente": 7.473627090454102
+  },
+  {
+    "paso": 900,
+    "perdida": -2.8609893321990967,
+    "global": -2.3036718368530273,
+    "local": -2.786587715148926,
+    "tasa_aprendizaje": 3.499282764451118e-06,
+    "momentum_objetivo": 0.9992625986477177,
+    "segundos": 75.6006183999998,
+    "norma_gradiente": 8.552098274230957
+  },
+  {
+    "paso": 925,
+    "perdida": -3.8870089054107666,
+    "global": -3.1419179439544678,
+    "local": -3.725454807281494,
+    "tasa_aprendizaje": 3.0565513358693724e-06,
+    "momentum_objetivo": 0.9993572792597665,
+    "segundos": 78.21787059999951,
+    "norma_gradiente": 5.9112772941589355
+  },
+  {
+    "paso": 950,
+    "perdida": -2.0683436393737793,
+    "global": -1.657400131225586,
+    "local": -2.054717540740967,
+    "tasa_aprendizaje": 2.636867377374655e-06,
+    "momentum_objetivo": 0.9994466289214978,
+    "segundos": 80.39272560000063,
+    "norma_gradiente": 12.478838920593262
+  },
+  {
+    "paso": 975,
+    "perdida": -2.6651177406311035,
+    "global": -2.159600257873535,
+    "local": -2.5275869369506836,
+    "tasa_aprendizaje": 2.242264690036437e-06,
+    "momentum_objetivo": 0.9995302966965777,
+    "segundos": 82.62941879999744,
+    "norma_gradiente": 23.52908706665039
+  },
+  {
+    "paso": 1000,
+    "perdida": -1.9910075664520264,
+    "global": -1.5945591926574707,
+    "local": -1.9822417497634888,
+    "tasa_aprendizaje": 1.8746555303307501e-06,
+    "momentum_objetivo": 0.9996079539652698,
+    "segundos": 84.73814719999973,
+    "norma_gradiente": 20.262739181518555
+  },
+  {
+    "paso": 1025,
+    "perdida": -1.8917908668518066,
+    "global": -1.513695240020752,
+    "local": -1.8904778957366943,
+    "tasa_aprendizaje": 1.53582134328789e-06,
+    "momentum_objetivo": 0.9996792957151475,
+    "segundos": 86.98664879999887,
+    "norma_gradiente": 12.611090660095215
+  },
+  {
+    "paso": 1050,
+    "perdida": -2.898592472076416,
+    "global": -2.3267977237701416,
+    "local": -2.8589742183685303,
+    "tasa_aprendizaje": 1.2274041295562734e-06,
+    "momentum_objetivo": 0.9997440417390818,
+    "segundos": 89.2649036999992,
+    "norma_gradiente": 7.07287073135376
+  },
+  {
+    "paso": 1075,
+    "perdida": -3.5665132999420166,
+    "global": -2.871340751647949,
+    "local": -3.475862979888916,
+    "tasa_aprendizaje": 9.508984882179733e-07,
+    "momentum_objetivo": 0.9998019377358048,
+    "segundos": 91.62034709999898,
+    "norma_gradiente": 5.693478584289551
+  },
+  {
+    "paso": 1100,
+    "perdida": -2.94579815864563,
+    "global": -2.40244722366333,
+    "local": -2.71675443649292,
+    "tasa_aprendizaje": 7.076443739166766e-07,
+    "momentum_objetivo": 0.9998527563087216,
+    "segundos": 93.8225502999976,
+    "norma_gradiente": 10.16560173034668
+  },
+  {
+    "paso": 1125,
+    "perdida": -1.9100961685180664,
+    "global": -1.514482021331787,
+    "local": -1.978070616722107,
+    "tasa_aprendizaje": 4.988206033972311e-07,
+    "momentum_objetivo": 0.9998962978590498,
+    "segundos": 95.99101739999787,
+    "norma_gradiente": 9.755497932434082
+  },
+  {
+    "paso": 1150,
+    "perdida": -2.70155668258667,
+    "global": -2.160722494125366,
+    "local": -2.7041702270507812,
+    "tasa_aprendizaje": 3.254391429242855e-07,
+    "momentum_objetivo": 0.9999323913697787,
+    "segundos": 98.05505019999873,
+    "norma_gradiente": 11.818634033203125
+  },
+  {
+    "paso": 1175,
+    "perdida": -2.3068621158599854,
+    "global": -1.8540191650390625,
+    "local": -2.2642149925231934,
+    "tasa_aprendizaje": 1.8834020426337915e-07,
+    "momentum_objetivo": 0.9999608950773687,
+    "segundos": 100.1187160999998,
+    "norma_gradiente": 15.287277221679688
+  },
+  {
+    "paso": 1200,
+    "perdida": -2.4563205242156982,
+    "global": -1.9924914836883545,
+    "local": -2.3191447257995605,
+    "tasa_aprendizaje": 8.81881729894833e-08,
+    "momentum_objetivo": 0.9999816970285514,
+    "segundos": 102.20578650000061,
+    "norma_gradiente": 11.678544044494629
+  },
+  {
+    "paso": 1225,
+    "perdida": -2.378108501434326,
+    "global": -1.9050233364105225,
+    "local": -2.3654255867004395,
+    "tasa_aprendizaje": 2.5468388854548232e-08,
+    "momentum_objetivo": 0.9999947155200463,
+    "segundos": 104.26670619999823,
+    "norma_gradiente": 12.85052490234375
+  },
+  {
+    "paso": 1250,
+    "perdida": -2.2788279056549072,
+    "global": -1.837465524673462,
+    "local": -2.2068121433258057,
+    "tasa_aprendizaje": 4.847938164876178e-10,
+    "momentum_objetivo": 0.999999899419464,
+    "segundos": 106.3462290999978,
+    "norma_gradiente": 7.380432605743408
+  },
+  {
+    "paso": 1253,
+    "perdida": -1.2404407262802124,
+    "global": -0.9921583533287048,
+    "local": -1.2414116859436035,
+    "tasa_aprendizaje": 3.0299907316684585e-11,
+    "momentum_objetivo": 0.9999999937136671,
+    "segundos": 106.60675760000049,
+    "norma_gradiente": 22.62409210205078
+  }
+]

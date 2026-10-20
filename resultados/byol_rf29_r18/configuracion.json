@@ -1,0 +1,16 @@
+{
+  "nombre": "byol_rf29_r18",
+  "metodo": "byol",
+  "arquitectura": "rf29_resnet18",
+  "peso_local": 0.0,
+  "resolucion": 64,
+  "recorte": 0.2,
+  "semilla": 20261019,
+  "temperatura": 0.2,
+  "kernel_local": 1,
+  "fuente": "Control con arquitectura fija para panel pequeño",
+  "estado": "implementado_no_ejecutado",
+  "alias": [
+    "byol_rf29_r18"
+  ]
+}

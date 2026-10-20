@@ -1,0 +1,26 @@
+{
+  "revision_unix": 1792453016.1423893,
+  "estado": "aprobado",
+  "alcance": "revisión puntual mediante lectura de registros y corrección CPU de documentación y empaquetado, sin entrenamiento ni inferencia",
+  "arquitecturas_evaluadas": 14,
+  "configuraciones_nuevas_completas": 6,
+  "entrenamientos_totales": 54,
+  "metricas_CSV_contrastadas": 112,
+  "registros_historicos_SHA256_sin_cambios": 292,
+  "archivos_pesos_historicos_tamano_fecha_sin_cambios": 49,
+  "limite_comprobacion_pesos": "se compara tamaño y fecha con la captura anterior, no se repite lectura bit a bit de los pesos",
+  "archivos_python_sintaxis_y_estilo": 12,
+  "minutos_sesion_complementaria": 98.95832832654317,
+  "correcciones_documentacion": [
+    "estado actualizado de RF39 y RF115",
+    "controles de recorte 0.9 completados y resultado desfavorable a CO en esta ejecución",
+    "selección ampliada y selección histórica diferenciadas",
+    "presupuestos de ambas sesiones separados",
+    "tiempos históricos ausentes etiquetados como no registrados",
+    "índice de archivos actualizado"
+  ],
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "cuda_inicializada": false,
+  "entrenamientos_nuevos": 0,
+  "inferencias_nuevas": 0
+}

@@ -1,0 +1,407 @@
+{
+  "estado": "aprobado",
+  "alcance": "auditoría de archivos, configuraciones y coherencia de resultados existentes, no reentrena ni repite inferencia",
+  "errores": [],
+  "observaciones": [
+    "15 análisis de representaciones conservan partición externa validation por un error de metadatos, su resultado interno y el lector utilizan training sin identidades, se conservan los registros históricos y la corrección se documenta en REVISION_CUMPLIMIENTO.md"
+  ],
+  "modelos": [
+    {
+      "modelo": "byol_bagnet33",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_mc_r18",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_mc_r50",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_r18",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_r50",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_rf163_resnet50",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_rf195_paper193_resnet50",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_rf29_r18",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_rf67_resnet50",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_rf99",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_rf99_resnet50_co0.0_crop0.9",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_rf99_resnet50_co0.2_crop0.9",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_rf99_sin_mlp_co0.0",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_rf99_sin_mlp_co0.2",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_swin_b",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_swin_s",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_swin_t",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "byol_vit_s16",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_bagnet33",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_r50",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_resnet18_224",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf115_resnet50",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf163_resnet50",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf195_paper193_resnet50",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf29_224",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf29_r18",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf39_resnet50",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf67_resnet50",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf99",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf99_cabeza_compartida",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf99_capa2",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf99_locales1",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf99_locales16",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf99_locales4",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf99_locales64",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf99_peso0.1",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf99_peso0.5",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_rf99_peso1.0",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_swin_b",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_swin_s",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_swin_t",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_swin_t_kernel1",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_swin_t_kernel2",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_byol_vit_s16",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_mocov3_r50",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_mocov3_rf29_r18",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "co_mocov3_rf99",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "dino_r50",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "mocov3_mc_r18",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "mocov3_mc_r50",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "mocov3_r18",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "mocov3_r50",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "mocov3_rf29_r18",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    },
+    {
+      "modelo": "mocov3_rf99",
+      "entrenamiento_completo": true,
+      "pasos": 1253,
+      "validation_completa": true,
+      "testing_completa": true
+    }
+  ],
+  "seleccion_antes_primer_resultado_prueba": true,
+  "rankings_contrastados_con_metadatos": 6736,
+  "alcance_rankings": "los diez primeros índices, sus etiquetas y el rango del primer positivo del modelo seleccionado, el mAP se contrasta con AP previamente calculados sobre toda la galería, no se reconstruye AP usando solo los diez primeros",
+  "conjuntos_indices_fuente_distintos": 1,
+  "filas_cobertura": 144,
+  "filas_con_evidencia": 62,
+  "archivos_python_inspeccionados": 12,
+  "ejemplos": {
+    "original_aciertos": 5,
+    "original_fallos": 5,
+    "baja_resolucion_aciertos": 5,
+    "baja_resolucion_fallos": 5
+  },
+  "pendiente_humano": "revisión del material audiovisual y presentación grupal, envío al formulario y defensa individual",
+  "limite": "La coherencia automática de registros no sustituye la revisión metodológica y visual del informe",
+  "analisis_contrastados": 44,
+  "analisis_declarados": 44,
+  "metadatos_particion_legacy": 15,
+  "cumplimiento_integral_paper": "no certificado por la coherencia automática, consultar REVISION_CUMPLIMIENTO.md"
+}

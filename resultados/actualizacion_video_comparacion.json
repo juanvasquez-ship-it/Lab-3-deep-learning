@@ -1,0 +1,6 @@
+{
+  "video_actualizado": true,
+  "error": null,
+  "metodo": "síntesis y codificación CPU, reutiliza escenas y ejemplos existentes, no produce nuevas inferencias de los modelos",
+  "pendiente": "revisión y explicación del grupo"
+}

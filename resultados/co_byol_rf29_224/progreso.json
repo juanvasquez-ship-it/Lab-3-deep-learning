@@ -1,0 +1,7 @@
+{
+  "pasos": 1253,
+  "pasos_objetivo": 1253,
+  "estado": "entrenamiento_completado",
+  "checkpoint": "checkpoint.pt",
+  "actualizacion_unix": 1792449566.1618876
+}

@@ -1,0 +1,9 @@
+{
+  "inicio_unix": 1792426203.0365705,
+  "fin_unix": 1792437003.0365705,
+  "maximo_segundos": 10800.0,
+  "incluye": "calibracion, entrenamiento, validacion y evaluacion GPU, con pausas entre esas fases",
+  "fin_real_unix": 1792436498.0080366,
+  "transcurridos_segundos": 10294.971466064453,
+  "restantes_segundos": 505.0285339355469
+}

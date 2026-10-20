@@ -1,0 +1,11 @@
+{
+  "GPU": "NVIDIA GeForce RTX 4080 SUPER",
+  "VRAM_total_GiB": 15.99169921875,
+  "CPU": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+  "sistema": "Windows-11-10.0.26200-SP0",
+  "torch": "2.8.0+cu128",
+  "CUDA_torch": "12.8",
+  "medicion_unix": 1792445920.4826205,
+  "RAM": "33.4 GB instalados y aproximadamente 4.8 GB libres en la inspección previa, no se supone disponibilidad completa",
+  "limite_segundos": 10800
+}

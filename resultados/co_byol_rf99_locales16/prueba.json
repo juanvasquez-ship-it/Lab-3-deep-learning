@@ -1,0 +1,56 @@
+{
+  "online": {
+    "original": {
+      "mAP": 0.0050187820965984925,
+      "Rank-1": 0.006235154394299287,
+      "Rank-5": 0.02642517814726841,
+      "Rank-10": 0.043052256532066506,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.0035637398245366766,
+      "Rank-1": 0.003859857482185273,
+      "Rank-5": 0.015736342042755345,
+      "Rank-10": 0.02553444180522565,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": 0.14550422720618159,
+    "caida_mAP_relativa_porcentaje": 28.991939559360006,
+    "criterio_validacion": 0.0042912609605675845
+  },
+  "objetivo": {
+    "original": {
+      "mAP": 0.004779396828997977,
+      "Rank-1": 0.006532066508313539,
+      "Rank-5": 0.024049881235154395,
+      "Rank-10": 0.03978622327790974,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.0038712794733763824,
+      "Rank-1": 0.004750593824228029,
+      "Rank-5": 0.017517814726840854,
+      "Rank-10": 0.029097387173396674,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": 0.09081173556215946,
+    "caida_mAP_relativa_porcentaje": 19.000668664124834,
+    "criterio_validacion": 0.00432533815118718
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "espera_antes_inicio": 2978.0839262008667,
+  "preparacion_y_guardado": 11.70872309999686,
+  "validation": {
+    "online": 13.172439300000406,
+    "objetivo": 13.090997000002972
+  },
+  "testing": {
+    "online": 152.4984360999988,
+    "objetivo": 154.76236829999834
+  }
+}

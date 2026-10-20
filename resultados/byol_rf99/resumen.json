@@ -1,0 +1,22 @@
+{
+  "estado": "entrenamiento_completado",
+  "pasos_objetivo": 1253,
+  "pasos_realizados": 1253,
+  "batch_fisico": 8,
+  "acumulacion_gradientes": 1,
+  "batch_efectivo": 8,
+  "imagenes_fuente_procesadas": 10024,
+  "imagenes_fuente_distintas": 10024,
+  "epocas_completas": 0,
+  "fraccion_epoca": 0.9079710144927536,
+  "longitud_particion": 11043,
+  "pasos_por_epoca": 1380,
+  "descartadas_por_drop_last_cada_epoca": 3,
+  "segundos_entrenamiento": 137.81692980000025,
+  "perdida_media": -1.6733798927293775,
+  "vram_pico_GiB": 3.3112030029296875,
+  "parametros_online": 52086336,
+  "initializacion": "aleatoria, sin pesos externos",
+  "particion_entrenamiento": "training.h5 completo como origen, sin etiquetas de identidad",
+  "indices_fuente_visitados_sha256": "6dff18ff5c4c6fc9ea62ab095b792c5dd5bd9e086ccd1f41ced518b3d632b7d2"
+}

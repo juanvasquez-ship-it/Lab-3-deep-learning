@@ -1,0 +1,10 @@
+{
+  "modelo": "co_byol_bagnet33",
+  "estado": "entrenamiento_completado",
+  "validacion_mAP_media": 0.07533237917314749,
+  "rama": "online",
+  "pasos": 1253,
+  "segundos_entrenamiento_y_validacion": 185.0816665000002,
+  "configuracion_congelada_antes_de_prueba": true,
+  "criterio": "media de mAP de validación original y reducida, desempate por orden de ejecución"
+}

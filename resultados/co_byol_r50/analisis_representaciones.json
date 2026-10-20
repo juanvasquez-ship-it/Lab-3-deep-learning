@@ -1,0 +1,34 @@
+{
+  "rama": "online",
+  "particion": "validation",
+  "segundos": 0.7126201000010042,
+  "resultado": {
+    "particion": "training sin identidades",
+    "resolucion_entrada": 224,
+    "indices": [
+      712,
+      1634,
+      2078,
+      2787,
+      2912,
+      3161,
+      3773,
+      4024,
+      4454,
+      5093,
+      5898,
+      6633,
+      6908,
+      8145,
+      10359,
+      10572
+    ],
+    "seleccion": "16 índices sin reemplazo, generador NumPy con semilla 20261019",
+    "coseno_medio_posiciones_distintas": 0.4691351670771837,
+    "fraccion_area_gradiente_promedio": {
+      "0.05": 0.45856460259885207,
+      "0.32": 0.01725924744897959
+    },
+    "adaptacion_ERF": "gradiente absoluto sumado en RGB y normalizado por máximo por imagen, activación central absoluta sumada en canales, se calcula fracción por imagen y después su media sobre 16 imágenes, no equivale al muestreo de ImageNet del artículo"
+  }
+}

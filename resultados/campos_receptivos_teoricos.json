@@ -1,0 +1,2890 @@
+{
+  "procedimiento": "Instanciación CPU y recorrido de Conv2d y MaxPool2d reales en la trayectoria convolucional más extensa, se excluyen atajos y pooling global, no se hace forward ni entrenamiento",
+  "alcance": "campo teórico y forma derivada, no campo efectivo medido ni verificación de memoria GPU",
+  "arquitecturas": {
+    "resnet50": {
+      "RF_desde_modulos_reales": 427,
+      "salto_salida": 32,
+      "lado_mapa_derivado": 7,
+      "resolucion_entrada": 224,
+      "parametros_encoder": 23508032,
+      "capas_espaciales": [
+        {
+          "nombre": "conv1",
+          "kernel": 7,
+          "stride": 2,
+          "campo_acumulado": 7
+        },
+        {
+          "nombre": "maxpool",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "layer1.0.conv1",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "layer1.0.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "layer1.0.conv3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "layer1.1.conv1",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "layer1.1.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "layer1.1.conv3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "layer1.2.conv1",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "layer1.2.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "layer1.2.conv3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "layer2.0.conv1",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "layer2.0.conv2",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 43
+        },
+        {
+          "nombre": "layer2.0.conv3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 43
+        },
+        {
+          "nombre": "layer2.1.conv1",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 43
+        },
+        {
+          "nombre": "layer2.1.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 59
+        },
+        {
+          "nombre": "layer2.1.conv3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 59
+        },
+        {
+          "nombre": "layer2.2.conv1",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 59
+        },
+        {
+          "nombre": "layer2.2.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 75
+        },
+        {
+          "nombre": "layer2.2.conv3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 75
+        },
+        {
+          "nombre": "layer2.3.conv1",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 75
+        },
+        {
+          "nombre": "layer2.3.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 91
+        },
+        {
+          "nombre": "layer2.3.conv3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 91
+        },
+        {
+          "nombre": "layer3.0.conv1",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 91
+        },
+        {
+          "nombre": "layer3.0.conv2",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 107
+        },
+        {
+          "nombre": "layer3.0.conv3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 107
+        },
+        {
+          "nombre": "layer3.1.conv1",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 107
+        },
+        {
+          "nombre": "layer3.1.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 139
+        },
+        {
+          "nombre": "layer3.1.conv3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 139
+        },
+        {
+          "nombre": "layer3.2.conv1",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 139
+        },
+        {
+          "nombre": "layer3.2.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 171
+        },
+        {
+          "nombre": "layer3.2.conv3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 171
+        },
+        {
+          "nombre": "layer3.3.conv1",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 171
+        },
+        {
+          "nombre": "layer3.3.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 203
+        },
+        {
+          "nombre": "layer3.3.conv3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 203
+        },
+        {
+          "nombre": "layer3.4.conv1",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 203
+        },
+        {
+          "nombre": "layer3.4.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 235
+        },
+        {
+          "nombre": "layer3.4.conv3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 235
+        },
+        {
+          "nombre": "layer3.5.conv1",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 235
+        },
+        {
+          "nombre": "layer3.5.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 267
+        },
+        {
+          "nombre": "layer3.5.conv3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 267
+        },
+        {
+          "nombre": "layer4.0.conv1",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 267
+        },
+        {
+          "nombre": "layer4.0.conv2",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 299
+        },
+        {
+          "nombre": "layer4.0.conv3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 299
+        },
+        {
+          "nombre": "layer4.1.conv1",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 299
+        },
+        {
+          "nombre": "layer4.1.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 363
+        },
+        {
+          "nombre": "layer4.1.conv3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 363
+        },
+        {
+          "nombre": "layer4.2.conv1",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 363
+        },
+        {
+          "nombre": "layer4.2.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 427
+        },
+        {
+          "nombre": "layer4.2.conv3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 427
+        }
+      ]
+    },
+    "resnet18": {
+      "RF_desde_modulos_reales": 109,
+      "salto_salida": 8,
+      "lado_mapa_derivado": 8,
+      "resolucion_entrada": 64,
+      "parametros_encoder": 11168832,
+      "capas_espaciales": [
+        {
+          "nombre": "conv1",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 3
+        },
+        {
+          "nombre": "layer1.0.conv1",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 5
+        },
+        {
+          "nombre": "layer1.0.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 7
+        },
+        {
+          "nombre": "layer1.1.conv1",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "layer1.1.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "layer2.0.conv1",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 13
+        },
+        {
+          "nombre": "layer2.0.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "layer2.1.conv1",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 21
+        },
+        {
+          "nombre": "layer2.1.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 25
+        },
+        {
+          "nombre": "layer3.0.conv1",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 29
+        },
+        {
+          "nombre": "layer3.0.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 37
+        },
+        {
+          "nombre": "layer3.1.conv1",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 45
+        },
+        {
+          "nombre": "layer3.1.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 53
+        },
+        {
+          "nombre": "layer4.0.conv1",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 61
+        },
+        {
+          "nombre": "layer4.0.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 77
+        },
+        {
+          "nombre": "layer4.1.conv1",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 93
+        },
+        {
+          "nombre": "layer4.1.conv2",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 109
+        }
+      ]
+    },
+    "rf39_resnet50": {
+      "RF_desde_modulos_reales": 39,
+      "salto_salida": 2,
+      "lado_mapa_derivado": 112,
+      "resolucion_entrada": 224,
+      "parametros_encoder": 23749696,
+      "capas_espaciales": [
+        {
+          "nombre": "inicio.0",
+          "kernel": 7,
+          "stride": 2,
+          "campo_acumulado": 7
+        },
+        {
+          "nombre": "etapas.0.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 7
+        },
+        {
+          "nombre": "etapas.0.0.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.0.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.0.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.0.1.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.0.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.0.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.0.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.0.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.1.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.1.0.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.2.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 23
+        },
+        {
+          "nombre": "etapas.1.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 23
+        },
+        {
+          "nombre": "etapas.1.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 23
+        },
+        {
+          "nombre": "etapas.1.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 23
+        },
+        {
+          "nombre": "etapas.1.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 23
+        },
+        {
+          "nombre": "etapas.2.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 23
+        },
+        {
+          "nombre": "etapas.2.0.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.2.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.2.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.2.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.2.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.2.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.2.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.2.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.2.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.2.3.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 31
+        },
+        {
+          "nombre": "etapas.2.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 31
+        },
+        {
+          "nombre": "etapas.2.4.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 31
+        },
+        {
+          "nombre": "etapas.2.4.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 31
+        },
+        {
+          "nombre": "etapas.2.4.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 31
+        },
+        {
+          "nombre": "etapas.2.5.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 31
+        },
+        {
+          "nombre": "etapas.2.5.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 31
+        },
+        {
+          "nombre": "etapas.2.5.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 31
+        },
+        {
+          "nombre": "etapas.3.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 31
+        },
+        {
+          "nombre": "etapas.3.0.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.3.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.3.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.3.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.3.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.3.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.3.2.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 39
+        },
+        {
+          "nombre": "etapas.3.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 39
+        },
+        {
+          "nombre": "etapas.3.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 39
+        },
+        {
+          "nombre": "etapas.3.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 39
+        },
+        {
+          "nombre": "etapas.3.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 39
+        }
+      ]
+    },
+    "rf67_resnet50": {
+      "RF_desde_modulos_reales": 67,
+      "salto_salida": 8,
+      "lado_mapa_derivado": 28,
+      "resolucion_entrada": 224,
+      "parametros_encoder": 23749696,
+      "capas_espaciales": [
+        {
+          "nombre": "inicio.0",
+          "kernel": 7,
+          "stride": 2,
+          "campo_acumulado": 7
+        },
+        {
+          "nombre": "etapas.0.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 7
+        },
+        {
+          "nombre": "etapas.0.0.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.0.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.0.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.0.1.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.0.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.0.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.0.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.0.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.1.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.1.0.capas.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.2.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.1.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.1.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.1.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.1.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.2.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.2.0.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.3.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 43
+        },
+        {
+          "nombre": "etapas.2.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 43
+        },
+        {
+          "nombre": "etapas.2.4.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 43
+        },
+        {
+          "nombre": "etapas.2.4.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 43
+        },
+        {
+          "nombre": "etapas.2.4.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 43
+        },
+        {
+          "nombre": "etapas.2.5.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 43
+        },
+        {
+          "nombre": "etapas.2.5.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 43
+        },
+        {
+          "nombre": "etapas.2.5.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 43
+        },
+        {
+          "nombre": "etapas.3.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 43
+        },
+        {
+          "nombre": "etapas.3.0.capas.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.3.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.3.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.3.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.3.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.3.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.3.2.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.3.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.3.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.3.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.3.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        }
+      ]
+    },
+    "rf99_resnet50": {
+      "RF_desde_modulos_reales": 99,
+      "salto_salida": 16,
+      "lado_mapa_derivado": 14,
+      "resolucion_entrada": 224,
+      "parametros_encoder": 23749696,
+      "capas_espaciales": [
+        {
+          "nombre": "inicio.0",
+          "kernel": 7,
+          "stride": 2,
+          "campo_acumulado": 7
+        },
+        {
+          "nombre": "etapas.0.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 7
+        },
+        {
+          "nombre": "etapas.0.0.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.0.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.0.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.0.1.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.0.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.0.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.0.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.0.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.1.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 15
+        },
+        {
+          "nombre": "etapas.1.0.capas.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.1.2.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.1.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.1.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.1.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.1.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.2.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.2.0.capas.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.2.3.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.2.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.2.4.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.2.4.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.2.4.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.2.5.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.2.5.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.2.5.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.3.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.3.0.capas.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.3.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.3.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.3.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.3.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.3.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.3.2.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.3.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.3.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.3.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.3.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        }
+      ]
+    },
+    "rf115_resnet50": {
+      "RF_desde_modulos_reales": 115,
+      "salto_salida": 8,
+      "lado_mapa_derivado": 28,
+      "resolucion_entrada": 224,
+      "parametros_encoder": 23749696,
+      "capas_espaciales": [
+        {
+          "nombre": "inicio.0",
+          "kernel": 7,
+          "stride": 2,
+          "campo_acumulado": 7
+        },
+        {
+          "nombre": "inicio.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.0.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.0.0.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.0.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.0.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.0.1.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.0.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.0.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.0.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.0.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.1.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.1.0.capas.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.2.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.1.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.1.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.1.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.1.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.2.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.2.0.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.3.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 83
+        },
+        {
+          "nombre": "etapas.2.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 83
+        },
+        {
+          "nombre": "etapas.2.4.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 83
+        },
+        {
+          "nombre": "etapas.2.4.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 83
+        },
+        {
+          "nombre": "etapas.2.4.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 83
+        },
+        {
+          "nombre": "etapas.2.5.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 83
+        },
+        {
+          "nombre": "etapas.2.5.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 83
+        },
+        {
+          "nombre": "etapas.2.5.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 83
+        },
+        {
+          "nombre": "etapas.3.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 83
+        },
+        {
+          "nombre": "etapas.3.0.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.3.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.3.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.3.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.3.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.3.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.3.2.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 115
+        },
+        {
+          "nombre": "etapas.3.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 115
+        },
+        {
+          "nombre": "etapas.3.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 115
+        },
+        {
+          "nombre": "etapas.3.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 115
+        },
+        {
+          "nombre": "etapas.3.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 115
+        }
+      ]
+    },
+    "rf163_resnet50": {
+      "RF_desde_modulos_reales": 163,
+      "salto_salida": 16,
+      "lado_mapa_derivado": 14,
+      "resolucion_entrada": 224,
+      "parametros_encoder": 23749696,
+      "capas_espaciales": [
+        {
+          "nombre": "inicio.0",
+          "kernel": 7,
+          "stride": 2,
+          "campo_acumulado": 7
+        },
+        {
+          "nombre": "inicio.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.0.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.0.0.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.0.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.0.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.0.1.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.0.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.0.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.0.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.0.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.1.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.1.0.capas.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.2.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.1.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.1.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.1.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.1.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.2.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.2.0.capas.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.3.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.2.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.2.4.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.2.4.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.2.4.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.2.5.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.2.5.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.2.5.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.3.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.3.0.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 131
+        },
+        {
+          "nombre": "etapas.3.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 131
+        },
+        {
+          "nombre": "etapas.3.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 131
+        },
+        {
+          "nombre": "etapas.3.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 131
+        },
+        {
+          "nombre": "etapas.3.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 131
+        },
+        {
+          "nombre": "etapas.3.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 131
+        },
+        {
+          "nombre": "etapas.3.2.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 163
+        },
+        {
+          "nombre": "etapas.3.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 163
+        },
+        {
+          "nombre": "etapas.3.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 163
+        },
+        {
+          "nombre": "etapas.3.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 163
+        },
+        {
+          "nombre": "etapas.3.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 163
+        }
+      ]
+    },
+    "rf195_paper193_resnet50": {
+      "RF_desde_modulos_reales": 195,
+      "salto_salida": 32,
+      "lado_mapa_derivado": 7,
+      "resolucion_entrada": 224,
+      "parametros_encoder": 23749696,
+      "capas_espaciales": [
+        {
+          "nombre": "inicio.0",
+          "kernel": 7,
+          "stride": 2,
+          "campo_acumulado": 7
+        },
+        {
+          "nombre": "inicio.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.0.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.0.0.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.0.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.0.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 19
+        },
+        {
+          "nombre": "etapas.0.1.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.0.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.0.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.0.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.0.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.1.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 27
+        },
+        {
+          "nombre": "etapas.1.0.capas.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 35
+        },
+        {
+          "nombre": "etapas.1.2.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.1.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.1.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.1.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.1.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.2.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 51
+        },
+        {
+          "nombre": "etapas.2.0.capas.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 67
+        },
+        {
+          "nombre": "etapas.2.3.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.2.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.2.4.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.2.4.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.2.4.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.2.5.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.2.5.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.2.5.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.3.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 99
+        },
+        {
+          "nombre": "etapas.3.0.capas.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 131
+        },
+        {
+          "nombre": "etapas.3.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 131
+        },
+        {
+          "nombre": "etapas.3.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 131
+        },
+        {
+          "nombre": "etapas.3.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 131
+        },
+        {
+          "nombre": "etapas.3.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 131
+        },
+        {
+          "nombre": "etapas.3.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 131
+        },
+        {
+          "nombre": "etapas.3.2.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 195
+        },
+        {
+          "nombre": "etapas.3.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 195
+        },
+        {
+          "nombre": "etapas.3.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 195
+        },
+        {
+          "nombre": "etapas.3.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 195
+        },
+        {
+          "nombre": "etapas.3.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 195
+        }
+      ]
+    },
+    "rf29_resnet18": {
+      "RF_desde_modulos_reales": 29,
+      "salto_salida": 4,
+      "lado_mapa_derivado": 16,
+      "resolucion_entrada": 64,
+      "parametros_encoder": 7524928,
+      "capas_espaciales": [
+        {
+          "nombre": "inicio.0",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 3
+        },
+        {
+          "nombre": "etapas.0.0.capas.0",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 5
+        },
+        {
+          "nombre": "etapas.0.0.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 5
+        },
+        {
+          "nombre": "etapas.0.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 5
+        },
+        {
+          "nombre": "etapas.0.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 5
+        },
+        {
+          "nombre": "etapas.0.2.capas.0",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 7
+        },
+        {
+          "nombre": "etapas.0.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 7
+        },
+        {
+          "nombre": "etapas.0.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 7
+        },
+        {
+          "nombre": "etapas.0.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 7
+        },
+        {
+          "nombre": "etapas.1.0.capas.0",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "etapas.1.0.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "etapas.1.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "etapas.1.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "etapas.1.2.capas.0",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.1.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.1.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.1.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 11
+        },
+        {
+          "nombre": "etapas.2.0.capas.0",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 13
+        },
+        {
+          "nombre": "etapas.2.0.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 13
+        },
+        {
+          "nombre": "etapas.2.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 13
+        },
+        {
+          "nombre": "etapas.2.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 13
+        },
+        {
+          "nombre": "etapas.2.2.capas.0",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.3.0.capas.0",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 21
+        },
+        {
+          "nombre": "etapas.3.0.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 21
+        },
+        {
+          "nombre": "etapas.3.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 21
+        },
+        {
+          "nombre": "etapas.3.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 21
+        },
+        {
+          "nombre": "etapas.3.2.capas.0",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 29
+        },
+        {
+          "nombre": "etapas.3.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 29
+        },
+        {
+          "nombre": "etapas.3.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 29
+        },
+        {
+          "nombre": "etapas.3.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 29
+        }
+      ]
+    },
+    "bagnet33": {
+      "RF_desde_modulos_reales": 33,
+      "salto_salida": 8,
+      "lado_mapa_derivado": 24,
+      "resolucion_entrada": 224,
+      "parametros_encoder": 16261184,
+      "capas_espaciales": [
+        {
+          "nombre": "inicio.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 1
+        },
+        {
+          "nombre": "inicio.1",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 3
+        },
+        {
+          "nombre": "etapas.0.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 3
+        },
+        {
+          "nombre": "etapas.0.0.capas.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 5
+        },
+        {
+          "nombre": "etapas.0.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 5
+        },
+        {
+          "nombre": "etapas.0.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 5
+        },
+        {
+          "nombre": "etapas.0.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 5
+        },
+        {
+          "nombre": "etapas.0.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 5
+        },
+        {
+          "nombre": "etapas.0.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 5
+        },
+        {
+          "nombre": "etapas.0.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 5
+        },
+        {
+          "nombre": "etapas.0.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 5
+        },
+        {
+          "nombre": "etapas.1.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 5
+        },
+        {
+          "nombre": "etapas.1.0.capas.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "etapas.1.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "etapas.1.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "etapas.1.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "etapas.1.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "etapas.1.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "etapas.1.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "etapas.1.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "etapas.1.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "etapas.1.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "etapas.1.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "etapas.2.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 9
+        },
+        {
+          "nombre": "etapas.2.0.capas.3",
+          "kernel": 3,
+          "stride": 2,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.3.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.3.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.3.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.4.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.4.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.4.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.5.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.5.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.2.5.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.3.0.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 17
+        },
+        {
+          "nombre": "etapas.3.0.capas.3",
+          "kernel": 3,
+          "stride": 1,
+          "campo_acumulado": 33
+        },
+        {
+          "nombre": "etapas.3.0.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 33
+        },
+        {
+          "nombre": "etapas.3.1.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 33
+        },
+        {
+          "nombre": "etapas.3.1.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 33
+        },
+        {
+          "nombre": "etapas.3.1.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 33
+        },
+        {
+          "nombre": "etapas.3.2.capas.0",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 33
+        },
+        {
+          "nombre": "etapas.3.2.capas.3",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 33
+        },
+        {
+          "nombre": "etapas.3.2.capas.6",
+          "kernel": 1,
+          "stride": 1,
+          "campo_acumulado": 33
+        }
+      ]
+    }
+  },
+  "discrepancias_fuente": {
+    "rf195_paper193_resnet50": "La figura A.6 especifica MaxPool 3 por 3 y etiqueta RF193, los kernels y strides producen 195",
+    "resnet50": "El texto indica aproximadamente 425, ResNet50 de torchvision con sus kernels y strides produce 427"
+  }
+}
