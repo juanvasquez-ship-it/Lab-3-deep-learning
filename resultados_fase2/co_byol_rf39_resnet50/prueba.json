@@ -1,0 +1,60 @@
+{
+  "online": {
+    "original": {
+      "mAP": 0.007877835871394711,
+      "Rank-1": 0.016033254156769598,
+      "Rank-5": 0.050475059382422804,
+      "Rank-10": 0.08165083135391923,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.003629271291505857,
+      "Rank-1": 0.004156769596199525,
+      "Rank-5": 0.01336104513064133,
+      "Rank-10": 0.023752969121140142,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": 0.4248564579888854,
+    "caida_mAP_relativa_porcentaje": 53.930605425734484,
+    "criterio_validacion": 0.005753553581450284
+  },
+  "tiempos_segundos": {
+    "online": 337.4581196000072,
+    "objetivo": 337.4557199999981
+  },
+  "objetivo": {
+    "original": {
+      "mAP": 0.00834394057871492,
+      "Rank-1": 0.014845605700712588,
+      "Rank-5": 0.047802850356294536,
+      "Rank-10": 0.0831353919239905,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.003484902405193688,
+      "Rank-1": 0.003859857482185273,
+      "Rank-5": 0.011282660332541567,
+      "Rank-10": 0.01811163895486936,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": 0.48590381735212335,
+    "caida_mAP_relativa_porcentaje": 58.2343333786012,
+    "criterio_validacion": 0.005914421491954304
+  }
+}

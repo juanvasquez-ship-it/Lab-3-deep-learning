@@ -1,0 +1,31 @@
+{
+  "epoca": 0,
+  "inicializacion": "aleatoria con la semilla de configuración, antes de aprender",
+  "resultado": {
+    "original": {
+      "mAP": 0.03525643040539301,
+      "Rank-1": 0.06,
+      "Rank-5": 0.15,
+      "Rank-10": 0.27,
+      "consultas_evaluadas": 100,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.034079333418758156,
+      "Rank-1": 0.06,
+      "Rank-5": 0.16,
+      "Rank-10": 0.24,
+      "consultas_evaluadas": 100,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": 0.11770969866348527,
+    "caida_mAP_relativa_porcentaje": 3.3386731813178616,
+    "criterio_validacion": 0.03466788191207558
+  }
+}

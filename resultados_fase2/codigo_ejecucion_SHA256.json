@@ -1,0 +1,24 @@
+{
+  "creacion_unix": 1792475443.2613842,
+  "alcance": "fuentes exactas congeladas antes de iniciar la cola independiente, la captura inicial del plan corresponde a la etapa anterior de calibración",
+  "archivos": {
+    "main.py": "c70f0d588ee8934fbeb0b95b2089e1e7e5edfad76ba2488ff2ff878e8a27280e",
+    "codigo/ampliacion.py": "556d0cf764482e9501ddf3977978792e8434766279f01cbce20639b3a7b65b08",
+    "codigo/analisis.py": "2457fb02efe20838fbe0bb41814b57a2fd7a15f99841498be81ef473e119f53b",
+    "codigo/auditoria.py": "f88125941616a2f2ea019e5a443740637611292a028d5405d8c4b45a5414976c",
+    "codigo/comparacion.py": "3fa1c8c8f3dbe9771d754d4d279beb206627731f826d3e65b6e264748d9d3cd3",
+    "codigo/datos.py": "aa29e72f0fa19b883a7d9f69fc6ce8b6c56da5b07540a7d29efb5dbb540c3ded",
+    "codigo/entrenamiento.py": "bff3b2c3c30ff5a66143570c484b892231e341d92badeb9878c7079a217680ea",
+    "codigo/evaluacion.py": "014579d727a83a9067686e596689146e2494ffd6bc9f0b2b93fa01902971fcc3",
+    "codigo/experimentos.py": "49e4e822a1bd44327bf2c471bb4c7950e2fa77549de459e6a80fbbc9a85c3afa",
+    "codigo/fase2.py": "9e510f527d326cccac9856ed33756f344a1c5eae99e0a6aedaabc30a09c70127",
+    "codigo/informe.py": "43c2afb9918600f8555f4de46e1844e2f4964f9a2570bac038843bebfcb67e82",
+    "codigo/modelos.py": "6f5efdb8d76e870e4d7fe2ef20b1731cfc756202cc08116942e50d8e503780ea",
+    "codigo/verificaciones.py": "7ad4d4551eff3aff51b096a8d11c9862add401e08e32a8f9a23c6414d134e32f"
+  },
+  "scripts_supervision": {
+    "finalizar_fase2.py": "bd87cde2cfd5d8a1ea2ce096a84875a78cc988b135456ddfa9470c480ad1e4f4",
+    "sesion_fase2.py": "f2b0810cb45355fadb3e131b04f81aa22cb88c44c91292088ff4951cfbc01498",
+    "video_fase2.py": "ac34ca9dddf2e9ea890949c44ff2b4c25667b91c3eebc6f577793bfe6718852d"
+  }
+}

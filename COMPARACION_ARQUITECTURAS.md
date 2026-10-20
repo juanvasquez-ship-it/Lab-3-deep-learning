@@ -1,5 +1,7 @@
 # Comparación común de las catorce arquitecturas
 
+Este documento conserva la comparación de fase 1, el estado vigente de fase 2 y su contraste entre fases se encuentran en [INFORME.md](INFORME.md) y [resultados_fase2/RESULTADOS_FASE2.md](resultados_fase2/RESULTADOS_FASE2.md), no se sustituyen las cifras históricas.
+
 Este panel fija CO-BYOL con peso local 0.2, rama online, entrada 224, batch físico y efectivo ocho y 1253 actualizaciones, conserva particiones, semilla, inicialización aleatoria y transformaciones comunes, la resolución original y reducida se leen de los HDF5 suministrados y se evalúan con la misma galería original.
 
 Se reutilizan diez configuraciones existentes y se programan cuatro para completar el panel a resolución común, ResNet18 y RF29 a 64 se conservan como experimentos del panel pequeño del artículo y no se mezclan en la clasificación de esta tabla, el control BYOL sin CO con ResNet50 y las ablaciones con arquitectura fija ya realizadas se conservan y no se repiten.

@@ -19,7 +19,7 @@ RAIZ = Path(__file__).resolve().parent
 
 def ejecutar_argumentos():
     parser = argparse.ArgumentParser(description='Laboratorio 3, CO-SSL y recuperación de personas')
-    parser.add_argument('accion', choices=['verificar', 'auditar', 'matriz', 'preparar-datos', 'ejecutar', 'ampliar', 'evaluar', 'analizar', 'analizar-panel', 'exportar', 'informe', 'tabla-arquitecturas', 'completar-arquitecturas'])
+    parser.add_argument('accion', choices=['verificar', 'auditar', 'matriz', 'preparar-datos', 'ejecutar', 'ampliar', 'evaluar', 'analizar', 'analizar-panel', 'exportar', 'informe', 'tabla-arquitecturas', 'completar-arquitecturas', 'fase2'])
     parser.add_argument('--datos', type=Path, default=RAIZ.parents[1] / 'work' / 'data')
     parser.add_argument('--resultados', type=Path, default=RAIZ / 'resultados')
     parser.add_argument('--zip', type=Path)
@@ -35,6 +35,7 @@ def ejecutar_argumentos():
     parser.add_argument('--analisis', choices=['mascaras', 'pgd', 'representaciones', 'representaciones384', 'antes_mlp', 'capas', 'eficiencia'], default='representaciones')
     parser.add_argument('--dispositivo', default='cuda')
     parser.add_argument('--rama', choices=['seleccionada', 'online', 'objetivo'], default='seleccionada')
+    parser.add_argument('--fase2-etapa', choices=['calibrar', 'comprobar', 'ejecutar', 'consolidar'], default='ejecutar')
     args = parser.parse_args()
     if args.horas <= 0 or args.horas > 3:
         parser.error('El presupuesto autorizado está limitado a tres horas')
@@ -177,7 +178,10 @@ def ejecutar_suite(args):
 def main():
     args = ejecutar_argumentos()
     args.resultados.mkdir(parents=True, exist_ok=True)
-    if args.accion == 'preparar-datos':
+    if args.accion == 'fase2':
+        from codigo.fase2 import ejecutar_fase2
+        ejecutar_fase2(args, RAIZ)
+    elif args.accion == 'preparar-datos':
         if args.zip is None:
             raise ValueError('Debe proporcionar --zip')
         print(preparar_datos(args.zip, args.datos))

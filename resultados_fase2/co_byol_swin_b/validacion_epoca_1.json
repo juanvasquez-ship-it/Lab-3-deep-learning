@@ -1,0 +1,60 @@
+{
+  "tiempos_segundos": {
+    "online": 4.5408157000056235,
+    "objetivo": 4.871179299996584
+  },
+  "online": {
+    "original": {
+      "mAP": 0.04122951790592901,
+      "Rank-1": 0.06,
+      "Rank-5": 0.21,
+      "Rank-10": 0.3,
+      "consultas_evaluadas": 100,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.040610860635560186,
+      "Rank-1": 0.06,
+      "Rank-5": 0.18,
+      "Rank-10": 0.3,
+      "consultas_evaluadas": 100,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": 0.06186572703688262,
+    "caida_mAP_relativa_porcentaje": 1.5005202626438185,
+    "criterio_validacion": 0.0409201892707446
+  },
+  "objetivo": {
+    "original": {
+      "mAP": 0.03821004789185574,
+      "Rank-1": 0.06,
+      "Rank-5": 0.19,
+      "Rank-10": 0.27,
+      "consultas_evaluadas": 100,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.03968492957208556,
+      "Rank-1": 0.06,
+      "Rank-5": 0.2,
+      "Rank-10": 0.3,
+      "consultas_evaluadas": 100,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": -0.14748816802298212,
+    "caida_mAP_relativa_porcentaje": -3.8599315143600856,
+    "criterio_validacion": 0.03894748873197065
+  }
+}

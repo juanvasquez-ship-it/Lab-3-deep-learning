@@ -1,0 +1,468 @@
+{
+  "CNN": {
+    "tasa_base": 1.6,
+    "pilotos": [
+      {
+        "familia": "CNN",
+        "modelo": "co_byol_rf99",
+        "tasa_base": 0.2,
+        "tasa_efectiva": 0.00625,
+        "pasos": 400,
+        "batch": 8,
+        "segundos": 107.2165393000032,
+        "validacion": {
+          "tiempos_segundos": {
+            "online": 2.657006299996283,
+            "objetivo": 2.6034301000036066
+          },
+          "online": {
+            "original": {
+              "mAP": 0.04445696899966053,
+              "Rank-1": 0.1,
+              "Rank-5": 0.17,
+              "Rank-10": 0.24,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "baja_resolucion": {
+              "mAP": 0.03683995438880224,
+              "Rank-1": 0.07,
+              "Rank-5": 0.16,
+              "Rank-10": 0.17,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "caida_mAP_puntos_porcentuales": 0.7617014610858286,
+            "caida_mAP_relativa_porcentaje": 17.133454624215272,
+            "criterio_validacion": 0.040648461694231385
+          },
+          "objetivo": {
+            "original": {
+              "mAP": 0.038987200511837,
+              "Rank-1": 0.04,
+              "Rank-5": 0.13,
+              "Rank-10": 0.19,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "baja_resolucion": {
+              "mAP": 0.0323947009328185,
+              "Rank-1": 0.06,
+              "Rank-5": 0.1,
+              "Rank-10": 0.13,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "caida_mAP_puntos_porcentuales": 0.6592499579018501,
+            "caida_mAP_relativa_porcentaje": 16.909394602510474,
+            "criterio_validacion": 0.03569095072232775
+          }
+        },
+        "criterio": 0.040648461694231385,
+        "rama": "online",
+        "cambio_relativo_primer_tensor_encoder": 0.0008797018090263009,
+        "alcance_cambio": "primer tensor, no norma de todos los parámetros, no prueba causal de estabilidad BatchNorm",
+        "perdida_inicial": -2.353754997253418,
+        "perdida_final": -2.2380728721618652,
+        "pesos_descartados": true
+      },
+      {
+        "familia": "CNN",
+        "modelo": "co_byol_rf99",
+        "tasa_base": 0.8,
+        "tasa_efectiva": 0.025,
+        "pasos": 400,
+        "batch": 8,
+        "segundos": 105.73231180000585,
+        "validacion": {
+          "tiempos_segundos": {
+            "online": 2.6027183000041987,
+            "objetivo": 2.608903399996052
+          },
+          "online": {
+            "original": {
+              "mAP": 0.04054486656710459,
+              "Rank-1": 0.07,
+              "Rank-5": 0.14,
+              "Rank-10": 0.2,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "baja_resolucion": {
+              "mAP": 0.03730630516152904,
+              "Rank-1": 0.05,
+              "Rank-5": 0.11,
+              "Rank-10": 0.17,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "caida_mAP_puntos_porcentuales": 0.3238561405575553,
+            "caida_mAP_relativa_porcentaje": 7.9875991211255,
+            "criterio_validacion": 0.03892558586431681
+          },
+          "objetivo": {
+            "original": {
+              "mAP": 0.04140173244387923,
+              "Rank-1": 0.06,
+              "Rank-5": 0.12,
+              "Rank-10": 0.19,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "baja_resolucion": {
+              "mAP": 0.03755263199370115,
+              "Rank-1": 0.06,
+              "Rank-5": 0.1,
+              "Rank-10": 0.17,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "caida_mAP_puntos_porcentuales": 0.3849100450178077,
+            "caida_mAP_relativa_porcentaje": 9.296955037800894,
+            "criterio_validacion": 0.039477182218790194
+          }
+        },
+        "criterio": 0.039477182218790194,
+        "rama": "objetivo",
+        "cambio_relativo_primer_tensor_encoder": 0.0040028030052781105,
+        "alcance_cambio": "primer tensor, no norma de todos los parámetros, no prueba causal de estabilidad BatchNorm",
+        "perdida_inicial": -2.353754997253418,
+        "perdida_final": -2.14582896232605,
+        "pesos_descartados": true
+      },
+      {
+        "familia": "CNN",
+        "modelo": "co_byol_rf99",
+        "tasa_base": 1.6,
+        "tasa_efectiva": 0.05,
+        "pasos": 400,
+        "batch": 8,
+        "segundos": 112.61094900000171,
+        "validacion": {
+          "tiempos_segundos": {
+            "online": 2.6500516000014613,
+            "objetivo": 2.6571591000029002
+          },
+          "online": {
+            "original": {
+              "mAP": 0.04878124925295588,
+              "Rank-1": 0.1,
+              "Rank-5": 0.17,
+              "Rank-10": 0.25,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "baja_resolucion": {
+              "mAP": 0.0362333322229327,
+              "Rank-1": 0.07,
+              "Rank-5": 0.11,
+              "Rank-10": 0.14,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "caida_mAP_puntos_porcentuales": 1.2547917030023177,
+            "caida_mAP_relativa_porcentaje": 25.722828386283776,
+            "criterio_validacion": 0.04250729073794429
+          },
+          "objetivo": {
+            "original": {
+              "mAP": 0.03516193615504014,
+              "Rank-1": 0.07,
+              "Rank-5": 0.17,
+              "Rank-10": 0.24,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "baja_resolucion": {
+              "mAP": 0.02694208173829292,
+              "Rank-1": 0.06,
+              "Rank-5": 0.09,
+              "Rank-10": 0.11,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "caida_mAP_puntos_porcentuales": 0.8219854416747219,
+            "caida_mAP_relativa_porcentaje": 23.37713822271695,
+            "criterio_validacion": 0.03105200894666653
+          }
+        },
+        "criterio": 0.04250729073794429,
+        "rama": "online",
+        "cambio_relativo_primer_tensor_encoder": 0.00772238802164793,
+        "alcance_cambio": "primer tensor, no norma de todos los parámetros, no prueba causal de estabilidad BatchNorm",
+        "perdida_inicial": -2.353754997253418,
+        "perdida_final": -1.947184681892395,
+        "pesos_descartados": true
+      }
+    ]
+  },
+  "Transformer": {
+    "tasa_base": 0.0003,
+    "pilotos": [
+      {
+        "familia": "Transformer",
+        "modelo": "co_byol_vit_s16",
+        "tasa_base": 0.0003,
+        "tasa_efectiva": 9.375e-06,
+        "pasos": 400,
+        "batch": 8,
+        "segundos": 64.92336629999772,
+        "validacion": {
+          "tiempos_segundos": {
+            "online": 1.613266600004863,
+            "objetivo": 1.5417677000004915
+          },
+          "online": {
+            "original": {
+              "mAP": 0.03628469223158425,
+              "Rank-1": 0.05,
+              "Rank-5": 0.16,
+              "Rank-10": 0.27,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "baja_resolucion": {
+              "mAP": 0.03429051310935234,
+              "Rank-1": 0.05,
+              "Rank-5": 0.13,
+              "Rank-10": 0.2,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "caida_mAP_puntos_porcentuales": 0.19941791222319108,
+            "caida_mAP_relativa_porcentaje": 5.495924037343947,
+            "criterio_validacion": 0.03528760267046829
+          },
+          "objetivo": {
+            "original": {
+              "mAP": 0.03525029456881029,
+              "Rank-1": 0.04,
+              "Rank-5": 0.17,
+              "Rank-10": 0.24,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "baja_resolucion": {
+              "mAP": 0.03428909367943288,
+              "Rank-1": 0.05,
+              "Rank-5": 0.15,
+              "Rank-10": 0.22,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "caida_mAP_puntos_porcentuales": 0.09612008893774143,
+            "caida_mAP_relativa_porcentaje": 2.7267882471197606,
+            "criterio_validacion": 0.034769694124121585
+          }
+        },
+        "criterio": 0.03528760267046829,
+        "rama": "online",
+        "cambio_relativo_primer_tensor_encoder": 0.3091951906681061,
+        "alcance_cambio": "primer tensor, no norma de todos los parámetros, no prueba causal de estabilidad BatchNorm",
+        "perdida_inicial": -3.0050878524780273,
+        "perdida_final": -3.2025861740112305,
+        "pesos_descartados": true
+      },
+      {
+        "familia": "Transformer",
+        "modelo": "co_byol_vit_s16",
+        "tasa_base": 0.0005,
+        "tasa_efectiva": 1.5625e-05,
+        "pasos": 400,
+        "batch": 8,
+        "segundos": 64.65672949999862,
+        "validacion": {
+          "tiempos_segundos": {
+            "online": 1.5014119999977993,
+            "objetivo": 1.4727696000045398
+          },
+          "online": {
+            "original": {
+              "mAP": 0.03334689509116093,
+              "Rank-1": 0.04,
+              "Rank-5": 0.14,
+              "Rank-10": 0.22,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "baja_resolucion": {
+              "mAP": 0.03330734339507326,
+              "Rank-1": 0.05,
+              "Rank-5": 0.16,
+              "Rank-10": 0.21,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "caida_mAP_puntos_porcentuales": 0.0039551696087665456,
+            "caida_mAP_relativa_porcentaje": 0.11860683274872329,
+            "criterio_validacion": 0.0333271192431171
+          },
+          "objetivo": {
+            "original": {
+              "mAP": 0.03429321919625685,
+              "Rank-1": 0.05,
+              "Rank-5": 0.16,
+              "Rank-10": 0.25,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "baja_resolucion": {
+              "mAP": 0.03362912748312239,
+              "Rank-1": 0.04,
+              "Rank-5": 0.16,
+              "Rank-10": 0.23,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "caida_mAP_puntos_porcentuales": 0.06640917131344598,
+            "caida_mAP_relativa_porcentaje": 1.9365102743312774,
+            "criterio_validacion": 0.03396117333968962
+          }
+        },
+        "criterio": 0.03396117333968962,
+        "rama": "objetivo",
+        "cambio_relativo_primer_tensor_encoder": 0.5349491834640503,
+        "alcance_cambio": "primer tensor, no norma de todos los parámetros, no prueba causal de estabilidad BatchNorm",
+        "perdida_inicial": -3.0050878524780273,
+        "perdida_final": -3.160226583480835,
+        "pesos_descartados": true
+      },
+      {
+        "familia": "Transformer",
+        "modelo": "co_byol_vit_s16",
+        "tasa_base": 0.001,
+        "tasa_efectiva": 3.125e-05,
+        "pasos": 400,
+        "batch": 8,
+        "segundos": 64.79557020000357,
+        "validacion": {
+          "tiempos_segundos": {
+            "online": 1.52358870000171,
+            "objetivo": 1.5802003999997396
+          },
+          "online": {
+            "original": {
+              "mAP": 0.031625026928578465,
+              "Rank-1": 0.06,
+              "Rank-5": 0.13,
+              "Rank-10": 0.25,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "baja_resolucion": {
+              "mAP": 0.02985975851141385,
+              "Rank-1": 0.02,
+              "Rank-5": 0.11,
+              "Rank-10": 0.22,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "caida_mAP_puntos_porcentuales": 0.17652684171646157,
+            "caida_mAP_relativa_porcentaje": 5.581871664967351,
+            "criterio_validacion": 0.030742392719996157
+          },
+          "objetivo": {
+            "original": {
+              "mAP": 0.03140687392543515,
+              "Rank-1": 0.05,
+              "Rank-5": 0.14,
+              "Rank-10": 0.24,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "baja_resolucion": {
+              "mAP": 0.03000613462722146,
+              "Rank-1": 0.03,
+              "Rank-5": 0.14,
+              "Rank-10": 0.2,
+              "consultas_evaluadas": 100,
+              "consultas_omitidas": [],
+              "protocolo": "market_documentado",
+              "AP": "media de la precisión en cada posición relevante",
+              "desempate": "orden estable de los índices originales de galería"
+            },
+            "caida_mAP_puntos_porcentuales": 0.1400739298213688,
+            "caida_mAP_relativa_porcentaje": 4.4599768239884785,
+            "criterio_validacion": 0.030706504276328303
+          }
+        },
+        "criterio": 0.030742392719996157,
+        "rama": "online",
+        "cambio_relativo_primer_tensor_encoder": 1.9281100034713745,
+        "alcance_cambio": "primer tensor, no norma de todos los parámetros, no prueba causal de estabilidad BatchNorm",
+        "perdida_inicial": -3.0050878524780273,
+        "perdida_final": -3.0482821464538574,
+        "pesos_descartados": true
+      }
+    ]
+  }
+}

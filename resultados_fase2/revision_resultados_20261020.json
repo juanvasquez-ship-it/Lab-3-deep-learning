@@ -1,0 +1,44 @@
+{
+  "estado": "aprobado",
+  "alcance": "revisión de resultados existentes entre fases y corrección CPU de documentación y audiovisual",
+  "fecha_revision_Bogota": "2026-10-20",
+  "experimentos_fase2": "completados",
+  "arquitecturas": 14,
+  "configuraciones": 19,
+  "epocas_adicionales_comunes": 2,
+  "metricas_CSV_y_JSON_contrastadas": 152,
+  "registros_historicos_SHA256_preservados": 378,
+  "archivos_fuente_ejecutados_SHA256_preservados": 13,
+  "ejemplos_inspeccionados_visualmente": 20,
+  "visualizacion_video_inspeccionada": [
+    "comparación de arquitecturas",
+    "conclusiones y créditos"
+  ],
+  "video_fase2": {
+    "estado_actual": "corregido_CPU_y_verificado",
+    "fallo_inicial": "matplotlib ausente en el entorno de voz",
+    "correccion": "generación del gráfico en el entorno de análisis ya disponible, síntesis y codificación en entorno CPU de voz",
+    "duracion_segundos": 717.56,
+    "sha256": "dadf254ce6eeea5b3ca50460d7343043055117454ff4407a91da99cb2c8df6b7",
+    "registro_inicial_con_fallo_conservado": true
+  },
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "entrenamientos_nuevos": 0,
+  "inferencias_encoders_nuevas": 0,
+  "GPU_utilizada": false,
+  "sintesis_voz_CPU": true,
+  "procesos_interrumpidos": 0,
+  "publicacion_GitHub_y_ZIP_fase2": "pendiente",
+  "guia_PDF_fase2": "pendiente",
+  "revision_humana_envio_defensa": "pendiente",
+  "documentos_actualizados": [
+    "INFORME.md",
+    "README.md",
+    "GUION_VIDEO.md",
+    "COMPARACION_ARQUITECTURAS.md",
+    "resultados_fase2/RESULTADOS_FASE2.md",
+    "resultados_fase2/COMPARACION_FASES.md",
+    "resultados_fase2/ANALISIS_ERRORES_FASE2.md",
+    "resultados_fase2/REVISION_CIERRE.md"
+  ]
+}

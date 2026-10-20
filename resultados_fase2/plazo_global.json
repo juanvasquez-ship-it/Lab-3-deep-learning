@@ -1,0 +1,9 @@
+{
+  "inicio_unix": 1792474339.0,
+  "limite_correcciones_inicio_entrenamientos_unix": 1792503139.0,
+  "fin_unix": 1792510339.0,
+  "maximo_segundos": 36000,
+  "incluye": "revisión, correcciones, pilotos, entrenamiento, validación, prueba, consolidación y revisión, plazo absoluto que no se reinicia al reanudar",
+  "autorizacion": "solicitud humana del 20 de octubre, hasta ocho horas para correcciones e inicio y diez horas totales",
+  "zona_horaria_usuario": "America/Bogota"
+}

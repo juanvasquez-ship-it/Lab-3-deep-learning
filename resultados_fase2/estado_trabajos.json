@@ -1,0 +1,135 @@
+{
+  "co_byol_rf39_resnet50": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 5469.063360899992,
+    "vram_pico_GiB": 4.7649664878845215
+  },
+  "co_byol_rf29_224": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 1838.6401570999878,
+    "vram_pico_GiB": 1.643350601196289
+  },
+  "co_byol_bagnet33": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 630.5257739000081,
+    "vram_pico_GiB": 2.5861968994140625
+  },
+  "co_byol_r50": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 453.31109950000246,
+    "vram_pico_GiB": 1.335637092590332
+  },
+  "co_byol_resnet18_224": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 556.5767305000045,
+    "vram_pico_GiB": 1.7510552406311035
+  },
+  "co_byol_rf115_resnet50": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 721.9467701999965,
+    "vram_pico_GiB": 1.3616466522216797
+  },
+  "co_byol_rf163_resnet50": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 713.7579847000015,
+    "vram_pico_GiB": 1.109929084777832
+  },
+  "co_byol_rf195_paper193_resnet50": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 724.4945436000125,
+    "vram_pico_GiB": 1.106266975402832
+  },
+  "co_byol_rf67_resnet50": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 1007.3409985000035,
+    "vram_pico_GiB": 1.5863804817199707
+  },
+  "co_byol_rf99": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 739.3341784000077,
+    "vram_pico_GiB": 1.382969856262207
+  },
+  "co_byol_swin_b": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 910.2803695999901,
+    "vram_pico_GiB": 4.134103775024414
+  },
+  "co_byol_swin_s": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 829.339876099999,
+    "vram_pico_GiB": 2.9262566566467285
+  },
+  "co_byol_swin_t": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 538.9826866000076,
+    "vram_pico_GiB": 2.20443058013916
+  },
+  "co_byol_vit_s16": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 434.191628399989,
+    "vram_pico_GiB": 2.404547691345215
+  },
+  "byol_bagnet33": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 574.3209614999942,
+    "vram_pico_GiB": 2.137024402618408
+  },
+  "byol_r50": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 431.7325841999991,
+    "vram_pico_GiB": 1.1656460762023926
+  },
+  "byol_rf99": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 711.7129473000095,
+    "vram_pico_GiB": 1.2166104316711426
+  },
+  "co_mocov3_r50": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 448.14363959999173,
+    "vram_pico_GiB": 1.0780811309814453
+  },
+  "mocov3_r50": {
+    "epocas_completas": 2,
+    "pasos_fase2": 2760,
+    "estado": "epoca_completa",
+    "segundos_entrenamiento": 424.9465390000114,
+    "vram_pico_GiB": 0.9070982933044434
+  }
+}

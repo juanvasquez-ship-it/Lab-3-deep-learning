@@ -1,0 +1,50 @@
+{
+  "pid_supervisor": 53996,
+  "fase": "finalizado",
+  "actualizacion_unix": 1792497126.8653939,
+  "inicio_plazo_unix": 1792474339.0,
+  "limite_global_unix": 1792510339.0,
+  "sin_seguimiento_automatico_en_chat": true,
+  "codigo_GPU": 0,
+  "codigo_CPU": 0,
+  "transcurridos_desde_inicio_segundos": 22787.86539387703,
+  "resumen": {
+    "estado": "completado",
+    "arquitecturas_evaluadas": 14,
+    "configuraciones_evaluadas": 19,
+    "configuraciones_previstas": 19,
+    "rondas_comunes_completas": 2,
+    "maximo_epocas_adicionales_observado": 2,
+    "diferencias_exposicion_fase2": false,
+    "registros_historicos_SHA256_conservados": true,
+    "plazo": {
+      "inicio_unix": 1792474339.0,
+      "limite_correcciones_inicio_entrenamientos_unix": 1792503139.0,
+      "fin_unix": 1792510339.0,
+      "maximo_segundos": 36000,
+      "incluye": "revisión, correcciones, pilotos, entrenamiento, validación, prueba, consolidación y revisión, plazo absoluto que no se reinicia al reanudar",
+      "autorizacion": "solicitud humana del 20 de octubre, hasta ocho horas para correcciones e inicio y diez horas totales",
+      "zona_horaria_usuario": "America/Bogota"
+    },
+    "prueba_no_usada_en_pilotos": true,
+    "limites_no_resueltos": [
+      "una semilla",
+      "sin convergencia demostrada",
+      "video fase 1 requiere revisión humana",
+      "Places365 no disponible",
+      "BagNet33 no igualado en parámetros",
+      "parche externo no recibido"
+    ],
+    "video_fase2_CPU": "fallo_revision_pendiente",
+    "verificacion_CPU_final": "aprobado",
+    "errores_cierre": [],
+    "ejemplos_por_condicion": {
+      "original_aciertos": 5,
+      "original_fallos": 5,
+      "baja_resolucion_aciertos": 5,
+      "baja_resolucion_fallos": 5
+    },
+    "codigo_fuente_SHA256_conservado": true,
+    "CUDA_VISIBLE_DEVICES": "-1"
+  }
+}

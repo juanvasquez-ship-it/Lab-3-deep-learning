@@ -1,0 +1,67 @@
+{
+  "estado": "aprobado",
+  "modelo": "co_byol_rf99",
+  "batch": 8,
+  "pasos_entrenamiento_descartados": 3,
+  "checkpoint_modelo_optimizador_rng_recuperado": true,
+  "validacion_completa": true,
+  "encoders_exportados_tensores_iguales": true,
+  "testing_abierto": false,
+  "segundos": 8.303889100003289,
+  "validacion": {
+    "online": {
+      "original": {
+        "mAP": 0.036416983790261925,
+        "Rank-1": 0.09,
+        "Rank-5": 0.22,
+        "Rank-10": 0.26,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "baja_resolucion": {
+        "mAP": 0.029490274144206585,
+        "Rank-1": 0.08,
+        "Rank-5": 0.09,
+        "Rank-10": 0.11,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "caida_mAP_puntos_porcentuales": 0.6926709646055341,
+      "caida_mAP_relativa_porcentaje": 19.020547352160385,
+      "criterio_validacion": 0.03295362896723426
+    },
+    "objetivo": {
+      "original": {
+        "mAP": 0.04033332221471336,
+        "Rank-1": 0.1,
+        "Rank-5": 0.19,
+        "Rank-10": 0.25,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "baja_resolucion": {
+        "mAP": 0.02677847538748287,
+        "Rank-1": 0.06,
+        "Rank-5": 0.13,
+        "Rank-10": 0.14,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "caida_mAP_puntos_porcentuales": 1.3554846827230491,
+      "caida_mAP_relativa_porcentaje": 33.607067513733746,
+      "criterio_validacion": 0.03355589880109812
+    }
+  }
+}

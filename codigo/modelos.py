@@ -272,7 +272,7 @@ class SSL(nn.Module):
         return perdida_coseno(prediccion, objetivo)
 
     def forward(self, vistas):
-        online = [self.online(vista) for vista in vistas]
+        online = [ejecutar_memoria(self.online, vista, self.configuracion.get('checkpoint_rama', False)) for vista in vistas]
         with torch.no_grad():
             objetivo = [self.objetivo(vista, False) for vista in vistas[:2]]
         globales = [self.comparar(salida[1], objetivo[j][0]) for i, salida in enumerate(online) for j in range(2) if i != j]

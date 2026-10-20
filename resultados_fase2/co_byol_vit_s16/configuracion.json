@@ -1,0 +1,13 @@
+{
+  "nombre": "co_byol_vit_s16",
+  "metodo": "byol",
+  "arquitectura": "vit_s16",
+  "peso_local": 0.2,
+  "resolucion": 224,
+  "recorte": 0.2,
+  "semilla": 20261019,
+  "temperatura": 0.2,
+  "kernel_local": 6,
+  "checkpoint_rama": true,
+  "tasa_base": 0.0003
+}

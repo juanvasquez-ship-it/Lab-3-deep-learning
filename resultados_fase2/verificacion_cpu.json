@@ -1,0 +1,12 @@
+{
+  "estado": "aprobado",
+  "alcance": "prueba dirigida CPU, no sustituye verificación end-to-end GPU",
+  "checkpoint_rama_tupla_salidas_iguales": true,
+  "gradientes_equivalentes": true,
+  "buffers_BN_sin_doble_actualizacion": true,
+  "cursor_reanudacion_permutacion": true,
+  "seleccion_rama_solo_validacion": true,
+  "plazo_no_reiniciado": true,
+  "archivos_python_sintaxis_sin_comentarios_docstrings": 13,
+  "cuda_inicializada": false
+}

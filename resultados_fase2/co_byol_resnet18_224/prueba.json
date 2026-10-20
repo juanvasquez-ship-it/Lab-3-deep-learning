@@ -1,0 +1,65 @@
+{
+  "online": {
+    "original": {
+      "mAP": 0.018608335424977206,
+      "Rank-1": 0.043942992874109264,
+      "Rank-5": 0.09530878859857482,
+      "Rank-10": 0.1330166270783848,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.014316818991643946,
+      "Rank-1": 0.02672209026128266,
+      "Rank-5": 0.07036817102137767,
+      "Rank-10": 0.10570071258907364,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": 0.429151643333326,
+    "caida_mAP_relativa_porcentaje": 23.06233381612916,
+    "criterio_validacion": 0.016462577208310576
+  },
+  "objetivo": {
+    "original": {
+      "mAP": 0.018598301826388133,
+      "Rank-1": 0.04542755344418052,
+      "Rank-5": 0.09798099762470308,
+      "Rank-10": 0.13687648456057008,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "baja_resolucion": {
+      "mAP": 0.013487724769666868,
+      "Rank-1": 0.024049881235154395,
+      "Rank-5": 0.06561757719714964,
+      "Rank-10": 0.10095011876484561,
+      "consultas_evaluadas": 3368,
+      "consultas_omitidas": [],
+      "protocolo": "market_documentado",
+      "AP": "media de la precisión en cada posición relevante",
+      "desempate": "orden estable de los índices originales de galería"
+    },
+    "caida_mAP_puntos_porcentuales": 0.5110577056721265,
+    "caida_mAP_relativa_porcentaje": 27.47872953362947,
+    "criterio_validacion": 0.0160430132980275
+  },
+  "reutilizacion_fase1": {
+    "motivo": "época adicional seleccionada cero, mismos parámetros y protocolo, métricas históricas válidas reutilizadas después de congelar selección",
+    "origen": "resultados/co_byol_resnet18_224/prueba.json",
+    "sha256": "554e218e616c40a8b8c77d78d60cd611402bfa3b5dd2beb412e3aff30490aab1"
+  },
+  "tiempos_segundos": {
+    "online": 0.0,
+    "objetivo": 0.0
+  }
+}

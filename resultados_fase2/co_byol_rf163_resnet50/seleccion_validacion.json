@@ -1,0 +1,7 @@
+{
+  "rama": "objetivo",
+  "criterio": 0.03308331072090773,
+  "epoca_adicional_seleccionada": 2,
+  "actualizacion_unix": 1792490829.2219243,
+  "criterio_descripcion": "media mAP original/LR de validación, ambas ramas del mismo checkpoint"
+}

@@ -2,17 +2,29 @@
 
 Este proyecto adapta CO-BYOL y CO-MoCoV3 del artículo Seeing the whole in the parts with self-supervised representation learning al problema de recuperación de personas del laboratorio, la implementación del aprendizaje autosupervisado y de RF-ResNet es propia, las bibliotecas se utilizan para operaciones generales y arquitecturas estándar.
 
+## Estado actual, revisión de fase 2 del 20 de octubre
+
+La fase 2 terminó a las 06:52 de Bogotá con catorce arquitecturas y cinco controles evaluados, todas las configuraciones completaron dos épocas adicionales con batch ocho, la selección por validación es CO-BYOL BagNet33 objetivo con mAP de prueba original 2.167 por ciento y LR 2.014 por ciento, consultar [INFORME.md](INFORME.md) y [la tabla completa de fase 2](resultados_fase2/RESULTADOS_FASE2.md).
+
+Doce arquitecturas mejoran su mAP media observada, ResNet18 conserva su checkpoint anterior y RF29 empeora la media, cinco referencias siguen bajo su inicialización aleatoria en validación, estos resultados son preliminares y no prueban convergencia ni superioridad general de CO.
+
+El video de fase 2 está generado y verificado en [resultados_fase2/audiovisual/VIDEO.mp4](resultados_fase2/audiovisual/VIDEO.mp4), se corrigió su generación solo en CPU y el registro de cierre original mantiene visible el fallo inicial.
+
+La publicación vigente incorpora ambas fases en [entrega-v2](https://github.com/juanvasquez-ship-it/Lab-3-deep-learning/releases/tag/entrega-v2), la [guía PDF](docs/GUIA_EVALUACION_IA.pdf), el informe y los manifiestos distinguen código implementado, ejecuciones comprobadas y límites, esta actualización no entrenó ni realizó inferencia de encoders ni utilizó GPU.
+
 ## Evaluación independiente y archivos publicados
 
-La [guía PDF de evaluación](docs/GUIA_EVALUACION_IA.pdf) explica los requisitos, el código, lo ejecutado, las adaptaciones y los límites, [docs/inventario_ejecuciones.json](docs/inventario_ejecuciones.json) enumera las 54 configuraciones reales y sus evidencias, la auditoría histórica de 48 ejecuciones se conserva como documento anterior y la comparación ampliada presenta el estado de las catorce arquitecturas.
+El ZIP y el PDF actualizados están en [la entrega de fase 2](https://github.com/juanvasquez-ship-it/Lab-3-deep-learning/releases/tag/entrega-v2), el repositorio conserva código, métricas, registros, gráficos y los dos videos, el video vigente es [el de fase 2](resultados_fase2/audiovisual/VIDEO.mp4), el archivo VIDEO.mp4 de la raíz es histórico de fase 1.
 
-El repositorio contiene el código completo del proyecto y sus registros, métricas, análisis, gráficos, video y documentación, los [archivos de entrega en GitHub](https://github.com/juanvasquez-ship-it/Lab-3-deep-learning/releases/tag/entrega-v1) incluyen el ZIP compacto con los encoders de BagNet33 y ResNet18, copiar esos dos archivos a la raíz del proyecto permite utilizar las instrucciones de evaluación de pesos, siempre con los datos externos y autorización de cómputo correspondiente.
+El ZIP incluye tres archivos de pesos compactos en la raíz, encoders_fase2_seleccionados.pt contiene ambas ramas de BagNet33 de fase 2 y la rama elegida es objetivo, encoders_seleccionados.pt y encoders_comparacion.pt conservan los modelos seleccionados de fase 1, los pesos no se almacenan en Git, sus hashes, tamaños y las omisiones están en [CONTENIDO_PAQUETE.json](CONTENIDO_PAQUETE.json).
 
-Los 54 checkpoints completos ocupan aproximadamente 36.06 GiB y se conservan localmente fuera de Git y del ZIP, los HDF5 y los entornos virtuales también son externos, CONTENIDO_PAQUETE.json declara estas omisiones y el inventario conserva sus tamaños sin fingir una nueva verificación de todos los valores de los pesos, la revisión estática no necesita descargarlos y reevaluar otros modelos requiere recuperar sus checkpoints.
+[docs/inventario_ejecuciones.json](docs/inventario_ejecuciones.json) describe las 54 configuraciones de fase 1 y [docs/inventario_fase2.json](docs/inventario_fase2.json) las 19 continuaciones de fase 2, no son 73 arquitecturas ni 73 inicializaciones independientes, los HDF5, entornos y restantes checkpoints se conservan localmente fuera del ZIP por volumen, comprobar código y métricas no requiere esos pesos, reevaluar los modelos omitidos sí requiere recuperarlos.
 
-La preparación de la publicación solo añadió documentación, manifiestos, reglas de Git y la dependencia filelock que el código ya utilizaba, no cambió pesos ni resultados experimentales y no ejecutó entrenamiento ni inferencia GPU.
+La [release anterior](https://github.com/juanvasquez-ship-it/Lab-3-deep-learning/releases/tag/entrega-v1) y la [guía anterior](docs/GUIA_EVALUACION_IA_FASE1_HISTORICA.pdf) se conservan como historia, los JSON de revisión anteriores que indican publicación pendiente describen el estado de entonces y no se reescriben, el comando main.py informe regenera el informe histórico y no sustituye INFORME.md consolidado, revisar [PUBLICACION_FASE2.md](PUBLICACION_FASE2.md) antes de usar comandos de ejecución.
 
 ## Estado de la entrega
+
+Esta sección conserva las instrucciones y el estado publicados de fase 1, el estado vigente de ambas fases está resumido al inicio y desarrollado en INFORME.md.
 
 La continuación autorizada para completar arquitecturas tiene su plan en resultados/plan_comparacion.json y su progreso en resultados/estado_comparacion.json, COMPARACION_ARQUITECTURAS.md y resultados/comparacion_arquitecturas.csv muestran la referencia común y distinguen métricas existentes de pendientes, esta fase utiliza un presupuesto independiente y no reinicia ni altera la sesión inicial.
 
@@ -47,7 +59,8 @@ El paquete Laboratorio3_entrega.zip incluye código, documentación, métricas, 
 | `REVISION_CUMPLIMIENTO.md` | Revisión contra las fuentes, correcciones y separación entre implementación, ejecución y verificación |
 | `GUION_VIDEO.md` | Narración, estructura y créditos del video |
 | `VIDEO.mp4` | Material audiovisual con narración sintética local |
-| `encoders_seleccionados.pt` | Pesos de las dos ramas del modelo seleccionado, sin optimizador ni cabezas de entrenamiento |
+| `encoders_seleccionados.pt` | Ambas ramas de BagNet33, selección histórica de fase 1 |
+| `encoders_fase2_seleccionados.pt` | Ambas ramas de BagNet33 de fase 2, selección vigente objetivo, disponible en el ZIP |
 | `encoders_comparacion.pt` | Ambas ramas de ResNet18 a 224, selección de la comparación ampliada mediante validación |
 | `codigo/modelos.py` | Encoders, RF-ResNet, cabezas, BYOL, MoCoV3, extensiones CO y DINO |
 | `codigo/datos.py` | Lectura HDF5 sin modificar originales y transformaciones de entrada |
@@ -169,3 +182,9 @@ Caron y colaboradores, Emerging Properties in Self-Supervised Vision Transformer
 La continuación autorizada se documenta en COMPARACION_ARQUITECTURAS.md, actualmente hay 14 de catorce arquitecturas evaluadas bajo el protocolo común a 224, resultados/comparacion_arquitecturas.csv contiene todas las métricas y costes disponibles, las combinaciones históricas no esenciales no se anuncian como entrenamientos pendientes de arquitectura.
 
 La nueva sesión autorizada registra 98.96 minutos dentro de su límite separado de 180, el presupuesto inicial se conserva sin cambios y no se afirma que ambas sesiones juntas hayan durado tres horas.
+
+## Fase 2, continuación autorizada del 20 de octubre
+
+La fase 1 y su video conservan sus resultados históricos, la fase 2 tiene estado y tabla actualizados en [resultados_fase2/RESULTADOS_FASE2.md](resultados_fase2/RESULTADOS_FASE2.md), los pesos de fase 2 y las épocas elegidas se documentan por separado, las cifras de la fase 1 no se atribuyen al código o entrenamiento de fase 2, la narración del video debe revisarse antes de presentar los nuevos resultados.
+
+La versión audiovisual de fase 2 se encuentra en [resultados_fase2/audiovisual/VIDEO.mp4](resultados_fase2/audiovisual/VIDEO.mp4), su guion y verificación de duración y decodificación están en la misma carpeta, el video original de fase 1 se conserva sin cambios y la revisión humana de ambos materiales sigue pendiente.

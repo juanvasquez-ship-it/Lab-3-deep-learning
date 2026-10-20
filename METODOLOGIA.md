@@ -1,5 +1,7 @@
 # Metodología y correspondencia con las fuentes
 
+Esta versión distingue el mecanismo común y el calendario histórico de fase 1 de la continuación de fase 2, el estado vigente está en INFORME.md, la guía PDF y PUBLICACION_FASE2.md, los valores históricos no se atribuyen a los entrenamientos posteriores.
+
 ## Problema y alcance
 
 El laboratorio solicita recuperar imágenes de una persona observada por cámaras distintas y prohíbe utilizar etiquetas de identidad durante el entrenamiento, el artículo estudia aprendizaje autosupervisado para clasificación y propone alinear representaciones locales con globales de otra vista, la adaptación conserva ese aprendizaje y sustituye la sonda de clasificación por recuperación con el encoder congelado.
@@ -68,7 +70,7 @@ Se leen los píxeles HDF5 sin modificar los archivos, las vistas aumentadas exis
 
 El mínimo de área de recorte principal es 0.2, las configuraciones de 0.9 conservan un recorte reducido y no equivalen a eliminar completamente la operación geométrica, los paneles multicrop utilizan dos vistas grandes y cuatro pequeñas, DINO utiliza seis pequeñas, las escalas globales 0.14 a uno y locales 0.05 a 0.14 se mantienen como adaptación común del comparador multicrop de CO-SSL y no como reproducción literal de todos los ajustes de DINO original.
 
-Las CNN BYOL y MoCoV3 utilizan LARS con momento 0.9 y regularización 0.0000015, la tasa de referencia 0.2 se escala por batch dividido entre 256, los Transformers y DINO utilizan AdamW con tasa de referencia 0.0005 escalada de la misma forma, no se realiza el barrido de tasas del artículo por el límite de tiempo y los valores elegidos se registran como decisiones locales.
+En fase 1 las CNN BYOL y MoCoV3 utilizan LARS con momento 0.9 y regularización 0.0000015, la tasa de referencia 0.2 se escala por batch dividido entre 256, los Transformers y DINO utilizan AdamW con tasa de referencia 0.0005 escalada de la misma forma, no se realizó el barrido completo de tasas del artículo por el límite de tiempo y los valores elegidos se registran como decisiones locales.
 
 La tasa sigue un calentamiento que ocupa como máximo el diez por ciento de las actualizaciones locales y un descenso coseno posterior, el momentum EMA parte de 0.996 y se acerca a uno, la precisión mixta utiliza bfloat16 y las pérdidas se calculan en float32, la selección de cantidad de pasos procede del coste medido y no se redondea como si se hubieran completado las épocas del artículo.
 
@@ -82,7 +84,15 @@ Un entrenamiento menor de una época puede dejar la última capa de DINO congela
 
 El batch de entrenamiento no está fijado en los HDF5 ni en las instrucciones del laboratorio, el batch 64 del apéndice H del artículo pertenece a su medición de coste, el valor local de ocho se utiliza por igual y no se presenta como una exigencia de las fuentes, el batch de inferencia 64 no cambia los ejemplos ni los negativos de entrenamiento.
 
-El calendario local común comprende 1253 actualizaciones con ocho imágenes fuente por actualización y 10024 originales distintos de training, la fracción de época registrada es 1253 dividido entre los 1380 batches completos disponibles y equivale aproximadamente a 0.908, los tres registros sobrantes de una época se descartan mediante drop_last para mantener BatchNorm y el batch físico constantes, no se crea otra partición y los resúmenes conservan por separado la longitud original de 11043 registros y el hash de los índices visitados.
+El calendario local común de fase 1 comprende 1253 actualizaciones con ocho imágenes fuente por actualización y 10024 originales distintos de training, la fracción de época registrada es 1253 dividido entre los 1380 batches completos disponibles y equivale aproximadamente a 0.908, los tres registros sobrantes de una época se descartan mediante drop_last para mantener BatchNorm y el batch físico constantes, no se crea otra partición y los resúmenes conservan por separado la longitud original de 11043 registros y el hash de los índices visitados.
+
+## Continuación de fase 2
+
+La fase 2 conserva el método central, los datos, las particiones, el batch ocho y la entrada 224, continúa diecinueve checkpoints de fase 1, catorce arquitecturas CO-BYOL y cinco controles, con dos épocas adicionales completas para todos, 2760 actualizaciones nuevas y 4013 acumuladas, unas 2.908 épocas equivalentes, las 32104 visitas acumuladas no son imágenes distintas y no son diecinueve inicializaciones nuevas.
+
+Se probaron tres tasas CNN con RF99 y tres Transformer con ViT mediante pilotos de 400 pasos descartados, la validación eligió tasa base común CNN 1.6 y Transformer 0.0003, efectivas 0.05 y 0.000009375 antes del calendario, no se reproduce un ajuste exhaustivo por arquitectura ni se usa testing para elegirlas, el optimizador y el calendario EMA se reinician explícitamente y la mejora no puede atribuirse solo a más épocas.
+
+La recomputación de la rama online reduce memoria manteniendo los buffers BatchNorm durante la repetición, se probó antes de la ejecución con verificaciones dirigidas CPU y calibraciones GPU, la elección de época y rama se hace por media de mAP de validación original y LR y ambas ramas de la misma época se prueban después de congelar la selección global, el candidato de época cero son pesos aprendidos de fase 1 y no inicialización aleatoria, los 44 análisis históricos no se repitieron sobre los nuevos pesos.
 
 ## Evaluación
 

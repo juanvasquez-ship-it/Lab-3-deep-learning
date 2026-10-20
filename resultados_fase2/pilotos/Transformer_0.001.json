@@ -1,0 +1,76 @@
+{
+  "familia": "Transformer",
+  "modelo": "co_byol_vit_s16",
+  "tasa_base": 0.001,
+  "tasa_efectiva": 3.125e-05,
+  "pasos": 400,
+  "batch": 8,
+  "segundos": 64.79557020000357,
+  "validacion": {
+    "tiempos_segundos": {
+      "online": 1.52358870000171,
+      "objetivo": 1.5802003999997396
+    },
+    "online": {
+      "original": {
+        "mAP": 0.031625026928578465,
+        "Rank-1": 0.06,
+        "Rank-5": 0.13,
+        "Rank-10": 0.25,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "baja_resolucion": {
+        "mAP": 0.02985975851141385,
+        "Rank-1": 0.02,
+        "Rank-5": 0.11,
+        "Rank-10": 0.22,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "caida_mAP_puntos_porcentuales": 0.17652684171646157,
+      "caida_mAP_relativa_porcentaje": 5.581871664967351,
+      "criterio_validacion": 0.030742392719996157
+    },
+    "objetivo": {
+      "original": {
+        "mAP": 0.03140687392543515,
+        "Rank-1": 0.05,
+        "Rank-5": 0.14,
+        "Rank-10": 0.24,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "baja_resolucion": {
+        "mAP": 0.03000613462722146,
+        "Rank-1": 0.03,
+        "Rank-5": 0.14,
+        "Rank-10": 0.2,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "caida_mAP_puntos_porcentuales": 0.1400739298213688,
+      "caida_mAP_relativa_porcentaje": 4.4599768239884785,
+      "criterio_validacion": 0.030706504276328303
+    }
+  },
+  "criterio": 0.030742392719996157,
+  "rama": "online",
+  "cambio_relativo_primer_tensor_encoder": 1.9281100034713745,
+  "alcance_cambio": "primer tensor, no norma de todos los parámetros, no prueba causal de estabilidad BatchNorm",
+  "perdida_inicial": -3.0050878524780273,
+  "perdida_final": -3.0482821464538574,
+  "pesos_descartados": true
+}

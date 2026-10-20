@@ -1,0 +1,76 @@
+{
+  "familia": "Transformer",
+  "modelo": "co_byol_vit_s16",
+  "tasa_base": 0.0005,
+  "tasa_efectiva": 1.5625e-05,
+  "pasos": 400,
+  "batch": 8,
+  "segundos": 64.65672949999862,
+  "validacion": {
+    "tiempos_segundos": {
+      "online": 1.5014119999977993,
+      "objetivo": 1.4727696000045398
+    },
+    "online": {
+      "original": {
+        "mAP": 0.03334689509116093,
+        "Rank-1": 0.04,
+        "Rank-5": 0.14,
+        "Rank-10": 0.22,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "baja_resolucion": {
+        "mAP": 0.03330734339507326,
+        "Rank-1": 0.05,
+        "Rank-5": 0.16,
+        "Rank-10": 0.21,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "caida_mAP_puntos_porcentuales": 0.0039551696087665456,
+      "caida_mAP_relativa_porcentaje": 0.11860683274872329,
+      "criterio_validacion": 0.0333271192431171
+    },
+    "objetivo": {
+      "original": {
+        "mAP": 0.03429321919625685,
+        "Rank-1": 0.05,
+        "Rank-5": 0.16,
+        "Rank-10": 0.25,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "baja_resolucion": {
+        "mAP": 0.03362912748312239,
+        "Rank-1": 0.04,
+        "Rank-5": 0.16,
+        "Rank-10": 0.23,
+        "consultas_evaluadas": 100,
+        "consultas_omitidas": [],
+        "protocolo": "market_documentado",
+        "AP": "media de la precisión en cada posición relevante",
+        "desempate": "orden estable de los índices originales de galería"
+      },
+      "caida_mAP_puntos_porcentuales": 0.06640917131344598,
+      "caida_mAP_relativa_porcentaje": 1.9365102743312774,
+      "criterio_validacion": 0.03396117333968962
+    }
+  },
+  "criterio": 0.03396117333968962,
+  "rama": "objetivo",
+  "cambio_relativo_primer_tensor_encoder": 0.5349491834640503,
+  "alcance_cambio": "primer tensor, no norma de todos los parámetros, no prueba causal de estabilidad BatchNorm",
+  "perdida_inicial": -3.0050878524780273,
+  "perdida_final": -3.160226583480835,
+  "pesos_descartados": true
+}

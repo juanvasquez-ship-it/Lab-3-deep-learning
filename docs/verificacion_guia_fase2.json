@@ -1,0 +1,13 @@
+{
+  "archivo": "docs/GUIA_EVALUACION_IA.pdf",
+  "paginas": 15,
+  "sha256": "9dfb9abe25cc3432b1603f682e9c70619a82d691d5642132c4afd1979db6a63d",
+  "revision_visual": "15 páginas renderizadas, contacto completo y detalle de páginas 2, 8 y 12, sin recortes ni solapamientos",
+  "datos": "métricas procedentes de los CSV y JSON existentes, sin nueva inferencia",
+  "codigo_ejecutado_SHA256_preservado": 13,
+  "copias_scripts_supervision_SHA256_preservadas": 3,
+  "historicos_SHA256_preservados": 378,
+  "entrenamientos_nuevos": 0,
+  "inferencias_encoders_nuevas": 0,
+  "GPU_utilizada": false
+}

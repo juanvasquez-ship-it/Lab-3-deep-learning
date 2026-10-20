@@ -1,0 +1,272 @@
+{
+  "epocas_completas": 2,
+  "cursor_pasos": 0,
+  "pasos_totales_fase2": 2760,
+  "segundos_entrenamiento": 630.5257739000081,
+  "historia": [
+    {
+      "epoca_adicional": 1,
+      "paso_en_epoca": 100,
+      "pasos_totales_fase2": 100,
+      "perdida": -3.0270369052886963,
+      "norma_gradiente": 75.79888916015625,
+      "tasa": 0.036231884057971016,
+      "segundos_entrenamiento": 22.771959600002447
+    },
+    {
+      "epoca_adicional": 1,
+      "paso_en_epoca": 200,
+      "pasos_totales_fase2": 200,
+      "perdida": -3.2524850368499756,
+      "norma_gradiente": 47.85234069824219,
+      "tasa": 0.04997134289786272,
+      "segundos_entrenamiento": 45.57384460000321
+    },
+    {
+      "epoca_adicional": 1,
+      "paso_en_epoca": 300,
+      "pasos_totales_fase2": 300,
+      "perdida": -2.844212055206299,
+      "norma_gradiente": 45.23526382446289,
+      "tasa": 0.049800598156865106,
+      "segundos_entrenamiento": 69.12528120000206
+    },
+    {
+      "epoca_adicional": 1,
+      "paso_en_epoca": 400,
+      "pasos_totales_fase2": 400,
+      "perdida": -2.519338607788086,
+      "norma_gradiente": 31.444011688232422,
+      "tasa": 0.04947710219205808,
+      "segundos_entrenamiento": 91.80304890000116
+    },
+    {
+      "epoca_adicional": 1,
+      "paso_en_epoca": 500,
+      "pasos_totales_fase2": 500,
+      "perdida": -1.6970810890197754,
+      "norma_gradiente": 25.683746337890625,
+      "tasa": 0.04900284747169617,
+      "segundos_entrenamiento": 114.5264879000024
+    },
+    {
+      "epoca_adicional": 1,
+      "paso_en_epoca": 600,
+      "pasos_totales_fase2": 600,
+      "perdida": -2.304823398590088,
+      "norma_gradiente": 38.91481399536133,
+      "tasa": 0.04838075501359012,
+      "segundos_entrenamiento": 137.9107593000008
+    },
+    {
+      "epoca_adicional": 1,
+      "paso_en_epoca": 700,
+      "pasos_totales_fase2": 700,
+      "perdida": -2.8999574184417725,
+      "norma_gradiente": 20.61102294921875,
+      "tasa": 0.04761465639404697,
+      "segundos_entrenamiento": 160.4772398999994
+    },
+    {
+      "epoca_adicional": 1,
+      "paso_en_epoca": 800,
+      "pasos_totales_fase2": 800,
+      "perdida": -3.321438789367676,
+      "norma_gradiente": 13.487344741821289,
+      "tasa": 0.04670927014852111,
+      "segundos_entrenamiento": 183.7517571999997
+    },
+    {
+      "epoca_adicional": 1,
+      "paso_en_epoca": 900,
+      "pasos_totales_fase2": 900,
+      "perdida": -2.1543960571289062,
+      "norma_gradiente": 22.091276168823242,
+      "tasa": 0.04567017270932883,
+      "segundos_entrenamiento": 206.6608766999998
+    },
+    {
+      "epoca_adicional": 1,
+      "paso_en_epoca": 1000,
+      "pasos_totales_fase2": 1000,
+      "perdida": -2.2455637454986572,
+      "norma_gradiente": 9.70722770690918,
+      "tasa": 0.04450376405942576,
+      "segundos_entrenamiento": 229.31436940000276
+    },
+    {
+      "epoca_adicional": 1,
+      "paso_en_epoca": 1100,
+      "pasos_totales_fase2": 1100,
+      "perdida": -3.43913197517395,
+      "norma_gradiente": 12.790184020996094,
+      "tasa": 0.04321722831379202,
+      "segundos_entrenamiento": 252.7890378000011
+    },
+    {
+      "epoca_adicional": 1,
+      "paso_en_epoca": 1200,
+      "pasos_totales_fase2": 1200,
+      "perdida": -2.517437219619751,
+      "norma_gradiente": 20.437747955322266,
+      "tasa": 0.04181848947121091,
+      "segundos_entrenamiento": 275.5344258000041
+    },
+    {
+      "epoca_adicional": 1,
+      "paso_en_epoca": 1300,
+      "pasos_totales_fase2": 1300,
+      "perdida": -2.8081772327423096,
+      "norma_gradiente": 18.958955764770508,
+      "tasa": 0.04031616260897381,
+      "segundos_entrenamiento": 298.8493451000031
+    },
+    {
+      "epoca_adicional": 1,
+      "paso_en_epoca": 1380,
+      "pasos_totales_fase2": 1380,
+      "perdida": -2.6201963424682617,
+      "norma_gradiente": 35.18332290649414,
+      "tasa": 0.03904591582332896,
+      "segundos_entrenamiento": 317.2030311999988
+    },
+    {
+      "epoca_adicional": 2,
+      "paso_en_epoca": 20,
+      "pasos_totales_fase2": 1400,
+      "perdida": -2.1440253257751465,
+      "norma_gradiente": 16.464031219482422,
+      "tasa": 0.038719500821111655,
+      "segundos_entrenamiento": 321.8264166000008
+    },
+    {
+      "epoca_adicional": 2,
+      "paso_en_epoca": 120,
+      "pasos_totales_fase2": 1500,
+      "perdida": -2.3379526138305664,
+      "norma_gradiente": 16.153762817382812,
+      "tasa": 0.03703833822696958,
+      "segundos_entrenamiento": 344.39709660000517
+    },
+    {
+      "epoca_adicional": 2,
+      "paso_en_epoca": 220,
+      "pasos_totales_fase2": 1600,
+      "perdida": -2.332948684692383,
+      "norma_gradiente": 22.207860946655273,
+      "tasa": 0.0352830294011451,
+      "segundos_entrenamiento": 367.2574528000114
+    },
+    {
+      "epoca_adicional": 2,
+      "paso_en_epoca": 320,
+      "pasos_totales_fase2": 1700,
+      "perdida": -3.223952293395996,
+      "norma_gradiente": 26.85561752319336,
+      "tasa": 0.03346438559785119,
+      "segundos_entrenamiento": 389.557215599998
+    },
+    {
+      "epoca_adicional": 2,
+      "paso_en_epoca": 420,
+      "pasos_totales_fase2": 1800,
+      "perdida": -2.9895520210266113,
+      "norma_gradiente": 15.92777156829834,
+      "tasa": 0.03159360816250983,
+      "segundos_entrenamiento": 412.6683397000015
+    },
+    {
+      "epoca_adicional": 2,
+      "paso_en_epoca": 520,
+      "pasos_totales_fase2": 1900,
+      "perdida": -3.293944835662842,
+      "norma_gradiente": 19.944889068603516,
+      "tasa": 0.029682219540705435,
+      "segundos_entrenamiento": 435.07060810000985
+    },
+    {
+      "epoca_adicional": 2,
+      "paso_en_epoca": 620,
+      "pasos_totales_fase2": 2000,
+      "perdida": -3.3566784858703613,
+      "norma_gradiente": 28.409381866455078,
+      "tasa": 0.027741992309426252,
+      "segundos_entrenamiento": 457.4941389000014
+    },
+    {
+      "epoca_adicional": 2,
+      "paso_en_epoca": 720,
+      "pasos_totales_fase2": 2100,
+      "perdida": -3.213625907897949,
+      "norma_gradiente": 16.987913131713867,
+      "tasa": 0.025784876667702614,
+      "segundos_entrenamiento": 480.5349655000027
+    },
+    {
+      "epoca_adicional": 2,
+      "paso_en_epoca": 820,
+      "pasos_totales_fase2": 2200,
+      "perdida": -3.9438674449920654,
+      "norma_gradiente": 7.622779369354248,
+      "tasa": 0.023822926833240055,
+      "segundos_entrenamiento": 503.13108370000555
+    },
+    {
+      "epoca_adicional": 2,
+      "paso_en_epoca": 920,
+      "pasos_totales_fase2": 2300,
+      "perdida": -1.3308134078979492,
+      "norma_gradiente": 37.408870697021484,
+      "tasa": 0.02186822679838307,
+      "segundos_entrenamiento": 526.1376774000091
+    },
+    {
+      "epoca_adicional": 2,
+      "paso_en_epoca": 1020,
+      "pasos_totales_fase2": 2400,
+      "perdida": -3.461893081665039,
+      "norma_gradiente": 17.71140480041504,
+      "tasa": 0.01993281590269179,
+      "segundos_entrenamiento": 548.696008400002
+    },
+    {
+      "epoca_adicional": 2,
+      "paso_en_epoca": 1120,
+      "pasos_totales_fase2": 2500,
+      "perdida": -3.2174487113952637,
+      "norma_gradiente": 27.05401039123535,
+      "tasa": 0.018028614680542898,
+      "segundos_entrenamiento": 570.9813894000108
+    },
+    {
+      "epoca_adicional": 2,
+      "paso_en_epoca": 1220,
+      "pasos_totales_fase2": 2600,
+      "perdida": -2.077777624130249,
+      "norma_gradiente": 22.28809356689453,
+      "tasa": 0.016167351440472443,
+      "segundos_entrenamiento": 594.0396087000117
+    },
+    {
+      "epoca_adicional": 2,
+      "paso_en_epoca": 1320,
+      "pasos_totales_fase2": 2700,
+      "perdida": -2.6677801609039307,
+      "norma_gradiente": 16.157678604125977,
+      "tasa": 0.014360490028471324,
+      "segundos_entrenamiento": 616.54972000001
+    },
+    {
+      "epoca_adicional": 2,
+      "paso_en_epoca": 1380,
+      "pasos_totales_fase2": 2760,
+      "perdida": -2.5454630851745605,
+      "norma_gradiente": 35.49916458129883,
+      "tasa": 0.013307131637740409,
+      "segundos_entrenamiento": 630.5257739000081
+    }
+  ],
+  "vram_pico_GiB": 2.5861968994140625,
+  "indices_ultima_epoca_sha256": "1bd814378296115519a7b227876c6c60c70ce7d654aad53de87f225819d471a1",
+  "imagenes_fuente_por_epoca": 11040
+}

@@ -1,71 +1,63 @@
 {
-  "titulo": "Guía de evaluación independiente",
+  "titulo": "Guía de evaluación independiente, fases 1 y 2",
   "paginas": [
     {
-      "titulo": "Guía para evaluar el proyecto",
-      "subtitulo": "Laboratorio 3 | Adaptación de CO-SSL a reidentificación de personas | 19 de octubre de 2026",
+      "titulo": "Guía para evaluar ambas fases",
+      "subtitulo": "Laboratorio 3 | Implementación, resultados y límites | 20 de octubre de 2026",
       "bloques": [
         {
           "tipo": "parrafo",
-          "texto": "Este documento explica qué se implementó, qué se ejecutó realmente, por qué se tomaron las decisiones locales y qué evidencia permite comprobar cada afirmación, acompaña al código y no sustituye la revisión independiente de las fuentes ni de los resultados guardados."
+          "texto": "Esta versión incorpora la fase 2 y sustituye como guía vigente a la publicación anterior, el repositorio conserva código y evidencia histórica, el ZIP añade los encoders seleccionados de fase 2, no se ha entrenado ni repetido inferencia para actualizar esta entrega."
         },
         {
           "tipo": "tabla",
           "cabecera": [
             "Estado comprobado",
-            "Alcance real"
+            "Significado"
           ],
           "filas": [
             [
-              "54 configuraciones entrenadas",
-              "Cada una completó el calendario local de 1253 actualizaciones, completar ese calendario no significa converger ni completar una época"
+              "Fase 1, 54 configuraciones",
+              "1253 pasos cada una, 0.908 épocas equivalentes, 14 arquitecturas en el panel común y 44 análisis históricos"
             ],
             [
-              "14 arquitecturas evaluadas",
-              "Panel común CO-BYOL, rama online, resolución 224 y peso local 0.2, las variantes RF cuentan como arquitecturas distintas"
+              "Fase 2, 19 continuaciones",
+              "14 arquitecturas CO-BYOL a 224 y 5 controles, 2 épocas adicionales completas por configuración, no 19 inicializaciones nuevas"
             ],
             [
-              "432 conjuntos de métricas",
-              "54 configuraciones por 2 particiones por 2 ramas por 2 resoluciones, cada conjunto contiene mAP y Rank-1/5/10"
+              "Selección global por validación",
+              "CO-BYOL BagNet33, rama objetivo, época adicional 2, mAP media de validación 10.327%"
             ],
             [
-              "44 análisis históricos",
-              "Representaciones, máscaras, PGD, lecturas y eficiencia, su alcance específico se detalla en la página 7"
+              "Prueba del seleccionado",
+              "mAP original 2.167244%, LR 2.014327%, Rank-1 original 5.908551%, LR 4.661520%"
             ],
             [
-              "Reproducción del paper parcial",
-              "No se reproducen sus calendarios largos, sus datasets de clasificación ni todo su panel experimental"
+              "Cierre dentro del plazo",
+              "Fin 06:52:06 Bogotá, 6.330 h desde el inicio de la tarea, límite global 10 h"
+            ],
+            [
+              "Alcance empírico preliminar",
+              "Una semilla, baja precisión absoluta, sin convergencia ni reproducción íntegra de los experimentos del paper"
             ]
           ],
           "anchos": [
-            156,
-            343
+            160,
+            339
           ],
           "tamano": 8.2
         },
         {
-          "tipo": "subtitulo",
-          "texto": "Restricción temporal"
+          "tipo": "parrafo",
+          "texto": "La IA evaluadora debe separar mecanismo implementado, ejecuciones registradas, equivalencia con el laboratorio y fuerza de las conclusiones, una tabla completa no demuestra convergencia ni superioridad general de CO."
         },
         {
           "tipo": "parrafo",
-          "texto": "La sesión inicial consumió 171.58 minutos y la continuación autorizada 98.96 minutos, cada una tuvo un límite independiente de tres horas, la suma observada es aproximadamente 270.54 minutos y no se presenta como una única sesión de tres horas."
+          "texto": "Doce arquitecturas mejoran su mAP media observada, ResNet18 conserva la selección de fase 1 y RF29 empeora la media, cinco referencias siguen por debajo de su inicialización aleatoria en validación, se conservan estos resultados desfavorables."
         },
         {
           "tipo": "parrafo",
-          "texto": "La preparación de esta guía y de la publicación solo utiliza CPU y archivos existentes, no inicia entrenamiento, inferencia GPU ni una nueva autorización de cómputo."
-        },
-        {
-          "tipo": "subtitulo",
-          "texto": "Orden sugerido de revisión"
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "Para una lectura rápida, comenzar por README.md, esta guía y COMPARACION_ARQUITECTURAS.md, después contrastar codigo/modelos.py y codigo/evaluacion.py con los JSON individuales, el inventario legible por máquina está en docs/inventario_ejecuciones.json."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "El PDF del laboratorio tiene prioridad para el problema y los entregables, el paper recibido aporta el método de referencia, los metadatos HDF5 y las elecciones locales se distinguen de ambas fuentes, una contradicción no se resuelve atribuyendo una suposición al documento original."
+          "texto": "Entrega vigente: github.com/juanvasquez-ship-it/Lab-3-deep-learning/releases/tag/entrega-v2, repositorio privado, requiere acceso autorizado, entrega-v1 y la guía histórica se conservan."
         }
       ]
     },
@@ -98,8 +90,8 @@
             ],
             [
               "Entrenar y seleccionar con validación, p 2",
-              "resumen.json, validacion.json y dos selecciones documentadas",
-              "Calendario corto, selección ampliada después de existir pruebas antiguas"
+              "Pilotos, época y rama de fase 2 por validación, prueba posterior al cierre global",
+              "Las pruebas de fase 1 ya eran conocidas, no es un nuevo conjunto ciego"
             ],
             [
               "Base y ablación, p 2",
@@ -123,17 +115,17 @@
             ],
             [
               "Código, instrucciones y diferencias, p 2",
-              "main.py, 11 módulos, README y METODOLOGIA",
+              "main.py y 12 módulos, README, METODOLOGIA y PUBLICACION_FASE2",
               "Sin comentarios ni docstrings por preferencia expresa del usuario"
             ],
             [
               "5 aciertos y 5 fallos explicados, pp 2-3",
-              "ANALISIS_ERRORES.md y resultados/ejemplos",
+              "ANALISIS_ERRORES_FASE2.md y cuatro figuras, 20 casos visualmente revisados",
               "20 casos, 5 de cada tipo por resolución"
             ],
             [
               "Video máximo 18 min, p 3",
-              "VIDEO.mp4, verificación 845.48 s, tres capítulos menores de 6 min",
+              "Video vigente de fase 2, 717.56 s, capítulos 260.60, 228.46 y 226.70 s",
               "Narración sintética, revisión humana pendiente"
             ],
             [
@@ -147,7 +139,7 @@
             188,
             164
           ],
-          "tamano": 7.8
+          "tamano": 7.5
         },
         {
           "tipo": "parrafo",
@@ -329,735 +321,966 @@
       ]
     },
     {
-      "titulo": "4. Catorce arquitecturas y diferencias",
-      "subtitulo": "Panel común CO-BYOL online a 224, además se conservan paneles históricos a 64",
+      "titulo": "4. Diseño y ejecución de fase 2",
+      "subtitulo": "Presupuesto común, pilotos por validación y continuidad explícita",
       "bloques": [
         {
           "tipo": "tabla",
           "cabecera": [
-            "Arquitectura",
-            "Parámetros encoder M",
-            "Entrenamiento min",
-            "VRAM GiB"
+            "Decisión",
+            "Qué ocurrió y por qué"
           ],
           "filas": [
             [
-              "ResNet18",
-              "11.169",
-              "3.374",
-              "2.940"
+              "Datos y entrada",
+              "Mismos HDF5 y particiones, solo training para aprender, entrada 224x224 y vistas existentes, no se añade entrenamiento LR ni texto"
             ],
             [
-              "ResNet50",
-              "23.508",
-              "1.568",
-              "1.633"
+              "Presupuesto común",
+              "Batch físico 8, 2760 pasos extra en dos épocas para las 19 configuraciones, total acumulado 4013 pasos y 32104 visitas de imágenes, no imágenes distintas"
             ],
             [
-              "RF29-ResNet18",
-              "7.525",
-              "10.932",
-              "10.057"
+              "Origen de pesos",
+              "Checkpoints de fase 1, sin preentrenamiento externo, optimizador y calendario EMA se reinician, no equivale a reanudar un único calendario largo"
             ],
             [
-              "RF39-ResNet50",
-              "23.750",
-              "41.481",
-              "5.512"
+              "Tasas por validación",
+              "6 pilotos de 400 pasos descartados, CNN RF99 base 0.2/0.8/1.6 elige 1.6, ViT 0.0003/0.0005/0.001 elige 0.0003"
             ],
             [
-              "RF67-ResNet50",
-              "23.750",
-              "3.912",
-              "5.795"
+              "Escala efectiva de tasa",
+              "Batch/256, CNN 0.05 y Transformer 0.000009375 antes de los factores de calendario, no es el mismo valor que la tasa base"
             ],
             [
-              "RF99-ResNet50",
-              "23.750",
-              "2.456",
-              "3.549"
+              "Memoria",
+              "Recomputación online con preservación de buffers BatchNorm, pruebas dirigidas CPU y calibraciones GPU previas, mantiene la pérdida y el batch común"
             ],
             [
-              "RF115-ResNet50",
-              "23.750",
-              "2.801",
-              "2.978"
+              "Elección de checkpoint",
+              "Media de mAP de validación original y LR, elige época y rama, ambas ramas de esa misma época se prueban tras congelar la selección global"
             ],
             [
-              "RF163-ResNet50",
-              "23.750",
-              "1.456",
-              "1.784"
+              "Candidato de época 0",
+              "Son pesos entrenados de fase 1, no un encoder aleatorio, ResNet18 conserva este candidato y reutiliza métricas de prueba válidas"
             ],
             [
-              "RF195 / paper193",
-              "23.750",
-              "1.486",
-              "1.643"
-            ],
-            [
-              "BagNet33",
-              "16.261",
-              "2.858",
-              "4.096"
-            ],
-            [
-              "ViT-S/16",
-              "21.666",
-              "1.509",
-              "2.516"
-            ],
-            [
-              "Swin-T",
-              "27.519",
-              "2.050",
-              "2.594"
-            ],
-            [
-              "Swin-S",
-              "48.837",
-              "3.581",
-              "3.581"
-            ],
-            [
-              "Swin-B",
-              "86.743",
-              "3.686",
-              "4.975"
-            ]
-          ],
-          "anchos": [
-            176,
-            117,
-            114,
-            92
-          ],
-          "tamano": 8.2
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "Los siete RF son RF29, RF39, RF67, RF99, RF115, RF163 y RF195, además de ResNet18, ResNet50, BagNet33, ViT-S/16 y tres Swin, contar catorce arquitecturas no significa catorce algoritmos SSL ni que las 54 configuraciones sean 54 backbones distintos."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "La figura A.6 denomina RF193 a una construcción que da campo teórico 195 al seguir sus operaciones, se mantiene el nombre rf195_paper193_resnet50, la ResNet50 de torchvision da 427 frente al aproximadamente 425 del texto, ambas diferencias están explícitas y no se corrigen cambiando pesos después de entrenar."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "BagNet33 conserva un campo local pero tiene 16.261 millones de parámetros de encoder y no reproduce la igualación a aproximadamente 23.5 millones del paper, es una limitación de comparabilidad que requiere otra construcción y nuevos entrenamientos para resolverla."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "ViT utiliza promedio de tokens de parche sin CLS, sus ventanas locales son 6x6 tokens y las de Swin 3x3 por defecto, el padding válido y el submuestreo espacial determinista son elecciones locales declaradas, RF39 conserva todas sus posiciones con recomputación de activaciones."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "La VRAM tabulada es el máximo asignado por PyTorch durante entrenamiento y no toda la memoria de la tarjeta, el tiempo incluye transferencias y guardados del bucle, no se presenta como energía ni como reproducción de la tabla H.13."
-        }
-      ]
-    },
-    {
-      "titulo": "5. Entrenamiento y selección",
-      "subtitulo": "Restricciones reales del equipo y separación de las dos sesiones autorizadas",
-      "bloques": [
-        {
-          "tipo": "tabla",
-          "cabecera": [
-            "Decisión local",
-            "Valor y razón"
-          ],
-          "filas": [
-            [
-              "Origen y exposición",
-              "training 11043 como origen, cada configuración visitó 10024 imágenes distintas sin etiquetas"
-            ],
-            [
-              "Batch y pasos",
-              "Batch físico y efectivo 8, sin acumulación, 1253 actualizaciones comunes por calibración temporal"
-            ],
-            [
-              "Época equivalente",
-              "1253 / 1380 batches completos = 0.907971, drop_last descartaría 3 imágenes al final de una época completa"
-            ],
-            [
-              "Inicialización y semillas",
-              "Aleatoria, sin pesos externos, una semilla por configuración, no hay evidencia de convergencia"
-            ],
-            [
-              "CNN BYOL / MoCoV3",
-              "LARS, momento 0.9, LR base 0.2*B/256, weight decay 1.5e-6"
-            ],
-            [
-              "Transformers y DINO",
-              "AdamW, LR base 0.0005*B/256, los grupos aplican aquí el mismo decay a sus parámetros"
-            ],
-            [
-              "Calendario y precisión",
-              "Warmup local como máximo 10% y coseno, EMA 0.996 hacia 1, bfloat16 y pérdidas float32"
-            ],
-            [
-              "Hardware",
-              "RTX 4080 SUPER 16 GiB, PyTorch 2.8.0+cu128, detalles en hardware_comparacion.json"
-            ]
-          ],
-          "anchos": [
-            133,
-            366
-          ],
-          "tamano": 8.2
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "Las imágenes se leen en modo de solo lectura y se aumentan en memoria, se adaptan recortes a personas verticales con aspecto 0.375 a 2/3, el panel común usa 224x224 y el pequeño histórico 64x64, multicrop usa dos grandes y cuatro pequeñas, DINO seis pequeñas, no se atribuyen esas decisiones a restricciones inexistentes del PDF."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "DINO conserva centrado 0.9, temperaturas 0.1 estudiante y 0.04 hacia 0.07 objetivo durante 30 épocas reales, congelación de última capa durante una época y clipping 3, al durar menos de una época su última capa permanece congelada toda la ejecución, el valor de gradiente guardado es anterior al clipping."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "La selección histórica compara las 29 configuraciones iniciales y ambas ramas por media de mAP de validación O/LR, conserva co_byol_bagnet33 online con 7.533%, se guarda antes de su primera prueba, las ampliaciones posteriores no sustituyen retroactivamente esa selección."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "La comparación ampliada fija online y catorce candidatas CO a 224 y selecciona co_byol_resnet18_224 con 9.389% medio de validación antes de sus nuevas pruebas, como ya existían pruebas de la primera sesión, esta ampliación no se presenta como una evaluación completamente ciega."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "Los 54 hashes del conjunto de índices fuente coinciden, ese hash no certifica el orden de cada batch ni los aumentos exactos, RF39 usa recomputación con prueba CPU dirigida de salidas, gradientes y buffers BatchNorm, no se promete reproducibilidad bit a bit entre equipos."
-        }
-      ]
-    },
-    {
-      "titulo": "6. Qué se ejecutó y qué significa pendiente",
-      "subtitulo": "Resultados de archivos reales, no solo capacidades del ejecutor",
-      "bloques": [
-        {
-          "tipo": "tabla",
-          "cabecera": [
-            "Grupo",
-            "Ejecución documentada",
-            "Fuente"
-          ],
-          "filas": [
-            [
-              "Panel principal histórico",
-              "29 configuraciones con entrenamiento, validación y prueba",
-              "plan_ejecucion.json y carpetas individuales"
-            ],
-            [
-              "Ampliación histórica",
-              "19 configuraciones adicionales completadas",
-              "plan_ampliacion.json y estado_ejecucion.json"
-            ],
-            [
-              "Continuación autorizada",
-              "6 configuraciones, RF115, RF39, ResNet18-224, RF29-224 y dos controles crop0.9",
-              "plan_comparacion.json y estado_comparacion.json"
-            ],
-            [
-              "Evaluaciones completas",
-              "54 x 2 particiones x 2 ramas x 2 resoluciones = 432 conjuntos",
-              "validacion.json y prueba.json de cada ejecución"
-            ],
-            [
-              "Panel común de arquitecturas",
-              "14 referencias CO-BYOL online, mismas actualizaciones y batch",
-              "comparacion_arquitecturas.csv y .json"
+              "Tercera ronda no iniciada",
+              "Hasta 3 épocas planificadas, tras 2 rondas la previsión fue 204.285 min más reserva 90 frente a 258.525 restantes, se cerró por igual para todos"
             ]
           ],
           "anchos": [
             126,
-            224,
-            149
+            373
           ],
-          "tamano": 8.2
-        },
-        {
-          "tipo": "tabla",
-          "cabecera": [
-            "Análisis histórico completado",
-            "Cantidad de tareas",
-            "Alcance"
-          ],
-          "filas": [
-            [
-              "Representaciones locales",
-              "14",
-              "16 imágenes fijas de training por tarea, sin identidades"
-            ],
-            [
-              "Máscaras internas",
-              "10",
-              "Cinco proporciones por tarea sobre validación"
-            ],
-            [
-              "PGD",
-              "9",
-              "Cinco ataques por tarea sobre validación, objetivo adaptado"
-            ],
-            [
-              "Lectura antes de MLP",
-              "3",
-              "Lectura congelada, distinta de entrenar sin MLP"
-            ],
-            [
-              "Lectura de capas",
-              "3",
-              "Capas intermedias congeladas, distinta de alinear al entrenar"
-            ],
-            [
-              "Eficiencia",
-              "4",
-              "Conteo parcial de operaciones y coste local"
-            ],
-            [
-              "Representaciones a 384",
-              "1",
-              "Lectura congelada a otra resolución, no entrenamiento nuevo"
-            ]
-          ],
-          "anchos": [
-            182,
-            94,
-            223
-          ],
-          "tamano": 8.2
+          "tamano": 8.1
         },
         {
           "tipo": "parrafo",
-          "texto": "La matriz histórica tiene 144 filas con redundancias y calendarios publicados, permanecen 67 configuraciones de ampliación no ejecutadas fuera del panel mínimo acordado, ese número no representa 67 arquitecturas pendientes ni obliga a presentar una configuración como entrenada por estar escrita en JSON."
+          "texto": "Los pilotos consumieron 8.666 minutos compartidos, no se suman a la exposición de los modelos finales, las tasas son comunes por familia y no constituyen un ajuste exhaustivo por arquitectura, no se usó testing para elegirlas."
         },
         {
           "tipo": "parrafo",
-          "texto": "No faltan ejecuciones esenciales del panel mínimo acordado, sí quedan experimentos para una reproducción experimental íntegra del paper, las celdas No registrado de tiempos antiguos indican ausencia de medición separada y no ausencia de evaluación, no se repiten inferencias para rellenarlas."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "La sesión independiente y sus dos procesos terminaron con código cero, verificacion_comparacion.json registra cola completa, catorce arquitecturas y 292 registros históricos preservados, el seguimiento único posterior volvió a contrastar 112 métricas del CSV sin GPU."
+          "texto": "La fase terminó a las 06:52:06 de Bogotá, 6.330 horas desde el inicio y 6.013 desde el lanzamiento independiente, entrenar más, modificar tasa, reiniciar calendario y elegir otra rama son cambios conjuntos, las diferencias no aíslan un único efecto causal."
         }
       ]
     },
     {
-      "titulo": "7. Resultados del panel común",
-      "subtitulo": "Prueba, porcentajes, CO-BYOL online a 224, O original y LR consulta reducida",
+      "titulo": "5. Comparación con fase 1",
+      "subtitulo": "14 arquitecturas, misma política retrospectiva de elección de rama por validación",
       "bloques": [
         {
           "tipo": "tabla",
           "cabecera": [
             "Arquitectura",
-            "mAP O",
-            "R1 O",
-            "R5 O",
-            "R10 O",
-            "mAP LR",
-            "R1 LR",
-            "R5 LR",
-            "R10 LR"
+            "O F1 %",
+            "LR F1 %",
+            "O F2 %",
+            "LR F2 %",
+            "Delta media pp"
           ],
           "filas": [
             [
               "ResNet18",
               "1.861",
+              "1.432",
+              "1.861",
+              "1.432",
+              "+0.000"
+            ],
+            [
+              "ResNet50",
+              "0.331",
+              "0.241",
+              "0.605",
+              "0.502",
+              "+0.267"
+            ],
+            [
+              "RF29-R18",
+              "1.357",
+              "0.912",
+              "1.331",
+              "0.810",
+              "-0.064"
+            ],
+            [
+              "RF39-R50",
+              "0.805",
+              "0.252",
+              "0.788",
+              "0.363",
+              "+0.047"
+            ],
+            [
+              "RF67-R50",
+              "0.586",
+              "0.386",
+              "0.960",
+              "0.591",
+              "+0.289"
+            ],
+            [
+              "RF99-R50",
+              "0.521",
+              "0.367",
+              "1.324",
+              "1.140",
+              "+0.788"
+            ],
+            [
+              "RF115-R50",
+              "0.542",
+              "0.294",
+              "0.747",
+              "0.321",
+              "+0.116"
+            ],
+            [
+              "RF163-R50",
+              "0.369",
+              "0.238",
+              "0.509",
+              "0.331",
+              "+0.117"
+            ],
+            [
+              "RF195 / paper193",
+              "0.305",
+              "0.212",
+              "0.580",
+              "0.311",
+              "+0.187"
+            ],
+            [
+              "BagNet33",
+              "1.587",
+              "1.334",
+              "2.167",
+              "2.014",
+              "+0.630"
+            ],
+            [
+              "ViT-S/16",
+              "0.630",
+              "0.581",
+              "0.736",
+              "0.676",
+              "+0.101"
+            ],
+            [
+              "Swin-T",
+              "0.689",
+              "0.616",
+              "1.296",
+              "1.193",
+              "+0.592"
+            ],
+            [
+              "Swin-S",
+              "0.682",
+              "0.599",
+              "1.142",
+              "1.086",
+              "+0.473"
+            ],
+            [
+              "Swin-B",
+              "0.587",
+              "0.522",
+              "0.850",
+              "0.802",
+              "+0.271"
+            ]
+          ],
+          "anchos": [
+            159,
+            63,
+            67,
+            63,
+            67,
+            80
+          ],
+          "tamano": 8.0
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La tabla histórica fijaba rama online y se conserva intacta, esta tabla aplica la mejor rama de validación de cada fase y permite además elegir época en fase 2, el CSV comparacion_fase1_fase2_misma_rama.csv ofrece el contraste auxiliar manteniendo fija cada rama, los tres criterios no se mezclan como si fueran la misma selección histórica."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La selección ampliada de fase 1 fue ResNet18 online, 1.861% original y 1.432% LR, la selección actual BagNet33 objetivo alcanza 2.167% y 2.014%, diferencias de +0.306 y +0.583 puntos porcentuales, manteniendo la rama objetivo de BagNet33 pasa de 1.369% y 1.179% a los valores actuales."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Doce mejoran la media y una permanece igual, RF29 cae en promedio por su peor resultado LR, se informa la elección congelada por validación y no se la reemplaza mirando prueba, fuente completa: resultados_fase2/comparacion_fase1_fase2.csv."
+        }
+      ]
+    },
+    {
+      "titulo": "6. Prueba con consultas originales",
+      "subtitulo": "19 configuraciones, checkpoint y rama elegidos por validación, porcentajes",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Configuración",
+            "Época / rama",
+            "mAP %",
+            "R1 %",
+            "R5 %",
+            "R10 %"
+          ],
+          "filas": [
+            [
+              "CO-BYOL ResNet18",
+              "0/online",
+              "1.861",
               "4.394",
               "9.531",
-              "13.302",
+              "13.302"
+            ],
+            [
+              "CO-BYOL ResNet50",
+              "2/EMA",
+              "0.605",
+              "1.395",
+              "4.216",
+              "6.354"
+            ],
+            [
+              "CO-BYOL RF29-R18",
+              "1/online",
+              "1.331",
+              "3.771",
+              "8.848",
+              "12.233"
+            ],
+            [
+              "CO-BYOL RF39-R50",
+              "2/online",
+              "0.788",
+              "1.603",
+              "5.048",
+              "8.165"
+            ],
+            [
+              "CO-BYOL RF67-R50",
+              "2/EMA",
+              "0.960",
+              "1.722",
+              "5.048",
+              "8.106"
+            ],
+            [
+              "CO-BYOL RF99-R50",
+              "1/online",
+              "1.324",
+              "2.791",
+              "7.898",
+              "12.084"
+            ],
+            [
+              "CO-BYOL RF115-R50",
+              "2/EMA",
+              "0.747",
+              "1.544",
+              "5.018",
+              "8.165"
+            ],
+            [
+              "CO-BYOL RF163-R50",
+              "2/EMA",
+              "0.509",
+              "1.069",
+              "3.385",
+              "5.671"
+            ],
+            [
+              "CO-BYOL RF195 / paper193",
+              "2/online",
+              "0.580",
+              "0.861",
+              "3.414",
+              "5.641"
+            ],
+            [
+              "CO-BYOL BagNet33",
+              "2/EMA",
+              "2.167",
+              "5.909",
+              "12.233",
+              "17.696"
+            ],
+            [
+              "CO-BYOL ViT-S/16",
+              "2/online",
+              "0.736",
+              "1.633",
+              "5.166",
+              "7.809"
+            ],
+            [
+              "CO-BYOL Swin-T",
+              "2/online",
+              "1.296",
+              "3.147",
+              "9.145",
+              "13.688"
+            ],
+            [
+              "CO-BYOL Swin-S",
+              "2/EMA",
+              "1.142",
+              "2.702",
+              "8.373",
+              "12.678"
+            ],
+            [
+              "CO-BYOL Swin-B",
+              "2/EMA",
+              "0.850",
+              "1.811",
+              "6.087",
+              "9.204"
+            ],
+            [
+              "BYOL ResNet50",
+              "1/EMA",
+              "0.903",
+              "1.781",
+              "5.315",
+              "8.937"
+            ],
+            [
+              "BYOL RF99-R50",
+              "2/EMA",
+              "0.552",
+              "0.920",
+              "3.711",
+              "6.057"
+            ],
+            [
+              "BYOL BagNet33",
+              "1/EMA",
+              "2.017",
+              "5.760",
+              "11.520",
+              "16.271"
+            ],
+            [
+              "MoCoV3 ResNet50",
+              "2/EMA",
+              "0.933",
+              "2.049",
+              "5.819",
+              "9.353"
+            ],
+            [
+              "CO-MoCoV3 ResNet50",
+              "2/online",
+              "1.909",
+              "4.840",
+              "11.758",
+              "16.835"
+            ]
+          ],
+          "anchos": [
+            174,
+            89,
+            59,
+            59,
+            59,
+            59
+          ],
+          "tamano": 7.7
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Época significa número de épocas adicionales elegidas y no número de épocas entrenadas, todas completaron dos, EMA equivale a rama objetivo, cada prueba usa 3368 consultas y galería original de 19732 imágenes, no cambia el encoder entre original y LR."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El seleccionado BagNet33 objetivo acierta en Rank-1 en 199 de 3368 consultas originales, su rama online obtiene mAP original 2.179%, algo mayor, pero no se cambia la rama mirando prueba porque fue elegida por validación conjunta."
+        }
+      ]
+    },
+    {
+      "titulo": "7. Prueba con consultas reducidas",
+      "subtitulo": "19 configuraciones, checkpoint y rama elegidos por validación, porcentajes",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Configuración",
+            "Época / rama",
+            "mAP %",
+            "R1 %",
+            "R5 %",
+            "R10 %"
+          ],
+          "filas": [
+            [
+              "CO-BYOL ResNet18",
+              "0/online",
               "1.432",
               "2.672",
               "7.037",
               "10.570"
             ],
             [
-              "ResNet50",
-              "0.324",
-              "0.445",
-              "2.227",
-              "3.593",
-              "0.209",
-              "0.267",
-              "1.306",
-              "1.989"
+              "CO-BYOL ResNet50",
+              "2/EMA",
+              "0.502",
+              "0.891",
+              "2.939",
+              "4.810"
             ],
             [
-              "RF29-ResNet18",
-              "1.326",
-              "3.236",
-              "7.482",
-              "11.075",
-              "0.899",
-              "1.752",
-              "4.929",
-              "6.829"
-            ],
-            [
-              "RF39-ResNet50",
-              "0.725",
-              "2.108",
-              "5.285",
-              "8.224",
-              "0.237",
-              "0.238",
-              "1.158",
-              "2.227"
-            ],
-            [
-              "RF67-ResNet50",
-              "0.649",
-              "1.485",
-              "3.504",
-              "5.938",
-              "0.408",
-              "0.534",
-              "1.841",
-              "3.118"
-            ],
-            [
-              "RF99-ResNet50",
-              "0.521",
-              "0.713",
-              "2.643",
+              "CO-BYOL RF29-R18",
+              "1/online",
+              "0.810",
+              "1.366",
               "4.394",
-              "0.367",
-              "0.356",
-              "1.663",
-              "2.643"
+              "6.770"
             ],
             [
-              "RF115-ResNet50",
-              "0.542",
-              "0.861",
-              "3.474",
-              "5.790",
-              "0.294",
-              "0.505",
-              "1.752",
-              "3.088"
-            ],
-            [
-              "RF163-ResNet50",
-              "0.369",
-              "0.505",
-              "2.346",
-              "3.711",
-              "0.238",
-              "0.208",
-              "0.950",
-              "1.871"
-            ],
-            [
-              "RF195 / paper193",
-              "0.305",
-              "0.356",
+              "CO-BYOL RF39-R50",
+              "2/online",
+              "0.363",
+              "0.416",
               "1.336",
-              "2.257",
-              "0.212",
-              "0.148",
-              "0.772",
-              "1.306"
+              "2.375"
             ],
             [
-              "BagNet33",
-              "1.587",
-              "4.632",
-              "10.125",
-              "13.925",
-              "1.334",
-              "3.385",
-              "7.601",
-              "10.243"
+              "CO-BYOL RF67-R50",
+              "2/EMA",
+              "0.591",
+              "0.802",
+              "2.405",
+              "4.157"
             ],
             [
-              "ViT-S/16",
-              "0.630",
-              "1.069",
-              "4.186",
+              "CO-BYOL RF99-R50",
+              "1/online",
+              "1.140",
+              "2.108",
               "6.740",
-              "0.581",
-              "0.861",
-              "3.207",
-              "5.760"
+              "9.768"
             ],
             [
-              "Swin-T",
-              "0.689",
-              "1.158",
-              "4.899",
-              "7.928",
-              "0.616",
-              "0.891",
-              "3.800",
-              "6.502"
+              "CO-BYOL RF115-R50",
+              "2/EMA",
+              "0.321",
+              "0.475",
+              "1.188",
+              "2.257"
             ],
             [
-              "Swin-S",
-              "0.682",
+              "CO-BYOL RF163-R50",
+              "2/EMA",
+              "0.331",
+              "0.178",
               "1.544",
-              "5.255",
-              "8.017",
-              "0.599",
-              "1.099",
-              "4.038",
-              "6.799"
+              "2.553"
             ],
             [
-              "Swin-B",
-              "0.587",
+              "CO-BYOL RF195 / paper193",
+              "2/online",
+              "0.311",
+              "0.534",
+              "1.425",
+              "2.286"
+            ],
+            [
+              "CO-BYOL BagNet33",
+              "2/EMA",
+              "2.014",
+              "4.662",
+              "10.808",
+              "15.588"
+            ],
+            [
+              "CO-BYOL ViT-S/16",
+              "2/online",
+              "0.676",
+              "1.128",
+              "4.840",
+              "7.571"
+            ],
+            [
+              "CO-BYOL Swin-T",
+              "2/online",
+              "1.193",
+              "2.643",
+              "7.749",
+              "11.966"
+            ],
+            [
+              "CO-BYOL Swin-S",
+              "2/EMA",
+              "1.086",
+              "2.702",
+              "7.363",
+              "11.194"
+            ],
+            [
+              "CO-BYOL Swin-B",
+              "2/EMA",
+              "0.802",
+              "1.544",
+              "5.226",
+              "8.581"
+            ],
+            [
+              "BYOL ResNet50",
+              "1/EMA",
+              "0.892",
+              "1.752",
+              "5.048",
+              "7.957"
+            ],
+            [
+              "BYOL RF99-R50",
+              "2/EMA",
+              "0.353",
+              "0.297",
+              "1.574",
+              "2.494"
+            ],
+            [
+              "BYOL BagNet33",
+              "1/EMA",
+              "1.889",
+              "4.424",
+              "9.828",
+              "14.192"
+            ],
+            [
+              "MoCoV3 ResNet50",
+              "2/EMA",
+              "0.741",
               "1.099",
-              "3.919",
-              "6.770",
-              "0.522",
-              "0.891",
-              "3.444",
-              "5.701"
+              "4.305",
+              "6.770"
+            ],
+            [
+              "CO-MoCoV3 ResNet50",
+              "2/online",
+              "1.675",
+              "4.186",
+              "10.006",
+              "14.222"
             ]
           ],
           "anchos": [
-            115,
-            48,
-            48,
-            48,
-            48,
-            48,
-            48,
-            48,
-            48
+            174,
+            89,
+            59,
+            59,
+            59,
+            59
           ],
-          "tamano": 7.0
+          "tamano": 7.7
         },
         {
           "tipo": "parrafo",
-          "texto": "ResNet18 tiene la mayor media descriptiva de mAP entre condiciones, 1.646%, con 1.861% original y 1.432% LR, también es la selección ampliada por validación, eso no significa que gane todas las métricas, BagNet33 presenta Rank-1 superior en ambas condiciones."
+          "texto": "Época significa número de épocas adicionales elegidas y no número de épocas entrenadas, todas completaron dos, EMA equivale a rama objetivo, cada prueba usa 3368 consultas y galería original de 19732 imágenes, no cambia el encoder entre original y LR."
         },
         {
           "tipo": "parrafo",
-          "texto": "ViT-S/16 presenta la menor caída relativa de mAP, 7.761%, pero su mAP LR es 0.581%, conservar una mayor fracción de una precisión inicial baja no lo convierte en el mejor recuperador absoluto, la robustez relativa y la calidad final deben leerse por separado."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "BagNet33 tiene el mayor cociente descriptivo entre mAP media porcentual y minutos de entrenamiento, no es una medición de eficiencia energética, RF39 requirió 41.481 minutos de entrenamiento y no mejoró la mAP de las alternativas de mejor precisión en esta ejecución."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "Los resultados son bajos en términos absolutos y no acreditan un sistema de reidentificación útil en producción, una semilla y menos de una época no permiten significación estadística ni atribuir diferencias pequeñas a superioridad general del método o de una arquitectura."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "Los valores se copian de resultados/comparacion_arquitecturas.csv y se contrastan con los 112 valores de sus prueba.json originales, los JSON mantienen proporciones 0 a 1 y el CSV común porcentajes, metricas.csv contiene también validación y rama objetivo, no mezclar escalas."
+          "texto": "El seleccionado acierta en Rank-1 en 157 de 3368 consultas reducidas, su caída de mAP es 0.152917 puntos porcentuales y 7.055816% relativa, las ocho métricas, ambas caídas, configuraciones y costes exactos están en comparacion_fase2.csv, las otras ramas de la misma época en comparacion_ramas_fase2.csv."
         }
       ]
     },
     {
-      "titulo": "8. Bases, ablaciones y conclusiones acotadas",
-      "subtitulo": "Comparaciones a arquitectura fija, sin ocultar resultados desfavorables a CO",
+      "titulo": "8. Arquitecturas y coste medido",
+      "subtitulo": "Coste de entrenamiento observado, sin atribuirlo a energía ni a FLOPs equivalentes",
       "bloques": [
         {
           "tipo": "tabla",
           "cabecera": [
-            "Comparación, rama online",
-            "mAP original %",
-            "mAP LR %"
+            "Encoder",
+            "Parám. M",
+            "Min F2",
+            "Min F1+F2",
+            "VRAM F2 GiB"
           ],
           "filas": [
             [
-              "BYOL RF99",
-              "0.428",
-              "0.262"
+              "ResNet18",
+              "11.169",
+              "9.276",
+              "12.650",
+              "1.751"
             ],
             [
-              "CO-BYOL RF99",
-              "0.521",
-              "0.367"
+              "ResNet50",
+              "23.508",
+              "7.555",
+              "9.123",
+              "1.336"
             ],
             [
-              "BYOL BagNet33",
-              "1.548",
-              "1.473"
+              "RF29-R18",
+              "7.525",
+              "30.644",
+              "41.576",
+              "1.643"
             ],
             [
-              "CO-BYOL BagNet33",
-              "1.587",
-              "1.334"
+              "RF39-R50",
+              "23.750",
+              "91.151",
+              "132.632",
+              "4.765"
             ],
             [
-              "RF99 crop0.9 sin CO",
-              "0.522",
-              "0.447"
+              "RF67-R50",
+              "23.750",
+              "16.789",
+              "20.701",
+              "1.586"
             ],
             [
-              "RF99 crop0.9 con CO",
-              "0.382",
-              "0.297"
+              "RF99-R50",
+              "23.750",
+              "12.322",
+              "14.779",
+              "1.383"
+            ],
+            [
+              "RF115-R50",
+              "23.750",
+              "12.032",
+              "14.834",
+              "1.362"
+            ],
+            [
+              "RF163-R50",
+              "23.750",
+              "11.896",
+              "13.352",
+              "1.110"
+            ],
+            [
+              "RF195 / paper193",
+              "23.750",
+              "12.075",
+              "13.561",
+              "1.106"
+            ],
+            [
+              "BagNet33",
+              "16.261",
+              "10.509",
+              "13.366",
+              "2.586"
+            ],
+            [
+              "ViT-S/16",
+              "21.666",
+              "7.237",
+              "8.746",
+              "2.405"
+            ],
+            [
+              "Swin-T",
+              "27.519",
+              "8.983",
+              "11.033",
+              "2.204"
+            ],
+            [
+              "Swin-S",
+              "48.837",
+              "13.822",
+              "17.404",
+              "2.926"
+            ],
+            [
+              "Swin-B",
+              "86.743",
+              "15.171",
+              "18.857",
+              "4.134"
             ]
           ],
           "anchos": [
-            273,
-            113,
-            113
+            162,
+            77,
+            80,
+            94,
+            86
+          ],
+          "tamano": 8.1
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los 19 bucles de continuación suman 302.644 minutos, prueba 37.951, validación inicial y por época 7.827 sin azar ni pilotos, el total desde el inicio de tarea fue 379.798 minutos e incluye preparación, serialización y cierre, no se deben sumar tiempos parciales para sustituir ese total."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "BagNet33 ofrece la mejor mAP media y el mayor cociente descriptivo mAP media/minuto acumulado entre las catorce referencias, se excluye de ese cociente el coste compartido de pilotos, no equivale a energía ni a coste de una búsqueda completa, la VRAM es memoria máxima asignada por PyTorch y no toda la tarjeta."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "RF29 reduce su pico de fase 1 de 10.057 a 1.643 GiB con recomputación, RF39 de 5.512 a 4.765 GiB, esas reducciones operativas no prueban mejor representación, RF39 consume 91.151 minutos adicionales y tiene peor mAP que BagNet33."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "BagNet33 tiene 16.261M parámetros frente a unos 23.5M de la igualación del paper, RF195 sigue las operaciones de la figura que lo llama RF193, ResNet50 estándar da RF teórico 427 frente a aproximadamente 425, ViT promedia parches sin CLS y usa ventanas locales 6x6, Swin 3x3, padding válido y muestreo determinista son adaptaciones declaradas."
+        }
+      ]
+    },
+    {
+      "titulo": "9. Bases, ablación y encoder aleatorio",
+      "subtitulo": "Se conservan resultados que no favorecen a CO ni al aprendizaje",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Comparación",
+            "O base %",
+            "O CO %",
+            "LR base %",
+            "LR CO %"
+          ],
+          "filas": [
+            [
+              "BYOL ResNet50",
+              "0.903",
+              "0.605",
+              "0.892",
+              "0.502"
+            ],
+            [
+              "BYOL RF99",
+              "0.552",
+              "1.324",
+              "0.353",
+              "1.140"
+            ],
+            [
+              "BYOL BagNet33",
+              "2.017",
+              "2.167",
+              "1.889",
+              "2.014"
+            ],
+            [
+              "MoCoV3 ResNet50",
+              "0.933",
+              "1.909",
+              "0.741",
+              "1.675"
+            ]
+          ],
+          "anchos": [
+            163,
+            84,
+            84,
+            84,
+            84
           ],
           "tamano": 8.2
         },
         {
           "tipo": "parrafo",
-          "texto": "En RF99 con recorte mínimo 0.2 CO aumenta mAP frente al control sin CO, ese contraste conserva arquitectura, batch y actualizaciones, en BagNet33 la mejora original es pequeña y la mAP LR disminuye, por ello no se afirma una mejora uniforme por añadir el término local."
+          "texto": "CO mejora ambas condiciones en RF99, BagNet33 y el control MoCoV3, empeora frente a BYOL ResNet50, cada variante usa su propia época/rama elegida por validación, ese contraste práctico no aísla el efecto a checkpoint idéntico, los tiempos de los cinco controles también están en el CSV completo."
         },
-        {
-          "tipo": "parrafo",
-          "texto": "Los controles RF99 con recorte mínimo 0.9 completaron entrenamiento y ambas evaluaciones, CO da menor mAP en original y LR, este resultado no respalda localmente la mejora sin recortes pequeños sugerida por el paper y tampoco refuta sus experimentos largos en clasificación, los dominios y calendarios son distintos."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "También existen entrenamientos con peso local 0.1, 0.2, 0.5 y 1, cantidades K 1, 4, 16, 64 y valor por defecto 196 para RF99, dos variantes sin MLP, una cabeza compartida, kernels Swin 1, 2 y 3 y alineamiento en capa 2 frente al control en capa 4 a K64, revisar cobertura_experimentos.csv para los nombres equivalentes."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "La ablación de cabeza compartida cambia la reutilización de parámetros, la profundidad local y las estadísticas BatchNorm a la vez, no aísla solo compartir pesos, la lectura antes del MLP se analiza sin reentrenar y no equivale a eliminar ese módulo durante el aprendizaje."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "Los errores visuales documentados incluyen oclusión, encuadre, iluminación y similitud de ropa, las explicaciones se apoyan en ejemplos y no demuestran causalidad sobre las representaciones, los veinte casos conservan sus índices y etiquetas evaluativas en resultados/ejemplos."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "El laboratorio exige al menos una base y una ablación, no se afirma que se hayan entrenado todos los cruces de algoritmo, arquitectura y recorte de las tablas bibliográficas, los controles ya existentes se conservan y no se usan las pruebas para ajustar otro modelo."
-        }
-      ]
-    },
-    {
-      "titulo": "9. Diferencias y partes no reproducidas",
-      "subtitulo": "Separar adaptación implementada, experimento pendiente y componente ausente",
-      "bloques": [
         {
           "tipo": "tabla",
           "cabecera": [
-            "Parte del paper",
-            "Estado local y por qué",
-            "Impacto en la evaluación"
+            "Bajo inicialización en validación",
+            "Aleatoria %",
+            "Elegida %"
           ],
           "filas": [
             [
-              "Clasificación ImageNet / Tiny-ImageNet",
-              "Reemplazada por recuperación del laboratorio sin clasificador de identidades",
-              "No comparar mAP con Top-1 ni afirmar reproducción de sus benchmarks"
+              "ResNet50",
+              "4.831",
+              "4.096"
             ],
             [
-              "Calendarios 100 / 300 / 400 / 1000 épocas",
-              "No ejecutados, 0.908 épocas locales por restricción temporal",
-              "No convergencia ni validación de la escala publicada"
+              "RF39-R50",
+              "4.836",
+              "3.942"
             ],
             [
-              "Múltiples semillas y barrido de LR",
-              "No ejecutados, tasas locales explícitas y una semilla",
-              "Sin intervalos estadísticos ni selección de LR equivalente al paper"
+              "RF67-R50",
+              "4.898",
+              "4.847"
             ],
             [
-              "BagNet igualado en parámetros",
-              "No reproducido, encoder propio de 16.261M frente a unos 23.5M",
-              "El efecto de capacidad puede confundirse con el campo receptivo"
+              "RF163-R50",
+              "4.549",
+              "3.308"
             ],
             [
-              "Places365, tabla G.11",
-              "Sin datos recibidos ni ejecutor de transferencia literal, solo metadatos pendientes",
-              "No se declara transferencia implementada ni evaluada"
-            ],
-            [
-              "AMDIM y SD-BYOL, tabla 1",
-              "No implementados, procedencia y alcance de comparadores pendientes",
-              "No atribuirles resultados locales ni inferir cobertura total de la tabla"
-            ],
-            [
-              "Barridos completos de recortes / RF",
-              "Parciales, dos controles RF99 crop0.9 sí completados",
-              "No generalizar a todas las arquitecturas, algoritmos o mínimos de recorte"
-            ],
-            [
-              "Kernel Swin 4 y 5, alineamiento capa 3",
-              "Configurados pero no ejecutados",
-              "No usar la existencia del plan como evidencia de resultados"
-            ],
-            [
-              "Mejor lectura antes / después MLP, tabla 6",
-              "Lecturas disponibles, no reproduce automáticamente su selección de mejor punto",
-              "La comparación de cabeza compartida tiene otras diferencias locales"
-            ],
-            [
-              "Campos efectivos figuras 2 / C.7",
-              "16 imágenes y posición central, sin ambas posiciones ni submuestreo espacial paso 2",
-              "Evidencia exploratoria local, no réplica literal de las figuras"
-            ],
-            [
-              "PGD, tabla 5",
-              "Objetivo de recuperación con centro de positivos, inicio aleatorio declarado",
-              "Ataque adaptado, no exactitud adversarial del clasificador del paper"
-            ],
-            [
-              "Eficiencia, tabla H.13",
-              "Conteo Conv2d/Linear y tiempos locales, no todo el coste de cabezas y entrenamiento",
-              "No equivalencia literal de FLOPs, hardware ni batch de referencia"
+              "RF195 / paper193",
+              "4.170",
+              "2.851"
             ]
           ],
           "anchos": [
-            135,
-            193,
-            171
+            251,
+            124,
+            124
           ],
-          "tamano": 7.8
+          "tamano": 8.1
         },
         {
           "tipo": "parrafo",
-          "texto": "CO-DINO pertenece a una versión anterior y no se agrega como supuesto requisito de la publicación final entregada, la temperatura MoCo y algunos valores de ataque proceden de fuentes auxiliares explícitas, ninguna laguna se completa atribuyendo al paper detalles que no contiene."
+          "texto": "La inicialización aleatoria se midió solo en validación y no es un ranking aleatorio, cinco referencias quedan por debajo, RF67 difiere solo 0.051 puntos, no hay prueba de significación, BagNet33 sube de 8.453% a 10.327% medio de validación, no se afirma que todo SSL supere inicialización ni que toda fase 1 fuera equivalente a no entrenar."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El piloto RF99 mide cambio relativo del primer tensor de aproximadamente 0.088% con tasa base 0.2 y 0.772% con 1.6, no es una medida de todos los pesos ni demuestra una causa BatchNorm, los controles históricos de crop0.9, pesos locales, K, MLP y cabezas permanecen en fase 1, compartir cabeza cambia también profundidad local y BatchNorm."
         }
       ]
     },
     {
-      "titulo": "10. Límites de la evidencia y correcciones",
-      "subtitulo": "Qué demuestra la auditoría y qué sigue sin poder certificarse",
+      "titulo": "10. Observaciones externas y decisiones",
+      "subtitulo": "Propuestas verificadas, correcciones priorizadas y mejoras pospuestas",
       "bloques": [
         {
           "tipo": "tabla",
           "cabecera": [
-            "Evidencia o incidencia",
-            "Resultado y límite"
+            "Observación / decisión",
+            "Evidencia y motivo"
           ],
           "filas": [
             [
-              "Auditoría actual aprobada",
-              "verificacion_final.json contrasta coherencia, ramas, cantidades y análisis, no certifica convergencia ni reproducción íntegra"
+              "Calendario menor de una época, confirmado",
+              "Se continuaron 19 checkpoints válidos con presupuesto común, no se invalidan métricas históricas correctas por entrenar poco"
             ],
             [
-              "Checkpoints históricos",
-              "48 revisados estructuralmente en CPU con FakeTensor/mmap, claves, formas, tipos y configuración, no todos sus valores ni finitud"
+              "Tasa pequeña, valores confirmados",
+              "Se midió encoder aleatorio y un tensor en pilotos, se eligieron tasas por validación, la supuesta causa BatchNorm no quedó demostrada"
             ],
             [
-              "Encoders compactos",
-              "638 tensores BagNet33 y 240 ResNet18 con carga estricta y torch.equal CPU, sin repetir inferencia"
+              "Geometría 224 cuadrada, confirmada",
+              "Se mantuvo para comparar las catorce arquitecturas y conservar ventanas locales, entrada rectangular exige otro experimento y no se mezcló"
             ],
             [
-              "Preservación histórica",
-              "292 registros por SHA256 sin cambios durante la continuación y seguimiento, 49 archivos de pesos históricos por tamaño/fecha en el último control"
+              "Entrenamiento sin degradación LR",
+              "Se pospuso como mejora opcional, el laboratorio la permite pero no exige, no mezclar intervención nueva con tasa y calendario"
             ],
             [
-              "Código al iniciar entrenamiento",
-              "No se tomó hash exactamente al primer inicio, la captura retrospectiva y el commit actual no demuestran la versión histórica exacta"
+              "Solo 100 consultas de validación",
+              "No se inventó un split ni nuevas consultas, se limitó el barrido y la fuerza de las conclusiones"
             ],
             [
-              "15 metadatos legacy",
-              "Campo externo validation en análisis de representaciones, lector y resultado interno training sin identidades, se conserva el error original visible"
+              "Restricción de memoria",
+              "Recomputación de rama online preserva buffers BatchNorm, batch común 8 probado antes de lanzar, no se simula con acumulación"
             ],
             [
-              "Guardas corregidas en CPU",
-              "Auditoría rechaza rama ausente y análisis sin archivo, devuelve error, impide repetir suites y preserva panel completo"
+              "Límite global nuevo",
+              "Plazo absoluto de 10 horas y reserva para evaluación, no se reinicia el presupuesto por modelo ni se toca la guarda histórica de 3 horas"
             ],
             [
-              "Preparación de datos",
-              "Se añadió CRC al aceptar archivos existentes, comprobado con copias sintéticas de igual tamaño"
+              "Parche mejoras_lab3_noche.zip",
+              "No recibido, no se aplicaron archivos ausentes ni se inventa qué contenían"
             ],
             [
-              "Recomputación RF39",
-              "Prueba CPU dirigida con salidas, gradientes y buffers iguales, no prueba universal de todas las ejecuciones posibles"
+              "Video de fase 2 falló al cerrar",
+              "Faltaba matplotlib en entorno de voz, corregido después en CPU con entorno de análisis existente, registros de fallo conservados"
+            ]
+          ],
+          "anchos": [
+            162,
+            337
+          ],
+          "tamano": 8.0
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El video vigente dura 717.56 segundos y pasó decodificación completa, su SHA256 es dadf254ce6eeea5b3ca50460d7343043055117454ff4407a91da99cb2c8df6b7, el registro inicial con fallo audiovisual no se reescribe, revision_resultados_20261020.json acredita la reparación posterior."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Se inspeccionaron los veinte casos de fase 2, cinco aciertos y cinco fallos por condición, la ropa similar, mochilas, oclusión y punto de vista apoyan hipótesis visuales, no causalidad sobre el encoder, no deben interpretarse como 50% de acierto frente al Rank-1 global mucho menor."
+        }
+      ]
+    },
+    {
+      "titulo": "11. Lo no reproducido y sus efectos",
+      "subtitulo": "Separar omisiones del paper, adaptaciones y requisitos humanos pendientes",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Parte",
+            "Estado y consecuencia"
+          ],
+          "filas": [
+            [
+              "Benchmarks de clasificación",
+              "Se adaptan a recuperación del laboratorio sin clasificador de identidades, mAP no se compara con Top-1 ImageNet"
             ],
             [
-              "Documentación de publicación",
-              "Se declara filelock==3.32.3 porque comparacion.py ya lo importa, corrección de instalación, sin cambiar pesos ni método"
+              "Calendarios largos del paper",
+              "No ejecutados, solo unas 2.908 épocas equivalentes acumuladas, no se prueba convergencia ni escala publicada"
+            ],
+            [
+              "Semillas y ajuste por arquitectura",
+              "Una semilla y seis pilotos comunes, sin intervalos ni barridos completos, cien consultas de validación"
+            ],
+            [
+              "BagNet igualado en parámetros",
+              "No reproducido, 16.261M frente a unos 23.5M, capacidad y RF pueden confundirse, corregirlo requiere otra arquitectura y entrenamiento"
+            ],
+            [
+              "Places365 y transferencia literal",
+              "Datos no recibidos y ejecutor literal ausente, no se declara implementado ni evaluado"
+            ],
+            [
+              "AMDIM y SD-BYOL",
+              "Comparadores bibliográficos no implementados, CO-DINO pertenece a una versión anterior y no se agrega como requisito del PDF final"
+            ],
+            [
+              "Barridos completos",
+              "Cruces de recortes, kernels Swin 4/5 y capa 3 incompletos, una configuración en plan no es una ejecución"
+            ],
+            [
+              "44 análisis de fase 1",
+              "Máscaras, PGD, RF efectivo y lecturas no repetidos con pesos nuevos, no son evidencia de robustez de fase 2"
+            ],
+            [
+              "Análisis históricos adaptados",
+              "PGD usa objetivo de recuperación, RF efectivo usa 16 imágenes y centro, FLOPs Conv2d/Linear no reflejan todo el entrenamiento"
+            ],
+            [
+              "Selección y prueba histórica",
+              "Se selecciona por validación pero ya existían resultados de prueba de fase 1, no es un nuevo conjunto ciego"
+            ],
+            [
+              "Estadísticas y precisión",
+              "CO no mejora todos los controles, cinco redes bajo inicialización en validación, no afirmar causalidad ni superioridad general"
+            ],
+            [
+              "Actividades humanas",
+              "Revisión grupal, envío al formulario y defensa individual pendientes, el video usa narración sintética y requiere revisión"
             ]
           ],
           "anchos": [
@@ -1068,126 +1291,157 @@
         },
         {
           "tipo": "parrafo",
-          "texto": "La separación de identidades train/validación/prueba depende de lo declarado en los materiales porque training no proporciona identidades, no se puede probar mediante ausencia de duplicados exactos, la inspección visual por sí sola tampoco permitiría certificarla."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "Las marcas temporales locales y los logs respaldan el orden registrado pero no son una prueba forense inmutable de toda actividad externa, tampoco se atribuyen a correcciones posteriores resultados experimentales nuevos, las pruebas CPU dirigidas solo validan los caminos que cubren."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "Los tiempos antiguos de validación y prueba no registrados por separado permanecen sin dato, no se reconstruyen por restas de intervalos de distinto alcance ni se repite GPU, el pico de memoria no es consumo total del dispositivo y el cociente mAP/minuto no mide energía."
+          "texto": "El atributo final_training de los datos no se convierte automáticamente en instrucción superior al laboratorio, no se agregó validación al aprendizaje, el alcance de comparadores y la posible errata de audio siguen documentados, ninguna ambigüedad se resuelve inventando contenido del paper."
         }
       ]
     },
     {
-      "titulo": "11. Entrega en GitHub y revisión sin GPU",
-      "subtitulo": "Código y evidencia completos del proyecto, pesos grandes y datos declarados por separado",
+      "titulo": "12. Evidencia, trazabilidad e integridad",
+      "subtitulo": "Qué se comprobó y qué no certifica esa comprobación",
       "bloques": [
         {
           "tipo": "tabla",
           "cabecera": [
-            "Ubicación",
-            "Contenido y límite"
+            "Evidencia",
+            "Alcance y límite"
           ],
           "filas": [
             [
-              "Repositorio Git",
-              "12 archivos Python, requirements, documentación, guía PDF, JSON/CSV, análisis, gráficos y video"
+              "152 métricas CSV/JSON de fase 2",
+              "19 configuraciones por 8 métricas seleccionadas, ambas ramas con conteos y protocolo común, revisión posterior sin recalcular embeddings"
             ],
             [
-              "Release entrega-v1",
-              "ZIP compacto con el proyecto y ambos archivos de encoders, también se publica esta guía para acceso directo"
+              "378 registros históricos protegidos",
+              "Hashes del plan de fase 2 conservados, no se sustituyen métricas antiguas por resultados nuevos"
             ],
             [
-              "encoders_seleccionados.pt",
-              "Ambas ramas de BagNet33 histórico, 130731519 bytes, sin cabezas ni optimizador"
+              "13 fuentes de ejecución",
+              "codigo_ejecucion_SHA256.json captura fuentes antes de la cola, copias exactas en procedencia_codigo, no editadas para publicar"
             ],
             [
-              "encoders_comparacion.pt",
-              "Ambas ramas de ResNet18 ampliado, 89508573 bytes, sin cabezas ni optimizador"
+              "Supervisión original",
+              "sesion_independiente.json, estado_trabajos.json, eventos.jsonl y errores.log conservan cierre y fallo audiovisual inicial"
             ],
             [
-              "54 checkpoints completos",
-              "38720560690 bytes locales, 36.06 GiB, excluidos de Git y del ZIP compacto, inventario por archivo incluido"
+              "Scripts auxiliares",
+              "procedencia_scripts contiene las copias ejecutadas, incluida versión con fallo de video, su reparación CPU posterior está descrita aparte"
             ],
             [
-              "Datos y entorno",
-              "HDF5 y entorno virtual externos, no se alteran ni se incorporan al repositorio"
+              "Pruebas operativas previas",
+              "CPU salidas/gradientes/buffers de recomputación, cursor y RNG, GPU calibración y prueba de 3 pasos descartada sin testing, no certifican equivalencia universal"
             ],
             [
-              "CONTENIDO_PAQUETE.json",
-              "Declara omisiones de pesos y permite auditoría de un paquete compacto sin presentarlas como archivos existentes"
+              "Pesos compactos de fase 1",
+              "Revisión previa con carga estricta y torch.equal, 638 tensores BagNet y 240 ResNet18, no repetida para publicar"
             ],
             [
-              "docs/inventario_ejecuciones.json",
-              "54 configuraciones, resúmenes y hashes de métricas, no contiene pesos faltantes"
+              "Pesos seleccionados de fase 2",
+              "Copia exacta del archivo exportado por SHA256, no nueva inferencia ni nueva carga numérica de todos los checkpoints"
+            ],
+            [
+              "Auditorías históricas",
+              "48 checkpoints con FakeTensor/mmap: estructura, no todos los valores ni finitud, no extenderlo a 73 estados completos"
+            ],
+            [
+              "Código de fase 1",
+              "No existe hash tomado exactamente al primer inicio, captura retrospectiva no prueba esa versión histórica exacta"
+            ],
+            [
+              "15 metadatos legacy",
+              "Etiqueta externa validation errónea en análisis antiguos, lector e interior training sin identidades, originales conservados"
+            ],
+            [
+              "Estados pendientes anteriores",
+              "Los JSON previos indican publicación pendiente a su fecha, esta entrega posterior los contextualiza y no los reescribe"
             ]
           ],
           "anchos": [
             155,
             344
           ],
-          "tamano": 8.2
+          "tamano": 7.8
         },
         {
           "tipo": "parrafo",
-          "texto": "La revisión estática de código y resultados no necesita GPU ni los checkpoints completos, para repetir inferencia de los dos seleccionados se requiere descargar los encoders y disponer de los HDF5, para reevaluar los otros modelos deben recuperarse sus checkpoints locales, no basta con sus JSON de métricas."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "Leer el inventario y los JSON no ejecuta modelos, el comando de auditoría existente inspecciona archivos y puede regenerar sus informes de coherencia, si se usa debe hacerse en una copia de revisión para mantener intacta la evidencia original."
-        },
-        {
-          "tipo": "tabla",
-          "cabecera": [
-            "Paso",
-            "Instrucción"
-          ],
-          "filas": [
-            [
-              "PowerShell, en una copia del repositorio",
-              "$env:CUDA_VISIBLE_DEVICES='-1'"
-            ],
-            [
-              "Auditoría CPU con intérprete preparado",
-              "python main.py auditar --dispositivo cpu --datos RUTA_A_LOS_HDF5"
-            ]
-          ],
-          "anchos": [
-            196,
-            303
-          ],
-          "tamano": 7.7
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "No iniciar ejecutar, ampliar, completar-arquitecturas, analizar-panel ni evaluar para una evaluación documental, la autorización vigente de publicación no amplía el permiso de GPU, las fases experimentales existentes están cerradas."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "El video usa narración sintética local con créditos, duración verificada 14 min 05.48 s, revisión del grupo, envío al formulario y defensa individual siguen pendientes, subir el repositorio no equivale a entregar en el formulario académico."
+          "texto": "La aprobación automática verifica coherencia y cobertura del panel, no certifica convergencia ni reproducción experimental íntegra, la separación de identidades con training sin etiquetas no se prueba por ausencia de duplicados de píxeles."
         }
       ]
     },
     {
-      "titulo": "12. Mapa del código y referencias",
-      "subtitulo": "Localizadores verificables para una IA que revise el repositorio",
+      "titulo": "13. Contenido del ZIP y acceso",
+      "subtitulo": "Tres archivos compactos, métricas completas y omisiones explícitas",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Archivo compacto, solo en ZIP",
+            "Procedencia / uso",
+            "MiB"
+          ],
+          "filas": [
+            [
+              "encoders_seleccionados.pt",
+              "BagNet33 fase 1, ambas ramas",
+              "124.68"
+            ],
+            [
+              "encoders_comparacion.pt",
+              "ResNet18 fase 1, ambas ramas",
+              "85.36"
+            ],
+            [
+              "encoders_fase2_seleccionados.pt",
+              "BagNet33 fase 2, ambas ramas, elegir objetivo",
+              "124.67"
+            ]
+          ],
+          "anchos": [
+            211,
+            230,
+            58
+          ],
+          "tamano": 8.2
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El manifiesto CONTENIDO_PAQUETE.json registra SHA256 y tamaño de los tres archivos, enumera 92 archivos locales de pesos omitidos que suman 55.074 GiB, incluye los 54 checkpoints completos de fase 1, 19 de fase 2 y 19 exportados por configuración cuyo seleccionado se copia a la raíz, el ZIP no contiene esos originales duplicados ni los restantes encoders."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los HDF5 y los entornos son externos, Git omite todos los pesos y el ZIP los incluye solo mediante lista explícita, los compactos contienen encoders, configuración y selección, sin optimizadores ni cabezas para retomar entrenamiento, reevaluar otras configuraciones requiere recuperar sus pesos locales."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El repositorio privado incluye las fuentes, JSON, CSV, registros, figuras y video, la otra IA necesita acceso autorizado a GitHub, entrega-v2 contiene ZIP, PDF y comprobantes SHA256, entrega-v1 y documentos históricos permanecen disponibles, la ausencia de permisos puede mostrarse como repositorio inexistente."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Para revisión estática no se necesita entrenar ni abrir los HDF5, una reevaluación posterior autorizada del encoder vigente puede usar main.py evaluar con --checkpoint encoders_fase2_seleccionados.pt, --datos RUTA_A_LOS_HDF5, --resultados evaluacion_fase2_autorizada, --particion testing y --dispositivo cpu, no se ejecutó para publicar."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "No ejecutar main.py informe como una lectura del documento consolidado: regenera el informe histórico, fase2 consolidar también escribe archivos, las acciones ejecutar, ampliar, completar-arquitecturas y fase2 pueden iniciar cómputo, la guía permite analizar lo existente sin lanzar experimentos."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El video vigente es resultados_fase2/audiovisual/VIDEO.mp4, el de la raíz VIDEO.mp4 es histórico de fase 1, el inventario inicial se conserva en docs/inventario_ejecuciones.json y el nuevo en docs/inventario_fase2.json, los comprobantes externos al ZIP evitan una referencia circular a su propio hash."
+        }
+      ]
+    },
+    {
+      "titulo": "14. Localizadores y fuentes",
+      "subtitulo": "Mapa de revisión y criterio final para la IA evaluadora",
       "bloques": [
         {
           "tipo": "tabla",
           "cabecera": [
             "Archivo y línea",
-            "Símbolo principal"
+            "Símbolo"
           ],
           "filas": [
             [
               "codigo/datos.py:43",
               "Entrenamiento"
-            ],
-            [
-              "codigo/datos.py:62",
-              "Evaluacion"
             ],
             [
               "codigo/modelos.py:72",
@@ -1198,24 +1452,12 @@
               "Encoder"
             ],
             [
-              "codigo/modelos.py:194",
-              "Rama"
-            ],
-            [
               "codigo/modelos.py:253",
               "SSL"
             ],
             [
-              "codigo/modelos.py:314",
-              "DINO"
-            ],
-            [
               "codigo/entrenamiento.py:158",
               "entrenar"
-            ],
-            [
-              "codigo/entrenamiento.py:247",
-              "exportar_encoders"
             ],
             [
               "codigo/evaluacion.py:12",
@@ -1226,43 +1468,39 @@
               "evaluar_encoder"
             ],
             [
-              "codigo/analisis.py:213",
-              "ejecutar_panel"
+              "codigo/fase2.py:562",
+              "ejecutar_fase2"
             ],
             [
-              "codigo/comparacion.py:198",
-              "ejecutar_cola"
+              "codigo/fase2.py:308",
+              "guardar_estado_entrenamiento"
             ],
             [
-              "codigo/auditoria.py:29",
-              "auditar_resultados"
+              "codigo/fase2.py:399",
+              "cargar_encoders"
             ]
           ],
           "anchos": [
-            283,
-            216
+            255,
+            244
           ],
-          "tamano": 7.9
+          "tamano": 8.1
         },
         {
           "tipo": "parrafo",
-          "texto": "Las líneas corresponden al código de esta publicación, la guía, los inventarios y los hashes deben leerse junto con los JSON individuales, REVISION_CUMPLIMIENTO.md conserva la auditoría histórica de 48 ejecuciones y tiene prioridad temporal anterior a COMPARACION_ARQUITECTURAS.md y al seguimiento CPU final, no mezclar sus cifras como si fueran contemporáneas."
+          "texto": "INFORME.md y PUBLICACION_FASE2.md describen el estado vigente, resultados_fase2/OBSERVACIONES_VERIFICADAS.md conserva el criterio sobre las propuestas externas, comparacion_fase2.csv y los JSON individuales acreditan las métricas, no se reemplaza evidencia experimental por un estado narrativo de completado."
         },
         {
           "tipo": "parrafo",
-          "texto": "Laboratorio 3.pdf, 3 páginas, SHA256 322bdc0185f86fe187bfb94f19d423142d94a72c920c2dc1058d62945e6ac0e2, fuente original proporcionada por el usuario."
+          "texto": "Laboratorio 3.pdf, 3 páginas, SHA256 322bdc0185f86fe187bfb94f19d423142d94a72c920c2dc1058d62945e6ac0e2, material original del usuario, Aubret, Teulière y Triesch, Seeing the whole in the parts with self-supervised representation learning, Neurocomputing 675, 132973, DOI 10.1016/j.neucom.2026.132973, main (3).pdf de 12 páginas, SHA256 3a93097c694e1e9cfa6666f9bc55d55ab44ddb463b6c6934b9c4e874127a41d7."
         },
         {
           "tipo": "parrafo",
-          "texto": "Aubret, Teulière y Triesch, Seeing the whole in the parts with self-supervised representation learning, Neurocomputing 675, 132973, 2026, DOI 10.1016/j.neucom.2026.132973, PDF recibido main (3).pdf, 12 páginas, SHA256 3a93097c694e1e9cfa6666f9bc55d55ab44ddb463b6c6934b9c4e874127a41d7."
+          "texto": "Protocolo de recuperación, documentación oficial Market-1501, zheng-lab-anu.github.io/Project/project_reid.html, el paper describe clasificación y no prescribe este filtrado, METODOLOGIA.md distingue estas fuentes y las adaptaciones, los PDF originales no se redistribuyen como código."
         },
         {
           "tipo": "parrafo",
-          "texto": "Protocolo oficial de Market-1501, https://zheng-lab-anu.github.io/Project/project_reid.html, detalles de ataque y diferencias adicionales se citan en METODOLOGIA.md, no se copian los PDF fuente al repositorio como si fueran código del proyecto."
-        },
-        {
-          "tipo": "parrafo",
-          "texto": "La valoración independiente debe separar fidelidad del mecanismo CO, adecuación al laboratorio, integridad documental y fuerza de las conclusiones empíricas, una implementación verificable con presupuesto corto puede cumplir la tarea básica y seguir sin demostrar las conclusiones experimentales de la publicación."
+          "texto": "La entrega permite revisar mecanismo CO, cumplimiento básico y comparación de arquitecturas, sigue siendo una reproducción parcial con bajo rendimiento absoluto, no se presenta como validación integral del artículo, quedan revisión humana, envío y defensa, esta publicación no añade entrenamientos ni inferencias de encoders."
         }
       ]
     }

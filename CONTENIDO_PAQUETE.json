@@ -1,73 +1,442 @@
 {
-  "tipo": "repositorio_y_entrega_compacta",
-  "repositorio_previsto": "https://github.com/juanvasquez-ship-it/Lab-3-deep-learning",
-  "descarga_prevista": "https://github.com/juanvasquez-ship-it/Lab-3-deep-learning/releases/tag/entrega-v1",
-  "contenido": "código completo del proyecto, resultados y análisis guardados, gráficos, video, guía PDF y manifiestos",
-  "encoders_incluidos_en_git": false,
+  "tipo": "entrega_compacta_fases_1_y_2",
+  "fecha_Bogota": "2026-10-20",
+  "repositorio": "https://github.com/juanvasquez-ship-it/Lab-3-deep-learning",
+  "release_fase2": "https://github.com/juanvasquez-ship-it/Lab-3-deep-learning/releases/tag/entrega-v2",
+  "release_historica_fase1": "https://github.com/juanvasquez-ship-it/Lab-3-deep-learning/releases/tag/entrega-v1",
+  "fase1": {
+    "configuraciones": 54,
+    "arquitecturas_panel": 14,
+    "actualizaciones": 1253,
+    "analisis_historicos": 44
+  },
+  "fase2": {
+    "continuaciones": 19,
+    "arquitecturas": 14,
+    "controles_adicionales": 5,
+    "epocas_adicionales_comunes": 2,
+    "actualizaciones_adicionales": 2760,
+    "seleccion": {
+      "nombre": "co_byol_bagnet33",
+      "grupo": "arquitecturas",
+      "rama": "objetivo",
+      "criterio": 0.10327042646631046,
+      "epoca_adicional_seleccionada": 2,
+      "actualizacion_unix": 1792489583.5603487,
+      "criterio_descripcion": "media mAP original/LR de validación, ambas ramas del mismo checkpoint"
+    }
+  },
+  "encoders_en_git": false,
   "encoders_incluidos_en_entrega_zip": [
-    "encoders_seleccionados.pt",
-    "encoders_comparacion.pt"
+    {
+      "archivo": "encoders_seleccionados.pt",
+      "bytes": 130731519,
+      "sha256": "a9fbf8d70c3ed3fbf248bb2945ee44fd54806d06d0a5bb0e1cf5fb470d05d367",
+      "fase": 1
+    },
+    {
+      "archivo": "encoders_comparacion.pt",
+      "bytes": 89508573,
+      "sha256": "54edaae526a04793b63af997e192780acb473ce8b0c40007ec62604e595af901",
+      "fase": 1
+    },
+    {
+      "archivo": "encoders_fase2_seleccionados.pt",
+      "bytes": 130726887,
+      "sha256": "b2122eb41c3e729f8fb27e623d6900d02090b67af9ad7bfa09bee8968daba2ac",
+      "fase": 2
+    }
   ],
-  "checkpoints_completos_omitidos_por_volumen": [
-    "resultados/byol_bagnet33/checkpoint.pt",
-    "resultados/byol_mc_r18/checkpoint.pt",
-    "resultados/byol_mc_r50/checkpoint.pt",
-    "resultados/byol_r18/checkpoint.pt",
-    "resultados/byol_r50/checkpoint.pt",
-    "resultados/byol_rf163_resnet50/checkpoint.pt",
-    "resultados/byol_rf195_paper193_resnet50/checkpoint.pt",
-    "resultados/byol_rf29_r18/checkpoint.pt",
-    "resultados/byol_rf67_resnet50/checkpoint.pt",
-    "resultados/byol_rf99/checkpoint.pt",
-    "resultados/byol_rf99_resnet50_co0.0_crop0.9/checkpoint.pt",
-    "resultados/byol_rf99_resnet50_co0.2_crop0.9/checkpoint.pt",
-    "resultados/byol_rf99_sin_mlp_co0.0/checkpoint.pt",
-    "resultados/byol_rf99_sin_mlp_co0.2/checkpoint.pt",
-    "resultados/byol_swin_b/checkpoint.pt",
-    "resultados/byol_swin_s/checkpoint.pt",
-    "resultados/byol_swin_t/checkpoint.pt",
-    "resultados/byol_vit_s16/checkpoint.pt",
-    "resultados/co_byol_bagnet33/checkpoint.pt",
-    "resultados/co_byol_r50/checkpoint.pt",
-    "resultados/co_byol_resnet18_224/checkpoint.pt",
-    "resultados/co_byol_rf115_resnet50/checkpoint.pt",
-    "resultados/co_byol_rf163_resnet50/checkpoint.pt",
-    "resultados/co_byol_rf195_paper193_resnet50/checkpoint.pt",
-    "resultados/co_byol_rf29_224/checkpoint.pt",
-    "resultados/co_byol_rf29_r18/checkpoint.pt",
-    "resultados/co_byol_rf39_resnet50/checkpoint.pt",
-    "resultados/co_byol_rf67_resnet50/checkpoint.pt",
-    "resultados/co_byol_rf99/checkpoint.pt",
-    "resultados/co_byol_rf99_cabeza_compartida/checkpoint.pt",
-    "resultados/co_byol_rf99_capa2/checkpoint.pt",
-    "resultados/co_byol_rf99_locales1/checkpoint.pt",
-    "resultados/co_byol_rf99_locales16/checkpoint.pt",
-    "resultados/co_byol_rf99_locales4/checkpoint.pt",
-    "resultados/co_byol_rf99_locales64/checkpoint.pt",
-    "resultados/co_byol_rf99_peso0.1/checkpoint.pt",
-    "resultados/co_byol_rf99_peso0.5/checkpoint.pt",
-    "resultados/co_byol_rf99_peso1.0/checkpoint.pt",
-    "resultados/co_byol_swin_b/checkpoint.pt",
-    "resultados/co_byol_swin_s/checkpoint.pt",
-    "resultados/co_byol_swin_t/checkpoint.pt",
-    "resultados/co_byol_swin_t_kernel1/checkpoint.pt",
-    "resultados/co_byol_swin_t_kernel2/checkpoint.pt",
-    "resultados/co_byol_vit_s16/checkpoint.pt",
-    "resultados/co_mocov3_r50/checkpoint.pt",
-    "resultados/co_mocov3_rf29_r18/checkpoint.pt",
-    "resultados/co_mocov3_rf99/checkpoint.pt",
-    "resultados/dino_r50/checkpoint.pt",
-    "resultados/mocov3_mc_r18/checkpoint.pt",
-    "resultados/mocov3_mc_r50/checkpoint.pt",
-    "resultados/mocov3_r18/checkpoint.pt",
-    "resultados/mocov3_r50/checkpoint.pt",
-    "resultados/mocov3_rf29_r18/checkpoint.pt",
-    "resultados/mocov3_rf99/checkpoint.pt"
+  "exportacion_fase2": {
+    "origen": "resultados_fase2/co_byol_bagnet33/mejores_encoders.pt",
+    "copia_identica_por_SHA256": true,
+    "contenido": "ambos encoders, online y objetivo, configuración y selección, sin optimizador ni cabezas",
+    "seleccion_evaluada": "objetivo, época adicional 2"
+  },
+  "pesos_locales_omitidos": [
+    {
+      "archivo": "resultados/byol_bagnet33/checkpoint.pt",
+      "bytes": 527665826
+    },
+    {
+      "archivo": "resultados/byol_mc_r18/checkpoint.pt",
+      "bytes": 390529328
+    },
+    {
+      "archivo": "resultados/byol_mc_r50/checkpoint.pt",
+      "bytes": 614617119
+    },
+    {
+      "archivo": "resultados/byol_r18/checkpoint.pt",
+      "bytes": 390529328
+    },
+    {
+      "archivo": "resultados/byol_r50/checkpoint.pt",
+      "bytes": 614617055
+    },
+    {
+      "archivo": "resultados/byol_rf163_resnet50/checkpoint.pt",
+      "bytes": 617657209
+    },
+    {
+      "archivo": "resultados/byol_rf195_paper193_resnet50/checkpoint.pt",
+      "bytes": 617657273
+    },
+    {
+      "archivo": "resultados/byol_rf29_r18/checkpoint.pt",
+      "bytes": 346981246
+    },
+    {
+      "archivo": "resultados/byol_rf67_resnet50/checkpoint.pt",
+      "bytes": 617657209
+    },
+    {
+      "archivo": "resultados/byol_rf99/checkpoint.pt",
+      "bytes": 617657017
+    },
+    {
+      "archivo": "resultados/byol_rf99_resnet50_co0.0_crop0.9/checkpoint.pt",
+      "bytes": 617657081
+    },
+    {
+      "archivo": "resultados/byol_rf99_resnet50_co0.2_crop0.9/checkpoint.pt",
+      "bytes": 747959259
+    },
+    {
+      "archivo": "resultados/byol_rf99_sin_mlp_co0.0/checkpoint.pt",
+      "bytes": 589207180
+    },
+    {
+      "archivo": "resultados/byol_rf99_sin_mlp_co0.2/checkpoint.pt",
+      "bytes": 719509358
+    },
+    {
+      "archivo": "resultados/byol_swin_b/checkpoint.pt",
+      "bytes": 1766523721
+    },
+    {
+      "archivo": "resultados/byol_swin_s/checkpoint.pt",
+      "bytes": 1143246985
+    },
+    {
+      "archivo": "resultados/byol_swin_t/checkpoint.pt",
+      "bytes": 801890229
+    },
+    {
+      "archivo": "resultados/byol_vit_s16/checkpoint.pt",
+      "bytes": 683031948
+    },
+    {
+      "archivo": "resultados/co_byol_bagnet33/checkpoint.pt",
+      "bytes": 657967812
+    },
+    {
+      "archivo": "resultados/co_byol_r50/checkpoint.pt",
+      "bytes": 744919233
+    },
+    {
+      "archivo": "resultados/co_byol_resnet18_224/checkpoint.pt",
+      "bytes": 445334034
+    },
+    {
+      "archivo": "resultados/co_byol_rf115_resnet50/checkpoint.pt",
+      "bytes": 747959259
+    },
+    {
+      "archivo": "resultados/co_byol_rf163_resnet50/checkpoint.pt",
+      "bytes": 747959195
+    },
+    {
+      "archivo": "resultados/co_byol_rf195_paper193_resnet50/checkpoint.pt",
+      "bytes": 747959259
+    },
+    {
+      "archivo": "resultados/co_byol_rf29_224/checkpoint.pt",
+      "bytes": 401785824
+    },
+    {
+      "archivo": "resultados/co_byol_rf29_r18/checkpoint.pt",
+      "bytes": 401785760
+    },
+    {
+      "archivo": "resultados/co_byol_rf39_resnet50/checkpoint.pt",
+      "bytes": 747959259
+    },
+    {
+      "archivo": "resultados/co_byol_rf67_resnet50/checkpoint.pt",
+      "bytes": 747959195
+    },
+    {
+      "archivo": "resultados/co_byol_rf99/checkpoint.pt",
+      "bytes": 747959195
+    },
+    {
+      "archivo": "resultados/co_byol_rf99_cabeza_compartida/checkpoint.pt",
+      "bytes": 617657209
+    },
+    {
+      "archivo": "resultados/co_byol_rf99_capa2/checkpoint.pt",
+      "bytes": 672461915
+    },
+    {
+      "archivo": "resultados/co_byol_rf99_locales1/checkpoint.pt",
+      "bytes": 747959387
+    },
+    {
+      "archivo": "resultados/co_byol_rf99_locales16/checkpoint.pt",
+      "bytes": 747959387
+    },
+    {
+      "archivo": "resultados/co_byol_rf99_locales4/checkpoint.pt",
+      "bytes": 747959387
+    },
+    {
+      "archivo": "resultados/co_byol_rf99_locales64/checkpoint.pt",
+      "bytes": 747959387
+    },
+    {
+      "archivo": "resultados/co_byol_rf99_peso0.1/checkpoint.pt",
+      "bytes": 747959323
+    },
+    {
+      "archivo": "resultados/co_byol_rf99_peso0.5/checkpoint.pt",
+      "bytes": 747959323
+    },
+    {
+      "archivo": "resultados/co_byol_rf99_peso1.0/checkpoint.pt",
+      "bytes": 747959323
+    },
+    {
+      "archivo": "resultados/co_byol_swin_b/checkpoint.pt",
+      "bytes": 2412798581
+    },
+    {
+      "archivo": "resultados/co_byol_swin_s/checkpoint.pt",
+      "bytes": 1638526837
+    },
+    {
+      "archivo": "resultados/co_byol_swin_t/checkpoint.pt",
+      "bytes": 1297170027
+    },
+    {
+      "archivo": "resultados/co_byol_swin_t_kernel1/checkpoint.pt",
+      "bytes": 894516971
+    },
+    {
+      "archivo": "resultados/co_byol_swin_t_kernel2/checkpoint.pt",
+      "bytes": 1045511915
+    },
+    {
+      "archivo": "resultados/co_byol_vit_s16/checkpoint.pt",
+      "bytes": 1631296514
+    },
+    {
+      "archivo": "resultados/co_mocov3_r50/checkpoint.pt",
+      "bytes": 543423283
+    },
+    {
+      "archivo": "resultados/co_mocov3_rf29_r18/checkpoint.pt",
+      "bytes": 200289810
+    },
+    {
+      "archivo": "resultados/co_mocov3_rf99/checkpoint.pt",
+      "bytes": 546463245
+    },
+    {
+      "archivo": "resultados/dino_r50/checkpoint.pt",
+      "bytes": 654631205
+    },
+    {
+      "archivo": "resultados/mocov3_mc_r18/checkpoint.pt",
+      "bytes": 189033378
+    },
+    {
+      "archivo": "resultados/mocov3_mc_r50/checkpoint.pt",
+      "bytes": 413121105
+    },
+    {
+      "archivo": "resultados/mocov3_r18/checkpoint.pt",
+      "bytes": 189033314
+    },
+    {
+      "archivo": "resultados/mocov3_r50/checkpoint.pt",
+      "bytes": 413121105
+    },
+    {
+      "archivo": "resultados/mocov3_rf29_r18/checkpoint.pt",
+      "bytes": 145485296
+    },
+    {
+      "archivo": "resultados/mocov3_rf99/checkpoint.pt",
+      "bytes": 416161067
+    },
+    {
+      "archivo": "resultados_fase2/byol_bagnet33/mejores_encoders.pt",
+      "bytes": 130727079
+    },
+    {
+      "archivo": "resultados_fase2/byol_bagnet33/ultimo_checkpoint.pt",
+      "bytes": 527668995
+    },
+    {
+      "archivo": "resultados_fase2/byol_r50/mejores_encoders.pt",
+      "bytes": 188697817
+    },
+    {
+      "archivo": "resultados_fase2/byol_r50/ultimo_checkpoint.pt",
+      "bytes": 614620267
+    },
+    {
+      "archivo": "resultados_fase2/byol_rf99/mejores_encoders.pt",
+      "bytes": 190756241
+    },
+    {
+      "archivo": "resultados_fase2/byol_rf99/ultimo_checkpoint.pt",
+      "bytes": 617660859
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_bagnet33/mejores_encoders.pt",
+      "bytes": 130726887
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_bagnet33/ultimo_checkpoint.pt",
+      "bytes": 657971219
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_r50/mejores_encoders.pt",
+      "bytes": 188697817
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_r50/ultimo_checkpoint.pt",
+      "bytes": 744922683
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_resnet18_224/mejores_encoders.pt",
+      "bytes": 89506885
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_resnet18_224/ultimo_checkpoint.pt",
+      "bytes": 445333955
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_rf115_resnet50/mejores_encoders.pt",
+      "bytes": 190756241
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_rf115_resnet50/ultimo_checkpoint.pt",
+      "bytes": 747963275
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_rf163_resnet50/mejores_encoders.pt",
+      "bytes": 190756241
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_rf163_resnet50/ultimo_checkpoint.pt",
+      "bytes": 747963275
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_rf195_paper193_resnet50/mejores_encoders.pt",
+      "bytes": 190756305
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_rf195_paper193_resnet50/ultimo_checkpoint.pt",
+      "bytes": 747963339
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_rf29_224/mejores_encoders.pt",
+      "bytes": 60505837
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_rf29_224/ultimo_checkpoint.pt",
+      "bytes": 401787635
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_rf39_resnet50/mejores_encoders.pt",
+      "bytes": 190756241
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_rf39_resnet50/ultimo_checkpoint.pt",
+      "bytes": 747963275
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_rf67_resnet50/mejores_encoders.pt",
+      "bytes": 190756241
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_rf67_resnet50/ultimo_checkpoint.pt",
+      "bytes": 747963275
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_rf99/mejores_encoders.pt",
+      "bytes": 190756241
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_rf99/ultimo_checkpoint.pt",
+      "bytes": 747963275
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_swin_b/mejores_encoders.pt",
+      "bytes": 694167767
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_swin_b/ultimo_checkpoint.pt",
+      "bytes": 2412808169
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_swin_s/mejores_encoders.pt",
+      "bytes": 390917975
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_swin_s/ultimo_checkpoint.pt",
+      "bytes": 1638536489
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_swin_t/mejores_encoders.pt",
+      "bytes": 220270223
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_swin_t/ultimo_checkpoint.pt",
+      "bytes": 1297174155
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_vit_s16/mejores_encoders.pt",
+      "bytes": 173424681
+    },
+    {
+      "archivo": "resultados_fase2/co_byol_vit_s16/ultimo_checkpoint.pt",
+      "bytes": 1631299971
+    },
+    {
+      "archivo": "resultados_fase2/co_mocov3_r50/mejores_encoders.pt",
+      "bytes": 188697817
+    },
+    {
+      "archivo": "resultados_fase2/co_mocov3_r50/ultimo_checkpoint.pt",
+      "bytes": 543426571
+    },
+    {
+      "archivo": "resultados_fase2/mocov3_r50/mejores_encoders.pt",
+      "bytes": 188697817
+    },
+    {
+      "archivo": "resultados_fase2/mocov3_r50/ultimo_checkpoint.pt",
+      "bytes": 413124155
+    }
   ],
-  "cantidad_checkpoints_completos_locales": 54,
-  "bytes_checkpoints_completos_locales": 38720560690,
-  "nota": "Los 54 checkpoints completos se conservan localmente, sus pesos no están en Git ni en el ZIP compacto, las métricas de todos los modelos sí están incluidas, reevaluar otros modelos requiere recuperar sus checkpoints, el ZIP contiene ambas ramas de los dos modelos seleccionados",
-  "datos": "HDF5 originales externos y sin cambios, ruta explícita mediante --datos",
-  "entorno": "Python 3.12, requirements.txt, CUDA solo para una futura ejecución expresamente autorizada",
-  "criterio_auditoria_compacta": "La presencia de este manifiesto identifica omisiones intencionales de pesos y no demuestra ejecución por sí sola"
+  "cantidad_pesos_locales_omitidos": 92,
+  "bytes_pesos_locales_omitidos": 59135007880,
+  "omisiones": [
+    "HDF5 originales externos",
+    "entornos Python y cachés",
+    "historial interno .git",
+    "todos los pesos salvo los tres archivos compactos de la raíz"
+  ],
+  "video_vigente": "resultados_fase2/audiovisual/VIDEO.mp4",
+  "video_historico": "VIDEO.mp4",
+  "proveniencia": "Los registros experimentales originales se conservan, los pendientes de publicación en revisiones anteriores describen su fecha y se resuelven mediante esta entrega posterior",
+  "limite_reevaluacion": "Reevaluar el resto de modelos requiere recuperar los pesos omitidos y los datos, la revisión de métricas y código no los necesita",
+  "alcance_verificacion_pesos": "Copia seleccionada fase 2 contrastada byte a byte mediante SHA256, no se vuelven a cargar todos los tensores ni se ejecuta inferencia",
+  "entrenamientos_nuevos_publicacion": 0,
+  "inferencias_encoders_nuevas_publicacion": 0,
+  "GPU_utilizada_publicacion": false
 }
