@@ -195,7 +195,7 @@ def auditar_resultados(resultados, raiz, datos=None):
     entrega = leer(raiz / 'CONTENIDO_PAQUETE.json', {})
     archivo_video = entrega.get('video', 'VIDEO.mp4')
     archivo_errores = entrega.get('analisis_errores', 'ANALISIS_ERRORES.md')
-    for requerido in ['README.md', 'METODOLOGIA.md', 'INFORME.md', archivo_errores, 'GUION_VIDEO.md', archivo_video, 'requirements.txt']:
+    for requerido in ['README.md', 'METODOLOGIA.md', 'INFORME.md', archivo_errores, archivo_video, 'requirements.txt']:
         if not (raiz / requerido).exists():
             errores.append(f'Falta entregable, {requerido}')
     video = leer(raiz / entrega['verificacion_video'], {}) if entrega.get('verificacion_video') else leer(resultados / 'video_verificacion.json', {})

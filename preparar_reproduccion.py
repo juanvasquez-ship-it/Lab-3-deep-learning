@@ -30,7 +30,7 @@ def preparar(destino, fase, pesos):
                 raise FileNotFoundError(str(fuente))
             checkpoints.append((fuente, destino / trabajo['origen']))
     destino.mkdir(parents=True)
-    for ruta in [origen / 'main.py', *sorted((origen / 'codigo').glob('*.py')), *[origen / n for n in ['requirements.txt', 'README.md', 'METODOLOGIA.md', 'INFORME.md', 'GUION_VIDEO.md']]]:
+    for ruta in [origen / 'main.py', *sorted((origen / 'codigo').glob('*.py')), *[origen / n for n in ['requirements.txt', 'README.md', 'METODOLOGIA.md', 'INFORME.md']]]:
         salida = destino / ruta.relative_to(origen)
         salida.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(ruta, salida)

@@ -160,9 +160,15 @@ Se mantuvo la entrada cuadrada 224 y se pospuso la degradación LR durante apren
 
 Se utilizó un asistente de IA en Codex como apoyo para programación, revisión de código, organización de experimentos y redacción, la expresión implementación propia se refiere al mecanismo programado en este repositorio sin importar una implementación existente de CO-SSL y no afirma una autoría exclusivamente humana, los entrenamientos y métricas proceden de ejecuciones locales con PyTorch, la defensa individual requiere comprensión del método y del código y no se acredita con la generación automática de documentos.
 
-El video utiliza síntesis local Piper, voz es_ES-sharvard-medium, basada en Spanish Harvard sentences de la Universidad de Edimburgo con licencia CC BY 3.0, el motor Piper se distribuye bajo GPL 3.0, el guion conserva las fuentes de voz, datos y motor, esta narración no registra una exposición humana del grupo.
+El video utiliza síntesis local Piper, voz es_ES-sharvard-medium, basada en Spanish Harvard sentences de la Universidad de Edimburgo con licencia CC BY 3.0, el motor Piper se distribuye bajo GPL 3.0, esta narración no registra una exposición humana del grupo.
 
-La publicación académica conserva los resultados originales y retira copias y materiales de trabajo del árbol actual de Git, el commit de ejecución a6dc59ab03ac869b5ab100c250492d19c07c5a39 conserva el código congelado y las versiones previas, las únicas modificaciones posteriores del auditor afectan a rutas de entregables y a la interpretación de fechas de copia, los modelos, las pérdidas, la lectura de datos y el cálculo de métricas se mantienen sin cambios.
+| Recurso de narración | Fuente y atribución |
+|---|---|
+| Modelo de voz es_ES-sharvard-medium | [Piper voices, modelo de voz](https://huggingface.co/rhasspy/piper-voices/tree/main/es/es_ES/sharvard/medium) |
+| Datos Spanish Harvard sentences | [Universidad de Edimburgo, CC BY 3.0](https://datashare.ed.ac.uk/handle/10283/574) |
+| Motor Piper | [OHF-Voice, GPL 3.0](https://github.com/OHF-Voice/piper1-gpl) |
+
+La publicación académica conserva los resultados originales, el commit de ejecución a6dc59ab03ac869b5ab100c250492d19c07c5a39 conserva el código congelado, los cambios posteriores afectan a auditoría, documentación y preparación de la entrega, incluidas las referencias a materiales auxiliares retirados, el manifiesto CONTENIDO_PAQUETE.json identifica las fuentes modificadas, los modelos, las pérdidas, la lectura de datos y el cálculo de métricas se mantienen sin cambios.
 
 ## Referencias
 

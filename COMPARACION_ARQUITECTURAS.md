@@ -72,7 +72,7 @@ Las diferencias pueden relacionarse con campo receptivo, capacidad, geometría d
 
 Los resultados de modelo base y ablaciones se conservan en INFORME.md y metricas.csv, el contraste adicional de RF99 con recorte mínimo 0.9 usa control sin CO y variante CO bajo las mismas actualizaciones y se registra por separado, esos dos experimentos tienen prioridad posterior a completar las arquitecturas y no se incorporan como filas intercambiables del panel con recorte 0.2.
 
-La selección ampliada se registra en seleccion_comparacion.json exclusivamente con validación y sin modificar seleccion_validacion.json del experimento histórico, esta ampliación se ha solicitado después de existir pruebas anteriores y no representa una nueva evaluación completamente ciega, se mantienen fijas las configuraciones y no se eligen por sus puntuaciones de prueba.
+La selección ampliada se registra en seleccion_comparacion.json exclusivamente con validación y sin modificar seleccion_validacion.json del experimento histórico, la ampliación se diseñó después de disponer de pruebas históricas y no representa una nueva evaluación completamente ciega, se mantienen fijas las configuraciones y no se eligen por sus puntuaciones de prueba.
 
 La matriz histórica ampliada mantiene combinaciones no ejecutadas fuera de esta cola mínima, eso no equivale a arquitecturas pendientes del panel, los calendarios largos, Places365 y la igualación literal de parámetros de BagNet33 conservan sus límites declarados y no se anuncian como reproducción completa del artículo.
 

@@ -83,3 +83,8 @@ Thumbs.db
 .ruff_cache/
 .ipynb_checkpoints/
 reproduccion*/
+GUION*.md
+*.ppt
+*.pptx
+/resultados_fase2/eventos.jsonl
+/resultados_fase2/revision_resultados_20261020.json

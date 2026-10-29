@@ -10,7 +10,7 @@ Se mantienen las particiones suministradas, training contiene 11043 imágenes si
 
 La fase 2 terminó el 20 de octubre a las 06:52:06 de Bogotá, completó las catorce arquitecturas de la referencia y cinco controles, diecinueve configuraciones con dos épocas adicionales completas y evaluación de ambas ramas en las dos resoluciones, el panel experimental acordado está evaluado y la organización posterior de la entrega se realizó sin repetir entrenamiento ni inferencia de encoders.
 
-El tiempo desde el inicio de la tarea fue 6.330 horas, incluido el análisis previo, y desde el lanzamiento independiente 6.013 horas, el cierre quedó dentro del plazo global de diez horas, los códigos de salida de GPU y consolidación CPU fueron cero, esa salida no ocultó el fallo separado del generador audiovisual que se documenta abajo.
+El tiempo desde el inicio de la tarea fue 6.330 horas, incluido el análisis previo, y desde el lanzamiento independiente 6.013 horas, el cierre quedó dentro del plazo global de diez horas, los códigos de salida de GPU y consolidación CPU fueron cero.
 
 La fase 1 conserva 54 configuraciones cortas y su comparación de catorce arquitecturas, las diecinueve ejecuciones de fase 2 son continuaciones de checkpoints válidos y no diecinueve inicializaciones independientes, las configuraciones y métricas de fase 1 se conservan en resultados y permiten contrastar cada comparación, las versiones anteriores de documentación permanecen en el historial de Git.
 
@@ -113,17 +113,17 @@ BagNet33 pasa de 8.453 a 10.327 por ciento medio de validación frente a su inic
 
 La revisión posterior a los experimentos contrastó las 152 métricas del CSV seleccionado con sus JSON de prueba, los 378 hashes de registros históricos y las huellas de los trece archivos ejecutados, todas las configuraciones conservan batch ocho, 2760 pasos adicionales, dos épocas completas y protocolo de evaluación común, no se recalcularon embeddings, métricas mediante inferencia ni gradientes durante esta revisión.
 
-sesion_independiente.json y verificacion_fase2.json conservan el cierre experimental, el fallo audiovisual inicial y su corrección CPU posterior se distinguen en revision_resultados_20261020.json, el registro de consola completo queda fuera de la entrega académica, la organización de archivos no sustituye los resultados ni cambia pesos o selecciones.
+sesion_independiente.json y verificacion_fase2.json conservan el cierre experimental, la duración y decodificación del video se documentan en su registro de verificación, la organización de archivos no sustituye los resultados ni cambia pesos o selecciones.
 
 La selección por validación antecede a la prueba de fase 2, pero la fase se diseñó después de existir pruebas históricas, no constituye un segundo conjunto ciego, no hay evidencia de ajuste con testing ni se propone ahora entrenar para mejorar las filas peores.
 
 ## Material audiovisual y análisis de errores
 
-El video de fase 2 se corrigió solo en CPU, el fallo inicial fue ModuleNotFoundError de matplotlib en el entorno de voz, el gráfico se genera ahora con el entorno de análisis que ya lo tiene instalado y la narración y codificación siguen en su entorno CPU, la versión final dura 717.56 segundos y pasó decodificación completa y límite por capítulo, el video anterior queda fuera de la entrega académica y se conserva localmente y en el historial.
+El video final dura 717.56 segundos y pasó la comprobación de decodificación completa y del límite por capítulo, su producción audiovisual no modificó los modelos ni los resultados experimentales.
 
-La versión actual y su guion están en [resultados_fase2/audiovisual/VIDEO.mp4](resultados_fase2/audiovisual/VIDEO.mp4) y [GUION_VIDEO.md](GUION_VIDEO.md), el material utiliza narración sintética y su generación no acredita una exposición humana del grupo.
+El [video final](resultados_fase2/audiovisual/VIDEO.mp4) utiliza narración sintética, sus fuentes y licencias se describen en METODOLOGIA.md, su generación no acredita una exposición humana del grupo.
 
-Las figuras incluyen cinco aciertos y cinco fallos por condición, se inspeccionaron visualmente los veinte casos y se documentaron prendas, punto de vista, mochila y pérdida de detalle LR en [el análisis de errores](resultados_fase2/ANALISIS_ERRORES_FASE2.md), esos rasgos visibles apoyan hipótesis de confusión pero no demuestran qué atributo determinó el encoder, la revisión del grupo sigue pendiente.
+Las figuras incluyen cinco aciertos y cinco fallos por condición, se inspeccionaron visualmente los veinte casos y se documentaron prendas, punto de vista, mochila y pérdida de detalle LR en [el análisis de errores](resultados_fase2/ANALISIS_ERRORES_FASE2.md), esos rasgos visibles apoyan hipótesis de confusión pero no demuestran qué atributo determinó el encoder.
 
 Persisten una semilla, solo unas 2.908 épocas equivalentes, cien consultas de validación, ausencia de convergencia y de intervalos de incertidumbre, no se reprodujeron los calendarios largos del paper, Places365, la igualación literal de parámetros de BagNet33 ni todos los barridos, los 44 análisis históricos de máscaras, PGD, campos efectivos y lecturas no se repitieron con los pesos nuevos y no deben presentarse como evidencia de fase 2, se mantienen como diferencias declaradas y no como requisitos básicos de ejecución que falten en el panel acordado.
 
@@ -146,10 +146,10 @@ Persisten una semilla, solo unas 2.908 épocas equivalentes, cien consultas de v
 
 ## Alcance de la entrega y reproducibilidad
 
-Se entregan código, configuraciones, métricas, curvas, casos, video final y guion con referencias y atribuciones, se conservan las familias BYOL, MoCoV3, CO-BYOL, CO-MoCoV3, multicrop y DINO y las catorce arquitecturas acordadas, los 44 análisis de fase 1 se mantienen separados de los pesos nuevos.
+Se entregan código, configuraciones, métricas, curvas, casos y video final con referencias y atribuciones, se conservan las familias BYOL, MoCoV3, CO-BYOL, CO-MoCoV3, multicrop y DINO y las catorce arquitecturas acordadas, los 44 análisis de fase 1 se mantienen separados de los pesos nuevos.
 
 Los datos y los checkpoints completos son externos por tamaño, la release entrega-v2 permite recuperar los tres exportados compactos, incluido el modelo seleccionado de fase 2, estos permiten evaluar encoders pero no retomar todo el entrenamiento, repetir las diecinueve continuaciones requiere recuperar sus checkpoints de fase 1, las instrucciones preparan una copia independiente sin sobrescribir los resultados entregados.
 
-El código congelado de los experimentos se identifica con el commit a6dc59ab03ac869b5ab100c250492d19c07c5a39 y codigo_ejecucion_SHA256.json, la adaptación posterior del auditor utiliza las rutas finales y deja de interpretar fechas de copia de Git como orden experimental, no cambia entrenamiento, datos, representaciones ni métricas, la verificación de entrega informa ese cambio en lugar de afirmar que todas las fuentes siguen idénticas.
+El código congelado de los experimentos se identifica con el commit a6dc59ab03ac869b5ab100c250492d19c07c5a39 y codigo_ejecucion_SHA256.json, las modificaciones posteriores afectan a auditoría, preparación de la entrega y texto generado, sin cambiar entrenamiento, datos, representaciones ni métricas, CONTENIDO_PAQUETE.json y la verificación de entrega identifican las fuentes modificadas.
 
-Se utilizó asistencia de IA en Codex y narración sintética Piper, las funciones y las atribuciones se describen en METODOLOGIA.md y GUION_VIDEO.md, no se afirma autoría exclusivamente humana ni se da por realizada la defensa individual o el envío académico.
+Se utilizó asistencia de IA en Codex y narración sintética Piper, las funciones y las atribuciones se describen en METODOLOGIA.md, no se afirma autoría exclusivamente humana ni se da por realizada la defensa individual o el envío académico.

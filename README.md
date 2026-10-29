@@ -16,9 +16,8 @@ La selección mediante validación fue CO-BYOL BagNet33, rama objetivo, con mAP 
 | [Comparación de fase 1](COMPARACION_ARQUITECTURAS.md) | Catorce arquitecturas con política histórica de rama online |
 | [Análisis de errores](resultados_fase2/ANALISIS_ERRORES_FASE2.md) | Veinte casos, cinco aciertos y cinco fallos por condición, con figuras y explicación |
 | [Video final](resultados_fase2/audiovisual/VIDEO.mp4) | 11 min 57.56 s, metodología, implementación y resultados |
-| [GUION_VIDEO.md](GUION_VIDEO.md) | Transcripción de la narración y atribuciones |
 
-No se incluye una presentación de diapositivas separada, el PDF del laboratorio exige código, resultados e instrucciones y video, el guion y el video conservan las atribuciones de la narración sintética, la exposición humana, el envío y la defensa no se acreditan mediante estos archivos.
+El PDF del laboratorio exige código, resultados, instrucciones y video, las atribuciones de la narración sintética se conservan en METODOLOGIA.md, la exposición humana, el envío y la defensa no se acreditan mediante estos archivos.
 
 ## Organización
 

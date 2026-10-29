@@ -509,19 +509,19 @@ def consolidar(raiz, destino):
         mejor = max(evaluadas, key=lambda fila: (fila['original_mAP_porcentaje'] + fila['baja_resolucion_mAP_porcentaje']) / 2)
         eficiencia = max(evaluadas, key=lambda fila: (fila['original_mAP_porcentaje'] + fila['baja_resolucion_mAP_porcentaje']) / (fila['segundos_entrenamiento_total'] / 60))
         texto += ['', f"La mayor mAP media descriptiva de prueba entre las arquitecturas evaluadas corresponde a {mejor['arquitectura']}, el mayor cociente descriptivo de mAP media por minuto de entrenamiento de ambas fases corresponde a {eficiencia['arquitectura']}, esos resultados no seleccionan hiperparámetros ni equivalen a medir energía, la exposición y época elegida deben consultarse antes de atribuir causas, el coste compartido de pilotos se registra aparte."]
-    texto += ['', '## Pendientes y límites', '', 'Los calendarios largos del paper, múltiples semillas, transferencia Places365, igualación literal de parámetros de BagNet33 y barridos exhaustivos permanecen fuera del alcance, el ZIP de modificaciones citado por la IA externa no fue recibido, el video histórico narra fase 1 y debe revisarse frente a estos resultados antes de la entrega humana.']
+    texto += ['', '## Pendientes y límites', '', 'Los calendarios largos del paper, múltiples semillas, transferencia Places365, igualación literal de parámetros de BagNet33 y barridos exhaustivos permanecen fuera del alcance, los resultados locales son preliminares y no acreditan convergencia ni una reproducción completa del artículo.']
     (destino / 'RESULTADOS_FASE2.md').write_text('\n'.join(texto) + '\n', encoding='utf-8')
     protegidos = all(huella(raiz / ruta) == digest for ruta, digest in plan['historicos_SHA256'].items())
     cobertura = len(evaluadas)
     rondas = [f.get('epocas_fase2_completas') or 0 for f in filas]
     guardar_json(destino / 'verificacion_fase2.json', {'estado': 'completado' if cobertura == 14 and all(f['estado'] == 'evaluado' for f in filas) and protegidos and min(rondas) >= 1 and min(rondas) == max(rondas) else 'parcial_o_en_curso', 'arquitecturas_evaluadas': cobertura, 'configuraciones_evaluadas': sum(f['estado'] == 'evaluado' for f in filas), 'configuraciones_previstas': len(filas), 'rondas_comunes_completas': min(rondas), 'maximo_epocas_adicionales_observado': max(rondas), 'diferencias_exposicion_fase2': min(rondas) != max(rondas), 'registros_historicos_SHA256_conservados': protegidos, 'plazo': leer(destino / 'plazo_global.json'), 'prueba_no_usada_en_pilotos': True, 'limites_no_resueltos': ['una semilla', 'sin convergencia demostrada', 'video fase 1 requiere revisión humana', 'Places365 no disponible', 'BagNet33 no igualado en parámetros', 'parche externo no recibido']})
     dibujar_curvas(destino, plan)
-    for nombre in ['README.md', 'INFORME.md', 'GUION_VIDEO.md']:
+    for nombre in ['README.md', 'INFORME.md']:
         ruta = raiz / nombre
         previo = ruta.read_text(encoding='utf-8')
         marca = '\n## Fase 2, continuación autorizada del 20 de octubre\n'
         base = previo.split(marca)[0]
-        nota = '\nLa fase 1 y su video conservan sus resultados históricos, la fase 2 tiene estado y tabla actualizados en [resultados_fase2/RESULTADOS_FASE2.md](resultados_fase2/RESULTADOS_FASE2.md), los pesos de fase 2 y las épocas elegidas se documentan por separado, las cifras de la fase 1 no se atribuyen al código o entrenamiento de fase 2, la narración del video debe revisarse antes de presentar los nuevos resultados.\n'
+        nota = '\nLa fase 1 y su video conservan sus resultados históricos, la fase 2 tiene estado y tabla actualizados en [resultados_fase2/RESULTADOS_FASE2.md](resultados_fase2/RESULTADOS_FASE2.md), los pesos de fase 2 y las épocas elegidas se documentan por separado, las cifras de la fase 1 no se atribuyen al código o entrenamiento de fase 2, la documentación audiovisual distingue la versión histórica de los resultados de continuación.\n'
         ruta.write_text(base + marca + nota, encoding='utf-8')
     ejemplos = leer(destino / 'ejemplos/indices_ejemplos.json', [])
     if ejemplos:

@@ -31,7 +31,6 @@
   "datos": "HDF5 externos, no incluidos, rutas explícitas mediante --datos",
   "checkpoints_completos": "Conservados localmente, no distribuidos por Git ni en el ZIP compacto de la release, reproducir todas las continuaciones requiere recuperar los diecinueve checkpoints iniciales",
   "video": "resultados_fase2/audiovisual/VIDEO.mp4",
-  "guion": "GUION_VIDEO.md",
   "informe": "INFORME.md",
   "metodologia": "METODOLOGIA.md",
   "analisis_errores": "resultados_fase2/ANALISIS_ERRORES_FASE2.md",
@@ -41,20 +40,24 @@
     "INFORME.md",
     "METODOLOGIA.md",
     "COMPARACION_ARQUITECTURAS.md",
-    "GUION_VIDEO.md",
     "resultados_fase2/RESULTADOS_FASE2.md",
     "resultados_fase2/ANALISIS_ERRORES_FASE2.md"
   ],
-  "procedencia": "Los hashes de ejecución corresponden al commit indicado, los cambios posteriores de auditoría y documentación no modifican modelos, datos, pérdidas ni métricas",
+  "procedencia": "El commit de ejecución conserva las fuentes experimentales, los cambios posteriores de auditoría, documentación y preparación de entregables se identifican por sus hashes y no modifican modelos, datos, pérdidas ni métricas",
   "omisiones": [
     "Copias de código y documentos anteriores",
     "Guías de trabajo para asistentes de IA",
     "Video de fase 1 y recursos audiovisuales duplicados",
     "Logs de consola y salidas de pruebas rápidas descartadas",
-    "Datos, checkpoints completos y entornos"
+    "Datos, checkpoints completos y entornos",
+    "Guiones de exposición y presentaciones auxiliares no exigidos por el laboratorio",
+    "Bitácora operativa detallada y revisión intermedia de producción audiovisual"
   ],
   "conservacion_local": "La retirada afecta al índice Git, los archivos permanecen en el equipo y en el historial anterior, no se reescribe el historial",
   "fuentes_modificadas_despues_de_ejecucion": {
-    "codigo/auditoria.py": "a0d09bc33a6828e64a80cb3249386b82fbe130b4bd44b98ad5cb4bf16a4d339d"
+    "codigo/auditoria.py": "c29a15fc84d0b42f24ad12ab49e85abf99a66c0d5d558d95903b496862d42970",
+    "codigo/comparacion.py": "3853b0805a81dea993fc85347206215888b986a16d0fc616ee8341f945d0c24e",
+    "codigo/fase2.py": "e903709d163b336798fb1c4ec7d7920343215880d1f050c2400b36c26f5d76b4",
+    "codigo/informe.py": "3bf029a6f3e23a91a4e209376e185e7795172e26a9beec776d77dc441b53b1b0"
   }
 }
