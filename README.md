@@ -52,7 +52,7 @@ Los pesos no se almacenan en Git, la [release entrega-v2](https://github.com/jua
 python main.py evaluar --checkpoint encoders_fase2_seleccionados.pt --datos RUTA_A_LOS_HDF5 --resultados evaluacion_reproducida --particion testing --dispositivo cpu
 ```
 
-Ese comando calcula de nuevo ambas ramas y puede ser lento en CPU, leer las tablas no lo requiere, reevaluar el resto de modelos requiere sus checkpoints completos, los 19 checkpoints de fase 1 necesarios para repetir la continuación no están en el ZIP compacto y se conservan en el equipo original, el repositorio tiene acceso restringido y su lectura requiere permisos de GitHub.
+Ese comando calcula de nuevo ambas ramas y puede ser lento en CPU, leer las tablas no lo requiere, reevaluar el resto de modelos requiere sus checkpoints completos, los 19 checkpoints de fase 1 necesarios para repetir la continuación no están en el ZIP compacto y se conservan en el equipo original, el repositorio de código es público y puede consultarse sin iniciar sesión.
 
 ## Reproducción del entrenamiento
 
