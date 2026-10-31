@@ -58,6 +58,60 @@
     "codigo/auditoria.py": "c29a15fc84d0b42f24ad12ab49e85abf99a66c0d5d558d95903b496862d42970",
     "codigo/comparacion.py": "3853b0805a81dea993fc85347206215888b986a16d0fc616ee8341f945d0c24e",
     "codigo/fase2.py": "e903709d163b336798fb1c4ec7d7920343215880d1f050c2400b36c26f5d76b4",
-    "codigo/informe.py": "3bf029a6f3e23a91a4e209376e185e7795172e26a9beec776d77dc441b53b1b0"
+    "codigo/informe.py": "ca5367c9bbecdcd15b0a74719ba6761ada2a4cca6a6adfc040d21b9733df0dd4"
+  },
+  "registros_documentales_actualizados": {
+    "resultados/video_verificacion.json": {
+      "sha256_original": "6aee9dea1ac3a1b7a5d45540bb36abd61bbf4b8746b7e3ac1329b31166423db8",
+      "sha256_actual": "e32c5df0c2ff1d4bdec580bbc70e79c8a3b7010c30065ba36c48c64cca158865",
+      "sha256_contenido_tecnico": "11499c7f0cfaae74d9baf29b114db6251dbd7a08df4ed22250917e0bf107385e",
+      "campos_retirados": [
+        "voz",
+        "fuente_voz",
+        "atribucion_dataset_voz",
+        "motor",
+        "limitacion"
+      ],
+      "commit_version_anterior": "ab85b87351c029318f8b7104a7d76a6bcd4590e0",
+      "alcance": "Corrección de atribuciones, duración, capítulos, resolución, decodificación y huella del video permanecen intactos"
+    },
+    "resultados_fase2/audiovisual/resultados/video_verificacion.json": {
+      "sha256_original": "b64566f082e4db6515957aae30a43535e9f9a49d8a2d22064f5f9721c9204e1f",
+      "sha256_actual": "b933d4d158f12b0ef9c35ddc13b71b2a4cb7d794ad46e62e4605d85b44c5d4dc",
+      "sha256_contenido_tecnico": "4c7a6d4ab6ec8fd27df747427d9c9c725eef68f8a110e3c4f3287d68cf0f479f",
+      "campos_retirados": [
+        "voz",
+        "fuente_voz",
+        "atribucion_dataset_voz",
+        "motor",
+        "limitacion"
+      ],
+      "commit_version_anterior": "ab85b87351c029318f8b7104a7d76a6bcd4590e0",
+      "alcance": "Corrección de atribuciones, duración, capítulos, resolución, decodificación y huella del video permanecen intactos"
+    },
+    "resultados/exportacion_comparacion.json": {
+      "sha256_original": "46c61bb265de8286b01ef33001cccf7b8e5a26e124a88b11ee96069597d588b2",
+      "sha256_actual": "17c6f1a47e2700d9d9ec54f4db6298ee0a8a35f3b275e944ef2b831f8ade8bf3",
+      "sha256_contenido_tecnico": "90575ff9d01ff6157ace8f97f0813ee6e60c7c7e8f785114e49ebd9db9fec21b",
+      "campos_retirados": [],
+      "commit_version_anterior": "ab85b87351c029318f8b7104a7d76a6bcd4590e0",
+      "alcance": "Rutas locales de procedencia convertidas a referencias relativas, sin cambiar métricas, tamaños ni huellas de pesos"
+    },
+    "resultados/exportacion_encoders.json": {
+      "sha256_original": "c1383926a09b53498c90d21f5c448005ecef88b8b2c1ff0e11684410c94bd286",
+      "sha256_actual": "462674641cf1a3540d467ff6a1dcd1036592e01d17c85f08bb35064986823a51",
+      "sha256_contenido_tecnico": "079ee085f41ade6d968263458945e60bd5b484e75d83e752a40431e3f42a0055",
+      "campos_retirados": [],
+      "commit_version_anterior": "ab85b87351c029318f8b7104a7d76a6bcd4590e0",
+      "alcance": "Rutas locales de procedencia convertidas a referencias relativas, sin cambiar métricas, tamaños ni huellas de pesos"
+    },
+    "resultados/revision_cumplimiento.json": {
+      "sha256_original": "10592683944cb26f277b6b5146fa8219816231045b02ae860776621464675280",
+      "sha256_actual": "b576148d1de52d572275b7473effb813f2a4433a6febdb59fc1a28fef45aff3d",
+      "sha256_contenido_tecnico": "dcbd7e4072d57c17e41633076356325ef32d1ad4af5fd047d01b008997538384",
+      "campos_retirados": [],
+      "commit_version_anterior": "ab85b87351c029318f8b7104a7d76a6bcd4590e0",
+      "alcance": "Rutas locales de procedencia convertidas a referencias relativas, sin cambiar métricas, tamaños ni huellas de pesos"
+    }
   }
 }

@@ -43,8 +43,18 @@ def verificar(datos=None):
     for ruta in sorted((raiz / 'codigo').glob('*.py')):
         importlib.import_module('codigo.' + ruta.stem)
     plan = leer(raiz / 'resultados_fase2/plan_fase2.json')
+    revisiones_documentales = entrega.get('registros_documentales_actualizados', {})
+    for nombre, revision in revisiones_documentales.items():
+        actual = leer(raiz / nombre)
+        assert sha(raiz / nombre) == revision['sha256_actual'], nombre
+        assert all(campo not in actual for campo in revision['campos_retirados']), nombre
+        contenido = json.dumps(actual, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode('utf-8')
+        assert hashlib.sha256(contenido).hexdigest() == revision['sha256_contenido_tecnico'], nombre
+        if nombre in plan['historicos_SHA256']:
+            assert revision['sha256_original'] == plan['historicos_SHA256'][nombre], nombre
     for nombre, esperado in plan['historicos_SHA256'].items():
-        assert sha(raiz / nombre) == esperado, nombre
+        esperado_actual = revisiones_documentales.get(nombre, {}).get('sha256_actual', esperado)
+        assert sha(raiz / nombre) == esperado_actual, nombre
     captura = leer(raiz / 'resultados_fase2/codigo_ejecucion_SHA256.json')['archivos']
     cambios = {nombre: sha(raiz / nombre) for nombre, esperado in captura.items() if sha(raiz / nombre) != esperado}
     assert cambios == entrega['fuentes_modificadas_despues_de_ejecucion'], cambios
@@ -134,7 +144,7 @@ def verificar(datos=None):
         from codigo.verificaciones import verificar as verificar_funciones
         numericas = verificar_funciones(datos)
         assert numericas['estado'] == 'aprobado'
-    return {'estado': 'aprobado', 'alcance': 'archivos e importaciones, evidencia y métricas guardadas, selección por validación, video y enlaces, no estima embeddings ni vuelve a evaluar modelos', 'fuentes_python_sin_comentarios_ni_docstrings': len(fuentes), 'modulos_importados_CPU': len(list((raiz / 'codigo').glob('*.py'))), 'configuraciones_fase1': len(fase1), 'continuaciones_fase2': len(filas), 'arquitecturas': len(ARQUITECTURAS), 'controles': 5, 'metricas_CSV_JSON_fase2': len(filas) * 8, 'historicos_SHA256': len(plan['historicos_SHA256']), 'fuentes_ejecucion_identicas': len(captura) - len(cambios), 'fuentes_cambiadas_solo_auditoria_entregables': cambios, 'seleccion': global_, 'video_SHA256': video['sha256_video'], 'enlaces_internos_comprobados': enlaces, 'datos_HDF5_contrastados': datos is not None, 'verificaciones_numericas_y_datos': numericas, 'entrenamientos_nuevos': 0, 'inferencias_encoders_nuevas': 0, 'GPU_utilizada': False}
+    return {'estado': 'aprobado', 'alcance': 'archivos e importaciones, evidencia y métricas guardadas, selección por validación, video y enlaces, no estima embeddings ni vuelve a evaluar modelos', 'fuentes_python_sin_comentarios_ni_docstrings': len(fuentes), 'modulos_importados_CPU': len(list((raiz / 'codigo').glob('*.py'))), 'configuraciones_fase1': len(fase1), 'continuaciones_fase2': len(filas), 'arquitecturas': len(ARQUITECTURAS), 'controles': 5, 'metricas_CSV_JSON_fase2': len(filas) * 8, 'historicos_SHA256': len(plan['historicos_SHA256']), 'historicos_SHA256_sin_cambios': len(plan['historicos_SHA256']) - sum(n in plan['historicos_SHA256'] for n in revisiones_documentales), 'registros_documentales_actualizados': sorted(revisiones_documentales), 'fuentes_ejecucion_identicas': len(captura) - len(cambios), 'fuentes_cambiadas_solo_auditoria_entregables': cambios, 'seleccion': global_, 'video_SHA256': video['sha256_video'], 'enlaces_internos_comprobados': enlaces, 'datos_HDF5_contrastados': datos is not None, 'verificaciones_numericas_y_datos': numericas, 'entrenamientos_nuevos': 0, 'inferencias_encoders_nuevas': 0, 'GPU_utilizada': False}
 
 
 if __name__ == '__main__':

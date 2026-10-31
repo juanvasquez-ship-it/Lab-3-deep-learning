@@ -1392,17 +1392,17 @@
   "pesos_compactos_y_48_checkpoints": "tamaño y fecha de modificación iguales a la captura inicial, se evita afirmar una nueva comparación bit a bit de todos sus contenidos",
   "datos_preservados": [
     {
-      "ruta": "C:\\Users\\msdro\\Documents\\Codex\\2026-10-19\\act-a-como-un-cient-fico-8\\work\\data\\testing.h5",
+      "ruta": "testing.h5",
       "bytes": 475648138,
       "mtime_ns": 1792422944272424900
     },
     {
-      "ruta": "C:\\Users\\msdro\\Documents\\Codex\\2026-10-19\\act-a-como-un-cient-fico-8\\work\\data\\training.h5",
+      "ruta": "training.h5",
       "bytes": 227124285,
       "mtime_ns": 1792422943592237600
     },
     {
-      "ruta": "C:\\Users\\msdro\\Documents\\Codex\\2026-10-19\\act-a-como-un-cient-fico-8\\work\\data\\validation.h5",
+      "ruta": "validation.h5",
       "bytes": 39020636,
       "mtime_ns": 1792422943641391100
     }

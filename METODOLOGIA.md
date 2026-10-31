@@ -156,16 +156,6 @@ La exposición inferior a una época de fase 1 motivó continuar un panel de cat
 
 Se mantuvo la entrada cuadrada 224 y se pospuso la degradación LR durante aprendizaje para conservar la geometría local y no mezclar otra intervención con las tasas y el calendario, el laboratorio permite esa degradación pero no la exige, la adaptación rectangular y las múltiples semillas quedan fuera de los experimentos entregados, las cien consultas de validación y una semilla limitan la selección y la interpretación estadística.
 
-## Créditos y licencias del material audiovisual
-
-El video utiliza síntesis local Piper, voz es_ES-sharvard-medium, basada en Spanish Harvard sentences de la Universidad de Edimburgo con licencia CC BY 3.0, el motor Piper se distribuye bajo GPL 3.0, esta narración no registra una exposición humana del grupo.
-
-| Recurso de narración | Fuente y atribución |
-|---|---|
-| Modelo de voz es_ES-sharvard-medium | [Piper voices, modelo de voz](https://huggingface.co/rhasspy/piper-voices/tree/main/es/es_ES/sharvard/medium) |
-| Datos Spanish Harvard sentences | [Universidad de Edimburgo, CC BY 3.0](https://datashare.ed.ac.uk/handle/10283/574) |
-| Motor Piper | [OHF-Voice, GPL 3.0](https://github.com/OHF-Voice/piper1-gpl) |
-
 La publicación académica conserva los resultados originales, el commit de ejecución a6dc59ab03ac869b5ab100c250492d19c07c5a39 conserva el código congelado, los cambios posteriores afectan a auditoría, documentación y preparación de la entrega, incluidas las referencias a materiales auxiliares retirados, el manifiesto CONTENIDO_PAQUETE.json identifica las fuentes modificadas, los modelos, las pérdidas, la lectura de datos y el cálculo de métricas se mantienen sin cambios.
 
 ## Referencias

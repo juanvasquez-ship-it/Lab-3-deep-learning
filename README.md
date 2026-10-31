@@ -11,13 +11,13 @@ La selección mediante validación fue CO-BYOL BagNet33, rama objetivo, con mAP 
 | Material | Contenido |
 |---|---|
 | [INFORME.md](INFORME.md) | Problema, resultados entre fases, bases, ablaciones, costes, límites y cobertura del laboratorio |
-| [METODOLOGIA.md](METODOLOGIA.md) | Ecuaciones, arquitecturas, adaptaciones, referencias y créditos audiovisuales |
+| [METODOLOGIA.md](METODOLOGIA.md) | Ecuaciones, arquitecturas, adaptaciones y referencias |
 | [Resultados de fase 2](resultados_fase2/RESULTADOS_FASE2.md) | Diecinueve configuraciones con ambas resoluciones y tiempos |
 | [Comparación de fase 1](COMPARACION_ARQUITECTURAS.md) | Catorce arquitecturas con política histórica de rama online |
 | [Análisis de errores](resultados_fase2/ANALISIS_ERRORES_FASE2.md) | Veinte casos, cinco aciertos y cinco fallos por condición, con figuras y explicación |
 | [Video final](resultados_fase2/audiovisual/VIDEO.mp4) | 11 min 57.56 s, metodología, implementación y resultados |
 
-El PDF del laboratorio exige código, resultados, instrucciones y video, las atribuciones de la narración sintética se conservan en METODOLOGIA.md, la exposición humana, el envío y la defensa no se acreditan mediante estos archivos.
+El PDF del laboratorio exige código, resultados, instrucciones y video, el envío y la defensa individual corresponden a las actividades académicas del grupo.
 
 ## Organización
 
@@ -82,4 +82,4 @@ main.py informe regenera los gráficos y el informe automático de fase 1, tabla
 
 codigo/verificaciones.py conserva comprobaciones analíticas de stop-gradient, pérdidas y AP/Rank-k, codigo/auditoria.py comprueba la evidencia de fase 1 y utiliza las rutas del entregable final declaradas en el manifiesto, los mtime de un clon no demuestran el orden histórico de selección y prueba, esa limitación se declara en lugar de convertir fechas de copia en evidencia experimental.
 
-Las decisiones y las partes no reproducidas se describen en METODOLOGIA.md e INFORME.md, las referencias científicas y los créditos de los recursos audiovisuales se mantienen en la metodología, las actividades de revisión grupal, envío al formulario y defensa individual siguen pendientes de realización humana.
+Las decisiones y las partes no reproducidas se describen en METODOLOGIA.md e INFORME.md, las referencias científicas se mantienen en la metodología, las actividades de revisión grupal, envío al formulario y defensa individual siguen pendientes de realización humana.

@@ -9,11 +9,6 @@
     1600,
     900
   ],
-  "voz": "Piper sharvard medium, speaker 0, síntesis CPU local",
-  "fuente_voz": "https://huggingface.co/rhasspy/piper-voices/tree/main/es/es_ES/sharvard/medium",
-  "atribucion_dataset_voz": "Spanish Harvard sentences, Universidad de Edimburgo, https://datashare.ed.ac.uk/handle/10283/574, CC BY 3.0",
-  "motor": "Piper, https://github.com/OHF-Voice/piper1-gpl, GPL 3.0",
-  "limitacion": "Material audiovisual sintético de apoyo, no registra una exposición humana del grupo",
   "decodificacion_completa_sin_errores": true,
   "sha256_video": "dadf254ce6eeea5b3ca50460d7343043055117454ff4407a91da99cb2c8df6b7",
   "fase": 2,

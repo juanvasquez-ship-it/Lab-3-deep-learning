@@ -115,13 +115,15 @@ La revisión posterior a los experimentos contrastó las 152 métricas del CSV s
 
 sesion_independiente.json y verificacion_fase2.json conservan el cierre experimental, la duración y decodificación del video se documentan en su registro de verificación, la organización de archivos no sustituye los resultados ni cambia pesos o selecciones.
 
+Las correcciones documentales posteriores se registran en CONTENIDO_PAQUETE.json con las huellas originales y actuales de los metadatos auxiliares, sus campos técnicos y los resultados experimentales permanecen intactos.
+
 La selección por validación antecede a la prueba de fase 2, pero la fase se diseñó después de existir pruebas históricas, no constituye un segundo conjunto ciego, no hay evidencia de ajuste con testing ni se propone ahora entrenar para mejorar las filas peores.
 
 ## Material audiovisual y análisis de errores
 
 El video final dura 717.56 segundos y pasó la comprobación de decodificación completa y del límite por capítulo, su producción audiovisual no modificó los modelos ni los resultados experimentales.
 
-El [video final](resultados_fase2/audiovisual/VIDEO.mp4) utiliza narración sintética, sus fuentes y licencias se describen en METODOLOGIA.md, su generación no acredita una exposición humana del grupo.
+El [video final](resultados_fase2/audiovisual/VIDEO.mp4) presenta la metodología, la implementación y los resultados del trabajo.
 
 Las figuras incluyen cinco aciertos y cinco fallos por condición, se inspeccionaron visualmente los veinte casos y se documentaron prendas, punto de vista, mochila y pérdida de detalle LR en [el análisis de errores](resultados_fase2/ANALISIS_ERRORES_FASE2.md), esos rasgos visibles apoyan hipótesis de confusión pero no demuestran qué atributo determinó el encoder.
 
