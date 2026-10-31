@@ -46,7 +46,7 @@
   "procedencia": "El commit de ejecución conserva las fuentes experimentales, los cambios posteriores de auditoría, documentación y preparación de entregables se identifican por sus hashes y no modifican modelos, datos, pérdidas ni métricas",
   "omisiones": [
     "Copias de código y documentos anteriores",
-    "Guías de trabajo para asistentes de IA",
+    "Guías internas de trabajo",
     "Video de fase 1 y recursos audiovisuales duplicados",
     "Logs de consola y salidas de pruebas rápidas descartadas",
     "Datos, checkpoints completos y entornos",

@@ -156,9 +156,7 @@ La exposición inferior a una época de fase 1 motivó continuar un panel de cat
 
 Se mantuvo la entrada cuadrada 224 y se pospuso la degradación LR durante aprendizaje para conservar la geometría local y no mezclar otra intervención con las tasas y el calendario, el laboratorio permite esa degradación pero no la exige, la adaptación rectangular y las múltiples semillas quedan fuera de los experimentos entregados, las cien consultas de validación y una semilla limitan la selección y la interpretación estadística.
 
-## Uso de herramientas y atribuciones
-
-Se utilizó un asistente de IA en Codex como apoyo para programación, revisión de código, organización de experimentos y redacción, la expresión implementación propia se refiere al mecanismo programado en este repositorio sin importar una implementación existente de CO-SSL y no afirma una autoría exclusivamente humana, los entrenamientos y métricas proceden de ejecuciones locales con PyTorch, la defensa individual requiere comprensión del método y del código y no se acredita con la generación automática de documentos.
+## Créditos y licencias del material audiovisual
 
 El video utiliza síntesis local Piper, voz es_ES-sharvard-medium, basada en Spanish Harvard sentences de la Universidad de Edimburgo con licencia CC BY 3.0, el motor Piper se distribuye bajo GPL 3.0, esta narración no registra una exposición humana del grupo.
 

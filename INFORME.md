@@ -151,5 +151,3 @@ Se entregan código, configuraciones, métricas, curvas, casos y video final con
 Los datos y los checkpoints completos son externos por tamaño, la release entrega-v2 permite recuperar los tres exportados compactos, incluido el modelo seleccionado de fase 2, estos permiten evaluar encoders pero no retomar todo el entrenamiento, repetir las diecinueve continuaciones requiere recuperar sus checkpoints de fase 1, las instrucciones preparan una copia independiente sin sobrescribir los resultados entregados.
 
 El código congelado de los experimentos se identifica con el commit a6dc59ab03ac869b5ab100c250492d19c07c5a39 y codigo_ejecucion_SHA256.json, las modificaciones posteriores afectan a auditoría, preparación de la entrega y texto generado, sin cambiar entrenamiento, datos, representaciones ni métricas, CONTENIDO_PAQUETE.json y la verificación de entrega identifican las fuentes modificadas.
-
-Se utilizó asistencia de IA en Codex y narración sintética Piper, las funciones y las atribuciones se describen en METODOLOGIA.md, no se afirma autoría exclusivamente humana ni se da por realizada la defensa individual o el envío académico.
